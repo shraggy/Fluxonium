@@ -72,7 +72,7 @@ Typically, fluxonium qubit measurements are performed by dispersively coupling t
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Figures/Demo.pdf}
-    \caption{State transitions in a qubit induced due to a driven readout resonator in the presence of parasitic modes from a Josephson junction array (JJA). The leading order parasitic effects during readout are incurred when the photon number distribution in the readout (black) is split into excitations in the various parasitic modes (red) with just enough energy left for a transition in the qubit mode (blue).}
+    \caption{State transitions in a qubit induced due to a driven readout resonator in the presence of parasitic modes from a Josephson junction array (JJA). The leading order parasitic effects during readout are incurred when the photon number distribution in the driven readout mode (black) is split into excitations in the various parasitic modes (red) of the JJA with just enough energy left for a transition in the qubit mode (blue) determined by the phase-slip junction.}
     \label{fig:demo}
 \end{figure}
 In this work, we analyze the state transitions during the dispersive readout of a fluxonium circuit, especially focusing on the effects that arise due to the parasitic modes of the JJA-fluxonium. Fig.~\ref{fig:meas_circuit} shows our measurement circuit for a heavy fluxonium circuit at the flux sweet spot  ($\varphi_{ext}=0.5\Phi_0$), an experimentally-relevant choice for maximizing qubit coherence~\cite{somoroff_millisecond_2023,nguyen2019high,zhang_universal_2021,manucharyan2009fluxonium}; however, parasitic effects in the case of several circuit modifications are also discussed. We study population in the first three eigenstates in the qubit mode, to include experiments with a heavy fluxonium that use the first two levels ($01$) for computation and the second two levels ($12$) for measurement~\cite{zhang_universal_2021}. %The parasitic ground capacitance couples the various internal modes of a junction array. 
@@ -963,8 +963,9 @@ The term $\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}}$ will be added to the Lagrang
     &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\
     &\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
 \end{align}
+
 \paragraph{Hamiltonian:} All terms in the Hamiltonian ($H_2$) can be adopted via $N\rightarrow N-1$. If $C_g^N\neq C_g^1$ then this ground fluxonium and floating fluxonium have a larger difference in terms of frequencies of modes.
-\bibliography{refs} 
+\bibliography{refs.bib} 
 
 \end{document}
 
