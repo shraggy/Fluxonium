@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1726977010
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1726979786
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
   "main.aux" 0 -1 0 "pdflatex"
-  "mainNotes.bib" 1726977009 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "mainNotes.bib" 1726979785 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   "refs.bib" 1726974003 47747 ca478b89cda2d57db9a61bf47c219bdb ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1726977007 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1726977010
+["pdflatex"] 1726979783 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1726979786
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Fluxonium_Readout_manuscript/Figures/dephasing.pdf" 0 -1 0 ""
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1726977007 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1726979783 8 a94a2480d3289e625eea47cd1b285758 ""
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1726976639 132273 9ec69bb1e4d181f936df674d12c8a4cc ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -253,12 +253,12 @@
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1726976639 132273 9ec69bb1e4d181f936df674d12c8a4cc ""
   (generated)
-  "mainNotes.bib"
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
+  "main.aux"
   "main.soc"
   "main.loc"
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
   "main.pdf"
-  "main.aux"
+  "mainNotes.bib"
   "main.out"
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
   "main.log"
