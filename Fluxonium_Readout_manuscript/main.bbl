@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{39}%
+\begin{thebibliography}{40}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -531,6 +531,19 @@
   {Masluk}},\ }\href@noop {} {\emph {\bibinfo {title} {Reducing the losses of
   the fluxonium artificial atom}}}\ (\bibinfo  {publisher} {Yale University},\
   \bibinfo {year} {2013})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fowler}\ \emph {et~al.}(2012)\citenamefont {Fowler},
+  \citenamefont {Mariantoni}, \citenamefont {Martinis},\ and\ \citenamefont
+  {Cleland}}]{fowler2012surface}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont
+  {Fowler}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mariantoni}},
+  \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Martinis}},\ and\
+  \bibinfo {author} {\bibfnamefont {A.~N.}\ \bibnamefont {Cleland}},\
+  }\bibfield  {title} {\bibinfo {title} {Surface codes: Towards practical
+  large-scale quantum computation},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review A—Atomic, Molecular, and Optical
+  Physics}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages} {032324}
+  (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hazra}\ \emph {et~al.}(2024)\citenamefont {Hazra},
   \citenamefont {Dai}, \citenamefont {Connolly}, \citenamefont {Kurilovich},
   \citenamefont {Wang}, \citenamefont {Frunzio},\ and\ \citenamefont

@@ -316,26 +316,18 @@ The p-MIST effects shown in the previous section can be mitigated in various way
 As we discussed above, a parasitic mode can introduce p-MIST, which involve population exchange of a parasitic mode ($\mu$) excitation, and qubit mode  ($\phi$) excitations. We estimate the resonance conditions by identifying  energy-conserving processes, where $m$ readout photons convert into $n$ parasitic mode photons and a qubit excitation $\ket{i} \rightarrow \ket{j}$ with gap $\Delta_{ij}=\epsilon_j-\epsilon_i$. Here, $\epsilon_i,\epsilon_j$ are the eigenenergies of the bare qubit Hamiltonian $H_\phi$. To guide intuition for understanding the spectrum of resonance conditions, we plot such energy-conserving processes in Fig.~\ref{fig:trans_prof}, for the lowest-order case of $\mu=2$, that satisfy
 \begin{align}
     |m\omega_r-(n\omega_\mu+\Delta_{ij})|\le 10 \textrm{ MHz}
+    \label{eq:En_cons}
 \end{align}
-\ER{is it 10 MHz or 50 MHz? You have one in the eq and one in the text.} That is, we are plotting almost resonant transitions with within $10$ MHz, \ER{ want something like: to allow for Stark shifts $\sim \xi^2 / \Delta$ on the parasitic or qubit transitions due to detuned driving from the readout excitations (see App.~\ref{app:stark-shift} for estimations of stark-shifted energies), which we find to be WELL BELOW(?) 10 MHz for our parameter set}. 
-\ER{I don't understand this next sentence, can you flesh it out? } Note that our first-order perturbative calculation underestimates the stark shift so this flexibility is justified. 
 
-%\begin{figure}[!htb]
- %   \centering
- %   \includegraphics[width=\linewidth]{Figures/Trans.pdf}
- %   \caption{%(a) Charge matrix elements (transition probabilities) between various fluxonium energy levels. (b)
- %   Energy-conserving processes involving upto four readout photons with parasitic mode $\mu=2$ which satisfy $|m\omega_r-n_\mu\omega_{\mu}-\Delta_{if}|\le 10$ MHz with $0\le m\le 4, 0\le n_\mu\le 2, 0\le i\le 2, 0\le f\le 20$. Justification for this flexibility in the resonance condition allows for stark-shifted deviations in $\Delta_{ij}$ (see App.~\ref{app:stark-shift}). Transitions marked in grey are captured in Fig.~\ref{fig:Energy_Flo}.}
- %   \label{fig:trans_prof}
-%\end{figure}
-%\ER{ we need to walk the readers through the figure more here. Explain we plot the readout resonator frequency on one axis, initial parasitic population on the other, and consider the different initial states.... Also, it's hard to read with the slices, way too much info. Let's just plot the initial parasitic population of 0 since that's by far the most relevant. PS why is there 'Fig 6' labels on top of all of them? }
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=\linewidth]{Figures/Trans_.pdf}
+    \caption{Energy conserving processes $\ket{\tilde{i},\tilde{0}}\leftrightarrow\ket{\tilde{f},\tilde{\bar n}_\mu}$ for Eq.~\ref{eq:En_cons} in the range of drive frequency $\omega_d$ captured in Floquet simulations (see Fig.~\ref{fig:Floquet}). (Red) $i=0$, (Green) $i=1$, (Blue) $i=2$. Marked points correspond to transition $#$ listed in Table~\ref{tab:p-MIST}. The labels ($m\text{r},n\text{p}$) show the number of readout photons and the number of parasitic mode ($\mu=2$) photons, respectively.}
+    \label{fig:trans_prof}
+\end{figure}
 \paragraph{Drive Frequency:} 
 The transition profile in Fig.~\ref{fig:trans_prof} shows us the regions where up to four-photon processes will be prominent when starting in one of the four lowest fluxonium levels involved in the readout. Note that there are downward transitions in the fluxonium subspace in the presence of parasitic modes, one of which was captured in transition $15$ of Table~\ref{tab:circuit_params}. To emphasize the correctness of these predictions we zoom into the transitions captured from Floquet simulations (see Sec.~\ref{sec:MIST}) in Fig.~\ref{fig:Energy_Flo}. The labels correspond to the disjoint subspaces for clarification but the energy conservation uses the eigenenergies of the hybridized state for $H_{0}$ in Eq.~\ref{eq:drive}. A positive $\#$ denotes emission while a negative denotes absorption. For example, in transition $2$ emits $3$ readout photons which is converted into $2$ parasitic mode photons absorbed by the mode $\mu=2$ and the transition $\ket{0}_\phi\leftrightarrow \ket{4}_\phi$ in the fluxonium subspace. 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.9\textwidth]{Figures/Trans_.pdf}
-    \caption{Energy conserving processes in the range of drive frequency $\omega_d$ captured in Floquet simulations (see Fig.~\ref{fig:Floquet}). Marked points correspond to transitions $\#$s listed in Table~\ref{tab:p-MIST}. The labels ($\#r,\#p$) show the number of readout photons and the number of parasitic mode ($\mu=2$) photons, respectively.}
-    \label{fig:Energy_Flo}
-\end{figure}
+
 Fig.~\ref{fig:trans_prof} shows that the farther the readout frequency is from the parasitic mode frequency, lesser are the parasitic transitions. This argument applies to not only p-MIST effects but in general any MIST effect is reduced the closer we move to the qubit frequency $\omega_q$ as evident from the $\ket{n_\mu=0}$ panel. 
 
 \paragraph{Parasitic Mode Frequency:}
