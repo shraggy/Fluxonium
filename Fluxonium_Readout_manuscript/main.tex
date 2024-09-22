@@ -296,26 +296,20 @@ Next, we use the gaps in the quasi-energies to compute the Landau-Zener (LZ) pro
 which includes a ring-up time of $1/\kappa$, according to the readout resonator bandwidth~\cite{khezri2023measurement,dumas2024unified,cohen2023reminiscence}. Note that the time interval is again given by $\Delta \bar n_r=1$, thus replicating our previous model used for Floquet simulations with $\bar n_r=50$. As expected, varying $\kappa$ changes the probability of transitions, plotted in Fig.~\ref{fig:LZ} (for details seeApp.~\ref{app:LZ}).  \ER{we have a different nbar(t) dependence though no? } We compare these LZ transition probabilities to the overlap of the initial state evolved under the unitary $U=e^{i\hat H_{s.c.}t}$ with the Floquet branch state at $t_f=\frac{10}{\kappa_r}$: $|\braket{m_{\bar n_r=n_f}|\mathcal{U}(t_f)|i}|^2$. \singh{Unlike Ref.~\cite{dumas2024unified} we do not find perfect agreement in these two cases due to Landau-Zener-Stuckleberg transitions..? This indicates that the two-state physics captured by Landau-Zener transitions may not be correct to study strengths of fluxonium transitions.}
 
 \subsection{Qubit Dephasing post-Readout} 
-%Parasitic mode-induced dephasing can be problematic if the qubit is reset while the parasitic mode remains excited due to p-MIST effects, 
-After fluxonium qubit readout, there will generally be non-zero population $\bar n_\rho=\mathcal{O}(1)$ in the parasitic modes. Subsquently, the parasitic mode dissipates to its ground state with rate $\kappa_\mu=\omega_\mu/Q_\mu$. This process can cause qubit dephasing, through the large dispersive coupling between the qubit mode and parasitic mode, which in our parameters is about $\sim 1$ MHz. %Here, $\sigma_z$ denotes the Pauli $Z$ operator of the two-qubit Hamiltonian obtained using Schrieffer Wolff transformation of Eq.~\ref{Hamiltonian_total}. The dispersive coupling of the qubit to the parasitic mode $\mu=2$ is $\chi_{\phi\mu}=1.1$ MHz. 
-Specifically, the decay of the parasitic mode is a Poissonian process for which the dephasing can be extracted as follows,
+Here, we consider implications of p-MIST \textit{after} the readout pulse is executed, in the context of a larger quantum circuit where the fluxonium mode is used as a qubit. In general, the parasitic modes are long-lived, with internal quality factors of $\sim 10^{4}$\cite{masluk_microwave_2012, masluk2013reducing}. Spurious excited state population of the parasitic mode introduced by p-MIST during readout can introduce correlated dephasing of the qubit, through the large dispersive interaction $\chi_{\mu \phi} \sim 1$ MHz (see Table~\ref{tab:circuit_params}). If the parasitic mode is excited, the qubit accumulates a phase at a constant rate $\chi_{\mu\phi} \bar n_\mu$, in the absence of any decay. However, for finite internal quality factor $Q_\mu$, the parasitic mode decays at a rate $\kappa_\mu=Q_\mu/\omega_\mu$. In this scenario, the qubit dephasing is not deterministic but a Poissonion process which relies on the random decay of the parasitic mode. 
 
-\sh{Dephasing calculation}
-
-\par
-\ER{Just some suggestions for text: Here, we consider implications of p-MIST \textit{after} the readout pulse is executed, in the context of a larger quantum circuit where the fluxonium mode is used as a qubit. In general, the parasitic modes are long-lived, with internal quality factors of $\sim 10^{4}$\cite{masluk_microwave_2012, masluk2013reducing}. Spurious excited state population of the parasitic mode introduced by p-MIST during readout can introduce correlated dephasing of the qubit, through the large dispersive interaction $\chi_{\mu \phi} \sim g_{\mu \phi}^2 / (\omega_{10} - \omega_\mu)$. If the parasitic mode is excited, the qubit accumulates a phase at rate $\chi_{\mu\phi}$; eventually, the parasitic mode decays, leading to an average phase accumulation of order $\sim \chi_{\mu\phi} \omega_\mu / Q_\mu$. }.
-Specifically, we find that for internal quality factors of the parasitic mode $Q_\mu$ of $10^{4}$, $10^{5}$, and $10^{6}$, about XXX population in the parsitic mode is needed to introduce qubit dephasing rates of 1ms, approximately matching state-of-the-art fluxonium qubit coherence~\cite{ding_high-fidelity_2023,somoroff_millisecond_2023}. Given that the population of the parasitic modes is about XXX at a readout power of $\sim 10$ photons, we expect that qubit coherence can be limited by p-MIST in circuit designs which do not anticipate them. 
-
-
-\ER{this paragarph needs work} Thus, with various methods used in these analyses we have quantitatively demonstrated that p-MIST effects restrict the frequency landscape available for high-fidelity readout of a fluxonium qubit. In the next section, we will analyze some key circuit parameters responsible for these effects.
-
-We have confirmed that dephasing due to the drive and thermal effects is negligible (see Apps.~\ref{app:dephasing} and~\ref{app:Hamiltonian}).
-\begin{figure}
+\begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Fluxonium_Readout_manuscript/Figures/dephasing.pdf}
-    \caption{Dephasing}
+    \caption{Dephasing error probability due to random decay of an excited excited parasitic mode after p-MIST at finite $Q_\mu$.}
     \label{fig:dephasing}
 \end{figure}
+
+We performed a master equation simulation of dephasing of a qubit state $\ket{+}$ under the Hamiltonian $H=\chi_{\phi\mu} \hat a_\mu^\dagger \hat a_\mu \sigma_z$ and dissipation under $\sqrt{\kappa_\mu}\hat a_\mu$ when the initial parasitic mode population is $\bar n_\mu$. We plot in Fig.~\ref{fig:dephasing} the infidelity of the state after the parasitic mode reaches a steady state at $T_f=10/\kappa_\mu$ for various $Q_\mu$ and $\bar n_\mu$. Specifically, we find that for internal quality factors of the parasitic mode $Q_\mu$ of $10^{4}$ about XXX population in the parsitic mode is needed to introduce a dephasing error probability of $0.01$, already past the threshold of surface code decoders~\cite{fowler2012surface}. Given that the population of the parasitic modes is about $\bar n_\mu\sim 1$ at a readout power of $\sim 10$ photons, we expect that qubit coherence can be limited by p-MIST in circuit designs which do not anticipate them. 
+
+
+Thus, with various methods used in these analyses we have quantitatively demonstrated that p-MIST effects restrict the frequency landscape available for high-fidelity readout of a fluxonium qubit. We have confirmed that dephasing due to the drive and thermal effects is negligible (see Apps.~\ref{app:dephasing} and~\ref{app:Hamiltonian}). In the next section, we will analyze the range of various mode frequencies responsible for these effects.
+
 \section{Effects of Circuit Modifications on p-MIST}\label{sec:expressions}
 The p-MIST effects shown in the previous section can be mitigated in various ways, by adjusting the qubit frequency, readout resonator frequency, and parasitic mode frequencies, as well as reducing parasitic mode and qubit coupling strengths. In this section, we explore the impact of each of these components individually. All equations analyzed in this section were derived in Ref.~\cite{viola2015collective} for the circuit in Fig.~\ref{fig:meas_circuit}, and we have extended these results to circuits with different grounding configurations in App.~\ref{app:alt_circuits}.
 \subsection{Mode Frequencies}
@@ -323,7 +317,7 @@ As we discussed above, a parasitic mode can introduce p-MIST, which involve popu
 \begin{align}
     |m\omega_r-(n\omega_\mu+\Delta_{ij})|\le 10 \textrm{ MHz}
 \end{align}
-\ER{is it 10 MHz or 50 MHz? You have one in the eq and one in the text.} That is, we are plotting almost resonant transitions with within $50$ MHz, \ER{ want something like: to allow for Stark shifts $\sim \xi^2 / \Delta$ on the parasitic or qubit transitions due to detuned driving from the readout excitations (see App.~\ref{app:stark-shift} for estimations of stark-shifted energies), which we find to be WELL BELOW(?) 10 MHz for our parameter set}. 
+\ER{is it 10 MHz or 50 MHz? You have one in the eq and one in the text.} That is, we are plotting almost resonant transitions with within $10$ MHz, \ER{ want something like: to allow for Stark shifts $\sim \xi^2 / \Delta$ on the parasitic or qubit transitions due to detuned driving from the readout excitations (see App.~\ref{app:stark-shift} for estimations of stark-shifted energies), which we find to be WELL BELOW(?) 10 MHz for our parameter set}. 
 \ER{I don't understand this next sentence, can you flesh it out? } Note that our first-order perturbative calculation underestimates the stark shift so this flexibility is justified. 
 
 %\begin{figure}[!htb]
