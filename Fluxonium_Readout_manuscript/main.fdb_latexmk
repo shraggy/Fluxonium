@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1726985526
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1726985603
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
   "main.aux" 0 -1 0 "pdflatex"
-  "mainNotes.bib" 1726985525 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "mainNotes.bib" 1726985602 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   "refs.bib" 1726974003 47747 ca478b89cda2d57db9a61bf47c219bdb ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1726985523 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1726985526
+["pdflatex"] 1726985599 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1726985603
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Fluxonium_Readout_manuscript/Figures/Floquet_Will.pdf" 0 -1 0 ""
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Fluxonium_Readout_manuscript/Figures/Floquet_low.pdf" 0 -1 0 ""
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Fluxonium_Readout_manuscript/Figures/dephasing.pdf" 0 -1 0 ""
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1726985523 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1726985599 8 a94a2480d3289e625eea47cd1b285758 ""
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1726985523 133117 cf095cf1cca3504833c48ba9cb8b038b ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -236,7 +236,7 @@
   "Figures/Coupling_strength.pdf" 1726383562 106240 37617dca3bd3c5a953d0c924b5aeb03c ""
   "Figures/Demo.pdf" 1726937923 86322 8aebd9e5334591cffe73dc9adfc87328 ""
   "Figures/Floquet_011.pdf" 1726234885 105295 e8ce77a266e01aab20c4345c647068f6 ""
-  "Figures/Floquet_coupling.pdf" 1726985311 259969 63970798a5d7b021e1693b03f4b56763 ""
+  "Figures/Floquet_coupling.pdf" 1726985580 259838 9c815e607abcacdcd642f43d60a4cbb8 ""
   "Figures/Floquet_min.pdf" 1726939436 212924 08f534e533ba1d5c10819c84a4c8df8b ""
   "Figures/LZ.pdf" 1726383560 85667 7ebd23c701dbfa7b72949afcb05003e9 ""
   "Figures/Meas_Circuit.pdf" 1726939216 119492 48439b601128e9d13c262ee6290f760a ""
@@ -256,12 +256,12 @@
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1726985523 133117 cf095cf1cca3504833c48ba9cb8b038b ""
   (generated)
-  "mainNotes.bib"
-  "main.pdf"
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
   "main.soc"
-  "main.loc"
   "main.log"
+  "mainNotes.bib"
+  "main.loc"
+  "main.pdf"
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
   "main.out"
   "main.aux"
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
