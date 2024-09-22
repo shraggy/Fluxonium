@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1726976647
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1726977010
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
   "main.aux" 0 -1 0 "pdflatex"
-  "mainNotes.bib" 1726976646 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
+  "mainNotes.bib" 1726977009 104 4d8bb863c86f3d7b03a471e9d4707f34 "pdflatex"
   "refs.bib" 1726974003 47747 ca478b89cda2d57db9a61bf47c219bdb ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1726976644 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1726976647
+  "main.blg"
+["pdflatex"] 1726977007 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1726977010
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Fluxonium_Readout_manuscript/Figures/dephasing.pdf" 0 -1 0 ""
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1726976644 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1726977007 8 a94a2480d3289e625eea47cd1b285758 ""
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1726976639 132273 9ec69bb1e4d181f936df674d12c8a4cc ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -243,7 +243,7 @@
   "Figures/Trans0.pdf" 1726383562 269246 036501fea6cb7dd581dcd461f4f73379 ""
   "Figures/Trans1.pdf" 1726383562 318063 54cd7d81cb277cc8071d45d994782667 ""
   "Figures/Trans2.pdf" 1726383562 143050 0b6fd3c803be43035d5d40cfbe218886 ""
-  "Figures/Trans_.pdf" 1726976454 94563 2dcd25bdf65162fdf293a09cc840a762 ""
+  "Figures/Trans_.pdf" 1726977002 94557 5d170f52aae63e38d94810f131d6c78d ""
   "Figures/circuit_comp.pdf" 1726383560 287505 18ea5a6072750cee4556600ff805027f ""
   "Figures/dephasing.pdf" 1726941525 115731 7cb5e84ebb56f9382f35b3b540c3f397 ""
   "Figures/dispersive-shift.pdf" 1726383560 172802 63d3e88050a43f0f5dbed4be94e344e6 ""
@@ -253,12 +253,12 @@
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1726976639 132273 9ec69bb1e4d181f936df674d12c8a4cc ""
   (generated)
-  "main.soc"
-  "main.pdf"
-  "main.out"
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
-  "main.aux"
-  "main.log"
-  "main.loc"
   "mainNotes.bib"
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
+  "main.soc"
+  "main.loc"
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
+  "main.pdf"
+  "main.aux"
+  "main.out"
+  "main.log"
