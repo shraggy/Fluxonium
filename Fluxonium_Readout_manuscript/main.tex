@@ -211,6 +211,13 @@ Our primary task is to analyze p-MIST effects which introduce simultaneous trans
 In this section, we perform a Floquet simulation of the driven circuit to identify the state transitions in the system. We simulate the system dynamics for a range of readout resonator frequencies, $\omega_d$, and ramp up the various drive strengths $\xi_{\mu/\phi}$ to emulate the addition of photons in the readout resonator. We find that the presence of the parasitic mode $\mu=2$ significantly increases the number of MIST effects in the system. Next, we analyze the processes that cause these transitions and quantify the rates of these effects using perturbative approaches and Landau Zener probabilities. We also show that the residual population in the parasitic modes after a readout pulse can lead to significant dephasing of the qubit mode, limiting the performance of a fluxonium qubit architecture.
 
 \subsection{Floquet Simulations} 
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Figures/Floquet_min.pdf}
+    \caption{p-MIST effects in Floquet Simulations. Columns show results when the initial state in the branch analysis is the dressed hybridized eigenstate $i=\ket{\tilde{k},\tilde{0}}$, with maximum overlap with un-hybridized states $\ket{k}_\phi\otimes\ket{0}_{\mu=2}$. (Top row) Average fluxonium excitation $\langle n_\phi\rangle $. (Bottom row) Average excitation $\langle n_\mu\rangle$ of the first-even parasitic mode ($\mu=2$). %Color bars have been chosen to accentuate the p-MIST effects, marked by dotted boxes. 
+    All transitions observed in this figure are explicitly listed in Table~\ref{tab:p-MIST} and plotted in Figs.~\ref{fig:Trans0}-\ref{fig:Trans2} of App.~\ref{app:Floquet-trans}.}
+    \label{fig:Floquet}
+\end{figure}
 \begin{table*}[!bth]
     \centering
     \begin{tabular}{w{c}{1cm}w{c}{6cm}w{c}{3cm}w{c}{2cm}w{c}{4cm}}
@@ -268,7 +275,7 @@ Our method is different from Ref.~\cite{dumas2024unified,cohen2023reminiscence} 
     \item the quasi-energy spectrum $\epsilon_i\mod \omega_d$.
 \end{enumerate}
 
-Fig.~\ref{fig:Floquet} illustrates our main result, showing p-MIST for initial fluxonium states $\ket{n}$ of $\ket{0}$, $\ket{1}$ and $\ket{2}$. We show the fluxonium excitation (top-row) and parasitic mode excitation (bottom-row) values for the branch analysis of hybridized states $\ket{m}$ closest to the disjoint states where the fluxonium subspace is $i=0,1,2$ and that parasitic modes begin in the ground state with $\bar n_\mu=0$. We focus on readout drive frequencies between $8.5 - 9.5$ GHz (a relatively high-frequency choice, to reduce thermal, photon shot-noise induced dephasing in the qubit compared to lower-frequency bands). The p-MIST effects occur at various values of $\omega_d$, corresponding to simultaneous jumps in the population of the modes $\phi$ (Figs. 2a-2c, top row) and $\mu=2$ (Figs. 2a-2c, bottom row), as $\bar{n}_r$ varies. At these points, an avoided crossing in quasi-energies confirms the hybridization of the two states involved in the population exchange (Figs.~\ref{fig:Trans0}-\ref{fig:Trans2}).
+Fig.~\ref{fig:Floquet} illustrates our main result, showing p-MIST for initial fluxonium states of $\ket{0}$, $\ket{1}$ and $\ket{2}$. We show the fluxonium excitation (top-row) and parasitic mode excitation (bottom-row) values for the branch analysis of hybridized states $\ket{m}$ closest to the disjoint states where the fluxonium subspace is $i=0,1,2$ and that parasitic modes begin in the ground state with $\bar n_\mu=0$. We focus on readout drive frequencies between $8.5 - 9.5$ GHz (a relatively high-frequency choice, to reduce thermal, photon shot-noise induced dephasing in the qubit compared to lower-frequency bands). The p-MIST effects occur at various values of $\omega_d$, corresponding to simultaneous jumps in the population of the modes $\phi$ (Figs. 2a-2c, top row) and $\mu=2$ (Figs. 2a-2c, bottom row), as $\bar{n}_r$ varies. At these points, an avoided crossing in quasi-energies confirms the hybridization of the two states involved in the population exchange (Figs.~\ref{fig:Trans0}-\ref{fig:Trans2}).
 
 
 %%%%%%%%%%%%%%%%%
