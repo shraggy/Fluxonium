@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1727096413
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1727097239
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
   "main.aux" 0 -1 0 "pdflatex"
-  "mainNotes.bib" 1727096412 605 935fe03959582ca799c19d3ca5af3f1e "pdflatex"
+  "mainNotes.bib" 1727097238 605 935fe03959582ca799c19d3ca5af3f1e "pdflatex"
   "refs.bib" 1726974003 47747 ca478b89cda2d57db9a61bf47c219bdb ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1727096410 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1727096413
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1727096410 8 a94a2480d3289e625eea47cd1b285758 ""
+  "main.bbl"
+["pdflatex"] 1727097235 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1727097239
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1727097235 8 a94a2480d3289e625eea47cd1b285758 ""
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1727087745 133668 1a37b44187fa7e8de6e2f450db45ff70 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -234,7 +234,7 @@
   "Figures/Demo.pdf" 1727045576 73982 ee818720265642e2480906d64b47fdfa ""
   "Figures/Floquet_011.pdf" 1727058843 88884 c4e47eeb658024ffb98636199fc5fc46 ""
   "Figures/Floquet_Will.pdf" 1727094929 159872 e8a5578cb17b9853e19288bb171592da ""
-  "Figures/Floquet_coupling.pdf" 1727047591 237364 9085ff9127f699d5ff8bc6c59e4151c8 ""
+  "Figures/Floquet_coupling.pdf" 1727097025 237746 9866c35c1e81a06f611f57d6b05fcb40 ""
   "Figures/Floquet_low.pdf" 1727094286 268107 c4c13d852375b0c540380c6fc6f2c21e ""
   "Figures/Floquet_min.pdf" 1727094265 205529 faa141d80003c1a397cec038c265efb8 ""
   "Figures/LZ.pdf" 1726383560 85667 7ebd23c701dbfa7b72949afcb05003e9 ""
@@ -252,12 +252,12 @@
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1727087745 133668 1a37b44187fa7e8de6e2f450db45ff70 ""
   (generated)
-  "main.aux"
-  "main.log"
+  "mainNotes.bib"
   "main.pdf"
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
-  "main.loc"
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
+  "main.log"
   "main.soc"
-  "mainNotes.bib"
   "main.out"
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
+  "main.aux"
+  "main.loc"
