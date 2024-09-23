@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1727107799
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1727107969
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
   "main.aux" 0 -1 0 "pdflatex"
-  "mainNotes.bib" 1727107798 605 935fe03959582ca799c19d3ca5af3f1e "pdflatex"
+  "mainNotes.bib" 1727107968 605 935fe03959582ca799c19d3ca5af3f1e "pdflatex"
   "refs.bib" 1726974003 47747 ca478b89cda2d57db9a61bf47c219bdb ""
   (generated)
-  "main.blg"
   "main.bbl"
-["pdflatex"] 1727107795 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1727107799
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 1727107795 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1727107791 134195 a6218f931ff0d962ba1087045af23386 ""
+  "main.blg"
+["pdflatex"] 1727107969 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf" "main" 1727107969
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.aux" 0 -1 0 ""
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1727107968 134274 346bff01afeb408464de7646d9f73ede ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
@@ -250,14 +250,14 @@
   "main.aux" 0 -1 0 "pdflatex"
   "main.bbl" 1727086429 44107 89b9d32c56f6160a9880e91958eb2f52 "bibtex main"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1727107791 134195 a6218f931ff0d962ba1087045af23386 ""
+  "main.tex" 1727107968 134274 346bff01afeb408464de7646d9f73ede ""
   (generated)
-  "main.pdf"
-  "main.loc"
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
-  "main.log"
   "main.out"
   "mainNotes.bib"
   "main.aux"
   "main.soc"
+  "main.pdf"
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.log"
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.pdf"
+  "main.log"
+  "main.loc"
