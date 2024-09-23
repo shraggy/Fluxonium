@@ -286,7 +286,7 @@ In transitions $3-5$ we observe Rabi Flopping between two states upon addition o
 
 The MIST effects with no jumps in the qubit subspace, also categorized as p-MIST, will only affect the parasitic modes during readout. However, after the qubit is reset post measurement, such an excited parasitic mode can severely dephase the resetted qubit. Our findings reveal that for our specific circuit choice JJA parasitic modes significantly many p-MIST effects are observed in the target readout range. Having identified key transitions that cause these effects we will now calculate how detrimental these processes can be towards qubit readout fidelity and coherence. To this end, we will next study some specific transitions in detail involving the state $\ket{\tilde{1},\tilde{0}}$ used for both computation as well as readout. We will analyze the probability of populating the parasitic modes in these transitions and its outstanding effect on the qubit coherence, post reset.
 
-\subsection{Transition Probability}
+\subsection{Transition Probability}\label{sec:LZ}
  \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Figures/Floquet_011.pdf}
@@ -448,8 +448,8 @@ To emphasize this, we plot the three types of coupling strengths across all circ
 
 Here we will follow the recipe of Ref.~\cite{viola2015collective} to derive Hamiltonians for circuits shown in Figs.~\ref{fig:circuit_comp}(b,c). We will use the following notations defined in Table~\ref{tab:params}. The Lagrangian corresponding to these circuits is a combination of the Lagrangians, $\mathcal{L}_g$ from the phase-slip junction (comprising of the junction with $E_J/E_C\sim 5-8$ and the capacitor $C$), $\mathcal{L}_{g}$ from the ground capacitances, $\mathcal{L}_{RO}$ from the readout resonator and $\mathcal{L}_c$ due to the coupling capacitances $C_c$ and the external voltage $V$. We mark the flux points across JJA using $\varphi_0$ and $\varphi_{N}$. We write the capacitive energy terms using $E_x=\frac{e^2}{2C_x}$ and the voltages of each island $\dot{\varphi}/2e$, such that, $\frac{1}{2}C\frac{\dot{\varphi}^2}{4e^2}=\frac{\dot{\varphi}^2}{16E_C}$. For simplicity, we have $C_{g,i}=C_g\quad\forall i$. The flux variables and voltage variables in the circuit are denoted by $\varphi_n=2\pi\Phi_n/\Phi_0$ and $\dot{\varphi}_n=2\pi V_n/\Phi_0$, respectively, where $\Phi_0=h/2e$ is the superconducting flux quantum. We will use subscripts $j, p$ for JJA and the phase-slip junction coordinates, respectively. The capacitance associated with the phase-slip junction is given by $\frac{1}{E_{C'}}=\frac{1}{E_C}+\frac{1}{E^{j}_{C}}$.
 
-\subsection{Floating Fluxonium Circuit: $H_2$}
-Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following terms will remain the same in the case of floating fluxonium circuit, given the diagrams in the following sections.
+\subsection{Floating Fluxonium Circuit}
+For $H_2$, Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following terms will remain the same in the case of floating fluxonium circuit, given the diagrams in the following sections.
 \begin{align}
     \mathcal{L}&=\mathcal{L}_{phase-slip}+\mathcal{L}_{JJA}+\mathcal{L}_{g}+\mathcal{L}_{RO}+\mathcal{L}_{C}\\
     \mathcal{L}_{phase-slip}&=\frac{(\dot{\varphi}_N-\dot{\varphi}_0)^2}{16E_{C'}}-E_{J_p}\cos(\varphi_0-\varphi_{N}+\varphi_{ext})\\
@@ -567,8 +567,8 @@ we can carry out the exact same procedure as Ref.~\cite{viola2015collective} to 
  \end{align}
  where the variables $\tilde{E}^e_{c,\mu}$ are same as before and $\tilde{E}^o_{c,\mu}$ is the diagonalized charging energy of odd sectors. $\tilde{E}^{e/o}_{c,\mu}$ denotes that the term will be $\tilde{E}^{o}_{c,\mu}$ for odd $\mu$ and $\tilde{E}^{e}_{c,\mu}$ for even $\mu$. Thus, we can see that by not preserving the symmtery we only have the extra odd sector term interacting with the readout resonator. However, we can see that this term is extremely small. $\mathcal{U}$ remains the same as the parallel case. Thus, in terms of types of couplings there might not be major differences, however, value of $\bar{E}_c^\phi=(G_{00}+M_{00})^{-1}$ changes since $G_{00}$ has changed. This change can also be diminished with increasing N. Thus, for large enough N, this circuit is the same as the parallel circuit. \sh{Write this in terms of previous format of $H_\phi$}
 
-\subsection{Grounded Fluxonium Circuit: $H_3$}
-The constraint $\dot{\varphi_{N}}=0$ yields
+\subsection{Grounded Fluxonium Circuit}
+For $H_3$, the constraint $\dot{\varphi_{N}}=0$ yields
 \begin{align}
     \mathcal{L}&=\mathcal{L}_{phase-slip}+\mathcal{L}_{JJA}+\mathcal{L}_{g}+\mathcal{L}_{RO}+\mathcal{L}_{C}\\
     \mathcal{L}_{phase-slip}&=\frac{\dot{\varphi}_0^2}{16E_{C'}}-E_{J_p}\cos(\varphi_0+\varphi_{ext})\\
@@ -767,7 +767,7 @@ As discussed in the main text, the parasitic mode frequencies are given by,
    
 \end{enumerate}
 
-\subsection{Qubit Hamiltonian: $H_\phi$}\label{app:coupling}
+\subsection{Qubit Hamiltonian}\label{app:coupling}
 The qubit Hamiltonian $H_{\phi}$ is diagonalized in the Fock state basis, where we have used $\hat x=x_{zpf}(a+a^\dagger)$ and $\hat p=-ip_{zpf}(a-a^\dagger)$, then $x_{zpf}=\frac{1}{2p_{zpf}}$. Each zero-point fluctuation value in the two cases is related as $ZPF_2=ZPF_1/\sqrt{2}$. \paragraph{Energy Spectrum for $H_1$:}
 The Hamiltonian of the qubit subspace is $H_\phi=4\tilde{E}_C^\phi n_\phi^2+E_{J,p}\cos{\phi}+\frac{1}{2}E_L\phi^2$, where $E_L=\frac{E_J^a}{N}$. The zero-point fluctuation of the unit-less phase operator $\phi$ is $n_{ZPF,\phi}^{-1}=1.39$. 
 \paragraph{Charge Matrix Elements for $H_1,H_2,H_3$:}
@@ -894,7 +894,7 @@ where$\mu$ is the density of states which will be a Dirac Delta function in the 
     \Gamma_{i\rightarrow f}&=|\braket{f|H_1|i}|^2\mu(E_i-E_f)\quad\textrm{(first-order)}\\
 &=\sum_m\frac{|\braket{f|H_1|m}\braket{m|H_1|i}|^2}{|E_i-E_m-k\hbar\omega_d|^2}\mu(E_f-E_i-n\hbar \omega_d)\nonumber\\&\quad\quad\quad\textrm{(second-order)}
 \end{align}
-We use a Lorentzian density of states at a $\frac{\kappa}{2\pi}=1.5$ KHz. Here $k<n$ is used to compute the detuning with the intermediate state involved in the transition. Note that increasing the width of the Lorentzian $\kappa$ resulting in an increase in the FG rates. Thus, here the decay rate does not yield any insights into the diabaticity at the transition, and hence the $\kappa$ variation here is not the same as the $\kappa$ variation in Sec.~\ref{ssec:LZ}.
+We use a Lorentzian density of states at a $\frac{\kappa}{2\pi}=1.5$ KHz. Here $k<n$ is used to compute the detuning with the intermediate state involved in the transition. Note that increasing the width of the Lorentzian $\kappa$ resulting in an increase in the FG rates. Thus, here the decay rate does not yield any insights into the diabaticity at the transition, and hence the $\kappa$ variation here is not the same as the $\kappa$ variation in Sec.~\ref{sec:LZ}.
 
 While these calculations include stark shifts in the energies of the states, we know that the first-order perturbative correction is not enough for some of the more higher states as seen in the comparisons of quasi-energies from Floquet simulations and predicitions of stark shifted transitions. Thus, the computation below is only based on a heuristic developed from this approximate calculation. All transitions are computed at $\bar n_r=50$. We note that the fermi's golden rule calculations higher rates at the frequencies predicted by $g_{\phi\mu}=0$ case where the two frequencies are extremely different, for example, transitions $10$ and $14$. This happens since the Fermi's golden rule calculations are only approximately computing the stark-shifted energies for states which are more hybridized due to the presence of coupling $g_{\phi\mu}$. This behaviour is evident in Figs.~\ref{fig:Trans0},~\ref{fig:Trans1},~\ref{fig:Trans2}. We will compare the considerable FG rates with well-separated quasi-energy gap at the avoided crossings  $\Delta_{ac}$ seen in these figures.
 
