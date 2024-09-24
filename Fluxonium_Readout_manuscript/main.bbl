@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{41}%
+\begin{thebibliography}{43}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -50,11 +50,11 @@
 \providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
 \let\auto@bib@innerbib\@empty
 %</preamble>
-\bibitem [{hig()}]{high_coherence_2019}%
+\bibitem [{hig(2019)}]{high_coherence_2019}%
   \BibitemOpen
   \href {https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.041041}
   {\bibinfo {title} {Phys. {Rev}. {X} 9, 041041 (2019) - {High}-{Coherence}
-  {Fluxonium} {Qubit}}}\BibitemShut {NoStop}%
+  {Fluxonium} {Qubit}}} (\bibinfo {year} {2019})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Somoroff}\ \emph {et~al.}(2023)\citenamefont
   {Somoroff}, \citenamefont {Ficheux}, \citenamefont {Mencia}, \citenamefont
   {Xiong}, \citenamefont {Kuzmin},\ and\ \citenamefont
@@ -71,11 +71,11 @@
   {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume}
   {130}},\ \bibinfo {pages} {267001} (\bibinfo {year} {2023})},\ \bibinfo
   {note} {publisher: American Physical Society}\BibitemShut {NoStop}%
-\bibitem [{sin()}]{single_cooper_pair}%
+\bibitem [{sin(2009)}]{single_cooper_pair}%
   \BibitemOpen
   \href {https://www.science.org/doi/10.1126/science.1175552} {\bibinfo {title}
   {Fluxonium: {Single} {Cooper}-{Pair} {Circuit} {Free} of {Charge} {Offsets}
-  {\textbar} {Science}}}\BibitemShut {NoStop}%
+  {\textbar} {Science}}} (\bibinfo {year} {2009})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Earnest}\ \emph {et~al.}(2018)\citenamefont
   {Earnest}, \citenamefont {Chakram}, \citenamefont {Lu}, \citenamefont
   {Irons}, \citenamefont {Naik}, \citenamefont {Leung}, \citenamefont {Ocola},
@@ -122,14 +122,15 @@
   {\bibinfo {volume} {11}},\ \bibinfo {pages} {011010} (\bibinfo {year}
   {2021})},\ \bibinfo {note} {arXiv:2002.10653 [cond-mat,
   physics:quant-ph]}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Ding}\ \emph {et~al.}(2023)\citenamefont {Ding},
-  \citenamefont {Hays}, \citenamefont {Sung}, \citenamefont {Kannan},
-  \citenamefont {An}, \citenamefont {Di~Paolo}, \citenamefont {Karamlou},
-  \citenamefont {Hazard}, \citenamefont {Azar}, \citenamefont {Kim},
-  \citenamefont {Niedzielski}, \citenamefont {Melville}, \citenamefont
-  {Schwartz}, \citenamefont {Yoder}, \citenamefont {Orlando}, \citenamefont
-  {Gustavsson}, \citenamefont {Grover}, \citenamefont {Serniak},\ and\
-  \citenamefont {Oliver}}]{ding_high-fidelity_2023}%
+\bibitem [{\citenamefont {Ding}\ \emph
+  {et~al.}(2023{\natexlab{a}})\citenamefont {Ding}, \citenamefont {Hays},
+  \citenamefont {Sung}, \citenamefont {Kannan}, \citenamefont {An},
+  \citenamefont {Di~Paolo}, \citenamefont {Karamlou}, \citenamefont {Hazard},
+  \citenamefont {Azar}, \citenamefont {Kim}, \citenamefont {Niedzielski},
+  \citenamefont {Melville}, \citenamefont {Schwartz}, \citenamefont {Yoder},
+  \citenamefont {Orlando}, \citenamefont {Gustavsson}, \citenamefont {Grover},
+  \citenamefont {Serniak},\ and\ \citenamefont
+  {Oliver}}]{ding_high-fidelity_2023}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
   {Ding}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hays}}, \bibinfo
@@ -153,8 +154,8 @@
   {Fluxonium} {Gates} with a {Transmon} {Coupler}},\ }\href
   {https://doi.org/10.1103/PhysRevX.13.031035} {\bibfield  {journal} {\bibinfo
   {journal} {Physical Review X}\ }\textbf {\bibinfo {volume} {13}},\ \bibinfo
-  {pages} {031035} (\bibinfo {year} {2023})},\ \bibinfo {note} {publisher:
-  American Physical Society}\BibitemShut {NoStop}%
+  {pages} {031035} (\bibinfo {year} {2023}{\natexlab{a}})},\ \bibinfo {note}
+  {publisher: American Physical Society}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zhang}\ \emph {et~al.}(2024)\citenamefont {Zhang},
   \citenamefont {Ding}, \citenamefont {Weiss}, \citenamefont {Huang},
   \citenamefont {Ma}, \citenamefont {Guinn}, \citenamefont {Sussman},
@@ -235,20 +236,17 @@
   {Rosenfeld}}, \bibinfo {author} {\bibfnamefont {C.~T.}\ \bibnamefont {Hann}},
   \bibinfo {author} {\bibfnamefont {D.~I.}\ \bibnamefont {Schuster}}, \bibinfo
   {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Matheny}},\ and\ \bibinfo
-  {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Clerk}},\ }\href
-  {http://arxiv.org/abs/2403.07242} {{\selectlanguage {en}\emph {\bibinfo
-  {title} {Designing high-fidelity two-qubit gates between fluxonium
-  qubits}}}},\ \bibinfo {type} {Tech. Rep.}\ \bibinfo {number}
-  {arXiv:2403.07242}\ (\bibinfo  {institution} {arXiv},\ \bibinfo {year}
-  {2024})\ \bibinfo {note} {arXiv:2403.07242 [quant-ph] type:
-  article}\BibitemShut {NoStop}%
-\bibitem [{ngu()}]{nguyen_blueprint_2022}%
+  {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Clerk}},\ }\bibfield  {title}
+  {\bibinfo {title} {Designing high-fidelity two-qubit gates between fluxonium
+  qubits},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv
+  preprint arXiv:2403.07242}\ } (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{ngu(2022)}]{nguyen_blueprint_2022}%
   \BibitemOpen
   \href
   {https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.3.037001}
   {\bibinfo {title} {{PRX} {Quantum} 3, 037001 (2022) - {Blueprint} for a
-  {High}-{Performance} {Fluxonium} {Quantum} {Processor}}}\BibitemShut
-  {NoStop}%
+  {High}-{Performance} {Fluxonium} {Quantum} {Processor}}} (\bibinfo {year}
+  {2022})\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Masluk}\ \emph {et~al.}(2012)\citenamefont {Masluk},
   \citenamefont {Pop}, \citenamefont {Kamal}, \citenamefont {Minev},\ and\
   \citenamefont {Devoret}}]{masluk_microwave_2012}%
@@ -267,15 +265,8 @@
 \bibitem [{\citenamefont {Wang}\ \emph {et~al.}(2024)\citenamefont {Wang},
   \citenamefont {Lu}, \citenamefont {Zhan}, \citenamefont {Ma}, \citenamefont
   {Wu}, \citenamefont {Sun}, \citenamefont {Deng}, \citenamefont {Bai},
-  \citenamefont {Bao}, \citenamefont {Chang}, \citenamefont {Gao},
-  \citenamefont {Gao}, \citenamefont {Gong}, \citenamefont {Hu}, \citenamefont
-  {Hu}, \citenamefont {Ji}, \citenamefont {Ma}, \citenamefont {Mao},
-  \citenamefont {Song}, \citenamefont {Tang}, \citenamefont {Wang},
-  \citenamefont {Wang}, \citenamefont {Wang}, \citenamefont {Xia},
-  \citenamefont {Xu}, \citenamefont {Zhan}, \citenamefont {Zhang},
-  \citenamefont {Zhou}, \citenamefont {Zhu}, \citenamefont {Zhu}, \citenamefont
-  {Zhu}, \citenamefont {Zhu}, \citenamefont {Shi}, \citenamefont {Zhao},\ and\
-  \citenamefont {Deng}}]{wang_achieving_2024}%
+  \citenamefont {Bao}, \citenamefont {Chang} \emph
+  {et~al.}}]{wang_achieving_2024}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
   {Wang}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Lu}}, \bibinfo
@@ -285,33 +276,10 @@
   {Sun}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Deng}}, \bibinfo
   {author} {\bibfnamefont {Y.}~\bibnamefont {Bai}}, \bibinfo {author}
   {\bibfnamefont {F.}~\bibnamefont {Bao}}, \bibinfo {author} {\bibfnamefont
-  {X.}~\bibnamefont {Chang}}, \bibinfo {author} {\bibfnamefont
-  {R.}~\bibnamefont {Gao}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
-  {Gao}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Gong}}, \bibinfo
-  {author} {\bibfnamefont {L.}~\bibnamefont {Hu}}, \bibinfo {author}
-  {\bibfnamefont {R.}~\bibnamefont {Hu}}, \bibinfo {author} {\bibfnamefont
-  {H.}~\bibnamefont {Ji}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
-  {Ma}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Mao}}, \bibinfo
-  {author} {\bibfnamefont {Z.}~\bibnamefont {Song}}, \bibinfo {author}
-  {\bibfnamefont {C.}~\bibnamefont {Tang}}, \bibinfo {author} {\bibfnamefont
-  {H.}~\bibnamefont {Wang}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
-  {Wang}}, \bibinfo {author} {\bibfnamefont {Z.}~\bibnamefont {Wang}}, \bibinfo
-  {author} {\bibfnamefont {T.}~\bibnamefont {Xia}}, \bibinfo {author}
-  {\bibfnamefont {H.}~\bibnamefont {Xu}}, \bibinfo {author} {\bibfnamefont
-  {Z.}~\bibnamefont {Zhan}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Zhang}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Zhou}},
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Zhu}}, \bibinfo {author}
-  {\bibfnamefont {Q.}~\bibnamefont {Zhu}}, \bibinfo {author} {\bibfnamefont
-  {S.}~\bibnamefont {Zhu}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
-  {Zhu}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Shi}}, \bibinfo
-  {author} {\bibfnamefont {H.-H.}\ \bibnamefont {Zhao}},\ and\ \bibinfo
-  {author} {\bibfnamefont {C.}~\bibnamefont {Deng}},\ }\href
-  {http://arxiv.org/abs/2405.05481} {{\selectlanguage {en}\emph {\bibinfo
-  {title} {Achieving millisecond coherence fluxonium through overlap
-  {Josephson} junctions}}}},\ \bibinfo {type} {Tech. Rep.}\ \bibinfo {number}
-  {arXiv:2405.05481}\ (\bibinfo  {institution} {arXiv},\ \bibinfo {year}
-  {2024})\ \bibinfo {note} {arXiv:2405.05481 [quant-ph] type:
-  article}\BibitemShut {NoStop}%
+  {X.}~\bibnamefont {Chang}}, \emph {et~al.},\ }\bibfield  {title} {\bibinfo
+  {title} {Achieving millisecond coherence fluxonium through overlap josephson
+  junctions},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv
+  preprint arXiv:2405.05481}\ } (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Ferguson}\ \emph {et~al.}(2013)\citenamefont
   {Ferguson}, \citenamefont {Houck},\ and\ \citenamefont
   {Koch}}]{ferguson2013symmetries}%
@@ -500,6 +468,22 @@
   {journal} {\bibinfo  {journal} {Physical Review Applied}\ }\textbf {\bibinfo
   {volume} {15}},\ \bibinfo {pages} {064030} (\bibinfo {year}
   {2021})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ikeda}\ \emph {et~al.}(2022)\citenamefont {Ikeda},
+  \citenamefont {Tanaka},\ and\ \citenamefont {Kayanuma}}]{ikeda2022floquet}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~N.}\ \bibnamefont
+  {Ikeda}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Tanaka}},\ and\
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kayanuma}},\ }\bibfield
+  {title} {\bibinfo {title} {Floquet-landau-zener interferometry: Usefulness of
+  the floquet theory in pulse-laser-driven systems},\ }\href@noop {} {\bibfield
+   {journal} {\bibinfo  {journal} {Physical Review Research}\ }\textbf
+  {\bibinfo {volume} {4}},\ \bibinfo {pages} {033075} (\bibinfo {year}
+  {2022})}\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {A relatively high-frequency choice, to reduce thermal,
+  photon shot-noise induced dephasing in the qubit compared to lower-frequency
+  bands}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Zhu}\ \emph {et~al.}(2013)\citenamefont {Zhu},
   \citenamefont {Ferguson}, \citenamefont {Manucharyan},\ and\ \citenamefont
   {Koch}}]{zhu_circuit_2013}%
@@ -514,17 +498,6 @@
   {\bibinfo {volume} {87}},\ \bibinfo {pages} {024510} (\bibinfo {year}
   {2013})},\ \bibinfo {note} {publisher: American Physical Society}\BibitemShut
   {NoStop}%
-\bibitem [{\citenamefont {Ikeda}\ \emph {et~al.}(2022)\citenamefont {Ikeda},
-  \citenamefont {Tanaka},\ and\ \citenamefont {Kayanuma}}]{ikeda2022floquet}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~N.}\ \bibnamefont
-  {Ikeda}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Tanaka}},\ and\
-  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Kayanuma}},\ }\bibfield
-  {title} {\bibinfo {title} {Floquet-landau-zener interferometry: Usefulness of
-  the floquet theory in pulse-laser-driven systems},\ }\href@noop {} {\bibfield
-   {journal} {\bibinfo  {journal} {Physical Review Research}\ }\textbf
-  {\bibinfo {volume} {4}},\ \bibinfo {pages} {033075} (\bibinfo {year}
-  {2022})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Masluk}(2013)}]{masluk2013reducing}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~A.}\ \bibnamefont
@@ -544,6 +517,26 @@
   {\bibinfo  {journal} {Physical Review A—Atomic, Molecular, and Optical
   Physics}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages} {032324}
   (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ding}\ \emph
+  {et~al.}(2023{\natexlab{b}})\citenamefont {Ding}, \citenamefont {Hays},
+  \citenamefont {Sung}, \citenamefont {Kannan}, \citenamefont {An},
+  \citenamefont {Di~Paolo}, \citenamefont {Karamlou}, \citenamefont {Hazard},
+  \citenamefont {Azar}, \citenamefont {Kim} \emph {et~al.}}]{ding2023high}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Ding}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Hays}}, \bibinfo
+  {author} {\bibfnamefont {Y.}~\bibnamefont {Sung}}, \bibinfo {author}
+  {\bibfnamefont {B.}~\bibnamefont {Kannan}}, \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {An}}, \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Di~Paolo}}, \bibinfo {author} {\bibfnamefont {A.~H.}\ \bibnamefont
+  {Karamlou}}, \bibinfo {author} {\bibfnamefont {T.~M.}\ \bibnamefont
+  {Hazard}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Azar}},
+  \bibinfo {author} {\bibfnamefont {D.~K.}\ \bibnamefont {Kim}}, \emph
+  {et~al.},\ }\bibfield  {title} {\bibinfo {title} {High-fidelity,
+  frequency-flexible two-qubit fluxonium gates with a transmon coupler},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  X}\ }\textbf {\bibinfo {volume} {13}},\ \bibinfo {pages} {031035} (\bibinfo
+  {year} {2023}{\natexlab{b}})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Hazra}\ \emph {et~al.}(2024)\citenamefont {Hazra},
   \citenamefont {Dai}, \citenamefont {Connolly}, \citenamefont {Kurilovich},
   \citenamefont {Wang}, \citenamefont {Frunzio},\ and\ \citenamefont
@@ -569,13 +562,12 @@
   \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Gyenis}}, \bibinfo
   {author} {\bibfnamefont {D.~I.}\ \bibnamefont {Schuster}}, \bibinfo {author}
   {\bibfnamefont {A.~A.}\ \bibnamefont {Houck}},\ and\ \bibinfo {author}
-  {\bibfnamefont {J.}~\bibnamefont {Koch}},\ }\bibfield  {title}
-  {{\selectlanguage {en}\bibinfo {title} {Engineering {Dynamical} {Sweet}
-  {Spots} to {Protect} {Qubits} from 1/\$f\$ {Noise}}},\ }\href
-  {https://doi.org/10.1103/PhysRevApplied.15.034065} {\bibfield  {journal}
-  {\bibinfo  {journal} {Physical Review Applied}\ }\textbf {\bibinfo {volume}
-  {15}},\ \bibinfo {pages} {034065} (\bibinfo {year} {2021})},\ \bibinfo {note}
-  {arXiv:2004.12458 [quant-ph]}\BibitemShut {NoStop}%
+  {\bibfnamefont {J.}~\bibnamefont {Koch}},\ }\bibfield  {title} {\bibinfo
+  {title} {Engineering dynamical sweet spots to protect qubits from $1/f$
+  noise},\ }\href {https://doi.org/10.1103/PhysRevApplied.15.034065} {\bibfield
+   {journal} {\bibinfo  {journal} {Phys. Rev. Appl.}\ }\textbf {\bibinfo
+  {volume} {15}},\ \bibinfo {pages} {034065} (\bibinfo {year}
+  {2021})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Reed}\ \emph {et~al.}(2010)\citenamefont {Reed},
   \citenamefont {DiCarlo}, \citenamefont {Johnson}, \citenamefont {Sun},
   \citenamefont {Schuster}, \citenamefont {Frunzio},\ and\ \citenamefont
@@ -620,6 +612,40 @@
   }\textbf {\bibinfo {volume} {115}},\ \bibinfo {pages} {203601} (\bibinfo
   {year} {2015})},\ \bibinfo {note} {publisher: American Physical
   Society}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Catelani}\ \emph {et~al.}(2011)\citenamefont
+  {Catelani}, \citenamefont {Schoelkopf}, \citenamefont {Devoret},\ and\
+  \citenamefont {Glazman}}]{catelani2011relaxation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Catelani}}, \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
+  {Schoelkopf}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Devoret}},\ and\ \bibinfo {author} {\bibfnamefont {L.~I.}\ \bibnamefont
+  {Glazman}},\ }\bibfield  {title} {\bibinfo {title} {Relaxation and frequency
+  shifts induced by quasiparticles in superconducting qubits},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf
+  {\bibinfo {volume} {84}},\ \bibinfo {pages} {064517} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Koch}\ \emph {et~al.}(2009)\citenamefont {Koch},
+  \citenamefont {Manucharyan}, \citenamefont {Devoret},\ and\ \citenamefont
+  {Glazman}}]{koch2009charging}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Koch}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Manucharyan}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Devoret}},\ and\ \bibinfo
+  {author} {\bibfnamefont {L.}~\bibnamefont {Glazman}},\ }\bibfield  {title}
+  {\bibinfo {title} {Charging effects in the inductively shunted josephson
+  junction},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical review letters}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
+  {pages} {217004} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
+  \bibinfo {note} {Alternatively, for the coupling strengths with readout, we
+  multiply with the constant factor of $\protect \frac {1}{2\pi }\omega
+  _r\protect \sqrt {\protect \frac {\pi Z}{R_K}}\approx 1$ in GHz for (eV/h),
+  where $R_k=h/e^2=25.8K\Omega $, $Z=50*4/\pi \Omega $, $\omega _r\approx
+  10$GHz. Thus, $eVZPF/h=0.14$ which can be checked against $n_{ZPF,r}$ quoted
+  for chip $2(A\&B)$ as follows. $n=Q/2e=CV/2e=(eV/h)/{\omega
+  _r*Z_r*2e^2/h}=0.14/(2\omega _r*Z_r/R_k)=2.84$.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Gambetta}\ \emph {et~al.}(2006)\citenamefont
   {Gambetta}, \citenamefont {Blais}, \citenamefont {Schuster}, \citenamefont
   {Wallraff}, \citenamefont {Frunzio}, \citenamefont {Majer}, \citenamefont
@@ -649,38 +675,4 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Physical Review A—Atomic,
   Molecular, and Optical Physics}\ }\textbf {\bibinfo {volume} {75}},\ \bibinfo
   {pages} {042302} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
-\bibitem [{Note1()}]{Note1}%
-  \BibitemOpen
-  \bibinfo {note} {Alternatively, for the coupling strengths with readout, we
-  multiply with the constant factor of $\protect \frac {1}{2\pi }\omega
-  _r\protect \sqrt {\protect \frac {\pi Z}{R_K}}\approx 1$ in GHz for (eV/h),
-  where $R_k=h/e^2=25.8K\Omega $, $Z=50*4/\pi \Omega $, $\omega _r\approx
-  10$GHz. Thus, $eVZPF/h=0.14$ which can be checked against $n_{ZPF,r}$ quoted
-  for chip $2(A\&B)$ as follows. $n=Q/2e=CV/2e=(eV/h)/{\omega
-  _r*Z_r*2e^2/h}=0.14/(2\omega _r*Z_r/R_k)=2.84$.}\BibitemShut {Stop}%
-\bibitem [{\citenamefont {Catelani}\ \emph {et~al.}(2011)\citenamefont
-  {Catelani}, \citenamefont {Schoelkopf}, \citenamefont {Devoret},\ and\
-  \citenamefont {Glazman}}]{catelani2011relaxation}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
-  {Catelani}}, \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
-  {Schoelkopf}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
-  {Devoret}},\ and\ \bibinfo {author} {\bibfnamefont {L.~I.}\ \bibnamefont
-  {Glazman}},\ }\bibfield  {title} {\bibinfo {title} {Relaxation and frequency
-  shifts induced by quasiparticles in superconducting qubits},\ }\href@noop {}
-  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf
-  {\bibinfo {volume} {84}},\ \bibinfo {pages} {064517} (\bibinfo {year}
-  {2011})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Koch}\ \emph {et~al.}(2009)\citenamefont {Koch},
-  \citenamefont {Manucharyan}, \citenamefont {Devoret},\ and\ \citenamefont
-  {Glazman}}]{koch2009charging}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
-  {Koch}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Manucharyan}},
-  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Devoret}},\ and\ \bibinfo
-  {author} {\bibfnamefont {L.}~\bibnamefont {Glazman}},\ }\bibfield  {title}
-  {\bibinfo {title} {Charging effects in the inductively shunted josephson
-  junction},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
-  {Physical review letters}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo
-  {pages} {217004} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
 \end{thebibliography}%
