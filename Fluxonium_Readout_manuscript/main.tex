@@ -118,7 +118,7 @@ With our Hamiltonian derivations inspired from~\cite{viola2015collective}, we fi
 %\begin{minipage}[b]{\linewidth}    
 \centering    
 \includegraphics[width=\linewidth]{Figures/Meas_Circuit.pdf}
-\caption{(a) Fluxonium readout circuit. The color scheme shows primary components which correspond to various modes, shown in Fig.~\ref{fig:demo}, when a JJA fluxonium circuit is connected to a readout resonator (R). This circuit shows parasitic ground capacitances in JJA ($C_{g,j}$) and next to phase-slip junction ($C_{g,p}$), coupling capacitances ($C_c$), readout frequency parameters ($\omega_r/2\pi=1/\sqrt{L_{R}C_{R}}$). The differential capacitance $C$ adjusts the charging energy of the qubit mode (see Table~\ref{tab:readout_params}). (b) Parasitic mode frequencies $\omega_\mu$. The lowest even mode $\mu = 2$ has the strongest coupling to the qubit (see Fig.~\ref{fig:coupling-strength}). (c) Fluxonium mode energy levels, with the highlighted area showing the first three levels essential for certain readout schemes~\cite{zhang_universal_2021}. 
+\caption{(a) Fluxonium readout circuit. The color scheme shows primary components which correspond to various modes, shown in Fig.~\ref{fig:demo}, when a JJA fluxonium circuit is connected to a readout resonator (R). The subscripts $p,j$ denote components of the phase-slip junction and the JJA, respectively. This circuit shows coupling capacitances ($C_c$), readout frequency parameters ($\omega_r/2\pi=1/\sqrt{L_{R}C_{R}}$), parasitic ground capacitances in JJA ($C_{g,j}$) and next to the phase-slip junction ($C_{g,p}$). The differential capacitance $C$ adjusts the charging energy of the qubit mode (see Table~\ref{tab:readout_params}). (b) Fluxonium mode energy levels in units of $h$, with the highlighted area showing the first three levels essential for certain readout schemes~\cite{zhang_universal_2021}. (c) Parasitic mode frequencies $\omega_\mu$. The lowest even mode $\mu = 2$ has the strongest coupling to the qubit (see Fig.~\ref{fig:coupling-strength}). 
 }
 \label{fig:meas_circuit}
 \end{figure}
@@ -150,16 +150,16 @@ Additionally, we show that the residual p-MIST population in the parasitic modes
     \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
-\shortstack{\\\textbf{Qubit Readout}\\ \textbf{Parameters}} &$\omega_{01}/2\pi$&$\omega_{12}/2\pi$ &$\tilde{E}^\phi_c$ &$g_{\phi r}/2\pi$&$\chi_{\phi r}(01)/2\pi$&$\chi_{\phi r}(12)/2\pi$&$\omega_r/2\pi$&$\kappa_r/2\pi$\\
-    \hline
--&$30$ MHz& $6.04$ GHz & $0.92$ GHz& $25.50$ MHz& $0.18$ MHz&$0.98$ MHz&$8.50$ GHz&$1$ MHz\\    
+\shortstack{\\\textbf{Qubit ($\phi$) $\&$ }\\ \textbf{Readout ($r$)}} &$\omega_{01}/2\pi$&$\omega_{12}/2\pi$ &$\tilde{E}^\phi_c$ &$g_{\phi r}/2\pi$&$\chi_{\phi r}(01)/2\pi$&$\chi_{\phi r}(12)/2\pi$&$\omega_r/2\pi$&$\kappa_r/2\pi$\\
+    \cline{2-9}
+\textbf{Parameters}&$30$ MHz& $6.04$ GHz & $0.92$ GHz& $25.50$ MHz& $0.18$ MHz&$0.98$ MHz&$8.50$ GHz&$1$ MHz\\    
 \hline
-     \shortstack{\\\textbf{Parasitic-Mode}\\ \textbf{Parameters}} &$\delta\omega_{01,\mu}/2\pi$ &$\delta\omega_{12,\mu}/2\pi$ & $g_{\phi\mu}/2\pi$&$g_{\mu r}/2\pi$&$\chi_{\phi\mu}(01)/2\pi$&$\chi_{\phi\mu}(12)/2\pi$&$\omega_\mu/2\pi$&$Q_\mu$\\
-    \hline
-$(\mu=2)$&$0.40$ MHz & $14$ MHz&$157$ MHz& $4.22$ MHz& $-1.10$ MHz& $5$ MHz& $12.06$ GHz&$10^{4}$\\    
+     \shortstack{\\\textbf{Parasitic-Mode}\\ ($\mu=2$)} &$\delta\omega_{01,\mu}/2\pi$ &$\delta\omega_{12,\mu}/2\pi$ & $g_{\phi\mu}/2\pi$&$g_{\mu r}/2\pi$&$\chi_{\phi\mu}(01)/2\pi$&$\chi_{\phi\mu}(12)/2\pi$&$\omega_\mu/2\pi$&$Q_\mu$\\
+    \cline{2-9}
+\textbf{Parameters}&$0.40$ MHz & $14$ MHz&$157$ MHz& $4.22$ MHz& $-1.10$ MHz& $5$ MHz& $12.06$ GHz&$10^{4}$\\    
 \hline
 \end{tabular}
-\caption{Parameters for qubit mode ($\phi$), readout mode ($r$) and closest even parasitic mode ($\mu=2$). \textbf{(Qubit-Readout Parameters)} $\omega_{ij}:$ qubit $i\rightarrow j$ splitting frequency, $\tilde{E^\phi_c}:$ qubit charging energy, $g_{\phi r}:$ qubit-readout coupling, $\chi_{\phi r}(ij):$ dispersive shift due to readout mode in the two-level $ij$ system, $\omega_r:$ readout mode frequency, $\kappa_r:$ decay rate. These quantities are derived and computed analytically using derivations in~\cite{viola2015collective}, also detailed in App.~\ref{app:Hamiltonian}. \textbf{(Parasitic-Mode Parameters)} $\omega_\mu:$ mode frequency, $\delta \omega_{ij,\mu}:$ corrections to $\omega_{ij}$ due to parasitic modes, $g_{\phi \mu}:$ qubit-parasitic coupling, $g_{\mu r}:$ parasitic-readout coupling, $\chi_{\phi \mu}(ij):$ dispersive shift due to parasitic modes in the two-level $ij$ system, and $Q_\mu:$ internal quality factor~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
+\caption{Parameters for qubit mode $\phi$, readout mode $r$ and closest even parasitic mode $\mu=2$.  All quantities are derived and computed analytically using circuit parameters listed in Table.~\ref{tab:circuit_params} (see App.~\ref{app:Hamiltonian} for details). \textbf{Qubit-Readout Parameters:} ($\omega_{ij}$) qubit $i\rightarrow j$ splitting frequency; ($\tilde{E}^\phi_c$) qubit charging energy; ($g_{\phi r}$) qubit-readout coupling; ($\chi_{\phi r}(ij)$) dispersive shift due to readout mode in the two-level $ij$ system; ($\omega_r$) readout mode frequency; ($\kappa_r$) decay rate. \textbf{Parasitic-Mode Parameters:} ($\omega_\mu$) mode frequency; ($\delta \omega_{ij,\mu}$) corrections to $\omega_{ij}$ due to parasitic modes; ($g_{\phi \mu}$) qubit-parasitic coupling; ($g_{\mu r}$) parasitic-readout coupling; ($\chi_{\phi \mu}(ij)$) dispersive shift due to parasitic modes in the two-level $ij$ system; and ($Q_\mu$) internal quality factor~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
 \end{table*}
 
 %%Sec 4%%%%
@@ -231,39 +231,39 @@ Next, we perform a Floquet simulation of the driven circuit to identify the stat
 \end{figure}
 \begin{table*}[!bth]
     \centering
-    \begin{tabular}{w{c}{2cm}w{c}{4cm}w{c}{3.5cm}w{c}{2cm}w{c}{2cm}w{c}{3cm}}
+    \begin{tabular}{w{c}{2cm}w{c}{2.5cm}w{c}{3.5cm}w{c}{3.5cm}w{c}{2cm}w{c}{3cm}}
 \hline
-\textbf{Transition}&\textbf{MIST Process} &\shortstack{\\\textbf{Average}\\\textbf{Drive Photons} ($\bar n_r$)}& \shortstack{\\\textbf{Drive Frequency}\\($\omega_d$)}& \textbf{p-MIST}&\shortstack{\textbf{Drive Photons}\\\textbf{Absorbed} (see Fig.~\ref{fig:trans_prof})}\\
+\textbf{Transition}&\textbf{MIST Process} &\shortstack{\\\textbf{Lowest Average}\\\textbf{Drive Photons} ($\bar n_r$)}& \shortstack{\\\textbf{Drive Frequency}\\($\omega_d$)}& \textbf{p-MIST}&\shortstack{\textbf{Drive Photons}\\\textbf{Absorbed} (see Fig.~\ref{fig:trans_prof})}\\
 \hline
-$1.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow []{\hspace{1em}}\ket{\tilde{13},\tilde{0}}$&$13$ &$8.64$ GHz&$\times$ & $3$\\
+\rule{0pt}{4ex}$1.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow []{\hspace{1em}}\ket{\tilde{13},\tilde{0}}$&$13$ &$8.64$ GHz&$\times$ & $3$\\
 %\hline
-$2.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}\hspace{1em}}\ket{\tilde{4},\tilde{2}}^*$ &$48$&$8.71$ GHz&$\color{BrickRed}{\checkmark}$ & $4$\\
+$2.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{4},\tilde{2}}^*$ &$48$&$8.71$ GHz&$\color{BrickRed}{\checkmark}$ & $4$\\
 %\hline
-$3.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{8},\tilde{0}}$ &$\bar n_r\rightarrow 0$&$8.84$ GHz&$\times$ &$2$\\
+$3.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{8},\tilde{0}}$ &$\bar n_r\rightarrow 0$&$8.84$ GHz&$\times$ &$2$\\
 %\hline
-$4.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}\hspace{1em}}\ket{\tilde{6},\tilde{1}}^*$&$26$&$9.25$ GHz&$\color{BrickRed}{\checkmark}$ &$2$\\
-$5.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ &$12$&$9.36$ GHz&$\color{BrickRed}{\checkmark}$ &$2$\\
+$4.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{6},\tilde{1}}^*$&$26$&$9.25$ GHz&$\color{BrickRed}{\checkmark}$ &$2$\\
+$5.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ &$12$&$9.36$ GHz&$\color{BrickRed}{\checkmark}$ &$2$\\
 %\hline
-$6.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{17},\tilde{0}}$ &$32$&$8.56$ GHz&$\times$ & $4$\\
+$6.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{17},\tilde{0}}$ &$32$&$8.56$ GHz&$\times$ & $4$\\
 %\hline
-$7.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{7},\tilde{0}}$ &$4$&$8.73$ GHz&$\times$ & $2$\\
+$7.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{7},\tilde{0}}$ &$4$&$8.73$ GHz&$\times$ & $2$\\
 %\hline
-$8.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{12},\tilde{1}}$&$19$&$9.02$ GHz&$\color{ForestGreen}{\checkmark}$ & $4$\\
+$8.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{12},\tilde{1}}$&$19$&$9.02$ GHz&$\color{ForestGreen}{\checkmark}$ & $4$\\
 %\hline
-$9.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{2},\tilde{1}}$  &$13$&$9.05$ GHz&$\color{ForestGreen}{\checkmark}$ & $2$\\
+$9.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{2},\tilde{1}}$  &$13$&$9.05$ GHz&$\color{ForestGreen}{\checkmark}$ & $2$\\
 %\hline
-$10.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{14},\tilde{0}}$ &$8$&$9.31$ GHz&$\times$ & $3$\\
+$10.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{0}}$ &$8$&$9.31$ GHz&$\times$ & $3$\\
 %\hline
-$11.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}}\ket{\tilde{9},\tilde{0}}$ &$3$&$9.41$ GHz&$\times$ &$2$\\
+$11.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{9},\tilde{0}}$ &$3$&$9.41$ GHz&$\times$ &$2$\\
 %\hline
-$12.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{2em}\hspace{2em}} \ket{\tilde{12},\tilde{0}}$ &$2$&$9.00$ GHz&$\times$ & $2$\\
+$12.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{12},\tilde{0}}$ &$2$&$9.00$ GHz&$\times$ & $2$\\
 %\hline
-$13.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}\hspace{1em}}\ket{\tilde{0},\tilde{2}}$&$37$&$9.06$ GHz&$\color{RoyalBlue}{\checkmark}$ & $2$\\
+$13.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{0},\tilde{2}}$&$37$&$9.06$ GHz&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 %\hline
-$14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$13$&$9.41$ GHz&$\color{RoyalBlue}{\checkmark}$ & $2$\\
+$14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$13$&$9.41$ GHz&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 \hline
 \end{tabular}
-\caption{Measurement-induced-state-transitions observed in Fig.~\ref{fig:Floquet}. Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstates of $H_0$ (see Eq.~\ref{eq:bare_ham}) which have the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of Fluxonium ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, the label $\bar n_r\rightarrow 0$ indicates that the drive frequency is exactly resonant with the transition frequency. An `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}\bar n_r=5\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d=8.71$ GHz  absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}\bar n_r\rightarrow 0\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\rightarrow 0, \omega_d=9.25$ GHz\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=11, \omega_d=9.41$ GHz absorbs $1$ drive photon}. Column $4$ represents the drive frequency $\omega_d$ at which these transitions occur. Column $5$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. Column $6$ indicates the number of drive photons ($\#$) involved in the energy-conserving process which is responsible for these transitions. We give comparison of Fermi's golden rule rates and quasienergies for these processes in App.~\ref{app:Floquet-trans}.
+\caption{Measurement-induced-state-transitions observed in Fig.~\ref{fig:Floquet}. Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstates of $H_0$ (see Eq.~\ref{eq:bare_ham}) which have the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of Fluxonium ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, the label $\bar n_r\rightarrow 0$ indicates that the drive frequency is exactly resonant with the transition frequency. An `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d=8.71$ GHz  absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\rightarrow 0, \omega_d=9.25$ GHz\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=11, \omega_d=9.41$ GHz absorbs $1$ drive photon}. Column $4$ represents the drive frequency $\omega_d$ at which these transitions occur. Column $5$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. Column $6$ indicates the number of drive photons ($\#$) involved in the energy-conserving process which is responsible for these transitions. We give comparison of Fermi's golden rule rates and quasienergies for these processes in App.~\ref{app:Floquet-trans}.
 }
     \label{tab:p-MIST}
 \end{table*}
