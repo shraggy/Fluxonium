@@ -32,6 +32,7 @@ floatfix,
 %\usepackage{floatrow}
 \usepackage[utf8]{inputenc}
 \usepackage{array}
+
 \usepackage[dvipsnames]{xcolor}\usepackage[draft]{changes} %%%%---annotations are visible
 \usepackage{color}   %May be necessary if you want to color links
 \usepackage{hyperref}
@@ -99,16 +100,25 @@ Typically, fluxonium qubit measurements are performed by dispersively coupling t
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Figures/Demo.pdf}
-    \caption{Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for an excitation in the qubit mode (blue).}
+    \caption{A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous parasitic modes (red) and the qubit mode (blue) simultaneously. %Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for an excitation in the qubit mode (blue).
+    }
     \label{fig:demo}
 \end{figure}
+
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=\linewidth]{Fluxonium_Readout_manuscript/Figures/Demo_1.pdf}
+%    \\{Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for an excitation in the qubit mode (blue).
+%    }
+%    \label{fig:demo1}
+%\end{figure}
 In this work, we analyze the state transitions during the dispersive readout of a fluxonium circuit, especially focusing on the effects that arise due to the parasitic modes of the JJA-fluxonium. Fig.~\ref{fig:meas_circuit} shows our measurement circuit for a heavy fluxonium circuit at the flux sweet spot  ($\varphi_{ext}=0.5\Phi_0$), an experimentally-relevant choice for maximizing qubit coherence~\cite{somoroff_millisecond_2023,nguyen2019high,zhang_universal_2021,manucharyan2009fluxonium}; however, parasitic effects in the case of several circuit modifications are also discussed. While this figure shows a parallel circuit connection we have also analyzed different grounding configuration for single-point connection circuits in App.~\ref{app:alt_circuits}. In the main text, we analyze population in the first three eigenstates in the qubit mode, to include experiments with a heavy fluxonium that use the first two levels ($01$) for computation and the second two levels ($12$) for measurement~\cite{zhang_universal_2021}. %The parasitic ground capacitance couples the various internal modes of a junction array. 
 With our Hamiltonian derivations inspired from~\cite{viola2015collective}, we find that the coupling strength between the qubit mode and the parasitic modes can be $\sim 100$ MHz, approximately ten-fold higher than the qubit-readout coupling strength. %Our calculations assume no self-nonlinearity in any mode except for the qubit mode. For the MIST analysis, we further simplify the system by considering only the parasitic mode with the strongest coupling to the qubit mode, the qubit mode itself, and the readout mode. 
 \begin{figure}[htb]
 %\begin{minipage}[b]{\linewidth}    
 \centering    
 \includegraphics[width=\linewidth]{Figures/Meas_Circuit.pdf}
-\caption{(a) Fluxonium readout circuit. The color scheme uses Fig.~\ref{fig:demo} where readout oscillator (R) is connected to a JJA fluxonium circuit. This circuit shows parasitic ground capacitances in JJA ($C_{g,j}$) and next to phase-slip junction ($C_{g,p}$), coupling capacitances ($C_c$), readout frequency parameters ($\omega_r/2\pi=1/\sqrt{L_{R}C_{R}}$). The differential capacitance $C$ adjusts the charging energy of the qubit mode (see Table~\ref{tab:readout_params}). (b) Parasitic mode frequencies $\omega_\mu$. The lowest even mode $\mu = 2$ has the strongest coupling to the qubit (see Fig.~\ref{fig:coupling-strength}). (c) Fluxonium mode energy levels, with the highlighted area showing the first three levels essential for certain readout schemes~\cite{zhang_universal_2021}. 
+\caption{(a) Fluxonium readout circuit. The color scheme shows primary components which correspond to various modes, shown in Fig.~\ref{fig:demo}, when a JJA fluxonium circuit is connected to a readout resonator (R). This circuit shows parasitic ground capacitances in JJA ($C_{g,j}$) and next to phase-slip junction ($C_{g,p}$), coupling capacitances ($C_c$), readout frequency parameters ($\omega_r/2\pi=1/\sqrt{L_{R}C_{R}}$). The differential capacitance $C$ adjusts the charging energy of the qubit mode (see Table~\ref{tab:readout_params}). (b) Parasitic mode frequencies $\omega_\mu$. The lowest even mode $\mu = 2$ has the strongest coupling to the qubit (see Fig.~\ref{fig:coupling-strength}). (c) Fluxonium mode energy levels, with the highlighted area showing the first three levels essential for certain readout schemes~\cite{zhang_universal_2021}. 
 }
 \label{fig:meas_circuit}
 \end{figure}
