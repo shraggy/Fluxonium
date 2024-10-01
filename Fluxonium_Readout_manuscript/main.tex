@@ -301,7 +301,7 @@ The MIST processes with no jumps in the qubit subspace, also categorized as p-MI
  \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Figures/Floquet_011.pdf}
-    \caption{Examples of p-MIST using transitions \textbf{(a)} $8$ and \textbf{(b)} $9$ from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state, with maximum overlap to the un-hybridized state $\ket{1}_\phi\otimes\ket{0}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Stark-shifted eigen-energies from first-order perturbative calculations (dashed), and quasi-energies (solid) from Floquet simulations. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
+    \caption{Examples of p-MIST using transitions \textbf{(a)} $8$ and \textbf{(b)} $9$ from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state, with maximum overlap to the un-hybridized state $\ket{1}_\phi\otimes\ket{0}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Stark-shifted eigen-energies from first-order perturbative calculations (dashed), and quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
     \label{fig:011}
 \end{figure}
 In this section, we estimate the quasienergies and rates of exemplary p-MIST transitions, using the Landau-Zener formalism, respectively. In both the Floquet simulations and Landau-Zener approximations, the spectral gap of an associated transition is a critical figure-of-merit in determining the \singh{adiabatic} energy exchange probability. Figs.~\ref{fig:011}(a,b) respectively show the p-MIST explicit population exchange in transitions $8,9$ from Table~\ref{tab:p-MIST} involving $\ket{\tilde{1},\tilde{0}}$, the state involved in computation as well as readout~\cite{zhang_universal_2021}. The simultaneous exchange of population in the qubit mode $\phi$, shown in the top panels, and the parasitic mode $\mu=2$, shown in the middle panels, confirms that the transitions are indeed p-MIST. 
@@ -312,7 +312,7 @@ We will now compute the transition probability of the p-MIST effect shown in Fig
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Figures/LZ.pdf}
-    \caption{Diabatic transition probability (green) and adiabatic transition probability (green) against the parameter $\kappa$ which determines the change in drive strength $\xi_{\mu/\phi}=2g_{\mu/\phi}\sqrt{\bar n_r(t)}$ where $n_r(t)$ follows Eq.~\ref{eq:LZ-n}. Here, $\ket{f_{\bar n_r=50}}$ and $\ket{i_{\bar n_r=50}}$ are the final states at the end of branch analyses for $\ket{\tilde{1},\tilde{0}}$ and $\ket{\tilde{2},\tilde{1}}$, respectively. The Landau Zener probability ($P_{LZ}$ is marked in gray).}
+    \caption{Adiabatic (green) and diabatic (green) transition probability against the parameter $\kappa_r$ which determines the change in drive strength $\xi_{\mu/\phi}=2g_{\mu/\phi}\sqrt{\bar n_r(t)}$ where $\bar n_r(t)$ follows Eq.~\ref{eq:LZ-n}. Here, $\ket{f_{\bar n_r=50}}$ and $\ket{i_{\bar n_r=50}}$ are the final states in the end of branch analyses for $\ket{\tilde{2},\tilde{1}}$ and $\ket{\tilde{1},\tilde{0}}$, respectively. The Landau-Zener probability ($P_{LZ}$) for the avoided crossing in Fig.~\ref{fig:011}(b) is marked in gray.}
     \label{fig:LZ}
 \end{figure}
 For this analysis, instead of linearly increasing the drive power of a driven fluxonium circuit, we assume a time dependence of the average readout photon number of
@@ -377,7 +377,7 @@ where a buffer of $25$ MHz is allowed to accommodate for Stark shift (see App.~\
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=\linewidth]{Figures/Trans_.pdf}
-    \caption{Energy conserving processes $\ket{\tilde{i},\tilde{0}}\leftrightarrow\ket{\tilde{f},\tilde{y}}$ for Eq.~\ref{eq:En_cons} for $x\le 4, y\le 2, j\le 20$ and $i=0$ (red), $i=1$ (green), $i=2$ (blue). The horizontal lines indicate the initial state for each color for visual aid. Labels in black correspond to transition $\#$ listed in Table~\ref{tab:p-MIST}. Colored labels ($x \mathrm{r},-y \mathrm{p}$) values of show the number of readout photons absorbed ($x$) and the number of parasitic mode ($\mu=2$) photons emitted ($y$) in the transition.}
+    \caption{Energy conserving processes $\ket{\tilde{i},\tilde{0}}\leftrightarrow\ket{\tilde{f},\tilde{y}}$ for Eq.~\ref{eq:En_cons} for $x\le 4, y\le 2, j\le 20$ and $i=0$ (red), $i=1$ (green), $i=2$ (blue). The horizontal lines indicate the initial state for each color for visual aid. Labels in black correspond to transition $\#$ listed in Table~\ref{tab:p-MIST}. Colored labels ($x \mathrm{r},-y \mathrm{p}$) show the number of readout photons absorbed ($x$) and the number of parasitic mode ($\mu=2$) photons emitted ($y$) in the transition.}
     \label{fig:trans_prof}
 \end{figure}
 
@@ -388,7 +388,7 @@ The energy profile profile in Fig.~\ref{fig:trans_prof} shows us the regions whe
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Figures/Floquet_low.pdf}
-    \caption{Floquet simulations at lower readout frequencies for circuit parameters quoted in Tables~\ref{tab:circuit_params} and~\ref{tab:readout_params} for branch analysis starting in the dressed hybridized eigenstate $i=\ket{\tilde{k},\tilde{0}}$, with maximum overlap to the un-hybridized states $\ket{k}_\phi\otimes\ket{0}_{\mu=2}$. The figures are plotted in linear scale, unlike Fig.~\ref{fig:Floquet}, making any streak due to significantly weaker transitions \singh{($\Delta_{ac}<1$ KHz)} unnoticeable.}
+    \caption{Floquet simulations at lower readout frequencies using circuit parameters quoted in Tables~\ref{tab:circuit_params} and~\ref{tab:readout_params} for branch analysis starting in the dressed hybridized eigenstate $i=\ket{\tilde{k},\tilde{0}}$, with maximum overlap to the un-hybridized states $\ket{k}_\phi\otimes\ket{0}_{\mu=2}$. The figures are plotted in linear scale, unlike Fig.~\ref{fig:Floquet}, making any streak due to significantly weaker transitions \singh{($\Delta_{ac}<1$ KHz)} unnoticeable.}
     \label{fig:Flo_low}
 \end{figure}
 
