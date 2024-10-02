@@ -233,37 +233,37 @@ Next, we perform a Floquet simulation of the driven circuit to identify the stat
     \centering
     \begin{tabular}{w{c}{2cm}w{c}{2.0cm}w{c}{2.0cm}w{c}{3.0cm}w{c}{3.0cm}w{c}{2cm}w{c}{3cm}}
 \hline
-\textbf{Transition}&\shortstack{\\\textbf{MIST}\\\textbf{Process}} &\shortstack{\\\textbf{Threshold}\\\textbf{Drive Photon}}& \shortstack{\\\textbf{Drive Frequency}\\($\omega_d$)}& \shortstack{\\\textbf{Quasienergy Gap}\\($\Delta_{ac}$)}& \textbf{p-MIST}&\shortstack{\textbf{Drive Photons}\\\textbf{Absorbed} (see Fig.~\ref{fig:trans_prof})}\\
+\shortstack{\\\textbf{Transition No.}\\\textbf{ (see Fig.~\ref{fig:Floquet})}} &\shortstack{\\\textbf{MIST}\\\textbf{Process}} &\shortstack{\\\textbf{Threshold}\\\textbf{Drive Photon}}& \shortstack{\\\textbf{Drive Frequency}\\($\omega_d$) in GHz}& \shortstack{\\\textbf{Quasienergy Gap}\\($\Delta_{ac}$)}& \textbf{p-MIST}&\shortstack{\textbf{Drive Photons}\\\textbf{Absorbed} (see Fig.~\ref{fig:trans_prof})}\\
 \hline
-\rule{0pt}{4ex}$1.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow []{\hspace{1em}}\ket{\tilde{13},\tilde{0}}$&$13$ &$8.64$ GHz&&$\times$ & $3$\\
+\rule{0pt}{4ex}$1.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow []{\hspace{1em}}\ket{\tilde{13},\tilde{0}}$&$13$ &$8.64$&$0.90$ MHz&$\times$ & $3$\\
 %\hline
-$2.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{4},\tilde{2}}^*$ &$48$&$8.71$ GHz&&$\color{BrickRed}{\checkmark}$ & $4$\\
+$2.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{4},\tilde{2}}^*$ &$48$&$8.71$&$0.06$ MHz&$\color{BrickRed}{\checkmark}$ & $4$\\
 %\hline
-$3.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{8},\tilde{0}}$ &$\bar n_r\rightarrow 0$&$8.84$ GHz&&$\times$ &$2$\\
+$3.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{8},\tilde{0}}$ &$\bar n_r\rightarrow 0$&$8.84$&$-$&$\times$ &$2$\\
 %\hline
-$4.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{6},\tilde{1}}^*$&$26$&$9.25$ GHz&&$\color{BrickRed}{\checkmark}$ &$2$\\
-$5.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ &$12$&$9.36$ GHz&&$\color{BrickRed}{\checkmark}$ &$2$\\
+$4.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{6},\tilde{1}}^*$&$46$&$9.25$&$1.63$ MHz&$\color{BrickRed}{\checkmark}$ &$2$\\
+$5.$&$\color{BrickRed}{\ket{\tilde{0},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ &$12$&$9.36$&$0.56$ MHz&$\color{BrickRed}{\checkmark}$ &$2$\\
 %\hline
-$6.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{17},\tilde{0}}$ &$32$&$8.56$ GHz&&$\times$ & $4$\\
+$6.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{17},\tilde{0}}$ &$32$&$8.56$&$0.25$ MHz&$\times$ & $4$\\
 %\hline
-$7.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{7},\tilde{0}}$ &$4$&$8.73$ GHz&&$\times$ & $2$\\
+$7.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{7},\tilde{0}}$ &$4$&$8.73$&$0.74$ MHz&$\times$ & $2$\\
 %\hline
-$8.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{12},\tilde{1}}$&$19$&$9.02$ GHz&&$\color{ForestGreen}{\checkmark}$ & $4$\\
+$8.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{12},\tilde{1}}$&$19$&$9.02$&$0.12$ MHz&$\color{ForestGreen}{\checkmark}$ & $4$\\
 %\hline
-$9.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{2},\tilde{1}}$  &$13$&$9.05$ GHz&&$\color{ForestGreen}{\checkmark}$ & $2$\\
+$9.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{2},\tilde{1}}$  &$13$&$9.05$&$0.66$ MHz&$\color{ForestGreen}{\checkmark}$ & $2$\\
 %\hline
-$10.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{0}}$ &$8$&$9.31$ GHz&&$\times$ & $3$\\
+$10.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{0}}$ &$8$&$9.31$&$0.50$ MHz&$\times$ & $3$\\
 %\hline
-$11.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{9},\tilde{0}}$ &$3$&$9.41$ GHz&&$\times$ &$2$\\
+$11.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{9},\tilde{0}}$ &$3$&$9.41$&$1.19$ MHz&$\times$ &$2$\\
 %\hline
-$12.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{12},\tilde{0}}$ &$2$&$9.00$ GHz &&$\times$ & $2$\\
+$12.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{12},\tilde{0}}$ &$2$&$9.00$&$0.73$ MHz&$\times$ & $2$\\
 %\hline
-$13.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{0},\tilde{2}}$&$37$&$9.06$ GHz&&$\color{RoyalBlue}{\checkmark}$ & $2$\\
+$13.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{0},\tilde{2}}$&$37$&$9.06$&$0.53$ MHz&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 %\hline
-$14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$13$&$9.41$ GHz&&$\color{RoyalBlue}{\checkmark}$ & $2$\\
+$14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$13$&$9.41$&$2.71$ MHz&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 \hline
 \end{tabular}
-\caption{Measurement-induced-state-transition (MIST) observed in Fig.~\ref{fig:Floquet}. Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstates of $H_0$ (see Eq.~\ref{eq:bare_ham}) which have the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of qubit mode ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, we use $\bar n_r\rightarrow 0$ to indicate that the drive frequency is exactly resonant with the transition frequency. A `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d=8.71$ GHz  absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\rightarrow 0, \omega_d=9.25$ GHz\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=11, \omega_d=9.41$ GHz absorbs $1$ drive photon}. Column $4$ represents the drive frequency $\omega_d$ at which these transitions occur. Column $5$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. Column $6$ indicates the number of drive photons ($\#$) involved in the energy-conserving process, illustrated in Fig.~\ref{fig:trans_prof}. which is responsible for these transitions. We give a comparison of Fermi's golden rule rates and quasienergies for these processes in App.~\ref{app:Floquet-trans}.
+\caption{Measurement-induced-state-transition (MIST) observed in Fig.~\ref{fig:Floquet}. Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstates of $H_0$ (see Eq.~\ref{eq:bare_ham}) which have the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of qubit mode ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, we use $\bar n_r\rightarrow 0$ to indicate that the drive frequency is exactly resonant with the transition frequency. A `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d=8.71$ GHz with $\Delta_{ac}=4.0$ MHz absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\rightarrow 0, \omega_d=9.25$ GHz\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=11, \omega_d=9.41$ GHz with $\Delta_{ac}=4.2$ MHz absorbs $1$ drive photon}. Column $4$ yields the quasienergy gap at the avoided crossing labeled as $\Delta_{ac}$. Column $5$ represents the drive frequency $\omega_d$ at which these transitions occur. Column $6$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. Column $7$ indicates the number of drive photons ($\#$) involved in the energy-conserving process, illustrated in Fig.~\ref{fig:trans_prof}. which is responsible for these transitions. We give a comparison of Fermi's golden rule rates and quasienergies for these processes in App.~\ref{app:Floquet-trans}.
 }
     \label{tab:p-MIST}
 \end{table*}
