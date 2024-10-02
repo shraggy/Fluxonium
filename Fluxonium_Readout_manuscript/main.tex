@@ -65,15 +65,16 @@ floatfix,
 \author{Shraddha Singh\orcidlink{0000-0002-4921-1410}}\thanks{Corresponding email: shraddha.singh@yale.edu}
 \affiliation{Department of Applied Physics and Physics, Yale University, New Haven, Connecticut 06511, USA}
 \affiliation{Yale Quantum Institute, Yale University, New Haven, Connecticut 06511, USA}
-\affiliation{Amazon Web Services, Pasadena 91001, California, USA}
+\affiliation{AWS Center for Quantum Computing, Pasadena, CA 91125, USA}
 \author{Gil Refael}
-\affiliation{California Insititute of Technology, Pasadena 91001, California, USA}
-\affiliation{Amazon Web Services, Pasadena 91001, California, USA}
+\affiliation{AWS Center for Quantum Computing, Pasadena, CA 91125, USA}
+\affiliation{Institute for Quantum Information and Matter,
+California Institute of Technology, Pasadena, CA 91125}
 \author{Aashish Clerk}
-\affiliation{University of Chicago, Illinois, USA}
-\affiliation{Amazon Web Services, Pasadena 91001, California, USA}
-\author{Emma Rosenfeld}\thanks{Present address: Google Quantum AI, Santa Barbara, CA}
-\affiliation{Amazon Web Services, Pasadena 91001, California, USA}
+\affiliation{Pritzker School of Molecular Engineering, University of Chicago, Chicago, Illinois 60637, USA}
+\affiliation{AWS Center for Quantum Computing, Pasadena, CA 91125, USA}
+\author{Emma Rosenfeld}\thanks{Present address: Google Research}
+\affiliation{AWS Center for Quantum Computing, Pasadena, CA 91125, USA}
 \date{\today}%remove this eventually
 
 \begin{abstract}
@@ -97,21 +98,21 @@ Typically, fluxonium qubit measurements are performed by dispersively coupling t
 %%%%This-Work (Our circuit and assumptions)%%%%%%%%%%%%%
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{Figures/Demo.pdf}
-    \caption{A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous parasitic modes (red) and the qubit mode (blue) simultaneously. %Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for an excitation in the qubit mode (blue).
-    }
-    \label{fig:demo}
-\end{figure}
-
 %\begin{figure}
 %    \centering
-%    \includegraphics[width=\linewidth]{Fluxonium_Readout_manuscript/Figures/Demo_1.pdf}
-%    \\{Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for an excitation in the qubit mode (blue).
+%    \includegraphics[width=\linewidth]{Figures/Demo.pdf}
+%    \caption{A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous parasitic modes (red) and the qubit mode (blue) simultaneously. %Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for excitation in the qubit mode (blue).
 %    }
 %    \label{fig:demo1}
 %\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{Fluxonium_Readout_manuscript/Figures/Demo_1.pdf}
+    \caption{Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The abstract circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for excitation in the qubit mode (blue).
+    }
+    \label{fig:demo}
+\end{figure}
 In this work, we analyze the state transitions during the dispersive readout of a fluxonium circuit, especially focusing on the effects that arise due to the parasitic modes of the JJA-fluxonium. Fig.~\ref{fig:meas_circuit} shows our measurement circuit for a heavy fluxonium circuit at the flux sweet spot  ($\varphi_{ext}=0.5\Phi_0$), an experimentally-relevant choice for maximizing qubit coherence~\cite{somoroff_millisecond_2023,nguyen2019high,zhang_universal_2021,manucharyan2009fluxonium}; however, parasitic effects in the case of several circuit modifications are also discussed. While this figure shows a parallel circuit connection we have also analyzed different grounding configuration for single-point connection circuits in App.~\ref{app:alt_circuits}. In the main text, we analyze population in the first three eigenstates in the qubit mode, to include experiments with a heavy fluxonium that use the first two levels ($01$) for computation and the second two levels ($12$) for measurement~\cite{zhang_universal_2021}. %The parasitic ground capacitance couples the various internal modes of a junction array. 
 With our Hamiltonian derivations inspired from~\cite{viola2015collective}, we find that the coupling strength between the qubit mode and the parasitic modes can be $\sim 100$ MHz, approximately ten-fold higher than the qubit-readout coupling strength. %Our calculations assume no self-nonlinearity in any mode except for the qubit mode. For the MIST analysis, we further simplify the system by considering only the parasitic mode with the strongest coupling to the qubit mode, the qubit mode itself, and the readout mode. 
 \begin{figure}[htb]
