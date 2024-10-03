@@ -149,17 +149,19 @@ We compute the rates of all p-MIST processes involving the $\ket{1}$ state, whic
 
 Additionally, we show that the residual p-MIST population in the parasitic modes, which remains \textit{after} a readout pulse, begets significant dephasing of the qubit mode. Since these parasitic modes are long-lived~\cite{masluk_microwave_2012} and strongly coupled to the qubit mode, such residual population must be treated with care when designing the circuit. We numerically show that the dephasing error probability due to excited parasitic modes with finite internal quality factor is above the surface code error correction threshold for parameters used in the current experimental setups~\cite{masluk_microwave_2012,zhang_universal_2021,manucharyan2009fluxonium}. This effect indicates that, without proper care, the dephasing due to p-MIST could limit the performance of a fluxonium architecture.
 
+\renewcommand{\arraystretch}{1.5} % Adjust the value as needed
+
+
 \begin{table*}[tb]
     \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
     \hline
-\shortstack{\\\textbf{Qubit ($\phi$) $\&$ }\\ \textbf{Readout ($r$)}} &$\omega_{01}/2\pi$&$\omega_{12}/2\pi$ &$\tilde{E}^\phi_c$ &$g_{\phi r}/2\pi$&$\chi_{\phi r}(01)/2\pi$&$\chi_{\phi r}(12)/2\pi$&$\omega_r/2\pi$&$\kappa_r/2\pi$\\
+    \textbf{Qubit ($\phi$) $\&$}&$\omega_{01}/2\pi$&$\omega_{12}/2\pi$ &$\tilde{E}^\phi_c$ &$g_{\phi r}/2\pi$&$\chi_{\phi r}(01)/2\pi$&$\chi_{\phi r}(12)/2\pi$&$\omega_r/2\pi$&$\kappa_r/2\pi$\\
     \cline{2-9}
-\textbf{Parameters}&$30$ MHz& $6.04$ GHz & $0.92$ GHz& $25.50$ MHz& $0.18$ MHz&$0.98$ MHz&$8.50$ GHz&$1$ MHz\\    
-\hline
-     \shortstack{\\\textbf{Parasitic-Mode}\\ ($\mu=2$)} & && $g_{\phi\mu}/2\pi$&$g_{\mu r}/2\pi$&$\chi_{\phi\mu}(01)/2\pi$&$\chi_{\phi\mu}(12)/2\pi$&$\omega_\mu/2\pi$&$Q_\mu$\\
+\textbf{Readout ($r$)}&$30$ MHz& $6.04$ GHz & $0.92$ GHz& $25.50$ MHz& $0.18$ MHz&$0.98$ MHz&$8.50$ GHz&$1$ MHz\\    
+\hline\textbf{Parasitic-Mode} & \multicolumn{2}{c|}{} & $g_{\phi\mu}/2\pi$&$g_{\mu r}/2\pi$&$\chi_{\phi\mu}(01)/2\pi$&$\chi_{\phi\mu}(12)/2\pi$&$\omega_\mu/2\pi$&$Q_\mu$\\
     \cline{4-9}
-\textbf{Parameters}&&&$157$ MHz& $4.22$ MHz& $-1.10$ MHz& $5$ MHz& $12.06$ GHz&$10^{4}$\\    
+\textbf{($\mu=2$)}&\multicolumn{2}{c|}{} &$157$ MHz& $4.22$ MHz& $-1.10$ MHz& $5$ MHz& $12.06$ GHz&$10^{4}$\\    
 \hline
 \end{tabular}
 \caption{Parameters for qubit mode $\phi$, readout mode $r$ and closest even parasitic mode $\mu=2$.  All quantities are derived and computed analytically using circuit parameters listed in Table.~\ref{tab:circuit_params} (see App.~\ref{app:Hamiltonian} for details). \textbf{Qubit-Readout Parameters:} ($\omega_{ij}$) qubit $i\rightarrow j$ splitting frequency; ($\tilde{E}^\phi_c$) qubit charging energy; ($g_{\phi r}$) qubit-readout coupling; ($\chi_{\phi r}(ij)$) dispersive shift due to readout mode in the two-level $ij$ system; ($\omega_r$) readout mode frequency; ($\kappa_r$) decay rate of the readout resonator. \textbf{Parasitic-Mode Parameters:} ($g_{\phi \mu}$) qubit-parasitic coupling; ($g_{\mu r}$) parasitic-readout coupling; ($\chi_{\phi \mu}(ij)$) dispersive shift due to parasitic modes in the two-level $ij$ system; ($\omega_\mu$) mode frequency; and ($Q_\mu$) internal quality factor inspired by~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
