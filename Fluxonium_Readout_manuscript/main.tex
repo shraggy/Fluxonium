@@ -96,21 +96,21 @@ Typically, fluxonium qubit measurements are performed by dispersively coupling t
 %%%%This-Work (Our circuit and assumptions)%%%%%%%%%%%%%
 
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[width=\linewidth]{Figures/Demo.pdf}
-%    \caption{A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous parasitic modes (red) and the qubit mode (blue) simultaneously. %Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for excitation in the qubit mode (blue).
-%    }
-%    \label{fig:demo1}
-%\end{figure}
-
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{Fluxonium_Readout_manuscript/Figures/Demo_1.pdf}
-    \caption{Schematic of qubit state transitions driven by a readout oscillator (R) with parasitic modes from a Josephson junction array (JJA). The abstract circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for excitation in the qubit mode (blue).
+    \includegraphics[width=\linewidth]{Figures/Demo.pdf}
+    \caption{A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous parasitic modes (red) and the qubit mode (blue) simultaneously. %Schematic of qubit state transitions driven by a readout resonator with parasitic modes from a Josephson junction array (JJA). The cartoon circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for excitation in the qubit mode (blue).
     }
     \label{fig:demo}
 \end{figure}
+
+%\begin{figure}
+    %\centering
+    %\includegraphics[width=\linewidth]{Fluxonium_Readout_manuscript/Figures/Demo_1.pdf}
+%    \caption{Schematic of qubit state transitions driven by a readout oscillator (R) with parasitic modes from a Josephson junction array (JJA). The abstract circuit diagram is paired with energy profiles, showing energy in a coherent state of the driven readout mode (black) splitting into JJA parasitic modes (red), leaving enough energy for excitation in the qubit mode (blue).
+%    }
+%    \label{fig:demo1}
+%\end{figure}
 In this work, we analyze the state transitions during the dispersive readout of a fluxonium circuit, especially focusing on the effects that arise due to the parasitic modes of the JJA-fluxonium. Fig.~\ref{fig:meas_circuit} shows our measurement circuit for a heavy fluxonium circuit at the flux sweet spot  ($\varphi_{ext}=0.5\Phi_0$), an experimentally-relevant choice for maximizing qubit coherence~\cite{somoroff_millisecond_2023,nguyen2019high,zhang_universal_2021,manucharyan2009fluxonium}; however, parasitic effects in the case of several circuit modifications are also discussed. While this figure shows a parallel circuit connection we have also analyzed different grounding configurations for single-point connection circuits in App.~\ref{app:alt_circuits}. In the main text, we mainly discuss the parallel circuit in Fig.~\ref{fig:meas_circuit} with circuit parameters inspired by the experiment in Ref.~\cite{zhang_universal_2021}. We analyze the population in the first three eigenstates in the qubit mode, to include experiments with a heavy fluxonium that use the first two levels ($01$) for computation and the second two levels ($12$) for measurement~\cite{zhang_universal_2021}. %The parasitic ground capacitance couples the various internal modes of a junction array. 
 With our Hamiltonian derivations inspired from~\cite{viola2015collective}, we find that the coupling strength between the qubit mode and the parasitic modes can be $\sim 100$ MHz, approximately ten-fold higher than the qubit-readout coupling strength. %Our calculations assume no self-nonlinearity in any mode except for the qubit mode. For the MIST analysis, we further simplify the system by considering only the parasitic mode with the strongest coupling to the qubit mode, the qubit mode itself, and the readout mode. 
 \begin{figure}[htb]
@@ -325,10 +325,10 @@ We first use Hamiltonian dynamics to compute the transition probability as the o
 
 We also use the numerically-computed gaps in the quasi-energies to evaluate the Landau-Zener (LZ) probabilities $P_{LZ}$, using the method described in Ref.~\cite{ikeda2022floquet} (for details see App.~\ref{app:LZ}). Unlike the case of transmons Ref.~\cite{dumas2024unified} we do not find perfect agreement in these two cases. This indicates that the two-state physics captured by Landau-Zener transitions may not be correct for studying the strengths of fluxonium transitions. As $\kappa_r\rightarrow \infty$ the states seem to saturate to a superposition of $i-f$ since the green and black curves always sum up to $1$. Note that, similar to the Hamiltonian dynamics the population exchange plots in Fig.~\ref{fig:011}(b) also show that the green and black curves do not 
 
-We have confirmed that an observed p-MIST can have significant probability during a fluxonium qubit readout. While this effect will directly affect the readout performance for our chosen set of readout parameters, we will now analyze its impact on the qubit coherence.
+We have confirmed that an observed p-MIST can have a significant probability during a fluxonium qubit readout. While this effect will directly affect the readout performance for our chosen set of readout parameters, we will now analyze its impact on the qubit coherence.
 
 \subsection{Qubit Dephasing post-Readout} 
-Implications of p-MIST can be fatal even \textit{after} the readout pulse is executed, in the context of a larger quantum circuit where the fluxonium mode is used as a qubit. In general, the parasitic modes are long-lived, with internal quality factors of $\sim 10^{4}$~\cite{masluk_microwave_2012, masluk2013reducing}. We have confirmed that dephasing due to the detuned drive and thermal effects is negligible (see App.~\ref{app:dephasing}). However, spurious excited state population of the parasitic mode introduced by p-MIST during readout can induce correlated dephasing of the qubit, through the large dispersive interaction $\chi_{\mu \phi}/2\pi \sim 1$ MHz (see Table~\ref{tab:circuit_params}). If the parasitic mode is excited, the qubit accumulates a phase at a constant rate $\chi_{\mu\phi} \bar n_\mu$, in the absence of any decay i.e. infinite internal quality factor $Q_\mu$. This error can be measured and corrected for, given the knowledge of $\bar n_\mu$. For a finite $Q_\mu$, the parasitic mode decays at a rate $\kappa_\mu=Q_\mu/\omega_\mu$ such that the qubit dephasing is no longer deterministic but a Poissonion process which relies on the random decay of the parasitic mode. Now, we will analyze this effect due to p-MIST induced excitation in the parasitic modes.
+Implications of p-MIST can be fatal even \textit{after} the readout pulse is executed, in the context of a larger quantum circuit where the fluxonium mode is used as a qubit. In general, the parasitic modes are long-lived, with internal quality factors of $\sim 10^{4}$~\cite{masluk_microwave_2012, masluk2013reducing}. We have confirmed that dephasing due to the detuned drive and thermal effects is negligible (see App.~\ref{app:dephasing}). However, spurious excited state population of the parasitic mode introduced by p-MIST during readout can induce correlated dephasing of the qubit, through the large dispersive interaction $\chi_{\mu \phi}/2\pi \sim 1$ MHz (see Table~\ref{tab:circuit_params}). If the parasitic mode is excited, the qubit accumulates a phase at a constant rate $\chi_{\mu\phi} \bar n_\mu$, in the absence of any decay i.e. infinite internal quality factor $Q_\mu$. This error can be measured and corrected for, given the knowledge of $\bar n_\mu$. For a finite $Q_\mu$, the parasitic mode decays at a rate $\kappa_\mu=Q_\mu/\omega_\mu$ such that the qubit dephasing is no longer deterministic but a Poissonion process that relies on the random decay of the parasitic mode. Now, we will analyze this effect due to p-MIST induced excitation in the parasitic modes.
 
 
 \begin{figure}[htb]
