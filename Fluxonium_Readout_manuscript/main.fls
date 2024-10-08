@@ -1064,6 +1064,7 @@ INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscri
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Meas_Circuit.pdf
 INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Floquet_min.pdf
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Floquet_min.pdf
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Floquet_min.pdf
@@ -1110,7 +1111,6 @@ INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscri
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Circuit_choice.pdf
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Circuit_choice.pdf
 INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Charge_Matrix.pdf
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Charge_Matrix.pdf
 INPUT /Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/Figures/Charge_Matrix.pdf
