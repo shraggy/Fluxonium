@@ -133,7 +133,7 @@ provides an analysis of the full circuit including fluxonium, JJA, and readout r
     $122$ & $0.5\Phi_0$ & $7.30$ & $1.46$ & $17$ & $0.74$ & $60$ & $194$ & $1.94$ & $19.40$ \\
     \hline
 \end{tabular}
-\caption{Circuit parameters for Fig.~\ref{fig:meas_circuit}(a) inspired by Ref.~\cite{zhang_universal_2021}. All energies are given in GHz. Here $\Phi_0=h/2e$ denotes the magnetic flux quantum. The capacitive energies $E_{C'}=\frac{19.4}{{C'}(\mathrm{fF})} \ \mathrm{GHz}$ are computed from the corresponding capacitances $C'$. See Table~\ref{tab:params} in App.~\ref{app:circuit_features} for the values of capacitances.}
+\caption{Circuit parameters for Fig.~\ref{fig:meas_circuit}(a) inspired by Ref.~\cite{zhang_universal_2021}. All energies are given in GHz. Here $\Phi_0=h/2e$ denotes the magnetic flux quantum. The capacitive energies $E_{C'}=\frac{19.4}{{C'}(\mathrm{fF})} \ \mathrm{GHz}$ are computed from the corresponding capacitances $C'$. See Table~\ref{tab:params} in App.~\ref{app:Hamiltonian} for the values of capacitances.}
 \label{tab:circuit_params}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,7 +160,7 @@ provides an analysis of the full circuit including fluxonium, JJA, and readout r
 \textbf{($\mu=2$)}&\multicolumn{2}{c|}{} &$157 \ \mathrm{MHz}$& $4.22 \ \mathrm{MHz}$& $-1.10 \ \mathrm{MHz}$& $5 \ \mathrm{MHz}$& $12.06 \ \mathrm{GHz}$&$10^{4}$\\    
 \hline
 \end{tabular}
-\caption{Measurement parameters for qubit mode $\phi$, readout mode $r$ and closest even parasitic mode $\mu=2$.  All quantities are derived and computed analytically using circuit parameters listed in Table.~\ref{tab:circuit_params} (see Apps.~\ref{app:circuit_features}-\ref{app:coupling} for details). \textbf{Qubit-Readout Parameters:} ($\omega_{ij}$) qubit $i\rightarrow j$ splitting frequency between fluxonium excited states $i, j$; ($\tilde{E}^\phi_c$) qubit charging energy; ($g_{\phi r}$) qubit-readout coupling; ($\chi_{\phi r}(ij)$) dispersive shift due to readout mode in the two-level $ij$ system; ($\omega_r$) readout mode frequency; ($\kappa_r$) decay rate of the readout resonator. \textbf{Parasitic-Mode Parameters:} ($g_{\phi \mu}$) qubit-parasitic coupling; ($g_{\mu r}$) parasitic-readout coupling; ($\chi_{\phi \mu}(ij)$) dispersive shift due to parasitic mode $\mu$ in the two-level $ij$ system; ($\omega_\mu$) mode frequency; and ($Q_\mu$) internal quality factor inspired by~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
+\caption{Measurement parameters for qubit mode $\phi$, readout mode $r$ and closest even parasitic mode $\mu=2$.  All quantities are derived and computed analytically using circuit parameters listed in Table~\ref{tab:circuit_params} (see Apps.~\ref{app:alt_circuits}-\ref{app:Hamiltonian} for details). \textbf{Qubit-Readout Parameters:} ($\omega_{ij}$) qubit $i\rightarrow j$ splitting frequency between fluxonium excited states $i, j$; ($\tilde{E}^\phi_c$) qubit charging energy; ($g_{\phi r}$) qubit-readout coupling; ($\chi_{\phi r}(ij)$) dispersive shift due to readout mode in the two-level $ij$ system; ($\omega_r$) readout mode frequency; ($\kappa_r$) decay rate of the readout resonator. \textbf{Parasitic-Mode Parameters:} ($g_{\phi \mu}$) qubit-parasitic coupling; ($g_{\mu r}$) parasitic-readout coupling; ($\chi_{\phi \mu}(ij)$) dispersive shift due to parasitic mode $\mu$ in the two-level $ij$ system; ($\omega_\mu$) mode frequency; and ($Q_\mu$) internal quality factor inspired by~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
 \end{table*}
 %%%%%%%%%%%%%%%%%%
 
@@ -174,7 +174,7 @@ provides an analysis of the full circuit including fluxonium, JJA, and readout r
 
 
 %%%%Fluxonium circuit%%%%%%%%%%%%%%%%%%%%%%
-We consider a JJA-fluxonium circuit dispersively coupled to a readout mode as shown in Fig.~\ref{fig:meas_circuit}. We chose circuit parameters (as listed in Table~\ref{tab:circuit_params}) motivated by recent experiments on heavy fluxonium~\cite{zhang_tunable_2024,zhang_universal_2021}.  We also restrict attention to the flux ``sweet spot" that maximizes qubit coherence.
+We consider a JJA-fluxonium circuit dispersively coupled to a readout mode as shown in Fig.~\ref{fig:meas_circuit}. We chose circuit parameters (as listed in Table~\ref{tab:circuit_params}) motivated by recent experiments on heavy fluxonium~\cite{zhang_tunable_2024,zhang_universal_2021, ding_high-fidelity_2023}.  We also restrict attention to the flux ``sweet spot" that maximizes qubit coherence.
 This choice is also expected to reduce the number of allowed transitions in the circuit, as transitions between parity-conserving states via first-order processes are forbidden in this case. For our parameters, the qubit frequency ($\omega_{01}/2\pi$) is $\sim 30 \ \mathrm{MHz}$ and the plasmon frequency (i.e.~splitting frequency between first and second qubit excited states $\omega_{12}/2\pi$) is $\sim 6 \ \mathrm{GHz}$ (see Table~\ref{tab:readout_params} for a full list of readout parameters).
  
 
@@ -201,7 +201,7 @@ $\tilde{E}^\phi_c$ (see Table~\ref{tab:readout_params}) deviates from the target
 \begin{align}\label{eq:int_hamiltonian}
 \hat{H}_{int} &= \sum_{\mu} g_{\phi\mu} \frac{\hat N_\phi}{{N_{\phi,\mathrm{ZPF}}}} (\hat a_\mu-\hat a_\mu^\dagger)\nonumber \\ &\quad-g_{\phi r} \frac{\hat N_\phi}{{N_{\phi,\mathrm{ZPF}}}} (\hat a_r-\hat a_r^\dagger) \nonumber \\&\quad- \sum_{\mu} g_{\mu r} (\hat a_r-\hat a_r^\dagger)(\hat a_\mu-\hat a_\mu^\dagger).
 \end{align}
-where for our parameters, the zero-point fluctuations of qubit charge  $N_{\phi,\mathrm{ZPF}}=1.4$. Values for all remaining parameters appearing here are given in Table.~\ref{tab:readout_params}. \singh{Explicit expression for $g_{\phi\mu}$ is discussed in Sec.~\ref{sec:expressions}, while expressions for all other variables can be found in App.~\ref{app:Hamiltonian}}.
+where for our parameters, the zero-point fluctuations of qubit charge  $N_{\phi,\mathrm{ZPF}}=0.36$. Values for all remaining parameters appearing here are given in Table~\ref{tab:readout_params}. \singh{Explicit expression for $g_{\phi\mu}$ is discussed in Sec.~\ref{sec:expressions}, while expressions for all other variables can be found in App.~\ref{app:Hamiltonian}}.
 
 \singh{We verify the conclusion from Ref.~\cite{viola2015collective} that the symmetry of the parallel circuit in Fig.~\ref{fig:meas_circuit}(a)} prevents coupling between odd parasitic modes (including $\mu=1$) and other circuit modes. We extend this result to two additional circuits, with different ground circuit configurations, showing qualitatively consistent conclusions across all three circuits in App.~\ref{app:alt_circuits}. The circuits yield the same Hamiltonian when the differential capacitance $C$ and coupling capacitance $C_c$ are altered such that qubit frequency and qubit-readout coupling are the same across all three circuits (see Table~\ref{tab:parasitic_params} in App.~\ref{app:alt_circuits}). 
  
@@ -222,7 +222,7 @@ H_0=\hat H_\phi+\hat H_{\mu}-\frac{g_{\phi\mu}}{N_{\phi,\mathrm{ZPF}}} \hat N_\p
 \end{align}
 and the modified drive term $V_{s.c.}$ is
 \begin{align}
-    \hat V_\textrm{s.c.}(\bar n_r)&=\frac{\xi_{\phi r}(\bar n_r)}{N_{\phi,\mathrm{ZPF}}} \hat N_\phi\cos{\omega_d t}+\xi_{\mu r}(\bar n_r) \hat N_\mu\cos{\omega_d t}\label{eq:drive},
+    \hat V_\textrm{s.c.}(\bar n_r)&=\frac{\xi_{\phi r}(\bar n_r)}{N_{\phi,\mathrm{ZPF}}} \hat N_\phi\cos{\omega_d t}+\frac{\xi_{\mu r}}{N_{\mu, \mathrm{ZPF}}}(\bar n_r) \hat N_\mu\cos{\omega_d t}\label{eq:drive},
 \end{align}
 where the effective drive powers $\xi_{\mu(\phi) r}(\bar n_r)=2g_{\mu(\phi) r}\sqrt{\bar n_r}$, and $\bar n_r$ denotes the average number of photons in the readout cavity. In the remaining text, we refer to the quantities $\xi_{\phi r/\mu r}$ as  ``qubit drive strengths" and ``parasitic drive strengths", respectively. 
 
@@ -269,11 +269,11 @@ $10.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspac
 %\hline
 $11.$&$\color{ForestGreen}{\ket{\tilde{1},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{9},\tilde{0}}$ &$2$&$9.41 \ \mathrm{GHz}$&$1.19 \ \mathrm{MHz}$&$\times$ &$2$\\
 %\hline
-$12.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{12},\tilde{0}}$ &$1$&$9.00 \ \mathrm{GHz}$&$0.73 \ \mathrm{MHz}$&$\times$ & $2$\\
+$12.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{12},\tilde{0}}$ &$3$&$9.00 \ \mathrm{GHz}$&$0.73 \ \mathrm{MHz}$&$\times$ & $2$\\
 %\hline
 $13.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{0},\tilde{2}}$&$38$&$9.06 \ \mathrm{GHz}$&$0.53 \ \mathrm{MHz}$&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 %\hline
-$14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$41$&$9.41 \ \mathrm{GHz}$&$2.71 \ \mathrm{MHz}$&$\color{RoyalBlue}{\checkmark}$ & $2$\\
+$14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$49$&$9.41 \ \mathrm{GHz}$&$2.71 \ \mathrm{MHz}$&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 \hline
 \end{tabular}
 \caption{Measurement-induced-state-transition (MIST) observed in Fig.~\ref{fig:Floquet}. Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstate of $H_0$ (see Eq.~\ref{eq:bare_ham}) which has the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of qubit mode ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, we use $\bar n_r\sim 0$ to indicate that the drive frequency is exactly resonant with the transition frequency \singh{between the two levels}. A `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d/2\pi=8.71 \ \mathrm{GHz}$ with $\Delta_{ac}=4.0 \ \mathrm{MHz}$ absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\sim 0, \omega_d/2\pi=9.25 \ \mathrm{GHz}$\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=14, \omega_d/2\pi=9.41 \ \mathrm{GHz}$ with $\Delta_{ac}=4.2 \ \mathrm{MHz}$ absorbs $1$ drive photon}. Column $4$ represents the drive frequency $\omega_d/2\pi$ at which these transitions occur. Column $5$ yields the quasienergy gap at the avoided crossing labeled as $\Delta_{ac}$. Column $6$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. The various colors for the checkmarks indicate that the p-MIST event involves the state $\ket{\tilde{0},\tilde{0}}$ (red), $\ket{\tilde{1},\tilde{0}}$ (green) or $\ket{\tilde{2},\tilde{0}}$ (blue). Column $7$ indicates the number of drive photons ($\#$) involved in the energy-conserving process, illustrated in Fig.~\ref{fig:trans_prof}, which is responsible for these transitions.
@@ -284,7 +284,7 @@ $14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Our first numerical analysis involves calculating the Floquet eigenstates of $H_{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) for various fixed values of the drive powers, as controlled by the average photon number $\bar n_r$.  We do this by retaining the lowest $20$ levels in the qubit subspace $\phi$ and $2$ levels in the parasitic mode $\mu=2$\footnote{We show that our results hold when simulated with $30$ levels in the qubit mode and $10$ levels in the parasitic mode}; the \singh{truncation for this analysis} are discussed further in App.~\ref{app:numerics}.
-Our goal is to use these results to make predictions for a readout pulse involving a time-dependent drive power, identifying possible transitions starting from a dressed state $\ket{i} =\ket{\tilde{\phi}, \tilde{\mu}}$ where $\phi\in\{0,1,2\}$ and $\mu=0$ (i.e. parasitic mode is initially empty). With $\omega_\mu/2\pi=12.06 \ \mathrm{GHz}$, the analysis in this section will consider the regime of negative detuning where, $\omega_{\mu=2}>\omega_d=\omega_r \gg \omega_q$, and can be replicated for any other parasitic mode $\mu \neq 2$. Note that we also analyze the effects of an alternative circuit with $\omega_{\mu=2}/2\pi\sim 16 \ \mathrm{GHz}$ and $\omega_\phi/2\pi\sim 300 \ \mathrm{MHz}$ in Sec.~\ref{sec:expressions}.
+Our goal is to use these results to make predictions for a readout pulse involving a time-dependent drive power, identifying possible transitions starting from a dressed state $\ket{i} =\ket{\tilde{\phi}, \tilde{\mu}}$ where $\phi\in\{0,1,2\}$ and $\mu=0$ (i.e. parasitic mode is initially empty). With $\omega_\mu/2\pi=12.06 \ \mathrm{GHz}$, the analysis in this section will consider the regime of negative detuning where, $\omega_{\mu=2}>\omega_d=\omega_r \gg \omega_q$, and can be replicated for any other parasitic mode $\mu \neq 2$. Note that we also analyze the effects of an alternative circuit with $\omega_{\mu=2}/2\pi\sim 16 \ \mathrm{GHz}$ and $\omega_{01}/2\pi\sim 300 \ \mathrm{MHz}$ in Sec.~\ref{sec:expressions}.
 
 Inspired by~\cite{dumas2024unified,cohen2023reminiscence}, we extract p-MIST processes by tracking the evolution of  the Floquet eigenstates as we increase the parameter $\bar{n}_r$, a method known as \emph{branch analysis}. 
 We do this for a series of discrete values of $\bar{n}_r$, that we chose to be integers.  The simulation begins in a chosen eigenstate $\ket{i}_0$ of the bare Hamiltonian $\hat{H}_0 \equiv \hat{H}_{s.c.}[\bar{n}=0]$ (see Eq.~\ref{eq:bare_ham}). 
@@ -306,7 +306,7 @@ In Eq.~\ref{eq:track_Floquet}, the overlaps between Floquet eigenstates are all 
 
 For each state $\ket{i_{\bar n_r=k}}$ in a given branch, we compute:
 \begin{enumerate}
-    \item The expectation value of the fluxonium excitation-number operator $\hat n_\phi=\sum_k k\ket{k}_\phi\bra{k}_\phi$,  where $\ket{k}_\phi$ is the $k$th {\it bare} fluxonium energy eigenstate,
+    \item The expectation value of the fluxonium excitation-number operator $\hat n_\phi=\sum_k k\ket{k}_\phi\bra{k}_\phi$,  where $\ket{k}_\phi$ is the $k^{th}$ {\it bare} fluxonium energy eigenstate,
     \item The expectation value of parasitic-mode number operator $\hat n_\mu=\hat a_{\mu}^\dagger \hat a_{\mu}$ (for the single mode $\mu=2$ that we retain), and 
     \item The quasi-energy of the state $E_i \mod (\omega_d/2\pi)$.
 \end{enumerate}
@@ -377,7 +377,7 @@ As expected, the probability of remaining adiabatic (green curve) decreases as o
 
 
 The above probabilities are in very good agreement with the predictions of our Floquet branch analysis combined with a Landau-Zener approximation to the probability of a non-adiabatic transition (used here in a fashion similar to Ref.~\cite{ikeda2022floquet}, see App.~\ref{app:LZ}).  These probabilities ($P_{\mathrm{LZ}}$) are shown in grey in Fig.~\ref{fig:LZ}.   Similar to the transmon case in Ref.~\cite{dumas2024unified} we see agreement for most of the values of $\kappa_r$ between the time-domain simulations and our Landau-Zener calculations using the Floquet quasi-energies. 
-\sh{However, for large $\kappa_r\rightarrow \infty$, we observe disagreement on the order of $~\sim\ 10$\%, which we attribute to the complexity of our system which is very likely to not be explained by the simple picture presented by the Landau Zener physics of a two-level system. In fact, it is surprising that despite this complexity we find such good agreement for small $\kappa$ values.}
+\sh{However, for large $\kappa_r\rightarrow \infty$, we observe disagreement on the order of $~\sim\ 10$\%, which we attribute to the complexity of our two-mode system which is very likely to not be explained by the simple picture presented by the Landau Zener physics of a two-level system. It is surprising that despite this complexity we find such good agreement for small $\kappa$ values.}
 
 
 
@@ -401,7 +401,6 @@ For these parameters, our previous simulations and Landau-Zener analysis suggest
 A simple master equation simulation illustrates the resulting qubit dephasing due to this mechanism.  We investigate a reduced system of the parasitic mode $\mu=2$ and the fluxonium qubit (modeled as a two level system), interacting under the dispersive Hamiltonian $\hat H_\theta/\hbar=\chi_{\phi\mu} \hat a_\mu^\dagger \hat a_\mu \sigma_z$, and with a loss dissipator having collapse operator $\sqrt{\kappa_\mu}\hat a_\mu$, describing the parasitic mode internal loss.  We start the system in a product state, where the parasitic mode has some initial non-zero occupation, and the qubit is in the pure state $\ket{+}$. 
 We let the system evolve for a time $T_f=10/\kappa_\mu$ long enough to allow the parasitic mode to relax, and then compute the fidelity of the final qubit state with the initial state $\ket{+}$, defining the error probability be the corresponding infidelity.  
 This quantity is plotted in Fig.~\ref{fig:dephasing}, both as a function of the initial parasitic mode occupancy $\braket{n_\mu}$ \singh{(given by an incoherent mixture of $\ket{0}_\mu$ and $\ket{2}_\mu$)} and its internal quality factor $Q_\mu$. We find that for an internal quality factor $Q_\mu$ of $10^{4}$, an initial population of $\braket{n_\mu}=0.25$ in the parasitic mode introduces a dephasing error probability, of about $0.05$, which is already past the threshold of the surface code~\cite{fowler2012surface}. The explicit time-dependent simulations shown in Fig.~\ref{fig:011} indicate that using a realistic readout power of $\sim 10$ photons, the final post-readout parasitic mode population is $\braket{n_\mu}\sim 0.25$.  This population would already be enough to lead to a significant post-readout dephasing effect. 
-\AC{End of Aash edits Oct. 21}
 
 
 %%%%%%%%%%%%%%%
@@ -438,13 +437,14 @@ By observation, suppressing the parasitic capacitance to ground near the junctio
 \begin{align}
     \tilde{E}^e_{c,\mu}\approx 4E_{g,j}s_\mu^2, \quad \tilde{E}^\phi_c\propto \frac{1}{N^2}\implies g_{\phi\mu}\propto \frac{1}{N^{5/2}}.\label{eq:dep1}
 \end{align}
-These dependencies are plotted in Fig.~\ref{fig:circuit_comp} of App.~\ref{app:coupling}. We find that the coupling strength \textit{decreases} with the number of junctions $N$. Note that changing $N$ changes the target inductance of the qubit. When increasing $N$, we need to proportionally increase the energies $E_{J_j}, E_{C_j}$ to fix the inductive energy of the qubit ($E_L=E_{J_j}/N$). This increases the ratio $E_{J_j}/E_{C_j}$ of the junctions in the array which is preferable since it makes the junction array more linear. However, if we would like to keep this ratio constant, we should proportionally increase $E_{C_j}$. This further supports the large $N$ approximation $\tilde{E}_{c,\mu}^e\approx 4E_{g,j}s_\mu^2$ (see Eq.~\ref{eq:parasitic}). Thus, the number of junctions $N$ can be optimized to decrease $g_{\phi\mu}$ while keeping $E_L$ constant. 
+These dependencies are plotted in Fig.~\ref{fig:circuit_comp} of App.~\ref{app:coupling}. We find that the coupling strength \textit{decreases} with the number of junctions $N$. Note that changing $N$ changes the target inductance of the qubit. When increasing $N$, we need to proportionally increase the energies $E_{J_j}$ to fix the inductive energy of the qubit ($E_L=E_{J_j}/N$). This increases the ratio $E_{J_j}/E_{C_j}$ of the junctions in the array. However, if we would like to keep this ratio constant, we should proportionally increase $E_{C_j}$. This further supports the large $N$ approximation $\tilde{E}_{c,\mu}^e\approx 4E_{g,j}s_\mu^2$ (see Eq.~\ref{eq:parasitic}). Thus, the number of junctions $N$ can be optimized to decrease $g_{\phi\mu}$ while keeping $E_L$ constant. 
 
-Note that, increasing $N$ while keeping $E_L, E_{g,j}$ constant decreases the parasitic charging energy (see Fig.~\ref{fig:circuit_comp} in App.~\ref{app:coupling}). For large $N$ and small $\mu$ limit we can write,
+Note that, increasing $N$ while keeping $E_L, E_{g,j}$ constant decreases the parasitic charging energy (see Fig.~\ref{fig:circuit_comp} in App.~\ref{app:coupling}). For large $N$ and small $\mu$ limit,
 \begin{align}
 \tilde{E}_{c,\mu}^e\propto 1/N^2,  \label{eq:dep2} 
 \end{align}
 which corresponds to lowering the parasitic mode frequency $\omega_\mu$ with increasing $N$. This outcome is generally not favorable towards reducing p-MIST, as discussed in the next section. However, in the absence of any coupling to the qubit $g_{\phi\mu}$, even a low frequency parasitic mode will be of no consequence to p-MIST effects.
+\AC{End of Aash edits Oct. 22}
 
 \subsection{Mode Frequencies}\label{mode-frequencies}
 
@@ -464,14 +464,13 @@ Here, the buffer $\epsilon/2\pi= 25 \ \mathrm{MHz}$ is allowed in this energy co
     \label{fig:trans_prof}
 \end{figure}
 
-The energy profile in Fig.~\ref{fig:trans_prof} shows all four-photon processes allowed in the target drive frequency regime when starting in one of the four lowest fluxonium levels involved in the readout. The results from Floquet simulations are  shown in solid dots and labeled in black (see Sec.~\ref{sec:MIST}), while the processes not identified in the simulation are faded. The final state lines which correspond to $\{\ket{0}_\phi,\ket{1}_\phi,\ket{2}_\phi\}$ are explicitly colored in $\{\mathrm{red},\mathrm{green},\mathrm{blue}\}$. Note that there are downward transitions from $\ket{2}_\phi$ (blue dots) to the states $\ket{1}_\phi$ (green line) and $\ket{0}_\phi$ (red line) in the fluxonium subspace in the presence of parasitic modes. An example of this instance in the Floquet simulations is captured by transition $14$ of Table~\ref{tab:circuit_params}. 
+The energy profile in Fig.~\ref{fig:trans_prof} shows all four-photon processes allowed in the target drive frequency regime when starting in one of the four lowest fluxonium levels involved in the readout. The results from Floquet simulations are  shown in solid dots and labeled in black (see Sec.~\ref{sec:MIST}), while the processes not identified in the simulation are faded. Note that there are downward transitions from $\ket{2}_\phi$ (blue dots) to the states $\ket{1}_\phi$ (green line) and $\ket{0}_\phi$ (red line) in the fluxonium subspace in the presence of parasitic modes. An example is captured by transition $14$ of Table~\ref{tab:circuit_params}. 
 
 The parenthesized labels in color denote the number of readout photons ($x \mathrm{r}$) and parasitic mode photons ($y\mathrm{p}$) required for the transition in the fluxonium subspace, where a positive index denotes absorption/de-excitation while a negative index denotes emission/excitation. For example, transition $2$ corresponds to the emission of four readout photons, which are converted into two parasitic mode photons, absorbed by the mode $\mu=2$, as well as an excitation from $\ket{0}_\phi$ to $\ket{4}_\phi$ in the fluxonium subspace. 
 
-Intuitively, many readout photons are required to bridge a large gap between the readout frequency and parasitic mode frequency. Thus, larger the gap lesser would be the chances of observing p-MIST. We verify this intuition for different ranges of the various mode frequencies in the following discussion, where the variables $x,y,f$ from Eq.~\ref{eq:En_cons} are used frequently.
+Intuitively, many readout photons are required to bridge a large gap between the readout frequency and parasitic mode frequency. As the gap increases, the likelihood of p-MIST processes decrease. We verify this intuition for different ranges of the various mode frequencies in the following discussion.
 
-\paragraph{Drive Frequency ($\omega_d$):} If $\omega_d\gg \omega_{\mu=N-1}$, a dominating transition mechanism for p-MIST would correspond to an excitation of a strongly coupled, low-frequency parasitic mode (i.e., $\mu=\{2,4,6\}$) to a large photon number $y$, leaving just enough energy to produce excitation to some state $f$ in the fluxonium subspace of significant charge matrix elements (see Fig.~\ref{charge-matrix}). However such large excitations in the parasitic modes would occur with lower probability, because of the high photon number $y$ involved in the transition. A full study of this case requires a large Hilbert space and is beyond the scope of this work. 
-
+\paragraph{Drive Frequency ($\omega_d$):} If  $\omega_d\gg \omega_{\mu=N-1}$, a dominating transition mechanism for p-MIST would correspond to an excitation of a strongly coupled, low-frequency parasitic mode (i.e., $\mu=\{2,4,6\}$) to a large photon number $y$, leaving just enough energy to produce excitation to some state $f$ in the fluxonium subspace of significant charge matrix elements (see Fig.~\ref{charge-matrix}). However such large excitations in the parasitic modes would occur with lower probability, because of the high photon number $y$ involved in the transition. A full study of this case requires a large Hilbert space and is beyond the scope of this work. 
 
 For low-frequency readout ($\omega_d \ll \omega_{\mu = 2}$), on the other hand, a large readout photon number $x$ would be needed while having a similar impact. We give the Floquet figure corresponding to a low-frequency readout in Fig.~\ref{fig:Flo_low} which shows higher parasitic mode populations compared to our previous case in Fig.~\ref{fig:Floquet}. The increase in the p-MIST can be explained by examining the resonances when $\omega_d/2\pi \approx 6 \ \mathrm{GHz}$, which approximately corresponds to the fluxonium plasma frequency $\omega_{12}/2\pi$ and half the parasitic mode $\mu=2$ frequency. This logic already indicates that $5.5-6 \ \mathrm{GHz}$ would be a bad range of frequencies for the current choice of parameters. Formal transition probability calculations, same as Sec.~\ref{sec:LZ}, will be required to predict the how detrimental these effects can be. However, the energy conservation indicates that in spite of the increase in the number of p-MIST effects, such transitions will be higher-order processes (large $x$) which will not take place unless $\bar n_r$ is extremely large.
 
@@ -502,21 +501,21 @@ In the previous sections, we considered a fluxonium qubit frequency of  $\sim 30
     \label{fig:Floquet1}
 \end{figure}
 
-Fig.~\ref{fig:Floquet1} shows that indeed, p-MIST effects are comparatively less likely for this alternate circuit. The single p-MIST process observed in the Floquet profile $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{1}}$ occurs at $\bar n_r=25$ and has the quasi-energy gap of $\Delta_{ac}=0.13 \ \mathrm{MHz}$ at the avoided crossing. The $\Delta_{ac}$ for this transition is comparable to transition $8$ (see Fig.~\ref{fig:011}(a)) with a quasi-energy gap of $\Delta_{ac}=0.12$ MHz, much weaker compared to transition $9$ (see Fig.~\ref{fig:011}(b)) analyzed in in Fig.~\ref{fig:LZ} of Sec.~\ref{sec:LZ}. The corresponding Landau-Zener probabilities and explicit transitions with quasienergies for the Floquet profile in Fig.~\ref{fig:Floquet1} can be found in App.~\ref{app:alt_circuit1}. However, a detailed understanding of this Floquet profile, including rate calculations, is necessary to make proper claims about the target drive frequency regime inducing a favorably reduced number of MIST processes, and is left as future direction.
+Fig.~\ref{fig:Floquet1} shows that indeed, p-MIST effects are comparatively less likely for this alternate circuit. The single p-MIST process observed in the Floquet profile $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{1}}$ occurs at $\bar n_r=25$ and has the quasi-energy gap of $\Delta_{ac}=0.13 \ \mathrm{MHz}$ at the avoided crossing. The quasienergy gap at the avoided crossing for this transition is $\Delta_{ac}=0.12$ MHz. The corresponding Landau-Zener probabilities and explicit transitions with quasienergies for the Floquet profile in Fig.~\ref{fig:Floquet1} can be found in App.~\ref{app:alt_circuit1}. However, a detailed understanding of this Floquet profile, including rate calculations, is necessary to make proper claims about the target drive frequency regime inducing a favorably reduced number of MIST processes, and is left as future direction.
 
 \section{Conclusion and Further Work}\label{sec:conclusion}
 %%%%Summary/inferences&&&&&&
 In this work, we have analyzed the impact of parasitic modes on driven JJA fluxonium qubits, showing that measurement-induced state transitions of a fluxonium qubit can occur via excitations of a parasitic mode of the JJA. These transitions occur at particular resonance conditions when the energy of several readout photons is equal to a small number of parasitic mode excitations and a fluxonium mode excitation.  
-We refer to these transitions as parasitic-mode-induced-state-transitions or p-MIST, inspired by the term MIST for measurement-induced-state transitions~\cite{sank2016measurement}. We find that p-MIST transitions occur at considerable rates because of the strong coupling between the parasitic mode and qubit mode. Consequently, one may expect qubit state transitions via the JJA mode in fluxonium during readout, even at low average readout photon numbers and within the typical requirements for high fidelity, dispersive readout. We show that p-MIST does lower the onset of MIST processes to $\sim 10$ readout photons at certain drive frequencies. In addition, it has the potential to significantly dephase the qubit, which could in turn limit the two-qubit gate fidelity required for quantum error correction, and ultimately the performance of a quantum processor. However, the coupling is still sufficiently weak that for the vast majority of readout frequencies, p-MIST processes are off-resonant and the JJA mode excitation population is negligible. Therefore, an architect of the quantum circuit may avoid p-MIST with a judicious choice of readout, junction array, and fluxonium parameters.
+We refer to these transitions as parasitic-mode-induced-state-transitions or p-MIST, inspired by the term MIST for measurement-induced-state transitions~\cite{sank2016measurement}. We find that p-MIST transitions occur at considerable rates because of the strong coupling between the parasitic mode and qubit mode. Consequently, one may expect qubit state transitions via the JJA mode in fluxonium during readout, even at low average readout photon numbers and within the typical requirements for high fidelity, dispersive readout. We show that p-MIST does lower the onset of MIST processes to $\sim 10$ readout photons at certain drive frequencies. In addition, it has the potential to significantly dephase the qubit, which could in turn limit the qubit gate fidelities required for quantum error correction, and ultimately the performance of a quantum processor. However, the coupling is still sufficiently weak such that, for the vast majority of readout frequencies, p-MIST processes are off-resonant and the JJA mode excitation population is negligible. Therefore, an architect of the quantum circuit may avoid p-MIST with a judicious choice of readout, junction array, and fluxonium parameters.
 
 
 We observed p-MIST transitions despite imposing various symmetries which should suppress them. In particular, the parallel circuit considered in this work utilizes a specific symmetry, which removes the coupling between parity-odd modes and the qubit. We have shown that this symmetry is preserved even if the readout resonator is coupled to a floating or grounded fluxonium at a single point. Additionally, our analysis only considers fluxonium with external flux of one-half flux quantum. This introduces additional symmetries, forbidding transitions between parity-conserving states via first-order transitions, and even further restricting the possible transition pathways of p-MIST.
 
 %%%%Extension of our assumptions%%%%
-We analyze the trend in p-MIST for various drive frequencies, parasitic mode frequencies, coupling constants, and circuits with two different qubit frequencies equal to $\sim 30$ and $\sim 300 \ \mathrm{MHz}$. The assumptions we make are crucial to our MIST analysis. Increasing $N$ can reduce the nonlinearity of the parasitic modes, with results provided in Sec.~\ref{sec:expressions}. We also neglect the self-nonlinearity of the readout mode, following common practice in recent MIST-related analysis~\cite{shillito2022dynamics,dumas2024unified,cohen2023reminiscence}. While the effects of nonlinearity in parasitic and readout modes may have a significant impact on the readout fidelity, and perhaps even introduce additional p-MIST transitions, Floquet simulations including the self-nonlinearity of these modes are beyond the scope of our work. Finally, we treat all junctions in the array as identical. However, in practice, the capacitance to ground along the junction array will have some variation given by the geometry of the circuit layout. This may lead to changes in JJA mode frequencies and potentially lower coupling between the qubit and the parasitic modes. 
+We analyze the trend in p-MIST for various drive frequencies, parasitic mode frequencies, coupling constants, and circuits with two different qubit frequencies equal to $\sim 30$ and $\sim 300 \ \mathrm{MHz}$. The assumptions we make are crucial to our MIST analysis. Increasing $N$ can reduce the nonlinearity of the parasitic modes, with results provided in Sec.~\ref{sec:expressions}. We also neglect the self-nonlinearity of the readout mode, following common practice in recent MIST-related analysis~\cite{shillito2022dynamics,dumas2024unified,cohen2023reminiscence}. While the effects of nonlinearity in parasitic and readout modes may have a significant impact on the readout fidelity, and perhaps even introduce additional p-MIST transitions, Floquet simulations including the self-nonlinearity of these modes are beyond the scope of our work. Finally, we treat all junctions in the array as identical. However, in practice, the capacitance to ground along the junction array will have some variation, potentially changing the JJA mode structure. 
 
 
-To advance the implications for practical implementation, we suggest adding noise to the Floquet framework~\cite{huang_engineering_2021} and linking our results to readout fidelity values using input-output theory. Future work should also incorporate the intrinsic nonlinearity of both the junction array modes and the readout mode. Mitigating parasitic mode excitations could involve careful selection of the readout resonator frequency, and as mentioned above, varying junction energies along the array to localize parasitic modes, thereby altering the parasitic mode spectrum and reducing excitation probability. Alternative readout schemes like longitudinal readout or cloaking could also be explored with renewed motivation~\cite{reed_high-fidelity_2010, munoz-arias_qubit_2023, didier_fast_2015}. 
+To further study the implications for practical implementation, we suggest adding noise to the Floquet framework~\cite{huang_engineering_2021} and extending our results to include readout fidelity values, using input-output theory. Future work should also incorporate the intrinsic nonlinearity of both the junction array modes and the readout mode. Mitigating parasitic mode excitations could involve careful selection of the readout resonator frequenyc, and varying junction energies along the array to localize parasitic modes, thereby altering the parasitic mode spectrum and reducing excitation probability. Alternative readout schemes like longitudinal readout or cloaking could also be explored with renewed motivation~\cite{reed_high-fidelity_2010, munoz-arias_qubit_2023, didier_fast_2015}. 
 
 Finally, given the strong coupling between parasitic modes and fluxonium, these modes could even be used as the readout resonator for the fluxonium qubit. In this case, a Purcell filter would be needed to protect the qubit from radiative decay, while coupling the $\mu = 2$ parasitic mode to the Purcell filter and readout feed-line. This approach could help to alleviate the stringent capacitive loading constraints that plague the high-impedance fluxonium qubit.
 
@@ -530,7 +529,7 @@ We have presented a first analysis toward understanding the role of parasitic mo
 \begin{figure*}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Circuit_choice.pdf}
-    \caption{(a-c) Alternative readout circuits. (a) Parallel circuit ($H_1$), (b) Floating fluxonium ($H_2$), (c) Grounded fluxonium ($H_3$). Alternatives (b) and (c) require a single-point connection to the readout line $V$, unlike the parallel circuit in (a). We maintain the values for all circuit variables the same as used for the case of the parallel circuit in Fig.~\ref{fig:meas_circuit}. (d) Absolute values of the coefficients of coupling terms in the Hamiltonian (in GHz). We can see that the parasitic modes couple to the qubit stronger than the qubit couples to the readout. The parasitic mode coupling to the readout is very slightly weaker in $H_3$ compared to $H_1$, $H_2$.}
+    \caption{(a-c) Alternative readout circuits. (a) Parallel circuit ($H_1$), (b) Floating fluxonium ($H_2$), (c) Grounded fluxonium ($H_3$). Alternatives (b) and (c) require a single-point connection to the readout line $V$, unlike the parallel circuit in (a). We maintain the values for all circuit variables the same as used for the case of the parallel circuit in Fig.~\ref{fig:meas_circuit}. (d) Absolute values of the coefficients of coupling terms in the Hamiltonian (in GHz). We can see that the parasitic modes couple to the qubit stronger than the qubit couples to the readout. The parasitic mode coupling to the readout is very slightly weaker in $H_3$ compared to $H_1$, $H_2$. }
     \label{fig:circuit_choice}
 \end{figure*}
 
@@ -550,13 +549,14 @@ $\chi_{\phi,\mu}$&-$1.1 \ \mathrm{MHz}$ & -$1.3 \ \mathrm{MHz}$&-$1.1 \ \mathrm{
     \label{tab:parasitic_params}
 \end{table}
 
-The fluxonium readout circuit shown can have several modifications and each can affect various parameters associated with the efficiency of a fluxonium readout circuit as we proceed to show in this work. Here, in Fig.~\ref{fig:circuit_comp} we present two modifications to the parallel circuit shown in Fig.~\ref{fig:meas_circuit} with different grounding options for the fluxonium circuit. We will refer to these three circuit choices as $H_1:$ (Parallel circuit, see circuit in Fig.~\ref{fig:meas_circuit}), $H_2:$ (Floating fluxonium, see left circuit in Fig.~\ref{fig:circuit_comp}), $H_3:$ (Grounded fluxonium, see right circuit in Fig.~\ref{fig:circuit_comp}). Note that each parameter in Table.~\ref{tab:parasitic_params} is significantly different for the three circuits. We adjust the coupling capacitance $C_c$ and the total capacitance of the phase slip junction $E_{C_p}$ (by modifying $C'$) to achieve the same qubit frequency $\omega_{01}/2\pi$, plasmon frequency $\omega_{12}/2\pi$, qubit-readout coupling constant $g_{\phi \mu}$ and qubit-readout dispersive shift $\chi_{\phi r}$ for the three circuits as given in Table~\ref{tab:circuit_params}. These modifications yield for circuit (b)$E_{C_p}=0.83  \textrm{ GHz},E_{C_c}=3.82\textrm{ GHz}$ (c) $E_{C_p}=0.80\textrm{ GHz},E_{C_c}=4.70\textrm{ GHz}$. Table.~\ref{tab:parasitic_params} gives values of the various circuit parameters across the three circuits computed analytically using the expressions given in App.~\ref{app:Hamiltonian}. We note that upon adjusting the qubit parameters, all circuit parameters are similar in the three circuits. We find that, if the differential capacitance $C$ and coupling capacitance $C_c$ are altered such that qubit frequency and qubit-readout coupling are same across all three circuits, the parasitic mode effects are bound to have the same effect given our assumptions of ordered array and no self-nonlinearity in parasitic modes. Hence, we do not expect any change in the MIST/p-MIST processes for single-point connected circuits in the hangar geometry in comparison to what has already been shown in this work.
-To emphasize this, we plot the three types of coupling strengths across all circuits in Fig.~\ref{fig:circuit_choice}(d) while other parasitic parameters are given in Table.~\ref{tab:parasitic_params}. Note that, this symmetry prevents any coupling with the lowest-frequency parasitic mode ($\mu=1$) in all three circuits, presence of which would have been potentially detrimental. 
+The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text may have several modifications, each of which may affect various performance metrics. Here, in Fig.~\ref{fig:circuit_comp}, we present two modifications to the parallel circuit, with different grounding options. We will refer to the three circuit choices as: $H_1$, parallel circuit, see the circuit in Fig.~\ref{fig:meas_circuit}, $H_2$, floating fluxonium, see the left circuit in Fig.~\ref{fig:circuit_comp}, and $H_3$, grounded fluxonium, see the right circuit in Fig.~\ref{fig:circuit_comp}. Without any other modifications, each parameter in Table~\ref{tab:parasitic_params} is significantly different for the three circuits. Therefore, we adjust the coupling capacitance $C_c$ and the total capacitance of the phase slip junction $E_{C_p}$ (by modifying $C'$) to achieve the same qubit frequency $\omega_{01}/2\pi$, plasmon frequency $\omega_{12}/2\pi$, qubit-readout coupling constant $g_{\phi \mu}$ and qubit-readout dispersive shift $\chi_{\phi r}$ for the three circuits as given in Table~\ref{tab:circuit_params}. \ER{shraddha to check: This is equivalent to shifting the zero of the potential on the readout drive, with the same symmetries applying (e.g., odd parasitic modes are not coupled to the qubit)}. Upon adjusting the qubit parameters, all circuit parameters are similar in the three circuits. These modifications yield for circuit $H_2$:  $E_{C_p}=0.83  \textrm{ GHz},E_{C_c}=3.82\textrm{ GHz}$, and for circuit $H_3$: $E_{C_p}=0.80\textrm{ GHz},E_{C_c}=4.70\textrm{ GHz}$. Table~\ref{tab:parasitic_params} gives values of the various circuit parameters across the three circuits computed analytically using the expressions given in App.~\ref{app:Hamiltonian}. 
 
-Here we will follow the recipe of Ref.~\cite{viola2015collective} to derive Hamiltonians for circuits shown in Figs.~\ref{fig:circuit_comp}(b,c). We will use the following notations defined in Table~\ref{tab:params}. The Lagrangian corresponding to these circuits is a combination of the Lagrangians, $\mathcal{L}_g$ from the phase-slip junction (comprising of the junction with $E_J/E_C\sim 5-8$ and the capacitor $C$), $\mathcal{L}_{g}$ from the ground capacitances, $\mathcal{L}_{R}$ from the readout resonator and $\mathcal{L}_c$ due to the coupling capacitances $C_c$ and the external voltage $V$. We mark the flux points across JJA using $\varphi_0$ and $\varphi_{N}$. We write the capacitive energy terms using $E_x=\frac{e^2}{2C_x}$ and the voltages of each island $\dot{\varphi}/2e$, such that, $\frac{1}{2}C\frac{\dot{\varphi}^2}{4e^2}=\frac{\dot{\varphi}^2}{16E_C}$. For simplicity, we have $C_{g,i}=C_g\quad\forall i$. The flux variables and voltage variables in the circuit are denoted by $\varphi_n=2\pi\Phi_n/\Phi_0$ and $\dot{\varphi}_n=2\pi V_n/\Phi_0$, respectively, where $\Phi_0=h/2e$ is the superconducting flux quantum. We will use subscripts $j, p$ for JJA and the phase-slip junction coordinates, respectively. The capacitance associated with the phase-slip junction is given by $\frac{1}{E_{C'}}=\frac{1}{E_C}+\frac{1}{E^{j}_{C}}$.
+We also find that, if the differential capacitance $C$ and coupling capacitance $C_c$ are altered such that qubit frequency and qubit-readout coupling are same across all three circuits, the parasitic mode effects are bound to have the same effect \ER{Shraddha can you re-word this sentence? I'm not sure what it's trying to say} given our assumptions of ordered array and no self-nonlinearity in parasitic modes. Hence, we do not expect any change in the MIST/p-MIST processes for these single-point connected circuits, in comparison to what has already been shown in this work. To emphasize this, we plot the three types of coupling strengths across all circuits in Fig.~\ref{fig:circuit_choice}(d) while other parasitic parameters are given in Table~\ref{tab:parasitic_params}. Note that, this symmetry prevents any coupling with the lowest-frequency parasitic mode ($\mu=1$) in all three circuits, presence of which would have been potentially detrimental. 
 
+Next, we follow the recipe of Ref.~\cite{viola2015collective} to derive Hamiltonians for circuits shown in Figs.~\ref{fig:circuit_comp}(b,c) while the Hamiltonian for circuit in Figs.~\ref{fig:circuit_comp}(a) was derived in Ref.~\cite{viola2015collective}. We use the following notations defined in Table~\ref{tab:params}. The Lagrangian corresponding to these circuits is a combination of the Lagrangians $\mathcal{L}_g$ from the phase-slip junction (comprising of the junction with $E_J/E_C\sim 5-8$ and the capacitor $C$), $\mathcal{L}_{g}$ from the ground capacitances, $\mathcal{L}_{R}$ from the readout resonator and $\mathcal{L}_c$ due to the coupling capacitances $C_c$ and the external voltage $V$. We mark the flux points across JJA using $\varphi_0$ and $\varphi_{N}$. For simplicity, we have $C_{g,i}\equiv C_g\quad\forall i$. Our claims also hold for the case of $C_{g,p}\neq C_{g,j}$, as studied in Ref.~\cite{viola2015collective}. The flux variables and voltage variables in the circuit are denoted by $\varphi_n=2\pi\Phi_n/\Phi_0$ and $\dot{\varphi}_n=2\pi V_n/\Phi_0$, respectively, where $\Phi_0=h/2e$ is the superconducting flux quantum. We will use subscripts $j, p$ for JJA and the phase-slip junction coordinates, respectively. The capacitance associated with the phase-slip junction is given by $\frac{1}{E_{C'}}=\frac{1}{E_C}+\frac{1}{E_{C_j}}$.
 \subsection{Floating Fluxonium Circuit}
-For $H_2$, Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following terms will remain the same in the case of floating fluxonium circuit, given the diagrams in the following sections.
+Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following terms will remain the same in the case of floating fluxonium circuit:
+%, given the diagrams in the following sections.
 \begin{align}
     \mathcal{L}&=\mathcal{L}_{phase-slip}+\mathcal{L}_{JJA}+\mathcal{L}_{g}+\mathcal{L}_{R}+\mathcal{L}_{C}\\
     \mathcal{L}_{phase-slip}&=\frac{(\dot{\varphi}_N-\dot{\varphi}_0)^2}{16E_{C'}}-E_{J_p}\cos(\varphi_0-\varphi_{N}+\varphi_\mathrm{ext})\\
@@ -564,19 +564,18 @@ For $H_2$, Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the f
     \mathcal{L}_{R}&=\frac{\dot{\varphi}_{-}^2}{16E_{{R}}}-\frac{\varphi_{-}^2}{16E_{R}}\\
     \mathcal{L}_{g}&=\sum_{n=0}^N \frac{\dot{\varphi_n}^2}{16E^n_{g}}\label{eq:float-float}
   \end{align}
-  Here, we will not assume that the capacitances to transmission line are infinite or that ground capacitance for the phase-slip junction and JJA. We will leave the value of $\varphi_{\pm}$ a variable in this case unlike the parallel circuit study we performed above.
-
-
+  Here, we will not assume that the capacitances to transmission line are infinite or that ground capacitance for the phase-slip junction and JJA. We will leave the value of $\varphi_{\pm}$ a variable in this case unlike the parallel circuit study performed in Ref.~\cite{viola2015collective}.
+  
 \begin{align}
 \mathcal{L}_{c}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi_0})^2}{16E^1_{c}}+\frac{(\dot{\varphi}_{-1}-eV)^2}{16E^3_{c}}+\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}},\\ &=\frac{\dot{\varphi}^2_0}{16E^1_c}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E^1_c}+\frac{1}{E^3_c}\Big)+\frac{\dot{\varphi}^2_{-2}}{16E^4_c}\nonumber\\&\quad-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E^1_c}-\frac{\dot{\varphi}_{-1}eV}{8E^3_c}+\mathcal{O}(V^2)
 \end{align}
-Here, $E_c^4$ is the capacitance via which the readout resonator is grounded. Using the basis of (guage-invariant) phase difference, 
+Here, $E_c^4$ \ER{can we change the notation to be $E_c^{(4)}$ instead? This looks like "EC to the fourth power".} is the capacitance via which the readout resonator is grounded. Using the basis of (gauge-invariant) phase difference, 
 \begin{align}
 \varphi_m-\varphi_0&=\sum_{l=1}^m\theta_l\\ \sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z, \quad z\in\mathbb{Z}\quad\text{``fluxoid quantization"}\\
 \varphi_\mathrm{ext}&=\pi,    
 \end{align}
 \paragraph{Lagrangian} 
-From using Eq.~\ref{eq:float-float}, we find that, 
+From Eq.~\ref{eq:float-float}, we find that, 
 \begin{align}
     \dot{\varphi}_0&=E_t\Big(\frac{\dot{\varphi}_{-1}}{E_c^1}-\sum_{n=1}^N\sum_{m=n}^N\frac{\dot{\theta}_n}{E^m_g}\Big)\\&\quad\text{where}\quad E_t=\Big(\frac{1}{E_c^1}+\sum_{n=0}^N\frac{1}{E^n_g}\Big)^{-1}\nonumber\\
 \therefore     \mathcal{L}_g+\mathcal{L}_c&=\frac{\dot{\varphi}_{-1}eV}{8E^3_c}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E^1_c}\Big(1-\frac{E_t}{E_c^1}\Big)+\frac{1}{E^3_c}\Big)\nonumber\\&\quad+\sum_{n=1}^N\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_c^1}\Big(\sum_{i=n}^N\frac{E_t}{8E^i_g}\Big)\nonumber\\&\quad+\sum_{m=1}^N\sum_{n=1}^N\dot{\theta}_m\dot{\theta}_{n}\Big( \sum_{j=\text{max}\{m,n\}}^N\frac{1}{16E_g^j}\Big)\nonumber\\&\quad\quad\Big(1-\sum_{i=\text{min}\{m,n\}}^N\frac{E_t}{E_g^i}\Big)
@@ -586,9 +585,16 @@ We simplify the Lagrangian $\mathcal{L}_g+\mathcal{L}_c$ as
     &=\frac{\dot{\varphi}_{-1}eV}{8E_c}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)+\frac{1}{E_c}\Big)\nonumber\\&+\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_c}\Big)(N-n+1)\frac{E_t}{8E_g}+\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}}\nonumber\\
 &+\sum_{m=1}^N\sum_{n=1}^N\dot{\theta}_m\dot{\theta}_{n} \frac{(N-\text{max}\{m,n\}+1)\text{min}\{m,n\}E_t}{16E_g^2}
 \end{align}
-This expansion shows that the parasitic couplings depend on the ground capacitance due to terms like $\dot{\theta}_m\dot{\theta}_n$ while the coupling capacitance comes into picture only via couplings with the readout resonator mode. 
+This expansion shows that the parasitic couplings depend on the ground capacitance due to terms proportional to $\dot{\theta}_m\dot{\theta}_n$, while the coupling capacitance contributes only via  the readout resonator mode. Now, we will assume an ordered array and symmetric circuit:
+\begin{align*}
+    C_{g_1}=...C_{g_{N-1}}=C_{g,j} \\
+    C_{g_0}=C_{g_N}=C_{g,p} \\
+    E_{J_1}=...=E_{J_N}=E_{J,j} \\
+    C_{j_1}=...=C_{j_N}=C_{j} \\
+    C_{c,1}=C_{c,2}=C_{c}.
+\end{align*}
 \paragraph{Collective Modes} 
-We now transform to a new set of variables $\{\phi,\zeta_1,...,\zeta_{N-1}\}$, also known as the difference modes $\mu$ and their amplitudes $\xi_\mu$,
+We transform to a new set of variables $\{\phi,\zeta_1,...,\zeta_{N-1}\}$, defined as the ``difference modes" $\mu$ and their amplitudes $\xi_\mu$. They are given by
 \begin{align}
     \theta_m=\phi/N+\sum_\mu W_{\mu m}\xi_\mu,
 \end{align}
@@ -596,14 +602,13 @@ and inversely,
 \begin{align}
     \phi&=\sum_{m}\theta_m,\quad \xi_\mu=\sum_m W_{\mu m}\theta_m.
 \end{align}
-Here, $\phi$ is the superinductance mode where all array junction amplitudes are identical. The difference modes $\xi_\mu$ are such that the amplitude sum for all difference modes vanishes. See figures in~\cite{ferguson2013symmetries}. The matrix $(N-1)\times N$ matrix $W$ is semi-orthogonal, $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$ and its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective}
+Here, $\phi$ is the superinductance mode where all array junction amplitudes are identical. The difference modes $\xi_\mu$ are defined such that the amplitude sum for all difference modes vanishes. (See figures in~\cite{ferguson2013symmetries} for more details). The matrix $W$ is semi-orthogonal, with dimensions $(N-1)\times N$, and is given by $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$. Its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective}
 \begin{align}
     W_{\mu m}=\sqrt{\frac{2}{N}}\cos{\frac{\pi\mu(m-1/2)}{N}}.
 \end{align}
-The choice of these new variables is to identify the collective modes describing the low-energy physics as illustrated in~\cite{catelani2011relaxation,koch2009charging,manucharyan2009fluxonium}. Thus, under this new set of variables which define the normal modes of oscillations in $\theta_m$, we have,
+The choice of these new variables highlights the collective modes describing the low-energy physics as illustrated in~\cite{catelani2011relaxation,koch2009charging,manucharyan2009fluxonium}. Under this new set of variables which define the normal modes of oscillations in $\theta_m$, we have that the lagrangian $\mathcal{L} =\mathcal{T}-\mathcal{U}$ is
 \begin{align}
-    \mathcal{L}&=\mathcal{T}-\mathcal{U}\\
-    \mathcal{T}&=\frac{\dot{\varphi}_{-1}eV}{8E_c^3}-\frac{\dot{\varphi}_{-2}eV}{8E_c^4}-E_t\frac{\dot{\varphi}_{-1}\dot{\varphi}_{-2}}{8E_c^2}\nonumber\\
+\mathcal{T}&=\frac{\dot{\varphi}_{-1}eV}{8E_c^3}-\frac{\dot{\varphi}_{-2}eV}{8E_c^4}-E_t\frac{\dot{\varphi}_{-1}\dot{\varphi}_{-2}}{8E_c^2}\nonumber\\
     &+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)+\frac{1}{E_c^3}\Big)\\&+\frac{\dot{\varphi}^2_{-2}}{16}\Big(\frac{1}{E_c^4}+\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)\Big)\nonumber\\
       &+\Big[\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}}{E_c}+\frac{\dot{\varphi}_{-2}}{E_c}\Big)\Big(\frac{E_t}{8E_c}+(N-n+1)\frac{E_t}{8E_g}\Big)\nonumber\\&\quad-\sum_{n=1}^N\frac{\dot{\varphi}_{-2}}{8E_c}\Big](\dot{\phi}/N+\sum_\mu W_{\mu n}\dot{\xi}_\mu)+\sum_{m=1}^N\sum_{n=1}^N(\dot{\phi}/N\nonumber\\
   &+\sum_\mu W_{\mu n}\dot{\xi}_\mu)(\dot{\phi}/N+\sum_\mu W_{\mu m}\dot{\xi}_\mu)\Big( (N-\text{max}\{m,n\}\nonumber\\&+1)\frac{1}{16E_g}+\frac{1}{16E_c}\Big)\Big(\text{min}\{m,n\}\frac{E_t}{E_g}+\frac{E_t}{E_c}\Big)\label{eq:kin-energy}\\
@@ -611,14 +616,14 @@ The choice of these new variables is to identify the collective modes describing
 \end{align}
 
 \paragraph{Symmetries in the Lagrangian}
-Simplifying the kinetic energy term from Eq.~\ref{eq:kin-energy} using $\sum_m W_{\mu m}=0$ and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$ used above yields,
+Simplifying the kinetic energy term from Eq.~\ref{eq:kin-energy}, recalling that $\sum_m W_{\mu m}=0$, and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$ yields
 \begin{align}
 \mathcal{T}&=-\frac{\dot{\varphi}_{-2}eV}{16E_c}+\frac{\dot{\varphi}_{-1}eV}{16E_c}-E_t\frac{\dot{\varphi}_{-1}\dot{\varphi}_{-2}}{16E_c^2}\nonumber\\
     &+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)+\frac{1}{E_c}\Big)\\&+\frac{\dot{\varphi}^2_{-2}}{16}\Big(\frac{1}{E_c}+\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)\Big)\nonumber\\&\quad+\frac{E_t}{8E_c^2}\dot{\varphi}_{-1}\dot{\phi}+\frac{E_t}{8E_c^2}\dot{\varphi}_{-2}\dot{\phi}\nonumber\\
       &+\Big[\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}}{E_c}+\frac{\dot{\varphi}_{-2}}{E_c}\Big)\Big(\frac{E_t}{8E_c}+(N-n+1)\frac{E_t}{8E_g}\Big)\nonumber\\&\quad-\sum_{n=1}^N\frac{\dot{\varphi}_{-2}}{8E_c}\Big](\dot{\phi}/N+\sum_\mu W_{\mu n}\dot{\xi}_\mu)\nonumber\\
     &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]    
     \end{align}
-    Here $M$ comes from the phase-slip junction and JJA while $G$ comes from the coupling and ground capacitances, and these coefficients are given by,
+    Here $M$ is associated with the phase-slip junction and JJA, while $G$ is associated with the coupling and ground capacitances. Specifically, these coefficients are given by
     \begin{align}
     M_{00}&=\frac{1}{16E_{C'}}+\frac{1}{16NE_{C_j}},\quad M_{0\mu}=0,\quad    M_{\mu\nu}=\frac{\delta_{\mu\nu}}{16E_{C_j}}\\
     G_{00}&=\frac{1}{64E_t}\Big(1-\frac{E_t}{E_c}\Big)^2\Big[1-\frac{2}{3}\frac{N-1}{N}\Big]\\
@@ -626,9 +631,9 @@ Simplifying the kinetic energy term from Eq.~\ref{eq:kin-energy} using $\sum_m W
     G_{\mu\nu}&=\frac{1}{64E_gs_\mu^2}\Big[\delta_{\mu\nu}-\frac{E_t}{E_g}\frac{2c_\mu c_\nu o_\mu o_\nu}{N s_\nu^2}\Big]\\&\quad\text{where}\quad E_t=\Big(\frac{1}{E_c^1}+\sum_{n=0}^N\frac{1}{E^n_g}\Big)^{-1}\nonumber
 \end{align}
 Here $G_{00}$ increases quadratically with a factor of $\Big(1-\frac{E_t}{E_c}\Big)$. Thus, $G_{0\mu}$ is different from the parallel circuit by a factor $\Big(1-\frac{E_t}{E_c}\Big)$. 
-For the last term, $G_{\mu\nu}$, it is the same as parallel circuit because there is no term dependent on $E_c$. 
+For the last term, $G_{\mu\nu}$, it is the same as parallel circuit because there is no term dependent on $E_c$. \ER{would be nice to give some description of the physical significance of G and M if you can.}
 \paragraph{Linear Approximation}
-From here on, the sum over $m,n$ runs from $1$ to $N$ while the sum over $\mu,\nu$ runs from $1$ to $N-1$. Simplification to including only linear terms from Taylor expansion of the cosine ($\cos{x}\sim 1-\frac{x^2}{2}$) Eq.~\ref{eq:pot-energy} and using $\sum_{n}W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$, yields (upto a constant term)
+From here on, we define a sum over $m,n$ as running from $1$ to $N$, while the sum over $\mu,\nu$ runs from $1$ to $N-1$. Simplification to including only linear terms from Taylor expansion of the cosine ($\cos{x}\sim 1-\frac{x^2}{2}$) Eq.~\ref{eq:pot-energy} and using $\sum_{n}W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$, yields (up to a constant term)
 \allowdisplaybreaks{
 \begin{align}
     \mathcal{U}&=E_{J_p}\cos(\phi)-\frac{(\varphi_{-1}-\varphi_{-2})^2}{16E_{R}}\nonumber\\&\quad+\frac{E_{J_j}}{2N}\phi^2+\frac{E_{J_j}}{2}\sum_{\mu}\xi_\mu^2\\
@@ -638,7 +643,7 @@ From here on, the sum over $m,n$ runs from $1$ to $N$ while the sum over $\mu,\n
 where $\dot{\phi}_{-1}=-\dot{\phi}_{-2}=eV$
 
 
-\paragraph{Hamiltonian:} We can see that there is no choice of $\dot{\varphi}_{\pm}$ such that the parasitic coupling between the readout resonator and fluxonium can be cancelled without eliminating the coupling between the qubit and readout resonator. Note that, this expression assumed $C_g^0=C_g^N=C_g^1..=C_g^{N-1}$, such that  $\frac{N+1}{E_g}=\frac{1}{E_g}-\frac{1}{E_c}$. The coupling between the qubit and the readout is same as the parallel circuit if $E_g<<E_c$ with a lower $N$. We drive the readout resonator, such that, $\dot{\varphi}_{-}=2eV$ (the sign of the voltage value has been changed because in this circuit $\varphi_{-1}$ will be connected to $V$ and not $-V$, just for simplicity).
+\paragraph{Hamiltonian:} We can see that there is no choice of $\dot{\varphi}_{\pm}$ such that the parasitic coupling between the readout resonator and fluxonium can be cancelled without eliminating the coupling between the qubit and readout resonator. \ER{Can you first point out what the "parasitic coupling" is here when it shows up in an equation above, and give it some physical significance explanation?} Note that, this \ER{what expression?} expression assumed \ER{ you already say this above: } $C_g^0=C_g^N=C_g^1..=C_g^{N-1}$, such that  $\frac{N+1}{E_g}=\frac{1}{E_g}-\frac{1}{E_c}$. The coupling between the qubit and the readout is same as the parallel circuit if $E_g \ll E_c$ with a lower $N$. We drive the readout resonator, such that, $\dot{\varphi}_{-}\equiv 2eV$ (the sign of the voltage value has been changed because in this circuit $\varphi_{-1}$ will be connected to $V$ and not $-V$, just for simplicity).
 \begin{align}
     \mathcal{L}&=\frac{\dot{\varphi}_{+}^2}{64E_c}\Big(2+\frac{(N+1)E_t}{E_g}\Big)+\frac{\dot{\varphi}_{+}eV}{16E_c}\Big(\frac{3}{2}+\frac{E_t}{E_c}\Big)\nonumber\\
     &\quad-\frac{(N+1)E_t}{32E_gE_c}\dot{\phi}eV+\frac{(N+1)E_t}{64E_gE_c}\dot{\phi}\dot{\varphi}_{+}\nonumber\\
@@ -647,7 +652,7 @@ where $\dot{\phi}_{-1}=-\dot{\phi}_{-2}=eV$
     &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\
     &\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
 \end{align}
-This Lagrangian can be used to analyze effects in floating readout case. However, for simplicity, we can again just like the previous case, assume $C^3=C^4=0$ which makes the floating resonator grounded. Ideally this choice should not affect the analysis until we study the effects of a driven readout resonator (even then the intuition is that the ground capacitance should not make things worse). Currently this is equivalent to eliminating all terms with $E_c^3, E_c^4$ and using $\dot \varphi_{-2}=0, \dot\varphi_{-1}=-2eV$. Thus, $\varphi_{+}=\varphi_{-}=-2eV$. 
+This Lagrangian can be used to analyze effects in floating readout case. However, for simplicity, we can again just like the previous case, assume \ER{ where is $C$ defined?} $C^3=C^4=0$ which makes the floating resonator grounded. \ER{Can you give some physical intuition/explanation for this choice? Also the next sentences could use some re-wording. Why "ideally"? This choice either affects the analysis or not... same with the intuition in paranthesis - it reads more like notes to yourself. Please elaborate more or delete} Ideally this choice should not affect the analysis until we study the effects of a driven readout resonator (even then the intuition is that the ground capacitance should not make things worse). Currently this is equivalent to eliminating all terms with $E_c^3, E_c^4$ and using $\dot \varphi_{-2}=0, \dot\varphi_{-1}=-2eV$. Thus, $\varphi_{+}=\varphi_{-}=-2eV$. 
 \begin{align}
     &=-\frac{(N+1)E_t}{16E_gE_c}\dot{\phi}eV-\frac{E_t}{8E_gE_c} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu eV\nonumber\\
     &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
@@ -659,12 +664,12 @@ Next, we write the Legendre transformation using the velocity vectors and matric
     p_{\xi_\mu}&=\frac{\partial \mathcal{L_K}_o}{\partial \dot{\xi}_\mu}=(M_{0\mu}+G_{0\mu}) \dot{\phi}+2\sum_{\nu} (M_{\mu\nu}+G_{\mu\nu}) \dot{\xi}_\nu\nonumber\\
     &\quad-\frac{E_t}{8E_gE_c} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}eV
     \end{align}
-Here, the even and odd sectors are not decoupled due to the $eV$ term which will eventually act as the readout resonator mode. The even and odd sectors can be diagonalized independently, such that a rotation on the odd sectors does not affect the even sectors. This is contrary to the case of Eq. 77 in~\cite{viola2015collective} where the rotation of odd sectors affects the even sectors. This is because in that case $G_{0\mu}$ was changed to being dependent on odd as well as even sectors. However, here, only the $\mathcal{L}_V$ term has changed. Thus, if the following condition is satisfied, 
+Here, the even and odd sectors are not decoupled due to the $eV$ term. The even and odd sectors can be diagonalized independently, such that a rotation on the odd sectors does not affect the even sectors. This is contrary to the case of Eq. 77 in~\cite{viola2015collective} where the rotation of odd sectors affects the even sectors. This is because in that case $G_{0\mu}$ was changed to being dependent on odd as well as even sectors. However, here, only the $\mathcal{L}_V$ term has changed. Thus, if the following condition is satisfied, 
 \begin{align}
      \frac{\tilde{E}_{c}^{\phi}\tilde{E}_{c,j}^{e}c_i c_j}{32NE_g^2s_i^2 s_j^2}&<<1\implies \frac{4E_g\tilde{E}_{c}^{\phi}c_i c_j}{32NE_g^2s_i^2 }<<1\\
      \implies \frac{4\tilde{E}_{c}^{\phi}N}{8E_g \pi^2\mu\nu }&<<1\implies N<<8\pi^2\frac{E_g}{\tilde{E}_{c}^{\phi}}
  \end{align}
-we can carry out the exact same procedure as Ref.~\cite{viola2015collective} to simplify the inversion of matrix for the Legenrdre transformation and obtain the Hamiltonian as follows. Thus, we get the Hamiltonian as,
+we can carry out the exact same procedure as Ref.~\cite{viola2015collective} to simplify the inversion of matrix for the Legendre transformation and obtain the Hamiltonian as follows. Thus, we arrive at the following Hamiltonian
  \begin{align}
 \quad H_2&= 4\bar{E}^\phi_cp_\phi^2+\sum_{\mu=1}^{N-1} 4\tilde{E}^{e/o}_{c,\mu}p_\mu^2\nonumber\\
     &\quad+2\sum_{\mu=1}^{N-1} \frac{\bar{E}^\phi_c\tilde{E}^{e/o}_{c,\mu}c_\mu o_{\mu+1}}{\sqrt{2N}E_gs_\mu^2} p_\phi p_\mu \nonumber\\
@@ -672,7 +677,7 @@ we can carry out the exact same procedure as Ref.~\cite{viola2015collective} to 
     &\quad- \sum_{\mu=1}^{N-1} \frac{\bar{E}^\phi_c\tilde{E}^{e/o}_{c,\mu}c_\mu o_{\mu+1}}{\sqrt{2N}E_gs_\mu^2}\Big[\frac{(N+1)E_t}{8E_gE_c} \Big]p_\mu eV\nonumber\\
 &\quad +E_{J_p}\cos{\phi}+\frac{E_L}{2}\phi^2+\frac{E_{J_j}}{2}\sum_{\mu=1}^{N-1} \xi_\mu^2 -\frac{\varphi_{-}^2}{16E_{R}}
  \end{align}
- where the variables $\tilde{E}^e_{c,\mu}$ are same as before and $\tilde{E}^o_{c,\mu}$ is the diagonalized charging energy of odd sectors. $\tilde{E}^{e/o}_{c,\mu}$ denotes that the term will be $\tilde{E}^{o}_{c,\mu}$ for odd $\mu$ and $\tilde{E}^{e}_{c,\mu}$ for even $\mu$. Thus, we can see that by not preserving the symmtery we only have the extra odd sector term interacting with the readout resonator. However, we can see that this term is extremely small. $\mathcal{U}$ remains the same as the parallel case. Thus, in terms of types of couplings there might not be major differences, however, value of $\bar{E}_c^\phi=(G_{00}+M_{00})^{-1}$ changes since $G_{00}$ has changed. This change can also be diminished with increasing N. Thus, for large enough N, this circuit is the same as the parallel circuit. 
+ where the variables $\tilde{E}^e_{c,\mu}$ are the same as before and $\tilde{E}^o_{c,\mu}$ is the diagonalized charging energy of odd sectors. Here, $\tilde{E}^{e/o}_{c,\mu}$ denotes that the term will be $\tilde{E}^{o}_{c,\mu}$ for odd $\mu$ and $\tilde{E}^{e}_{c,\mu}$ for even $\mu$. Thus, we can see that by not preserving the symmtery we only have the extra odd sector term interacting with the readout resonator. However, this term is extremely small \ER{proportional to / why small}. Additionally, $\mathcal{U}$ remains the same as the parallel case. Thus, in terms of types of couplings there might not be major differences \ER{shouldn't there be major differences or not? why "might"?}, however, the value of $\bar{E}_c^\phi=(G_{00}+M_{00})^{-1}$ changes since $G_{00}$ has changed. This change can also be diminished with increasing N. Thus, for large enough N, this circuit is the same as the parallel circuit. 
 \subsection{Grounded Fluxonium Circuit}
 For $H_3$, the constraint $\dot{\varphi_{N}}=0$ yields
 \begin{align}
@@ -683,7 +688,7 @@ For $H_3$, the constraint $\dot{\varphi_{N}}=0$ yields
     \mathcal{L}_{g}&=\sum_{n=0}^{N-1} \frac{\dot{\varphi_n}^2}{16E^n_{g}}
   \end{align}
   Here, we will not assume that the capacitances to transmission line are infinite or that ground capacitance for the phase-slip junction and JJA. We will leave the value of $\varphi_{\pm}$ a variable in this case unlike the parallel circuit study we performed above. 
-The grounding of fluxonium yields an additional condition to the fluxoid condition $\varphi_N=c, \text{a constant}$ which implies,
+The grounding of fluxonium yields an additional condition to the fluxoid condition $\varphi_N=c, \text{a constant}$ which implies that
 \begin{align}
      \varphi_0=c-\sum_{l=1}^N \theta_l\implies \dot\varphi_0=-\sum_{l=1}^N \dot\theta_l
 \end{align}
@@ -715,11 +720,11 @@ The term $\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}}$ will be added to the Lagrang
     &\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
 \end{align}
 
-\paragraph{Hamiltonian:} All terms in the Hamiltonian ($H_2$) can be adopted via $N\rightarrow N-1$. If $C_g^N\neq C_g^1$ then this ground fluxonium and floating fluxonium have a larger difference in terms of frequencies of modes. However, we see that adjusting the values of the differential capacitance $C$ and coupling capacitances $C_c$ we can optimize the three circuits to have the same qubit and parasitic mode frequencies. See Fig.~\ref{fig:circuit_choice} and Table.~\ref{tab:parasitic_params}.
+\paragraph{Hamiltonian:} All terms in the Hamiltonian ($H_2$) can be adopted \ER{what do you mean by adopted?} via $N\rightarrow N-1$. If $C_g^N\neq C_g^1$ then this ground fluxonium and floating fluxonium have a larger difference in terms of frequencies of modes. However, we see that by adjusting the values of the differential capacitance $C$ and coupling capacitances $C_c$, we can optimize the three circuits to have the same qubit and parasitic mode frequencies. See Fig.~\ref{fig:circuit_choice} and Table~\ref{tab:parasitic_params} for further details.
 
 
 \section{Undriven Fluxonium Circuit}\label{app:Hamiltonian}
-In this appendix, we give the capacitances and zero-point fluctuations (see Table~\ref{tab:params}) used in the main text and derivations of the corresponding dispersive qubit Hamiltonian for all three circuits shown in Fig.~\ref{fig:circuit_choice} of App.~\ref{app:alt_circuits}. Same as main tex, we set $\hbar=1$.
+In this appendix, we give the capacitances and zero-point fluctuations used in the main text (see Table~\ref{tab:params}) and derivations of the corresponding dispersive qubit Hamiltonian for all three circuits shown in Fig.~\ref{fig:circuit_choice} of App.~\ref{app:alt_circuits}. Following the main text, we set $\hbar=1$. We also discuss the expressions and arguments for coupling and charging strengths used in Sec.~\ref{sec:expressions}.
 \begin{table}[htb]
 \begin{center}
 \begin{tabular}{|c |c| c |c| }
@@ -728,7 +733,7 @@ In this appendix, we give the capacitances and zero-point fluctuations (see Tabl
 \hline
 Phase-slip JJ capacitance &$C_p$ &$13.3$ fF\\ 
 \hline
-Differential capacitance &$E_{C}$ &$1.14$ fF\\ 
+Differential capacitance &$C$ &$1.14$ fF\\ 
 \hline
 JJA capacitance energy&$C_j$&$26.2$ fF\\ 
 \hline
@@ -738,7 +743,7 @@ Phase-slip ground capacitance&$C_{g,p}$&$10 \ \mathrm{fF}$\\
 \hline
 Coupling capacitance&$C_c$ &$1 \ \mathrm{fF}$\\ 
  \hline
-  ZPF of the drive&$V_{\mathrm{ZPF}}$&$0.75$\\
+  ZPF of the resonator/drive&$V_{\mathrm{ZPF}}$&$0.75$ GHz\\
  \hline
   ZPF of fluxonium charge operator&$N_{\phi,\mathrm{ZPF}}$&$0.36$\\
  \hline
@@ -747,26 +752,33 @@ Coupling capacitance&$C_c$ &$1 \ \mathrm{fF}$\\
 \end{tabular}
 \end{center}
 
-\caption{Capacitances and zero-point fluctuation (ZPF) values for the fluxonium readout circuit used in Secs.~\ref{sec:Fluxonium}-~\ref{mode-frequencies}.}
+\caption{Capacitances and zero-point fluctuation (ZPF) values for the fluxonium readout circuit used in the main text.}
 \label{tab:params}
 \end{table}
 
 \subsection{Fluxonium Qubit Hamiltonian}\label{app:coupling}
- We will now discuss the Fluxonium qubit Hamiltonian via its charge matrix elements and dispersive shifts of the qubit induced by the parasitic modes and readout obtained using the dispersive Hamiltonian. This Hamiltonian is derived using the Schrieffer Wolff approximation~\cite{viola2015collective}. The qubit Hamiltonian $H_{\phi}$ (see Eq.~\ref{eq:Hphi}) is diagonalized in the Fock state basis, where we have used $\hat x=x_{\mathrm{ZPF}}(a+a^\dagger)=\hat N_{\phi}/ N_{\phi,\mathrm{ZPF}}$ and $\hat p=-ip_{\mathrm{ZPF}}(a-a^\dagger)=\hat \phi/\phi_{\mathrm{ZPF}}$, then $\phi_{\mathrm{ZPF}}\times N_{\phi,\mathrm{ZPF}}=\frac{1}{2}$. 
+ We now discuss the Fluxonium qubit Hamiltonian, through a detailed consideration of its charge matrix elements and the dispersive shifts on the qubit induced by the parasitic modes and readout. This dispersive Hamiltonian is derived using the Schrieffer-Wolff approximation~\cite{viola2015collective}. The qubit Hamiltonian $H_{\phi}$ (see Eq.~\ref{eq:Hphi}) is diagonalized in the Fock state basis, where we have used the standard bosonic operators
+ \begin{equation} \hat x=x_{\mathrm{ZPF}}(a+a^\dagger)=\hat N_{\phi}/ N_{\phi,\mathrm{ZPF}}
+ \end{equation}
+ and 
+ \begin{equation} \hat p=-ip_{\mathrm{ZPF}}(a-a^\dagger)=\hat \phi/\phi_{\mathrm{ZPF}}.
+ \end{equation}
+% then $\phi_{\mathrm{ZPF}}\times N_{\phi,\mathrm{ZPF}}=\frac{1}{2}$. 
 
 \paragraph{Charge Matrix Elements for $H_1,H_2,H_3$:}
-Here, using the approximations described in the appendix, we get the following charge matrix elements for the qubit subspace. We can see that with increasing final state ($f$), the charge matrix elements with respect to the ground and first excited states follow a decreasing trend. This exponential decrease to $10^{-10}$ suggests that truncation of the fluxonium potential upto $30$ levels for Floquet simulations of Sec.~\ref{sec:MIST} is legitimate.
+Here, using the approximations described in App.~\ref{app:alt_circuits}, we calculate the charge matrix elements for the qubit mode. We observe that with increasing final state ($f$), the charge matrix elements with respect to the ground and first excited states follow a decreasing trend, approximately exponential. This exponential decrease to $10^{-10}$ motivates our truncation of the fluxonium potential up to $30$ levels for the Floquet simulations of Sec.~\ref{sec:MIST}.
 \begin{figure}[hbt]
     \centering
 \includegraphics[width=0.45\textwidth]{Supp_Fig/Charge_Matrix.pdf}
-    \caption{Charge Matrix 
- Elements (squared) for all three circuits. Note that in the equations below we substitute $\langle f|N_\phi|f'\rangle=iN_{\phi,\mathrm{ZPF}}\langle f|(a-a^\dagger)|f'\rangle$ where $N_{\phi,\mathrm{ZPF}}=\frac{1}{\sqrt{2}}\Big(E_{J,j}/8NE_C\Big)^{1/4}$. The charge matrix elements between odd-odd or even-even is zero (points not seen in log plot) due to the symmetry of cosine potential at $\varphi_\mathrm{ext}=0.5\Phi_0$, where $\Phi_0$ is the flux quantum.}
+    \caption{{\bf Charge Matrix 
+ Elements (squared) for all three circuits.} Note that in the equations below we substitute $\langle f|N_\phi|f'\rangle=iN_{\phi,\mathrm{ZPF}}\langle f|(a-a^\dagger)|f'\rangle$ where $N_{\phi,\mathrm{ZPF}}=\frac{1}{\sqrt{2}}\Big(E_{J,j}/8NE_C\Big)^{1/4}$. The charge matrix elements between odd-odd or even-even is zero (points not seen in log plot) due to the symmetry of cosine potential at $\varphi_\mathrm{ext}=0.5\Phi_0$, where $\Phi_0$ is the flux quantum.}
     \label{charge-matrix}
 \end{figure}
 
 
 \paragraph{Dispersive Hamiltonian}\label{app:dispersive}
-We use the Schrieffer-Wolff approximation to extract the readout parameters in Table.~\ref{tab:readout_params}, for example, dispersive shift of the qubit due to the parasitic modes $\chi_{\phi\mu}$ and the readout mode $\chi_{\phi r}$~\cite{viola2015collective}. These variables were used to generate Fig.~\ref{fig:dephasing}, 
+We use the Schrieffer-Wolff approximation to extract the readout parameters in Table~\ref{tab:readout_params}, for example, the dispersive shift of the qubit due to the parasitic modes $\chi_{\phi\mu}$ and the readout mode $\chi_{\phi r}$~\cite{viola2015collective}. (These variables were used to generate Fig.~\ref{fig:dephasing} in the main text). The Hamiltonian is 
+
 \allowdisplaybreaks{
 \begin{align}
     H/\hbar&=\frac{\omega_q}{2}\sigma_z+\sum_{\mu}(\omega_\mu+k_\mu) a_\mu^\dagger a_\mu
@@ -775,26 +787,35 @@ We use the Schrieffer-Wolff approximation to extract the readout parameters in T
    \nonumber\\&\quad +\sum_{\mu}\chi_{r\mu} a_\mu^\dagger a_\mu a_r^\dagger a_r\\
    &=\frac{\omega_q}{2}\sigma_z+\Big(\omega_r +\chi_{r\phi}\sigma_z\Big)a_r^\dagger a_r\nonumber\\&+\sum_{\mu}\Big(\omega_\mu+k_\mu+\chi_{r\mu}a_r^\dagger a_r+\chi_{\mu\phi}\sigma_z\Big) a_\mu^\dagger a_\mu\label{eq:dispersive}
     \\
-    &\text{where}\quad\omega_q\text{ or }\omega_{01}=\epsilon_0-\epsilon_1\nonumber\\ &+|\langle 0|p_\phi|1\rangle|^2\Bigg[16g_{r\phi}^2E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_r^2}\nonumber\\ &\quad+\sum_\mu\Bigg\{g_{\mu\phi}^2\sqrt{\frac{E_J^j}{32\tilde{E}_{C,\mu}^e}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\mu^2}\Bigg\}\Bigg]\nonumber\\&+\sum_{l>1}16g_{r\phi}^2E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\Bigg[\frac{|\langle 0|p_\phi|l\rangle|^2}{\epsilon_{0l}-\omega_r}\nonumber\\&-\frac{|\langle 1|p_\phi|l\rangle|^2}{\epsilon_{1l}-\omega_r}\Bigg]+\sum_{l>1,\mu}\Bigg\{g_{\mu\phi}^2\sqrt{\frac{E_J^j}{32\tilde{E}_{C,\mu}^e}}\times\nonumber \\&\quad\Bigg[\frac{|\langle 0|p_\phi|l\rangle|^2}{\epsilon_{0l}-\omega_\mu}-\frac{|\langle 1|p_\phi|l\rangle|^2}{\epsilon_{1l}-\omega_\mu}\Bigg]\Bigg\}\\
-   k_{\mu\in 2\mathbb{Z}}&=16E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\sqrt{\frac{E_J^j}{32E_C^e}}\Bigg[\frac{g_{r\mu}^2}{\omega_\mu-\omega_r}\Bigg]\nonumber\\&\quad\le\mathcal{O}(10^{-8})\\
+    &\text{where}\quad\omega_q\text{ or }\omega_{01}=\epsilon_0-\epsilon_1\nonumber\\ &+|\langle 0|p_\phi|1\rangle|^2\Bigg[16g_{r\phi}^2E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_r^2}\nonumber\\ &\quad+\sum_\mu\Bigg\{g_{\mu\phi}^2\sqrt{\frac{E_{J_j}}{32\tilde{E}_{C,\mu}^e}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\mu^2}\Bigg\}\Bigg]\nonumber\\&+\sum_{l>1}16g_{r\phi}^2E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\Bigg[\frac{|\langle 0|p_\phi|l\rangle|^2}{\epsilon_{0l}-\omega_r}\nonumber\\&-\frac{|\langle 1|p_\phi|l\rangle|^2}{\epsilon_{1l}-\omega_r}\Bigg]+\sum_{l>1,\mu}\Bigg\{g_{\mu\phi}^2\sqrt{\frac{E_{J_j}}{32\tilde{E}_{C,\mu}^e}}\times\nonumber \\&\quad\Bigg[\frac{|\langle 0|p_\phi|l\rangle|^2}{\epsilon_{0l}-\omega_\mu}-\frac{|\langle 1|p_\phi|l\rangle|^2}{\epsilon_{1l}-\omega_\mu}\Bigg]\Bigg\}\\
+   k_{\mu\in 2\mathbb{Z}}&=16E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\sqrt{\frac{E_{J_j}}{32E_C^e}}\Bigg[\frac{g_{r\mu}^2}{\omega_\mu-\omega_r}\Bigg]\nonumber\\&\quad\le\mathcal{O}(10^{-8})\\
 \chi_{r,\phi}&=16g_{r\phi}^2E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_r^2}|\langle 0|p_\phi|1 \rangle|^2\nonumber\\
    &+16g_{r\phi}^2E_{C_r}^2\sqrt{\frac{E_{L_r}}{32E_{C_r}}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_r^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_r^2}\Bigg] \\
-   \chi_{\mu,\phi}&=g_{\mu\phi}^2\sqrt{\frac{E_J^j}{32\tilde{E}_{C,\mu}^e}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\mu^2}|\langle 0|p_\phi|1 \rangle|^2\nonumber\\
-   &+g_{\mu\phi}^2\sqrt{\frac{E_J^j}{32\tilde{E}_{C,\mu}^e}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_\mu^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_\mu^2}\Bigg]
+   \chi_{\mu,\phi}&=g_{\mu\phi}^2\sqrt{\frac{E_{J_j}}{32\tilde{E}_{C,\mu}^e}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\mu^2}|\langle 0|p_\phi|1 \rangle|^2\nonumber\\
+   &+g_{\mu\phi}^2\sqrt{\frac{E_{J_j}}{32\tilde{E}_{C,\mu}^e}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_\mu^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_\mu^2}\Bigg]
    \quad\text{(see Fig.~\ref{fig:dispersive-shift})}
 \end{align}
 }
-Therefore $\omega_q=-7e-04 \ \mathrm{GHz}$, $\omega_{q,r}=-1.1e-03 \ \mathrm{GHz}$, see Fig.~\ref{fig:dispersive-shift} for $\omega_{q,\mu},\chi_{\mu,\phi}$.
-   
-The dispersive shift between the qubit and the readout is small due to the small charge matrix elements. The primary element which contributes to this quantity are the $03$ and $12$ charge matrix elements. See Fig.~\ref{fig:dispersive-shift}.
+For the parameters in Table~\ref{tab:circuit_params},  $\omega_q=\omega_{01}=-30 \ \mathrm{MHz}$ while $\chi_{\mu,\phi}$ is shown in Fig.~\ref{fig:dispersive-shift}. 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.45\textwidth]{Supp_Fig/dispersive_shift.pdf}
-    \caption{ The dispersive shift induced on the qubit due to the parasitic mode $\mu$. The three grounding configurations, parallel circuit ($H_1$), floating Fluxonium ($H_2$), and grounded fluxonium ($H_3$) shown in Figs.~\ref{fig:circuit_comp}(a-c) yield the same values.}
+    \caption{ {\bf The dispersive shift induced on the qubit due to the parasitic mode $\mu$.} The three grounding configurations, parallel circuit ($H_1$), floating Fluxonium ($H_2$), and grounded fluxonium ($H_3$) shown in Figs.~\ref{fig:circuit_comp}(a-c) yield the same values. Dashed lines in the same color code represent the dispersive shift ($\sim $) induced by the readout resonator on the qubit.}
     \label{fig:dispersive-shift}
 \end{figure}
 \subsection{Charging energies and Coupling Strengths}
-We summarize the expressions obtained for the variables used in the main text from App.~\ref{app:alt_circuits} and Ref.~\cite{viola2015collective} as follows. We will also analyze their variation with circuit parameters for all three circuits, as discussed in Sec.~\ref{sec:expressions}.
+Here, we summarize the expressions obtained for the variables used in the main text from App.~\ref{app:alt_circuits} and Ref.~\cite{viola2015collective}. We also calculate the variation of charging energies and coupling strengths with circuit parameters as discussed in Sec.~\ref{sec:expressions}. We use the uniform junction array approximation, namely that the capacitances down the array are uniform, with
+\begin{equation}
+C_{g_1}=...C_{g_{N-1}}=C_{g,j}, C_{g_0}=C_{g_N}=C_{g,p}.
+\end{equation}
+The differential capacitances are also uniform, with 
+\begin{equation}
+    C_{j_1}=...=C_{j_N}=C_{j},
+\end{equation}
+and the junction energies are as well, with
+\begin{equation}
+E_{J_1}=..=E_{J_N}=E_{J,j}.
+\end{equation} Also, we assume that the capacitances across the phase slip junction are identical, namely with $C_{c,1}=C_{c,2}=C_{c}$. 
 
 \begin{enumerate}
     \item Total ground capacitance.
@@ -838,16 +859,16 @@ We summarize the expressions obtained for the variables used in the main text fr
    
 \end{enumerate}
 
-Zooming into Fig.~\ref{fig:circuit_choice}(c) we can see in Fig.~\ref{fig:coupling-strength} that for all three circuits the lowest three even modes $\mu=2,4,6$ couple to the qubit stronger than the readout. Thus, we use the mode $\mu=2$ to analyze the effect of such parasitic modes on state transitions in a driven fluxonium circuit. 
+Zooming into Fig.~\ref{fig:circuit_choice}(c), we can see in Fig.~\ref{fig:coupling-strength} that for all three circuits the lowest three even modes $\mu=2,4,6$ couple to the qubit stronger than the readout. This observation is a backbone of our work; we find that because of this relatively large coupling strength, p-MIST rates may be significant in a broader quantum computing context. %Thus, we use the mode $\mu=2$ to analyze the effect of such parasitic modes on state transitions in a driven fluxonium circuit. 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Coupling-strength.pdf}
-    \caption{Absolute values of the coupling strengths, $g_{\phi r}/2\pi$ (qubit-readout), $g_{\phi\mu}/2\pi$ (qubit-parasitic), $g_{\mu r}/2\pi$ (parasitic-readout), for various circuits. Coupling to odd parasitic modes is zero due to the symmetries of the circuit~\cite{viola2015collective}. The parasitic modes $\mu\in\{2,4,6\}$ couple to the qubit more strongly than the readout.}
+    \caption{{\bf Absolute values of the coupling strengths.} $g_{\phi r}/2\pi$ (qubit-readout), $g_{\phi\mu}/2\pi$ (qubit-parasitic), $g_{\mu r}/2\pi$ (parasitic-readout), for various circuits. Coupling to odd parasitic modes is zero due to the symmetries of the circuit~\cite{viola2015collective}. The parasitic modes $\mu\in\{2,4,6\}$ couple to the qubit more strongly than the readout.}
     \label{fig:coupling-strength}
 \end{figure}
 
 \paragraph{Variations in Coupling Constant:}
-Below in Fig.~\ref{fig:circuit_comp} we show the dependence the dependence of charging energies and coupling constants on the number of junctions as well as the ground capacitance. 
+In Fig.~\ref{fig:circuit_comp}, we show the dependence the dependence of charging energies and coupling constants on the number of junctions as well as the ground capacitance. We find that the charging energies increase with decrease in capacitance $C_g$ and junction count $N$. The parasitic charging energy is crucial in deciding the parasitic mode frequency $\omega_{\mu}$. A higher parasitic charging frequency relative to the readout frequency can lower the chances of p-MIST effects. Thus, we prefer large $C_g$ and $N$. The coupling strengths as shown in Fig.~\ref{fig:coupling-Floquet} induce all MIST effects. In particular, the parasitic-qubit coupling $g_{\phi\mu}$ is responsible for p-MIST effects. The parasitic-readout coupling $g_{\mu r}$ on the other hand only increases population  of the parasitic modes and is directly proportional to $g_{\phi\mu}$. We find that for low $g_{\phi\mu}$ a low $C_g$ and high $N$ is required. Thus, to reduce p-MIST effects the best strategy is to target for low parasitic ground capacitance in the JJA and high junction count.
 
 
 \begin{figure}[htb]
@@ -859,97 +880,48 @@ Below in Fig.~\ref{fig:circuit_comp} we show the dependence the dependence of ch
 
 \section{Driven Fluxonium Circuit}\label{app:MIST}
 %Appendices for Sec 3
-Here, we will discuss the several analyses used in the driven fluxonium circuit including the semi-classical approximation and methods used in Sec.~\ref{sec:MIST} to compute the readout efficiency. We first start with the derivation of $H_{s.c.}$ in Eq.~\ref{eq:drive}. Then we discuss and justify the truncation as well as approximations used for Floquet simulations in Sec.~\ref{sec:MIST}
+Here, we discuss several analysis techniques. We begin with the derivation of $H_{s.c.}$ in Eq.~\ref{eq:drive}. Then we discuss and justify the Hilbert space truncation, as well as approximations used for Floquet simulations in Sec.~\ref{sec:MIST}.
 \subsection{Semi-classical Approximation}\label{app:semi-classical}
-\subsection{Approximations for Numerical Modelling}\label{app:numerics}
-We use the following three approximations to make the problem at hand simpler
+\subsection{Approximations for Numerical Modeling}\label{app:numerics}
+We use the following three approximations in our work.
 \begin{itemize}
-    \item Restriction to $\mu=2$. We restrict our analyses to the closest even parasitic mode that couples most strongly to the qubit and the readout as evident from Fig.~\ref{fig:coupling-strength}(d). This assumption helps us to lower bound the errors. Although it will be an interesting study to see if there are transitions caused due to higher modes that are more probable but in this work we aim at a proof of principle quantitative evidence of the presence of such transitions even with out modest assumptions.
+    \item \textbf{ Restriction to $\mu=2$}. We restrict our analyses to only include the lowest-frequency, even parasitic mode. This mode couples most strongly to the qubit and the readout as evident from Fig.~\ref{fig:coupling-strength}(d). This assumption reduces the Hilbert space size for feasible study. %Although it will be an interesting study to see if there are transitions caused due to higher modes that are more probable but in this work we aim at a proof of principle quantitative evidence of the presence of such transitions even with out modest assumptions.
 
-    \item Semi-classical drive approximation. This approximation treats the readout resonator classically as described in Refs.~\cite{xiao2023diagrammatic,dumas2024unified,cohen2023reminiscence,khezri2023measurement} reducing one mode from our numerical simulation. This assumption is essential since unlike the case of transmon or fluxonium without collective modes, with all the above approximation, a full quantum simulation of the problem will still require three modes.
+    \item \textbf{ Semi-classical drive approximation.}  We treat the readout resonator classically as described in Refs.~\cite{xiao2023diagrammatic,dumas2024unified,cohen2023reminiscence,khezri2023measurement}, eliminating the readout mode states from our numerical simulation. This approximation is again necessary to restrict the Hilbert space size to values feasible for numeric study. %This assumption is essential, since unlike the case of transmon or fluxonium without collective modes, with all the above approximation, a full quantum simulation of the problem will still require three modes.
 
-    \item Linear JJA Approximation. We assume that the parasitic modes behave as linear oscillators due to the large $E_{J_j}/E_{C_j}=200$ ratio. This approximation is explained in App.~\ref{app:Hamiltonian}. The nonlinear corrections to our results, while essential, is beyond the scope of this work. For details on how nonlinear corrections affect different circuit parameters in play we direct the readers to Ref.~\cite{viola2015collective}. Due to this assumption and the exponential decrease in charge matrix elements shown in Fig.~\ref{charge-matrix}, we can use a Hilbert size of $30\times 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. In the presence of nonlinearity, the Hilbert size would need to be much larger to capture the required effects. Note that for the conclusions drawn in this paper, we are only interested in the presence of p-MIST processes and do not claim to quantify how many such transitions can be present. Hence, with this truncation we only focus on excitations to $0-2$ levels in the parasitic mode and $0-20$ in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}.
-\end{itemize}
-
-\subsection{Stark Shift}\label{app:stark-shift}
-To observe a state transition the primary requirements are high charge matrix elements and low energy difference. The eigen-eniergies of the states in question are changed with an increase in the number of readout photons or, in this case, the drive strength. So, in this section, we compute the Stark shifted eigen-energies which can help in the prediction of an avoided crossing, given $\bar n_r, \omega_r$ and the charge matrix elements.  Let $\ket{i}$ be a state in the eigenspace of $H_{int}=H_\phi+H_{\mu=2}+g_{\phi\mu}\hat N_\phi\hat N_\mu$. Following derivations in App.~\ref{app:Hamiltonian} the ac Stark-shift in the energy of state $\ket{i}$ at an average number of readout photons $\bar n_r$ is given by,
+    \item \textbf{ Linear JJA Approximation.} We assume that the parasitic modes are linear, due to the large $E_{J_j}/E_{C_j} \sim 200$ ratio. Nonlinear corrections to our results is beyond the scope of this work. For details on how nonlinear corrections affect different circuit energies, we direct the readers to Ref.~\cite{viola2015collective}. 
+    \end{itemize}
+% ER PICKUP 
+Finally, we note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decreases roughly exponentially with increasing excited state number. With this observation, shown in Fig.~\ref{charge-matrix}, as well as our assumptions above, we truncate the Hilbert space dimensions to $30\otimes 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. In the presence of parasitic mode nonlinearity, the Hilbert size would need to be much larger to capture the required effects. Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of p-MIST processes, and do not claim to quantify how many such transitions can be present. Hence, with this truncation we only focus on excitations to $0-2$ levels in the parasitic mode and $0-20$ in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. For more details, see App.~\ref{app:Hamiltonian}. 
+\subsection{Floquet Simulations}
+\paragraph{Stark shift:}\label{app:stark-shift}
+To observe a state transition the primary requirements are high charge matrix elements and low energy difference. The eigen-eniergies of the states in question are changed with an increase in the number of readout photons or, in this case, the drive strength. In this section, we compute the Stark shifted eigen-energies which facilitates the prediction of an avoided crossing, given $\bar n_r, \omega_r$ and the charge matrix elements.  Let $\ket{i}$ be a state in the eigenspace of $H_{int}=H_\phi+H_{\mu=2}+g_{\phi\mu}\hat N_\phi\hat N_\mu$. Following derivations in App.~\ref{app:Hamiltonian}, the AC Stark-shift in the energy of state $\ket{i}$ at an average number of readout photons $\bar n_r$ is given by
 \begin{align}
     \chi_i(\bar n_r)=2\bar n_r\sum_{f}\omega_{if}\Big[\frac{g_{\phi r}|\braket{i|\hat N_\phi|f}|^2}{\omega_d^2-\omega_{if}^2}+\frac{g_{\mu r}|\braket{i|\hat N_\mu|f}|^2}{\omega_d^2-\omega_{if}^2}\Big]\label{eq:stark}
 \end{align}
- Here $\omega_{if}=E_f-E_i$ denote the energy difference in the eigen-energies of the $\ket{i}$. The impact due to the second term as expected is much smaller than the first term, and hence $g_{\phi r}$ primarily governs this Stark shift.
+ Here $\omega_{if}=E_f-E_i$ denote the energy difference in the eigen-energies of the state $\ket{i}$. The impact due to the second term is much smaller than the first term, and hence $g_{\phi r}$ primarily governs this Stark shift.
  \begin{figure}
      \centering
-     \includegraphics[width=\linewidth]{Figures/Stark-shift.pdf}
-     \caption{Stark shift in different qubit levels under observation for readout computed using Eq.~\ref{eq:stark}.}
+     \includegraphics[width=\linewidth]{Supp_Fig/Stark-shift.pdf}
+     \caption{Stark shift in different energy levels for readout computed using Eq.~\ref{eq:stark} for energy level $\ket{\tilde{0},\tilde{0}}$. We have verified that stark shift on the excited energy levels $\ket{\tilde{1},\tilde{0}}$ and $\ket{\tilde{2},\tilde{0}}$ are also upper bounded by $50$ MHz for the ranges considered in x- and y-axes in this plot.}
      \label{fig:stark-shift}
  \end{figure}
 
-\subsection{Transition Rates and Quasienergies}\label{app:Floquet-trans}
-Below we guess process responsible for each transition using first and second order Fermi's Golden Rule calculations. We have computed rates using Fermi's golden rule up to second order terms, as many of these transitions occur between a parity-conserving states, a forbidden first order transition. We compute these transitions involving up to $4$ readout photons, as suggested by energy conservation. 
-Under the same classical approximation, we can identify our parent Hamiltonian as $H_0$ and perturbation $V$ as follows,
-\begin{align}
-H_0/\hbar&=H_{\phi}+\omega_\mu \hat a_\mu^\dagger \hat a_\mu+g_{\phi,\mu}\hat N_\phi \hat N_\mu\\
-V&=2\sqrt{\bar n_r}(g_{r,\phi} \hat N_\phi+g_{r,\mu}\hat N_\mu)\sin{\omega_d t},
-\end{align}
-where$\mu$ is the density of states which will be a Dirac Delta function in the absence of loss while it will be Lorentzian in the presence of loss $\frac{\kappa}{2\pi}=50$. In units of $\hbar$ we have,
-\begin{align}
-    \Gamma_{i\rightarrow f}&=|\braket{f|H_1|i}|^2\mu(E_i-E_f)\quad\textrm{(first-order)}\\
-&=\sum_m\frac{|\braket{f|H_1|m}\braket{m|H_1|i}|^2}{|E_i-E_m-k\hbar\omega_d|^2}\mu(E_f-E_i-n\hbar \omega_d)\nonumber\\&\quad\quad\quad\textrm{(second-order)}
-\end{align}
-We use a Lorentzian density of states at a $\frac{\kappa}{2\pi}=1.5 \ \mathrm{KHz}$. Here $k<n$ is used to compute the detuning with the intermediate state involved in the transition. Note that increasing the width of the Lorentzian $\kappa$ resulting in an increase in the FG rates. Thus, here the decay rate does not yield any insights into the diabaticity at the transition, and hence the $\kappa$ variation here is not the same as the $\kappa$ variation in Sec.~\ref{sec:LZ}.
+\paragraph{Population exchange and quasienergies:}\label{app:Floquet-trans}
+Below we plot the population exchange and quasienergy probabilities for all transitions captured in Fig.~\ref{fig:Floquet} and Table~\ref{tab:p-MIST} for states $\ket{\tilde{0},\tilde{0}}$ (see Fig.~\ref{fig:Trans0}), $\ket{\tilde{1},\tilde{0}}$ (see Fig.~\ref{fig:Trans1}) and $\ket{\tilde{2},\tilde{0}}$ (see Fig.~\ref{fig:Trans2}).
 
-While these calculations include stark shifts in the energies of the states, we know that the first-order perturbative correction is not enough for some of the more higher states as seen in the comparisons of quasi-energies from Floquet simulations and predictions of Stark shifted transitions. Thus, the computation below is only based on a heuristic developed from this approximate calculation. All transitions are computed at $\bar n_r=50$. We note that the Fermi's golden rule calculations higher rates at the frequencies predicted by $g_{\phi\mu}=0$ case where the two frequencies are extremely different, for example, transitions $10$ and $14$. This happens since the Fermi's golden rule calculations are only approximately computing the Stark-shifted energies for states which are more hybridized due to the presence of coupling $g_{\phi\mu}$. This behaviour is evident in Figs.~\ref{fig:Trans0},~\ref{fig:Trans1},~\ref{fig:Trans2}. We will compare the considerable FG rates with well-separated quasi-energy gap at the avoided crossings  $\Delta_{ac}$ seen in these figures.
-
-For the case of $\ket{i}=\ket{\tilde{0},\tilde{0}}$ shown in Fig.~\ref{fig:Trans0}, we quote the rates for each process and state how many readout photons were involved, guess the possible intermediate state and whether it could be a first- or second-order process. This heuristic analysis is still interesting since it helps us understand the processes involved behind general MIST processes and p-MIST processes, identifying any unique feature or extremely high rates, if so. 
-\begin{itemize}
-    \item[1] This is a first order transition involving three readout photons $(3r)$ which yields a Fermi's golden rule rate of $40 \ \mathrm{KHz}$. 
-    \item[2] The first process is a second-order process which absorbs two photons $(2r)$ through an intermediate state with energy close to $E_i+\omega_r/2\pi$ at a rate of $4 \ \mathrm{MHz}$ where $\Delta_{ac}=4 \ \mathrm{MHz}$. The second process is a second-order which absorbs four photons $(4r)$ through an intermediate state close to $E_i+3\omega_r/2\pi$ at a rate of $22 \ \mathrm{KHz}$. 
-    \item[3] This is a Rabi transition involving a virtual state via a second-order two-photon process $(2r)$ at a rate of $0.028 KHz$. 
-    \item[4-5] The first transition is a second order two-photon process $2r$ with an FG rate of $1.26 \ \mathrm{KHz}$ at $\omega_r/2\pi=9.25 \ \mathrm{GHz}$. The second process is a Rabi transition at a rate of $10 \ \mathrm{KHz}$. 
-\end{itemize} 
-\begin{figure*}
-    \centering
-    \includegraphics[width=1.0\textwidth]{Figures/Trans0.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{0},\tilde{0}}$ state. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
-    \label{fig:Trans0}
-\end{figure*}
-Next, we look at the transition rates for the $\ket{\tilde{0},\tilde{1}}$, the state involved in the computation as well as readout in a low-frequency fluxonium, shown in Fig.~\ref{fig:Trans1}.
-\begin{itemize}
-    \item[6] This is a second order process involving four readout photons $(4r)$ at a rate of $21 \ \mathrm{KHz}$. The intermediate state involved is close to a frequency of $E_i+3\omega_r/2\pi$.
-    \item[7] This is a second order process involving two readout photons $(2r)$ with a transition rate of $45 \ \mathrm{KHz}$. The energy gap at the avoided crossing for this transition is less than $1 \ \mathrm{MHz}$. 
-    \item[8] This is a second order process involving four readout $4r$ photons occurring at a rate of $0.95 \ \mathrm{KHz}$, where the intermediate state energy is close to $E_i+3\omega_r/2\pi$. 
-    \item[9] This is a second order process involving two readout $2r$ photons occurring at a rate of $91 \ \mathrm{KHz}$. Fig.~\ref{fig:LZ} also confirms that the transition 9 occurs with a higher probability compared to transition 8. The energy gap at the avoided crossing is
-    \item[10] This is a first order process involving three readout photons $(3r)$ occurring at a rate of $2.2 \ \mathrm{KHz}$. 
-    \item[11] This is a second order process involving two readout photons $(2r)$ occurring at a rate of $52 \ \mathrm{KHz}$ where $\Delta_{ac}=1.1 \ \mathrm{MHz}$.
-\end{itemize}
-\begin{figure*}
-    \centering
-    \includegraphics[width=1.0\textwidth]{Figures/Trans1.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
-    \label{fig:Trans1}
-\end{figure*}
-Finally, we look at the transition rates for the $\ket{\tilde{0},\tilde{2}}$, the state involved in the readout of a low-frequency fluxonium, shown in Fig.~\ref{fig:Trans2}.
-\begin{itemize}
-    \item[12] This is a second order process involving two-readout photons $(2r)$ occurring at a rate of $16$ ($1$) MHz which is the same as $\Delta_{ac}$.
-    \item[13] This is a second order process involving two-readout photons $(2r)$ occurring at a rate of $2.2 \ \mathrm{KHz}$.
-    \item[14] The first process is first order while the second process is second order, both involving $(1r)$ and $(2r)$ readout photons. The rates of these transitions are $1.48 \ \mathrm{KHz}$ and $28 \ \mathrm{KHz}$, respectively. The energy gap at this avoided crossing is $4 \ \mathrm{MHz}$. Thus, this transition appears to be a either a higher order process or a weaker transition.
-\end{itemize}
-\begin{figure*}
-    \centering
-    \includegraphics[width=1.0\textwidth]{Figures/Trans2.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{2},\tilde{0}}$ state. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
-    \label{fig:Trans2}
-\end{figure*}
-\subsection{Landau-Zener Probabilities}\label{app:LZ}
-We compute the Landau-Zener probabilties in Sec.~\ref{sec:LZ} numerically using the quasienergies from the Floquet simulations and analytically using the Stark-shifted eigen-energies. In order to convert the Floquet simulation used with variation in $\bar n_r$ at a fixed time $t$ (ignoring the short scale fast dynamics over a time period), in this case, we will use a time-dependent case where $\bar n_r$ varies as $\bar n_r=50(1-e^{-\kappa t/2})^2$ to emulate change in readout photons from dissipation. The numerical calculations use the probability for Landau-Zener transitions given in~\cite{ikeda2022floquet} for an avoided crossing observed between states $i,f$ ,
+\paragraph{Landau-Zener probabilities:}\label{app:LZ}
+We compute the Landau-Zener probabilties in Sec.~\ref{sec:LZ} numerically using the quasienergies from the Floquet simulations, and analytically, using the Stark-shifted eigen-energies. In this case, we use a time-dependent readout photon number, where $\bar n_r$ varies as $\bar n_r=50(1-e^{-\kappa t/2})^2$, to emulate change in readout photons from dissipation. The numerical calculations use the probability for Landau-Zener transitions given in~\cite{ikeda2022floquet}, for an avoided crossing observed between states $\ket{i},\ket{f}$ of
 \begin{align}
     P_{LZ}&=\exp{\Big[-\frac{\pi \Delta_{ac}^2}{2v}\Big]},\\
-    \text{where } v&=\sqrt{2\Delta_{ac}\Big|\frac{d^2\epsilon_f}{d\sqrt{\bar{n}_r(t)}^2}\Big|_{t_{ac}}}\frac{d\sqrt{\bar{n}_r(t)}}{dt}|_{t_{ac}}\Big.
+    \text{where } v&=\sqrt{2\Delta_{ac}\Big|\frac{d^2\epsilon_f}{d\sqrt{\bar{n}_r(t)}^2}\Big|_{t_{ac}}}\frac{d\sqrt{\bar{n}_r(t)}}{dt}|_{t_{ac}}\Big .
 \end{align}
-Here, the variable $\epsilon_j$ is the numerically computed quasi-energy obtained from Floquet simulations, while $\Delta_{ac}$ refers to the quasi-energy difference at avoided crossing. Since both drive powers $\xi_{\phi/\mu,r}$ in Eq.~\ref{eq:drive_Ham} are proportional to $\sqrt{\bar n_r(t)}$ this method works well for this system where both modes are driven at the same drive frequency but different drive strengths.
+Here, the variable $\epsilon_j$ is the numerically-computed quasi-energy obtained from Floquet simulations, while $\Delta_{ac}$ refers to the quasi-energy difference at avoided crossing. 
 
 \section{Alternative Circuit}\label{app:alt_circuit1}
-\begin{table}[h]
+Here, we give the circuit parameters (Table~\ref{tab:circuit_params_Will}), coupling strengths (Fig.~\ref{fig:coupling-strength-Will}), charge matrix elements (Fig.~\ref{fig:charge-matrix-Will}) and state transition quasienergies shown in Figs.~\ref{fig:Floquet1} and Fig.~\ref{fig:011_Will}. 
+The simulations in this section use the Truncation for these simulations uses the same justification and assumptions as App.~\ref{app:numerics}. 
+\begin{table}[htb]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
     \hline
@@ -961,14 +933,58 @@ Here, the variable $\epsilon_j$ is the numerically computed quasi-energy obtaine
 \caption{Circuit parameters for Fig.~\ref{fig:Floquet1}(a) inspired by Ref.~\cite{ding_high-fidelity_2023}. All energies are given in GHz. Here $\Phi_0=h/2e$ denotes the magnetic flux quantum. The capacitive energies $E_{C'}=\frac{19.4}{{C'}(fF)} \ \mathrm{GHz}$ are computed from the corresponding capacitances $C'$.}
 \label{tab:circuit_params_Will}
 \end{table}
+
+The coupling strengths in this circuit are similar to those evaluated for our original circuit parameters, in Fig.~\ref{fig:coupling-strength}.
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=\linewidth]{Supp_Fig/Coupling-Will.pdf}
+    \caption{{\bf Absolute values of the coupling strengths.} $g_{\phi r}/2\pi$ (qubit-readout), $g_{\phi\mu}/2\pi$ (qubit-parasitic), $g_{\mu r}/2\pi$ (parasitic-readout), for various circuits. Coupling to odd parasitic modes is zero due to the symmetries of the circuit~\cite{viola2015collective}. The parasitic modes $\mu\in\{2,4,6\}$ couple to the qubit more strongly than the readout.}
+    \label{fig:coupling-strength-Will}
+\end{figure}
+
+We find in Fig.~\ref{fig:charge-matrix-Will} that the charge matrix elements of the second circuit analyzed in Sec.~\ref{Will_circuit} has a faster decrease with increasing excited state levels. This could be indicative of the fact that such a circuit will see lower MIST effects as observed in Fig.~\ref{fig:Floquet1}(c). 
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=\linewidth]{Supp_Fig/Charge-matrix-Will.pdf}
+    \caption{{\bf Charge Matrix 
+ Elements (squared) for all three circuits.} Note that in the equations below we substitute $\langle i|N_\phi|f\rangle=iN_{\phi,\mathrm{ZPF}}\langle i|(a-a^\dagger)|f\rangle$ where $N_{\phi,\mathrm{ZPF}}=\frac{1}{\sqrt{2}}\Big(E_{J,j}/8NE_C\Big)^{1/4}$. The charge matrix elements between odd-odd or even-even is zero (points not seen in log plot) due to the symmetry of cosine potential at $\varphi_\mathrm{ext}=0.5\Phi_0$, where $\Phi_0$ is the flux quantum. Here $H_1$ denotes the parallel circuit in Fig.~\ref{fig:circuit_choice}(a).}
+    \label{fig:charge-matrix-Will}
+\end{figure}
+
+Finally, we plot the p-MIST effect observed in the Floquet simulations for this alternative circuit in Fig.~\ref{fig:011_Will}. We perform a branch analysis of the initial state $\ket{\tilde{0}, \tilde{0}}$ and observe a transition to $\ket{\tilde{4}\tilde{1}}$, as described in the main text. 
+
  \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Floquet_Will_landscape.pdf}
-    \caption{Examples of p-MIST using transitions for the alternative circuit in Fig.~\ref{fig:Floquet1}(c) of Sec.~\ref{Will_circuit}. involving the states $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{0}}$, with maximum overlap to the un-hybridized state $\ket{k}_\phi\otimes\ket{n}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
+    \caption{{\bf Examples of p-MIST using transitions for the alternative circuit in Fig.~\ref{fig:Floquet1}(c) of Sec.~\ref{Will_circuit}.} involving the states $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{0}}$, with maximum overlap to the un-hybridized state $\ket{k}_\phi\otimes\ket{n}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
     \label{fig:011_Will}
 \end{figure}
-\sh{Landau Zener calculations, coupling strength and charge matrix elements}
+
+%Finally, we focus on the rate of this p-MIST process using Landau Zener calculations as follows in Fig.??.
+%\sh{Add Landau Zener plot}
+\begin{figure*}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans0.pdf}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{0},\tilde{0}}$ state. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \label{fig:Trans0}
+\end{figure*}
+\begin{figure*}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans1.pdf}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \label{fig:Trans1}
+\end{figure*}
+\begin{figure*}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans2.pdf}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{2},\tilde{0}}$ state. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \label{fig:Trans2}
+\end{figure*}
+\begin{itemize}
+    \item Units of g is an outstanding issue
+    \item p-MIST or PIST
+    \item some sub-figures have subheadings some do not
+\end{itemize}
 \clearpage
 \bibliography{refs.bib} 
 \end{document}
-
