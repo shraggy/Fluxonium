@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1731188302 "main.aux" "main.bbl" "main" 1731188304 0
-  "./mainNotes.bib" 1731188304 987 189b17814cb95c4db7dcc262ea0acb58 ""
+["bibtex main"] 1731188302 "main.aux" "main.bbl" "main" 1731189343 0
+  "./mainNotes.bib" 1731189342 987 189b17814cb95c4db7dcc262ea0acb58 ""
   "./refs.bib" 1731174716 42942 ed44213324781617aa3b6ece87a01899 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1731188304 57619 a07cce8c22aa80f1f708fb1393d27eda "pdflatex"
+  "main.aux" 1731189342 57619 a07cce8c22aa80f1f708fb1393d27eda "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731188303 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731188304 0
+["pdflatex"] 1731189341 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731189343 0
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731176235 130237 1e746cbfe1ce2a79ba9cbfcb5c963381 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -234,15 +234,15 @@
   "Supp_Fig/Circuit_comp.pdf" 1731188300 130437 bd0dde1c329723f10c781020805dd750 ""
   "Supp_Fig/Coupling-Will.pdf" 1731188300 101084 30aa3d07962299007c3e265e97fdd234 ""
   "Supp_Fig/Coupling-strength.pdf" 1731188300 84523 98f991244ae53478e9a3dc7e27c0d63c ""
-  "Supp_Fig/Floquet_Will_landscape.pdf" 1731174716 81260 0974fe71d2484f25dfd758db6d37c25b ""
+  "Supp_Fig/Floquet_Will_landscape.pdf" 1731189340 83454 167d9b5ce8aca7ec22c540ae5368fa42 ""
   "Supp_Fig/Stark-shift.pdf" 1731188300 167009 94e0f7c418ed8d5961b38f870333dc0f ""
   "Supp_Fig/Trans0.pdf" 1731174716 319575 58a6636ce389bc61b5c7d0415ee31076 ""
   "Supp_Fig/Trans1.pdf" 1731174716 275198 60206f3045e578bc18a8f6d43a776944 ""
   "Supp_Fig/Trans2.pdf" 1731174716 192955 d6a4534b629022aac6cc7fbc5313788c ""
   "Supp_Fig/dispersive_shift.pdf" 1731188300 94666 2c23ac0c570a01ba9fc575349e1a92ea ""
-  "main.aux" 1731188304 57619 a07cce8c22aa80f1f708fb1393d27eda "pdflatex"
+  "main.aux" 1731189342 57619 a07cce8c22aa80f1f708fb1393d27eda "pdflatex"
   "main.bbl" 1731188303 40718 81f38879ea43dfacf9fad6e10f93126a "bibtex main"
-  "main.out" 1731188304 5343 ac475776380e22960d6e51ad1554abe2 "pdflatex"
+  "main.out" 1731189342 5343 ac475776380e22960d6e51ad1554abe2 "pdflatex"
   "main.tex" 1731176235 130237 1e746cbfe1ce2a79ba9cbfcb5c963381 ""
   (generated)
   "main.aux"
