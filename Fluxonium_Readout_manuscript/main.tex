@@ -585,38 +585,46 @@ Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following te
     \mathcal{L}_{phase-slip}&=\frac{(\dot{\varphi}_N-\dot{\varphi}_0)^2}{16E_{C'}}-E_{J_p}\cos(\varphi_0-\varphi_{N}+\varphi_\mathrm{ext})\\
     \mathcal{L}_{JJA}&=\sum_{n=1}^N\frac{(\dot{\varphi}_n-\dot{\varphi}_{n-1})^2}{16E^{n}_{C_j}}-E^{n}_{J_j}\cos(\varphi_n-\varphi_{n-1})\\
     \mathcal{L}_{R}&=\frac{\dot{\varphi}_{-}^2}{16E_{{R}}}-\frac{\varphi_{-}^2}{16E_{R}}\\
-    \mathcal{L}_{g}&=\sum_{n=0}^N \frac{\dot{\varphi_n}^2}{16E^n_{g}}\label{eq:float-float}
+    \mathcal{L}_{g}&=\sum_{i=0}^{N} \frac{\dot{\varphi_n}^2}{16E_{g_i}}\label{eq:float-float}
   \end{align}
 The change in this Lagrangian is primarily due to the fewer coupling capacitances such that,
 \begin{align}
-\mathcal{L}_{c}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi_0})^2}{16E_{c'}}=\frac{\dot{\varphi}^2_0}{16E^{c'}}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_{c'}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{c'}}
+\mathcal{L}_{c}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi_0})^2}{16E_{c'}}=\frac{\dot{\varphi}^2_0}{16E_{c'}}+\frac{\dot{\varphi}^2_{-1}}{16E_{c'}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{c'}}
 \end{align}
-Using the basis of (gauge-invariant) phase difference, 
+Now, we define the guage-invariant phase difference quadratures 
 \begin{align}
-\varphi_m-\varphi_0&=\sum_{l=1}^m\theta_l\\ \sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z, \quad z\in\mathbb{Z}\quad\text{``fluxoid quantization"}\\
-\varphi_\mathrm{ext}&=\pi,    
+\varphi_m-\varphi_0=\sum_{l=1}^m\theta_l
 \end{align}
-\paragraph{Lagrangian} 
-From Eq.~\ref{eq:float-float}, we find that, 
+and use the fluxoid quantization with an external flux $\varphi_{\mathrm{ext}}=\pi$.
 \begin{align}
-    \dot{\varphi}_0&=E_t\Big(\frac{\dot{\varphi}_{-1}}{E_c^1}-\sum_{n=1}^N\sum_{m=n}^N\frac{\dot{\theta}_n}{E^m_g}\Big)\\&\quad\text{where}\quad E_t=\Big(\frac{1}{E_c^1}+\sum_{n=0}^N\frac{1}{E^n_g}\Big)^{-1}\nonumber\\
-\therefore     \mathcal{L}_g+\mathcal{L}_c&=\frac{\dot{\varphi}_{-1}eV}{8E^3_c}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E^1_c}\Big(1-\frac{E_t}{E_c^1}\Big)+\frac{1}{E^3_c}\Big)\nonumber\\&\quad+\sum_{n=1}^N\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_c^1}\Big(\sum_{i=n}^N\frac{E_t}{8E^i_g}\Big)\nonumber\\&\quad+\sum_{m=1}^N\sum_{n=1}^N\dot{\theta}_m\dot{\theta}_{n}\Big( \sum_{j=\text{max}\{m,n\}}^N\frac{1}{16E_g^j}\Big)\nonumber\\&\quad\quad\Big(1-\sum_{i=\text{min}\{m,n\}}^N\frac{E_t}{E_g^i}\Big)
+\\ \sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z,
+\end{align}
+where $z\in\mathbb{Z}$ is an arbitrary integer. Writing the lagrangian in this new basis yields the expression,
+\begin{align}
+    \dot{\varphi}_0=E_t\Big(\frac{\dot{\varphi}_{-1}}{E_{c'}}-\sum_{n=1}^N\sum_{m=n}^N\frac{\dot{\theta}_n}{E_{g_m}}\Big)
+\end{align}
+where $E_t=\Big(\frac{1}{E_{c'}}+\sum_{n=0}^N\frac{1}{E_{g_n}}\Big)^{-1}$ is the total capacitive energy of the circuit due to the parasitic and coupling capacitances.
+
+\begin{align}
+\therefore     \mathcal{L}_g+\mathcal{L}_c&=\frac{\dot{\varphi}^2_{-1}}{16E_{c'}}\Big(1-\frac{E_t}{E_{c'}}\Big)+\sum_{n=1}^N\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_{c'}}\Big(\sum_{i=n}^N\frac{E_t}{8E_{g_i}}\Big)\nonumber\\&\quad+\sum_{m=1}^N\sum_{n=1}^N\dot{\theta}_m\dot{\theta}_{n}\Big( \sum_{j=\text{max}\{m,n\}}^N\frac{1}{16E_{g_j}}\Big)\nonumber\\&\quad\quad
+\times\Big(1-\sum_{i=\text{min}\{m,n\}}^N\frac{E_t}{E_g^i}\Big)
 \end{align}
 We simplify the Lagrangian $\mathcal{L}_g+\mathcal{L}_c$ as
 \begin{align}
     &=\frac{\dot{\varphi}_{-1}eV}{8E_c}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)+\frac{1}{E_c}\Big)\nonumber\\&+\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_c}\Big)(N-n+1)\frac{E_t}{8E_g}+\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}}\nonumber\\
 &+\sum_{m=1}^N\sum_{n=1}^N\dot{\theta}_m\dot{\theta}_{n} \frac{(N-\text{max}\{m,n\}+1)\text{min}\{m,n\}E_t}{16E_g^2}
 \end{align}
-This expansion shows that the parasitic couplings depend on the ground capacitance due to terms proportional to $\dot{\theta}_m\dot{\theta}_n$, while the coupling capacitance contributes only via  the readout resonator mode. Now, we will assume an ordered array and symmetric circuit:
+\paragraph{Assumptions.} 
+The first line show that the contribution from the coupling capacitance comes only via the readout resonator mode. The second and third lines, on the other hand, show the terms which contribute to parasitic couplings via the the ground capacitance due to terms proportional to $\dot{\theta}_m\dot{\theta}_n$. Now, we will assume an ordered array such that
 \begin{align*}
     C_{g_1}=...C_{g_{N-1}}=C_{g,j} \\
     C_{g_0}=C_{g_N}=C_{g,p} \\
     E_{J_1}=...=E_{J_N}=E_{J,j} \\
-    C_{j_1}=...=C_{j_N}=C_{j} \\
-    C_{c,1}=C_{c,2}=C_{c}.
+    C_{j_1}=...=C_{j_N}=C_{j} 
 \end{align*}
-\paragraph{Collective Modes} 
-We transform to a new set of variables $\{\phi,\zeta_1,...,\zeta_{N-1}\}$, defined as the ``difference modes" $\mu$ and their amplitudes $\xi_\mu$. They are given by
+\sh{Need to change \xi to \mu and \mu to \zeta.}
+\paragraph{Collective Modes.} 
+Now, we will define the collective modes for the fluxonium circuit, $\{\phi,\xi_1,...,\xi_{N-1}\}$ such that 
 \begin{align}
     \theta_m=\phi/N+\sum_\mu W_{\mu m}\xi_\mu,
 \end{align}
@@ -624,11 +632,13 @@ and inversely,
 \begin{align}
     \phi&=\sum_{m}\theta_m,\quad \xi_\mu=\sum_m W_{\mu m}\theta_m.
 \end{align}
-Here, $\phi$ is the superinductance mode where all array junction amplitudes are identical. The difference modes $\xi_\mu$ are defined such that the amplitude sum for all difference modes vanishes. (See figures in~\cite{ferguson2013symmetries} for more details). The matrix $W$ is semi-orthogonal, with dimensions $(N-1)\times N$, and is given by $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$. Its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective}
+Here, $\phi$ is called the superinductance mode or the \emph{qubit} mode while $\mu$ are called the parasitic modes. (See figures in~\cite{ferguson2013symmetries} for more details). The matrix $W$ is semi-orthogonal, with dimensions $(N-1)\times N$, and is given by $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$. Its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective}
 \begin{align}
     W_{\mu m}=\sqrt{\frac{2}{N}}\cos{\frac{\pi\mu(m-1/2)}{N}}.
 \end{align}
 The choice of these new variables highlights the collective modes describing the low-energy physics as illustrated in~\cite{catelani2011relaxation,koch2009charging,manucharyan2009fluxonium}. Under this new set of variables which define the normal modes of oscillations in $\theta_m$, we have that the lagrangian $\mathcal{L} =\mathcal{T}-\mathcal{U}$ is
+
+and rewrite the Lagrangian,
 \begin{align}
 \mathcal{T}&=\frac{\dot{\varphi}_{-1}eV}{8E_c^3}-\frac{\dot{\varphi}_{-2}eV}{8E_c^4}-E_t\frac{\dot{\varphi}_{-1}\dot{\varphi}_{-2}}{8E_c^2}\nonumber\\
     &+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)+\frac{1}{E_c^3}\Big)\\&+\frac{\dot{\varphi}^2_{-2}}{16}\Big(\frac{1}{E_c^4}+\frac{1}{E_c}\Big(1-\frac{E_t}{E_c}\Big)\Big)\nonumber\\
