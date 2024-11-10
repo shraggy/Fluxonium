@@ -535,7 +535,7 @@ We have presented a first analysis toward understanding the role of parasitic mo
 \begin{figure*}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Circuit_choice.pdf}
-    \caption{(a-c) Alternative readout circuits. (a) Parallel circuit ($H_1$), (b) Floating fluxonium ($H_2$), (c) Grounded fluxonium ($H_3$). Alternatives (b) and (c) require a single-point connection to the readout line $V$, unlike the parallel circuit in (a). We maintain the values for all circuit variables the same as used for the case of the parallel circuit in Fig.~\ref{fig:meas_circuit}. (d) Absolute values of the coefficients of coupling terms in the Hamiltonian (in GHz). We can see that the parasitic modes couple to the qubit stronger than the qubit couples to the readout. The parasitic mode coupling to the readout is very slightly weaker in $H_3$ compared to $H_1$, $H_2$. }
+    \caption{(a-c) Alternative readout circuits. (a) Parallel circuit ($H_1$), (b) Floating fluxonium ($H_2$), (c) Grounded fluxonium ($H_3$). Alternatives (b) and (c) require a single-point connection to the readout line $V$, unlike the parallel circuit in (a). We maintain the values for all circuit variables the same as used for the case of the parallel circuit in Fig.~\ref{fig:meas_circuit}. (d) Absolute values of the coefficients of coupling terms in the Hamiltonian (in GHz). We can see that the parasitic modes couple to the qubit stronger than the qubit couples to the readout. The parasitic mode coupling to the readout is very slightly weaker in $H_3$ compared to $H_1$, $H_2$. Need to add the flux variables in Figs.(a,b,c)}
     \label{fig:circuit_choice}
 \end{figure*}
 
@@ -576,6 +576,7 @@ The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text 
 We will now derive the Hamiltonians for the circuits in Figs.~\ref{fig:circuit_choice}(b,c) to be used in the next section for comparison. To do this, we follow the recipe given in Ref.~\cite{viola2015collective} for the parallel circuit shown in Fig.~\ref{fig:circuit_choice}(a) or Fig.~\ref{fig:meas_circuit}(a). Importantly, we will show that the symmetry in the parallel circuit which prevents any coupling with the lowest-frequency parasitic mode ($\mu=1$) is preserved in all three circuits, abesence of which would have changed the Floquet landscape acorss the three circuits significantly. 
 
 The Lagrangian corresponding to these circuits is a combination of the Lagrangians $\mathcal{L}_g$ from the phase-slip junction (comprising of the junction with $E_J/E_C\sim 5-8$ and the capacitor $C$), $\mathcal{L}_{g}$ from the ground capacitances, $\mathcal{L}_{R}$ from the readout resonator and $\mathcal{L}_c$ due to the coupling capacitances $C_c$ and the external voltage $V$. We mark the flux points across JJA using $\varphi_0$ and $\varphi_{N}$ in Figs.~\ref{fig:circuit_choice}(b,c). We start with an inhomogenous junction array and will use the assumption of ordered junction later in the derivation. The flux variables and voltage variables in the circuit are denoted by $\varphi_n=2\pi\Phi_n/\Phi_0$ and $\dot{\varphi}_n=2\pi V_n/\Phi_0$, respectively, where $\Phi_0=h/2e$ is the superconducting flux quantum. We will use subscripts $j, p$ for JJA and the phase-slip junction coordinates, respectively.
+
 \subsection{Floating Fluxonium Circuit}
 Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following terms will remain the same in the case of floating fluxonium circuit:
 %, given the diagrams in the following sections.
@@ -586,12 +587,11 @@ Transforming the Lagrangian in Ref.~\cite{viola2015collective}, the following te
     \mathcal{L}_{R}&=\frac{\dot{\varphi}_{-}^2}{16E_{{R}}}-\frac{\varphi_{-}^2}{16E_{R}}\\
     \mathcal{L}_{g}&=\sum_{n=0}^N \frac{\dot{\varphi_n}^2}{16E^n_{g}}\label{eq:float-float}
   \end{align}
-  Here, we will not assume that the capacitances to transmission line are infinite or that ground capacitance for the phase-slip junction and JJA. We will leave the value of $\varphi_{\pm}$ a variable in this case unlike the parallel circuit study performed in Ref.~\cite{viola2015collective}.
-  
+The change in this Lagrangian is primarily due to the fewer coupling capacitances such that,
 \begin{align}
-\mathcal{L}_{c}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi_0})^2}{16E^1_{c}}+\frac{(\dot{\varphi}_{-1}-eV)^2}{16E^3_{c}}+\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}},\\ &=\frac{\dot{\varphi}^2_0}{16E^1_c}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E^1_c}+\frac{1}{E^3_c}\Big)+\frac{\dot{\varphi}^2_{-2}}{16E^4_c}\nonumber\\&\quad-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E^1_c}-\frac{\dot{\varphi}_{-1}eV}{8E^3_c}+\mathcal{O}(V^2)
+\mathcal{L}_{c}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi_0})^2}{16E_{c'}}=\frac{\dot{\varphi}^2_0}{16E^{c'}}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_{c'}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{c'}}
 \end{align}
-Here, $E_c^4$ \ER{can we change the notation to be $E_c^{(4)}$ instead? This looks like "EC to the fourth power".} is the capacitance via which the readout resonator is grounded. Using the basis of (gauge-invariant) phase difference, 
+Using the basis of (gauge-invariant) phase difference, 
 \begin{align}
 \varphi_m-\varphi_0&=\sum_{l=1}^m\theta_l\\ \sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z, \quad z\in\mathbb{Z}\quad\text{``fluxoid quantization"}\\
 \varphi_\mathrm{ext}&=\pi,    
