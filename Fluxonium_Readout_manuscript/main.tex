@@ -80,7 +80,7 @@ California Institute of Technology, Pasadena, CA 91125}
 \date{\today}%remove this eventually
 
 \begin{abstract}
-Dispersive readout of superconducting qubits is often limited by non-ideal backaction effects in which the readout drive induces unwanted transitions between qubit levels.  While there is a growing understanding of such effects in transmon qubits, the case of highly nonlinear fluxonium qubits is more complex.  We theoretically analyze measurement-induced state transitions (MIST) during the dispersive readout of a fluxonium qubit, focusing on a new mechanism: the possibility of transitions where the drive simultaneously excites an internal mode of the Josephson junction array in the fluxonium circuit, while also causing a qubit transition. Using an adiabatic Floquet approach, we show that these new kinds of MIST processes are relevant \singh{at particular values of} realistic circuit parameters and relatively low readout drive powers.  As we show, they can also contribute to excess qubit dephasing even after a measurement is complete.  \singh{In a study of mitigation strategies,} we extend our findings across various fluxonium circuits, analyzing the dependency of qubit-parasitic mode coupling on different circuit parameters. Our results underscore the impact parasitic modes can have on the readout fidelity and the coherence of highly anharmonic superconducting circuits, \singh{if the circuit architect does not carefully investigate them during design.}   
+Dispersive readout of superconducting qubits is often limited by non-ideal backaction effects in which the readout drive induces unwanted transitions between qubit levels.  While there is a growing understanding of such effects in transmon qubits, the case of highly nonlinear fluxonium qubits is more complex.  We theoretically analyze measurement-induced state transitions (MIST) during the dispersive readout of a fluxonium qubit, focusing on a new mechanism: the possibility of transitions where the drive simultaneously excites an internal mode of the Josephson junction array in the fluxonium circuit, while also causing a qubit transition. Using an adiabatic Floquet approach, we show that these new kinds of MIST processes are relevant \singh{at particular values of} realistic circuit parameters and relatively low readout drive powers.  As we show, they can also contribute to excess qubit dephasing even after a measurement is complete.  \singh{In a study of mitigation strategies, we highlight readout frequency choices which avoid p-MIST, and analyze the dependency of qubit-parasitic mode coupling on different circuit parameters}. Our results underscore the impact of parasitic modes on qubit performance in highly anharmonic superconducting circuits, \singh{if they are not carefully treated during circuit design.} % circuit architect does not take strongly-coupled parasitic modes into consideration while choosing the readout resonator frequency during design.}   
 \end{abstract}
 
 \maketitle
@@ -294,13 +294,18 @@ corresponding to a single photon increase in the readout resonator. We then iden
 \begin{align}
 \ket{i_{\bar n_r=k}}:\max_{m}|\braket{i_{\bar n_r=k-1}|{m}_{\bar n_r=k}}|^2.\label{eq:track_Floquet}   
 \end{align}
-We thus obtain a set of states $\ket{i}_0,\ket{i}_1,\ket{i}_2,...$ that we refer to as a branch.  At a heuristic level, this trajectory of states would describe the adiabatic evolution of the system as the drive power is increased. The drive power in this trajectory is increased to emulate a single photon increase in the readout resonator i.e. $\delta \bar n_r=1$. This corresponds to a constant increase in drive powers (see Eq.~\ref{eq:drive}) $\delta |\xi_{\mu (\phi),r}|^2=4g_{\mu (\phi),r}^2$. \sh{We make this choice to emulate the more quantum approach to a branch analysis captured in Ref.~\cite{shillito2022dynamics,dumas2024unified}.  This aspect is studied further for one of the transitions in Sec.~\ref{sec:LZ}. Our choice is different from the driven transmon analysis in Refs.~\cite{dumas2024unified} which keeps the drive amplitude $\delta 
-|{\xi}_{\phi,r}|$ of the order of readout resonator's decay rate.}
+We thus obtain a set of states $\ket{i}_0,\ket{i}_1,\ket{i}_2,...$ that we refer to as a branch.  At a heuristic level, this trajectory of states would describe the adiabatic evolution of the system as the drive power is increased. The drive power in this trajectory is increased to emulate a single photon increase in the readout resonator i.e. $\delta \bar n_r=1$. This corresponds to a constant increase in drive powers (see Eq.~\ref{eq:drive}) $\delta |\xi_{\mu (\phi),r}|^2=4g_{\mu (\phi),r}^2$. \sh{We make this choice to emulate the more quantum approach to a branch analysis captured in Ref.~\cite{shillito2022dynamics,dumas2024unified}. The probability for this ring up is studied further for one of the transitions in Sec.~\ref{sec:LZ}. We emphasize that our analysis shows the impact of p-MIST transitions and does not focus on identifying \emph{all} transitions that will be caused due to the $N$ parasitic modes in the fluxonium circuit.}
 
 
-In Eq.~\ref{eq:track_Floquet}, the overlaps between Floquet eigenstates are all computed at a fixed time within each drive period (i.e. at times $t_k = k \times 2 \pi / \omega_d$).  We have verified that our method yields the same results as Ref.~\cite{dumas2024unified,cohen2023reminiscence} (where instead a time-averaged overlap was used). \sh{Thus, we do not see any appreciable difference from not using a time-averaged overlap in Ref.~\cite{dumas2024unified} but in less time.}
+In Eq.~\ref{eq:track_Floquet}, the overlaps between Floquet eigenstates are all computed at a fixed time within each drive period (i.e. at times $t_k = k \times 2 \pi / \omega_d$).  We have verified that our method yields the same results as Ref.~\cite{dumas2024unified} (where instead a time-averaged overlap was used). \sh{Thus, we do not see any appreciable difference from not using a time-averaged overlap in Ref.~\cite{dumas2024unified} but in less time.}
 
-\sh{We make these choices to observe population change in the fluxonium potential, i.e. state transitions, as we ring up the drive powers. Note that, the slower or more adiabatic the ring-up of the drive, more are the chances to observation a state transition. To avoid fairly weak transitions we ring-up the drive using discrete steps of $\delta \bar n_r=1$ which corresponds to a linear increase in the drive powers. Thus, our simulations can also be used to understand the state transitions due to a linearly increasing drive on the fluxonium circuit.
+\sh{We make these choices to observe population change in the fluxonium potential, i.e. state transitions, as we ring up the drive powers. Note that, the slower or more adiabatic the ring-up of the drive, more are the chances to observe a state transition. To avoid fairly weak transitions we ring-up the drive using discrete steps of $\delta \bar n_r=1$ which corresponds to a linear increase in the drive powers. This choice uses a drive strength increment size $\delta 
+|{\xi}_{\phi (
+mu
+),r}|= 2g_{
+\phi(\mu),r} 
+$, different from the driven transmon analysis in Refs.~\cite{dumas2024unified} where $\delta 
+|{\xi}_{\phi,r}|\sim \kappa_r$, the readout resonator's decay rate. Thus, our simulations can also be used to understand the impact of parasitic state transitions due to a linearly increasing drive on the fluxonium circuit.
 }
 
 
@@ -369,7 +374,7 @@ We focus on the p-MIST transition shown in Fig.~\ref{fig:011}(b), which correspo
 \begin{align}
     \bar n_r(t)&:\bar n_r(1-e^{-\kappa_r t/2})^2.\label{eq:LZ-n}
 \end{align}
-This corresponds to the ring-up of a resonantly driven cavity with a damping rate $\kappa_r$.  
+This corresponds to the ring-up of a resonantly driven cavity with a damping rate $\kappa_r$~\cite{khezri2023measurement,dumas2024unified,cohen2023reminiscence}.  
 
 To calculate transition probabilities in this full-time-dependent simulation, we start the system in the dressed state 
 $\ket{\tilde{1},\tilde{0}}$, evolve under $\hat{H}_{s.c.}(t)$ from a time $t=0$ to $t = 10 / \kappa_r$, and then compute the overlap of this state with the Floquet branches of the two states $\ket{i}=\ket{\tilde{1},\tilde{0}}$ and $\ket{f}=\ket{\tilde{2},\tilde{1}}$ associated with our predicted transition.  We then repeat this calculation for different choices of $\kappa_r$, examining how the transition probabilities vary, with the results shown in Fig.~\ref{fig:LZ}. 
@@ -437,7 +442,8 @@ By observation, suppressing the parasitic capacitance to ground near the junctio
 \begin{align}
     \tilde{E}^e_{c,\mu}\approx 4E_{g,j}s_\mu^2, \quad \tilde{E}^\phi_c\propto \frac{1}{N^2}\implies g_{\phi\mu}\propto \frac{1}{N^{5/2}}.\label{eq:dep1}
 \end{align}
-These dependencies are plotted in Fig.~\ref{fig:circuit_comp} of App.~\ref{app:coupling}. We find that the coupling strength \textit{decreases} with the number of junctions $N$. Note that changing $N$ changes the target inductance of the qubit. When increasing $N$, we need to proportionally increase the energies $E_{J_j}$ to fix the inductive energy of the qubit ($E_L=E_{J_j}/N$). This increases the ratio $E_{J_j}/E_{C_j}$ of the junctions in the array. However, if we would like to keep this ratio constant, we should proportionally increase $E_{C_j}$. This further supports the large $N$ approximation $\tilde{E}_{c,\mu}^e\approx 4E_{g,j}s_\mu^2$ (see Eq.~\ref{eq:parasitic}). Thus, the number of junctions $N$ can be optimized to decrease $g_{\phi\mu}$ while keeping $E_L$ constant. 
+These dependencies are plotted in Fig.~\ref{fig:circuit_comp} of App.~\ref{app:coupling}. We find that the coupling strength \textit{decreases} with the number of junctions $N$. Note that changing $N$ changes the target inductance of the qubit. When increasing $N$, we need to proportionally increase the energies $E_{J_j}$ to fix the inductive energy of the qubit ($E_L=E_{J_j}/N$). However, $E_{J_j}$ is constrained within a typical fabrication process window, capping the maximum $E_{L}$.
+This further supports the large $N$ approximation $\tilde{E}_{c,\mu}^e\approx 4E_{g,j}s_\mu^2$ (see Eq.~\ref{eq:parasitic}). Thus, the number of junctions $N$ can be optimized to decrease $g_{\phi\mu}$ while keeping $E_L$ constant. 
 
 Note that, increasing $N$ while keeping $E_L, E_{g,j}$ constant decreases the parasitic charging energy (see Fig.~\ref{fig:circuit_comp} in App.~\ref{app:coupling}). For large $N$ and small $\mu$ limit,
 \begin{align}
@@ -472,7 +478,7 @@ Intuitively, many readout photons are required to bridge a large gap between the
 
 \paragraph{Drive Frequency ($\omega_d$):} If  $\omega_d\gg \omega_{\mu=N-1}$, a dominating transition mechanism for p-MIST would correspond to an excitation of a strongly coupled, low-frequency parasitic mode (i.e., $\mu=\{2,4,6\}$) to a large photon number $y$, leaving just enough energy to produce excitation to some state $f$ in the fluxonium subspace of significant charge matrix elements (see Fig.~\ref{charge-matrix}). However such large excitations in the parasitic modes would occur with lower probability, because of the high photon number $y$ involved in the transition. A full study of this case requires a large Hilbert space and is beyond the scope of this work. 
 
-For low-frequency readout ($\omega_d \ll \omega_{\mu = 2}$), on the other hand, a large readout photon number $x$ would be needed while having a similar impact. We give the Floquet figure corresponding to a low-frequency readout in Fig.~\ref{fig:Flo_low} which shows higher parasitic mode populations compared to our previous case in Fig.~\ref{fig:Floquet}. The increase in the p-MIST can be explained by examining the resonances when $\omega_d/2\pi \approx 6 \ \mathrm{GHz}$, which approximately corresponds to the fluxonium plasma frequency $\omega_{12}/2\pi$ and half the parasitic mode $\mu=2$ frequency. This logic already indicates that $5.5-6 \ \mathrm{GHz}$ would be a bad range of frequencies for the current choice of parameters. Formal transition probability calculations, same as Sec.~\ref{sec:LZ}, will be required to predict the how detrimental these effects can be. However, the energy conservation indicates that in spite of the increase in the number of p-MIST effects, such transitions will be higher-order processes (large $x$) which will not take place unless $\bar n_r$ is extremely large.
+For low-frequency readout ($\omega_d \ll \omega_{\mu = 2}$), on the other hand, a large readout photon number $x$ would be needed while having a similar impact. We give the Floquet figure corresponding to a low-frequency readout in Fig.~\ref{fig:Flo_low} which shows higher parasitic mode populations compared to our previous case in Fig.~\ref{fig:Floquet}. The p-MIST effects can be explained by examining the increased density of resonances when $\omega_d/2\pi \approx 6 \ \mathrm{GHz}$. Note that this frequency is approximately the fluxonium plasma frequency $\omega_{12}/2\pi$ and is also half the parasitic mode $\mu=2$ frequency. This introduces multiple frequency collisions, which cause the various transitions observed in the figure. This logic already indicates that $5.5-6 \ \mathrm{GHz}$ would be a bad range of frequencies for the current choice of parameters. Formal transition probability calculations, same as Sec.~\ref{sec:LZ}, will be required to predict the how detrimental these effects can be. However, the energy conservation indicates that in spite of the increase in the number of p-MIST effects, such transitions will be higher-order processes (large $x$) which will not take place unless $\bar n_r$ is extremely large.
 
 
 Further lower $\omega_d$ for readout is not favorable due to thermal heating of the readout resonator leading to photon-shot-noise induced dephasing of the qubit, and hence not analyzed in this work.  
@@ -820,7 +826,7 @@ E_{J_1}=..=E_{J_N}=E_{J,j}.
 \begin{enumerate}
     \item Total ground capacitance.
     \begin{enumerate}
-        \item $H_1: E_t=(\frac{N-1}{E_g}+\frac{2}{E_{g1}}+\frac{2}{E_c})^{-1}=0.57 $GHz
+        \item $H_1: E_t=(\frac{N-1}{E_g}+\frac{2}{E_{g1}}+\frac{2}{E_c})^{-1}=0.57 $ GHz
     \item $H_2: E_t=(\frac{N-1}{E_{g,j}}+\frac{2}{E_{g_p}}+\frac{1}{E_c})^{-1}$
     \item $H_3: E_t=(\frac{N-1}{E_{g,j}}+\frac{1}{E_{g_p}}+\frac{1}{E_c})^{-1}$
     \end{enumerate}
@@ -891,8 +897,10 @@ We use the following three approximations in our work.
 
     \item \textbf{ Linear JJA Approximation.} We assume that the parasitic modes are linear, due to the large $E_{J_j}/E_{C_j} \sim 200$ ratio. Nonlinear corrections to our results is beyond the scope of this work. For details on how nonlinear corrections affect different circuit energies, we direct the readers to Ref.~\cite{viola2015collective}. 
     \end{itemize}
-% ER PICKUP 
-Finally, we note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decreases roughly exponentially with increasing excited state number. With this observation, shown in Fig.~\ref{charge-matrix}, as well as our assumptions above, we truncate the Hilbert space dimensions to $30\otimes 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. In the presence of parasitic mode nonlinearity, the Hilbert size would need to be much larger to capture the required effects. Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of p-MIST processes, and do not claim to quantify how many such transitions can be present. Hence, with this truncation we only focus on excitations to $0-2$ levels in the parasitic mode and $0-20$ in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. For more details, see App.~\ref{app:Hamiltonian}. 
+Finally, we note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decreases roughly exponentially with increasing excited state number. With this observation, shown in Fig.~\ref{charge-matrix}, as well as our assumptions above, we truncate the Hilbert space dimensions to $30\otimes 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. In the presence of parasitic mode nonlinearity, the Hilbert size would need to be much larger to capture the required effects. Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of p-MIST processes, and do not claim to quantify how many such transitions can be present. Hence, with this truncation we only examine the excitations to $0-2$ levels in the parasitic mode and $0-20$ in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. For more details, see App.~\ref{app:Hamiltonian}.
+
+\sh{Include the 30 X 10 as well as 20 X 3}
+
 \subsection{Floquet Simulations}
 \paragraph{Stark shift:}\label{app:stark-shift}
 To observe a state transition the primary requirements are high charge matrix elements and low energy difference. The eigen-eniergies of the states in question are changed with an increase in the number of readout photons or, in this case, the drive strength. In this section, we compute the Stark shifted eigen-energies which facilitates the prediction of an avoided crossing, given $\bar n_r, \omega_r$ and the charge matrix elements.  Let $\ket{i}$ be a state in the eigenspace of $H_{int}=H_\phi+H_{\mu=2}+g_{\phi\mu}\hat N_\phi\hat N_\mu$. Following derivations in App.~\ref{app:Hamiltonian}, the AC Stark-shift in the energy of state $\ket{i}$ at an average number of readout photons $\bar n_r$ is given by
@@ -920,7 +928,7 @@ Here, the variable $\epsilon_j$ is the numerically-computed quasi-energy obtaine
 
 \section{Alternative Circuit}\label{app:alt_circuit1}
 Here, we give the circuit parameters (Table~\ref{tab:circuit_params_Will}), coupling strengths (Fig.~\ref{fig:coupling-strength-Will}), charge matrix elements (Fig.~\ref{fig:charge-matrix-Will}) and state transition quasienergies shown in Figs.~\ref{fig:Floquet1} and Fig.~\ref{fig:011_Will}. 
-The simulations in this section use the Truncation for these simulations uses the same justification and assumptions as App.~\ref{app:numerics}. 
+%The truncation for these simulations uses the same justification and assumptions as App.~\ref{app:numerics}. 
 \begin{table}[htb]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
@@ -956,7 +964,7 @@ Finally, we plot the p-MIST effect observed in the Floquet simulations for this 
  \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Floquet_Will_landscape.pdf}
-    \caption{{\bf Examples of p-MIST using transitions for the alternative circuit in Fig.~\ref{fig:Floquet1}(c) of Sec.~\ref{Will_circuit}.} involving the states $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{0}}$, with maximum overlap to the un-hybridized state $\ket{k}_\phi\otimes\ket{n}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
+    \caption{{\bf Examples of p-MIST using transitions for the alternative circuit in Fig.~\ref{fig:Floquet1}(c) of Sec.~\ref{Will_circuit}.} involving the states $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{1}}$, with maximum overlap to the un-hybridized state $\ket{k}_\phi\otimes\ket{n}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
     \label{fig:011_Will}
 \end{figure}
 
@@ -977,13 +985,16 @@ Finally, we plot the p-MIST effect observed in the Floquet simulations for this 
 \begin{figure*}
     \centering
     \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans2.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{2},\tilde{0}}$ state in rows indexed by figure numberingtext. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{2},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
     \label{fig:Trans2}
 \end{figure*}
+
+\clearpage
 \begin{itemize}
-    \item Units of g is an outstanding issue
+    \item Units of g is an outstanding issue: momentum or charge coefficient?
     \item p-MIST or PIST
     \item some sub-figures have subheadings some do not
+    \item shorter conclusion
 \end{itemize}
 \clearpage
 \bibliography{refs.bib} 
