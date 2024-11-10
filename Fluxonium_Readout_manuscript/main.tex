@@ -765,7 +765,7 @@ The term $\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}}$ will be added to the Lagrang
 In this appendix, we summarize the expressions for coupling strengths and charging energies derived above and compare them for all three circuits. We will also analyze effect of variations in circuit parameters on these quantities. This analysis is used in Sec~\ref{sec:expressions} to comment on mitigation strategies for the parasitic effects captured in this work. We also discuss the quantities related to the corresponding dispersive qubit Hamiltonians and give expressions for the dispersive coupling $\chi_{\phi\mu}$ used in Sec.~\ref{sec:dephasing}. Following the main text, we set $\hbar=1$. 
 
 
-In Table~\ref{tab:parasitic_params} we note that in addition to the preserved symmetries which restrict qubit couplings to only even parasitic modes, in all three circuits, the parasitic quantities $g_{\phi\mu},g_{\phi r},\chi_{\phi\mu}$ are also very similar. Since the parasitic state transitions (p-MIST) and the post readout parasitic-dephasing are determined predominantly by these quantities only, this observation leads to our conclusion that the various grounding configurations covered in App.~\ref{app:alt_circuits} will have the same Floquet landscape. We plot these quantities in Figs.~\ref{fig:circuit_choice}(d) and~\ref{fig:dispersive-shift}. 
+In Table~\ref{tab:parasitic_params} we note that in addition to the preserved symmetries which restrict qubit couplings to only even parasitic modes, in all three circuits, the values of parasitic quantities $g_{\phi\mu},g_{\phi r},\chi_{\phi\mu}$ for $\mu=2$ are also very similar. Since the parasitic state transitions (p-MIST) and the post readout parasitic-dephasing are determined predominantly by these quantities only, this observation leads to our conclusion that the various grounding configurations covered in App.~\ref{app:alt_circuits} will have the same Floquet landscape. These arguments hold for all parasitic modes $\mu$ as shown by Figs.~\ref{fig:circuit_choice}(d) and~\ref{fig:dispersive-shift}. 
 \begin{table}[t]
     \centering
     \begin{tabular}{|c|c|c|c|}
@@ -778,13 +778,13 @@ In Table~\ref{tab:parasitic_params} we note that in addition to the preserved sy
     \hline
 $\chi_{\phi,\mu}$&-$1.1 \ \mathrm{MHz}$ & -$1.3 \ \mathrm{MHz}$&-$1.1 \ \mathrm{MHz}$ \\\hline
     \end{tabular}
-    \caption{Fluxonium parameters with the lowest frequency parasitic mode with non-zero coupling to the qubit and readout $\mu=2$. Here we quote the frequency of the fluxon transition between the lowest two levels ($\omega_{01}/2\pi$) and the plasmon transition between the first and second levels ($\omega_{12}/2\pi$). For the dispersive Hamiltonian obtained for each circuit in Fig.~\ref{fig:circuit_choice}(a-c), we quote the dispersive shift due to readout as $\chi_r$. The values in this table have been experimentally verified for $H_1$. The frequency of this mode is $f_\mu=12.063 \ \mathrm{GHz}$. We give the coupling strengths between the qubit-readout $g_{\phi\mu}$, readout-parasitic $g_{\phi r}$, parasitic-qubit  $g_{\mu r}$ modes. We also give the Stark shift $\chi_{\phi\mu}$. Here the values of $g_{\phi r}, \chi_{\phi r}, \omega_{\mu=2}/2\pi$ have been verified experimentally for $H_1$.}
+    \caption{{\bf Parasitic quantities for the mode $\mu=2$ across various ground configurations shown in Fig. \ref{fig:circuit_choice}(a-c).}  The table gives values of coupling strengths between the qubit and the readout $g_{\phi\mu}$, readout and the parasitic-mode $g_{\phi r}$, parasitic-qubit  $g_{\mu r}$ and the dispersive shift due to the parasitic mode $\chi_{\phi\mu}$.}
     \label{tab:parasitic_params}
 \end{table}
 
 
 \subsection{Charging energies and Coupling Strengths}\label{app:coupling}
-Here, we summarize the expressions obtained for the variables used in the main text from App.~\ref{app:alt_circuits} and Ref.~\cite{viola2015collective}. We also calculate the variation of charging energies and coupling strengths with circuit parameters as discussed in Sec.~\ref{sec:expressions}. 
+Here, we summarize the expressions for couplings and charging energies for the three circuits as derived in App.~\ref{app:alt_circuits} for circuits in Figs.~\ref{fig:circuit_choice}(b,c) and Ref.~\cite{viola2015collective} for circuit in Figs.~\ref{fig:circuit_choice}(a). We will use these expressions to show the variations with number of junctions $N$ and parasitic ground capacitance $C_g$, used in Sec.~\ref{sec:expressions}. \sh{check these expressions after derivation. Also multiply the charge fluctuations.}
 \begin{enumerate}
     \item Total ground capacitance.
     \begin{enumerate}
@@ -827,7 +827,7 @@ Here, we summarize the expressions obtained for the variables used in the main t
    
 \end{enumerate}
 
-Zooming into Fig.~\ref{fig:circuit_choice}(c), we can see in Fig.~\ref{fig:coupling-strength} that for all three circuits the lowest three even modes $\mu=2,4,6$ couple to the qubit stronger than the readout. This observation is a backbone of our work; we find that because of this relatively large coupling strength, p-MIST rates may be significant in a broader quantum computing context. %Thus, we use the mode $\mu=2$ to analyze the effect of such parasitic modes on state transitions in a driven fluxonium circuit. 
+Zooming into Fig.~\ref{fig:circuit_choice}(c), we can see in Fig.~\ref{fig:coupling-strength} that for all three circuits the lowest three even modes $\mu=2,4,6$ couple to the qubit stronger than the readout. This observation is a backbone of our work; we find that because of this relatively large coupling strength, p-MIST rates may be significant in a broader fluxonium-based quantum computers.
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Coupling-strength.pdf}
@@ -835,8 +835,8 @@ Zooming into Fig.~\ref{fig:circuit_choice}(c), we can see in Fig.~\ref{fig:coupl
     \label{fig:coupling-strength}
 \end{figure}
 
-\paragraph{Variations in Coupling Constant:}
-In Fig.~\ref{fig:circuit_comp}, we show the dependence the dependence of charging energies and coupling constants on the number of junctions as well as the ground capacitance. We find that the charging energies increase with decrease in capacitance $C_g$ and junction count $N$. The parasitic charging energy is crucial in deciding the parasitic mode frequency $\omega_{\mu}$. A higher parasitic charging frequency relative to the readout frequency can lower the chances of p-MIST effects. Thus, we prefer large $C_g$ and $N$. The coupling strengths as shown in Fig.~\ref{fig:coupling-Floquet} induce all MIST effects. In particular, the parasitic-qubit coupling $g_{\phi\mu}$ is responsible for p-MIST effects. The parasitic-readout coupling $g_{\mu r}$ on the other hand only increases population  of the parasitic modes and is directly proportional to $g_{\phi\mu}$. We find that for low $g_{\phi\mu}$ a low $C_g$ and high $N$ is required. Thus, to reduce p-MIST effects the best strategy is to target for low parasitic ground capacitance in the JJA and high junction count.
+\paragraph{Variations with circuit parameters:}
+In Fig.~\ref{fig:circuit_comp}, we show the dependence of charging energies and coupling constants on the number of junctions$N$ as well as the ground capacitance $C_g$. We find that the charging energies increase with decrease in $C_g$ and $N$. The parasitic charging energy is crucial in deciding the parasitic mode frequency $\omega_{\mu}$. A higher parasitic charging frequency relative to the readout frequency can lower the chances of p-MIST effects. Thus, we prefer large $C_g$ and $N$. The coupling strengths as shown in Fig.~\ref{fig:coupling-Floquet} induce all MIST effects. In particular, the parasitic-qubit coupling $g_{\phi\mu}$ is responsible for p-MIST effects. The parasitic-readout coupling $g_{\mu r}$ on the other hand only increases population  of the parasitic modes and is directly proportional to $g_{\phi\mu}$. We find that for low $g_{\phi\mu}$ a low $C_g$ and high $N$ is required. Thus, to reduce p-MIST effects the best strategy is to target for low parasitic ground capacitance in the JJA and high junction count.
 
 
 \begin{figure}[htb]
