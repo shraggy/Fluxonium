@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1731189507 "main.aux" "main.bbl" "main" 1731189507 2
-  "./mainNotes.bib" 1731189506 987 189b17814cb95c4db7dcc262ea0acb58 ""
+["bibtex main"] 1731189507 "main.aux" "main.bbl" "main" 1731233314 2
+  "./mainNotes.bib" 1731233314 987 189b17814cb95c4db7dcc262ea0acb58 ""
   "./refs.bib" 1731174716 42942 ed44213324781617aa3b6ece87a01899 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1731189507 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1731233314 52499 9e79445f760e4428c15778b11f5b44d6 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731189505 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731189507 2
+["pdflatex"] 1731233313 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731233314 2
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731176235 130237 1e746cbfe1ce2a79ba9cbfcb5c963381 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -24,6 +24,8 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -161,7 +163,6 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1667332637 2462 8ce5f9a9c63002f2c1af03c262cf29af ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty" 1654720880 5319 48d7f3cfa322abd2788e3c09d624b922 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty" 1654720880 5048 84b05796b49b69e2d4257d537721c960 ""
-  "/usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd" 1667332637 2469 24e8437abfd2393aed5f0ac9f00f801e ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/braket/braket.sty" 1266794558 3601 193635d942bc4777a5acaaeeffdce692 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/changes/changes.sty" 1626465424 29978 a9cfa26176db050060b35afe018a6d31 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -242,9 +243,9 @@
   "Supp_Fig/Trans1.pdf" 1731174716 275198 60206f3045e578bc18a8f6d43a776944 ""
   "Supp_Fig/Trans2.pdf" 1731174716 192955 d6a4534b629022aac6cc7fbc5313788c ""
   "Supp_Fig/dispersive_shift.pdf" 1731188300 94666 2c23ac0c570a01ba9fc575349e1a92ea ""
-  "main.aux" 1731189507 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "main.aux" 1731233314 52499 9e79445f760e4428c15778b11f5b44d6 "pdflatex"
   "main.bbl" 1731189507 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 0 -1 0 "pdflatex"
+  "main.out" 1731233314 5237 a32a41ce05670528cc6e3211161997ad "pdflatex"
   "main.tex" 1731176235 130237 1e746cbfe1ce2a79ba9cbfcb5c963381 ""
   (generated)
   "main.aux"
