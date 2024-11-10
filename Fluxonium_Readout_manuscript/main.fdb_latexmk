@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1731233664 "main.aux" "main.bbl" "main" 1731235194 2
-  "./mainNotes.bib" 1731235194 987 189b17814cb95c4db7dcc262ea0acb58 ""
+["bibtex main"] 1731233664 "main.aux" "main.bbl" "main" 1731235525 2
+  "./mainNotes.bib" 1731235525 987 189b17814cb95c4db7dcc262ea0acb58 ""
   "./refs.bib" 1731174716 42942 ed44213324781617aa3b6ece87a01899 ""
   "/usr/local/texlive/2023/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1731235194 52499 9e79445f760e4428c15778b11f5b44d6 "pdflatex"
+  "main.aux" 1731235525 52961 d979f4eaef36b8ec007b57c363152ebc "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731235192 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731235194 2
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731176235 130237 1e746cbfe1ce2a79ba9cbfcb5c963381 ""
+["pdflatex"] 1731235523 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731235525 2
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731235521 130468 d95db850363baa87c884f35131950899 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -243,10 +243,10 @@
   "Supp_Fig/Trans1.pdf" 1731174716 275198 60206f3045e578bc18a8f6d43a776944 ""
   "Supp_Fig/Trans2.pdf" 1731174716 192955 d6a4534b629022aac6cc7fbc5313788c ""
   "Supp_Fig/dispersive_shift.pdf" 1731188300 94666 2c23ac0c570a01ba9fc575349e1a92ea ""
-  "main.aux" 1731235194 52499 9e79445f760e4428c15778b11f5b44d6 "pdflatex"
+  "main.aux" 1731235525 52961 d979f4eaef36b8ec007b57c363152ebc "pdflatex"
   "main.bbl" 1731233664 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.out" 1731235194 5237 a32a41ce05670528cc6e3211161997ad "pdflatex"
-  "main.tex" 1731176235 130237 1e746cbfe1ce2a79ba9cbfcb5c963381 ""
+  "main.out" 1731235525 5237 a32a41ce05670528cc6e3211161997ad "pdflatex"
+  "main.tex" 1731235521 130468 d95db850363baa87c884f35131950899 ""
   (generated)
   "main.aux"
   "main.loc"
