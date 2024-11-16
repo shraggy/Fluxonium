@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1731714011.97255 "main.aux" "main.bbl" "main" 1731715067.76362 0
-  "./mainNotes.bib" 1731715067.44531 1829 9ed0fa2809426d8dc8b9590f7b8d1727 ""
+["bibtex main"] 1731714011.97255 "main.aux" "main.bbl" "main" 1731715586.47418 0
+  "./mainNotes.bib" 1731715586.15668 1829 9ed0fa2809426d8dc8b9590f7b8d1727 ""
   "./refs.bib" 1731174716.1147 42942 ed44213324781617aa3b6ece87a01899 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1731715067.44303 55747 badc24a0d2154eb5570c0ff1bb24e8f3 "pdflatex"
+  "main.aux" 1731715586.15312 55747 badc24a0d2154eb5570c0ff1bb24e8f3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731715066.14153 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731715067.76384 0
+["pdflatex"] 1731715584.7989 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731715586.4744 0
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731714019.65348 132234 9d672d3c565d51e1276d432156ecffc0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -228,7 +228,7 @@
   "Figures/dephasing.pdf" 1731600224.29404 81834 14caf0e5272c85e7294927b2cdcb951e ""
   "Supp_Fig/Charge-matrix-Will.pdf" 1731189362.21062 94447 295d5a74427a614dd3191aa674c45e9e ""
   "Supp_Fig/Charge_Matrix.pdf" 1731189362.21131 131005 22455cbbf15c6904117fcc0d261d518d ""
-  "Supp_Fig/Circuit_choice.pdf" 1731250776.18357 154831 c19d8b5922927140f27581f84242564a ""
+  "Supp_Fig/Circuit_choice.pdf" 1731715584.30582 146796 1c5ad589cfc80a9b69a9118eecd411f3 ""
   "Supp_Fig/Circuit_comp.pdf" 1731189362.21279 129716 9c2065e4a40710a0387e1a45a4985dcc ""
   "Supp_Fig/Coupling-Will.pdf" 1731189362.21355 97250 9d1e117b5a40db125b7a376bf600c16b ""
   "Supp_Fig/Coupling-strength.pdf" 1731189362.21405 83167 07a4e8c2d29a2ecd534d2d39d2cb219e ""
@@ -238,9 +238,9 @@
   "Supp_Fig/Trans1.pdf" 1731235118.87205 268088 926f80516896e94d8771c88e7a609d03 ""
   "Supp_Fig/Trans2.pdf" 1731235119.01233 185501 14ce32a7791e9a6221a548b999e4fe66 ""
   "Supp_Fig/dispersive_shift.pdf" 1731189362.22025 90319 ca949f994939b8681eeaaf9bb7b457e0 ""
-  "main.aux" 1731715067.44303 55747 badc24a0d2154eb5570c0ff1bb24e8f3 "pdflatex"
+  "main.aux" 1731715586.15312 55747 badc24a0d2154eb5570c0ff1bb24e8f3 "pdflatex"
   "main.bbl" 1731714012.07255 39162 6a48d58d5ae5a0b3b60fba9ac2fd44b4 "bibtex main"
-  "main.out" 1731715067.44518 5543 5a399d2c8df1365130851f8ca9079735 "pdflatex"
+  "main.out" 1731715586.15633 5543 5a399d2c8df1365130851f8ca9079735 "pdflatex"
   "main.tex" 1731714019.65348 132234 9d672d3c565d51e1276d432156ecffc0 ""
   (generated)
   "main.aux"
