@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1731717350.72685 "main.aux" "main.bbl" "main" 1733202347.33293 0
-  "./mainNotes.bib" 1733202347.02506 1829 9ed0fa2809426d8dc8b9590f7b8d1727 ""
+["bibtex main"] 1733204132.5171 "main.aux" "main.bbl" "main" 1733213954.378 0
+  "./mainNotes.bib" 1733213954.07665 1805 8546f34c0182ce3462159301ff71653a ""
   "./refs.bib" 1731174716.1147 42942 ed44213324781617aa3b6ece87a01899 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1733202347.02276 56272 21ab7131546306d907464b6edafc36ec "pdflatex"
+  "main.aux" 1733213954.07449 56416 1e3a288da4535a59605d4ec5112751fe "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733202345.70212 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1733202347.33317 0
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731717422.61439 132504 c06634d8af40cd788dbdc76abce07a04 ""
+["pdflatex"] 1733213952.80806 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1733213954.37821 0
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1733204128.56691 132619 1cec99e474f685f59b02263fe8e9a9e5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -225,7 +225,7 @@
   "Figures/LZ.pdf" 1731189362.2067 76280 09f3c4e850f3c9ead4a31f2676cf0b35 ""
   "Figures/Meas_Circuit.pdf" 1731189362.2074 135427 3c8c646bbd324923bddc811098fe4fad ""
   "Figures/Trans_.pdf" 1731189362.20788 101024 da7b58555346a47cea870f908b6a75a8 ""
-  "Figures/dephasing.pdf" 1731600224.29404 81834 14caf0e5272c85e7294927b2cdcb951e ""
+  "Figures/dephasing.pdf" 1733213952.26 81375 f7a78f2766f4ecca081cda1cbd727909 ""
   "Supp_Fig/Charge-matrix-Will.pdf" 1731189362.21062 94447 295d5a74427a614dd3191aa674c45e9e ""
   "Supp_Fig/Charge_Matrix.pdf" 1731189362.21131 131005 22455cbbf15c6904117fcc0d261d518d ""
   "Supp_Fig/Circuit_choice.pdf" 1731717475.95299 146400 acca8982deae4a679c15015169f0ec31 ""
@@ -238,10 +238,10 @@
   "Supp_Fig/Trans1.pdf" 1731235118.87205 268088 926f80516896e94d8771c88e7a609d03 ""
   "Supp_Fig/Trans2.pdf" 1731235119.01233 185501 14ce32a7791e9a6221a548b999e4fe66 ""
   "Supp_Fig/dispersive_shift.pdf" 1731189362.22025 90319 ca949f994939b8681eeaaf9bb7b457e0 ""
-  "main.aux" 1733202347.02276 56272 21ab7131546306d907464b6edafc36ec "pdflatex"
-  "main.bbl" 1731717350.80917 39162 6a48d58d5ae5a0b3b60fba9ac2fd44b4 "bibtex main"
-  "main.out" 1733202347.02494 5543 5a399d2c8df1365130851f8ca9079735 "pdflatex"
-  "main.tex" 1731717422.61439 132504 c06634d8af40cd788dbdc76abce07a04 ""
+  "main.aux" 1733213954.07449 56416 1e3a288da4535a59605d4ec5112751fe "pdflatex"
+  "main.bbl" 1733204132.59808 37778 b678dd7f3238ed9939fc4cb6e0afc89e "bibtex main"
+  "main.out" 1733213954.07652 5543 5a399d2c8df1365130851f8ca9079735 "pdflatex"
+  "main.tex" 1733204128.56691 132619 1cec99e474f685f59b02263fe8e9a9e5 ""
   (generated)
   "main.aux"
   "main.loc"
