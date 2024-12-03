@@ -99,7 +99,7 @@ In addition to coherence and the ability to do high-fidelity gates, the ability 
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{Figures/Demo.pdf}
-    \caption{A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous linear modes (red) and the nonlinear qubit mode (blue) simultaneously. 
+    \caption{{\bf Schematic of a p-MIST process.} A parasitic effect where energy in a coherent state of the driven readout mode (black) excites extraneous linear modes (red) and the nonlinear qubit mode (blue) simultaneously. 
     }
     \label{fig:demo}
 \end{figure}
@@ -119,7 +119,7 @@ provides an analysis of the full circuit including fluxonium, JJA, and readout r
 \begin{figure}[t]
 \centering    
 \includegraphics[width=\linewidth]{Figures/Meas_Circuit.pdf}
-\caption{(a) Fluxonium readout circuit. The color scheme shows primary components that correspond to various modes, shown in Fig.~\ref{fig:demo} when a JJA fluxonium circuit is connected to a readout resonator (R). The subscripts $p,j$ denote components of the phase-slip junction and the JJA, respectively. This circuit shows coupling capacitances ($C_c$), readout frequency parameters ($\omega_r=1/\sqrt{L_{R}C_{R}}$), parasitic ground capacitances in JJA ($C_{g,j}$) and next to the phase-slip junction ($C_{g,p}$). The differential capacitance $C$ adjusts the charging energy of the qubit mode (see Table~\ref{tab:readout_params}). (b) Fluxonium mode energy levels in units of $h$, with the highlighted area showing the first three levels essential for certain readout schemes~\cite{zhang_universal_2021}. (c) Parasitic mode frequencies $\omega_\mu/2\pi$. The lowest even mode $\mu = 2$ has the strongest coupling to the qubit (see Fig.~\ref{fig:coupling-strength}). 
+\caption{{\bf Fluxonium readout circuit, qubit and array modes' spectrum.} (a) The color scheme shows primary components that correspond to various modes, shown in Fig.~\ref{fig:demo} when a JJA fluxonium circuit is connected to a readout resonator (R). The subscripts $p,j$ denote components of the phase-slip junction and the JJA, respectively. This circuit shows coupling capacitances ($C_c$), readout frequency parameters ($\omega_r=1/\sqrt{L_{R}C_{R}}$), parasitic ground capacitances in JJA ($C_{g,j}$) and next to the phase-slip junction ($C_{g,p}$). The differential capacitance $C$ adjusts the charging energy of the qubit mode (see Table~\ref{tab:readout_params}). (b) Fluxonium mode energy levels in units of $h$, with the highlighted area showing the first three levels essential for certain readout schemes~\cite{zhang_universal_2021}. (c) Parasitic mode frequencies $\omega_\mu/2\pi$. The lowest even mode $\mu = 2$ has the strongest coupling to the qubit (see Fig.~\ref{fig:coupling-strength}). 
 }
 \label{fig:meas_circuit}
 \end{figure}
@@ -136,7 +136,7 @@ provides an analysis of the full circuit including fluxonium, JJA, and readout r
     $122$ & $0.5\Phi_0$ & $7.30$ & $1.46$ & $17$ & $0.74$ & $60$ & $194$ & $1.94$ & $19.40$ \\
     \hline
 \end{tabular}
-\caption{Circuit parameters for Fig.~\ref{fig:meas_circuit}(a) inspired by Ref.~\cite{zhang_universal_2021}. All energies are given in GHz. Here $\Phi_0=h/2e$ denotes the magnetic flux quantum. The capacitive energies $E_{C'}=\frac{19.4}{{C'}(\mathrm{fF})} \ \mathrm{GHz}$ are computed from the corresponding capacitances $C'$. See Table~\ref{tab:params} in App.~\ref{app:Hamiltonian} for the values of capacitances.}
+\caption{{\bf Circuit parameters for Fig.~\ref{fig:meas_circuit}(a) inspired by Ref.~\cite{zhang_universal_2021}.} All energies are given in GHz. Here $\Phi_0=h/2e$ denotes the magnetic flux quantum. The capacitive energies $E_{C'}=\frac{19.4}{{C'}(\mathrm{fF})} \ \mathrm{GHz}$ are computed from the corresponding capacitances $C'$. See Table~\ref{tab:params} in App.~\ref{app:Hamiltonian} for the values of capacitances.}
 \label{tab:circuit_params}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,7 +163,7 @@ provides an analysis of the full circuit including fluxonium, JJA, and readout r
 \textbf{($\mu=2$)}&\multicolumn{2}{c|}{} &$157 \ \mathrm{MHz}$& $4.22 \ \mathrm{MHz}$& $-1.10 \ \mathrm{MHz}$& $5 \ \mathrm{MHz}$& $12.06 \ \mathrm{GHz}$&$10^{4}$\\    
 \hline
 \end{tabular}
-\caption{Measurement parameters for qubit mode $\phi$, readout mode $r$ and closest even parasitic mode $\mu=2$.  All quantities are derived and computed analytically using circuit parameters listed in Table~\ref{tab:circuit_params} (see Apps.~\ref{app:alt_circuits}-\ref{app:Hamiltonian} for details). \textbf{Qubit-Readout Parameters:} ($\omega_{ij}$) qubit $i\rightarrow j$ splitting frequency between fluxonium excited states $i, j$; ($\tilde{E}^\phi_c$) qubit charging energy; ($g_{\phi r}$) qubit-readout coupling; ($\chi_{\phi r}(ij)$) dispersive shift due to readout mode in the two-level $ij$ system; ($\omega_r$) readout mode frequency; ($\kappa_r$) decay rate of the readout resonator. \textbf{Parasitic-Mode Parameters:} ($g_{\phi \mu}$) qubit-parasitic coupling; ($g_{\mu r}$) parasitic-readout coupling; ($\chi_{\phi \mu}(ij)$) dispersive shift due to parasitic mode $\mu$ in the two-level $ij$ system; ($\omega_\mu$) mode frequency; and ($Q_\mu$) internal quality factor inspired by~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
+\caption{{\bf Measurement parameters for qubit mode $\phi$, readout mode $r$ and closest even parasitic mode $\mu=2$.}  All quantities are derived and computed analytically using circuit parameters listed in Table~\ref{tab:circuit_params} (see Apps.~\ref{app:alt_circuits}-\ref{app:Hamiltonian} for details). \textbf{Qubit-Readout Parameters:} ($\omega_{ij}$) qubit $i\rightarrow j$ splitting frequency between fluxonium excited states $i, j$; ($\tilde{E}^\phi_c$) qubit charging energy; ($g_{\phi r}$) qubit-readout coupling; ($\chi_{\phi r}(ij)$) dispersive shift due to readout mode in the two-level $ij$ system; ($\omega_r$) readout mode frequency; ($\kappa_r$) decay rate of the readout resonator. \textbf{Parasitic-Mode Parameters:} ($g_{\phi \mu}$) qubit-parasitic coupling; ($g_{\mu r}$) parasitic-readout coupling; ($\chi_{\phi \mu}(ij)$) dispersive shift due to parasitic mode $\mu$ in the two-level $ij$ system; ($\omega_\mu$) mode frequency; and ($Q_\mu$) internal quality factor inspired by~\cite{masluk_microwave_2012}.}   \label{tab:readout_params}
 \end{table*}
 %%%%%%%%%%%%%%%%%%
 
@@ -279,7 +279,7 @@ $13.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{
 $14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{5},\tilde{1}}^*$ &$49$&$9.41 \ \mathrm{GHz}$&$2.71 \ \mathrm{MHz}$&$\color{RoyalBlue}{\checkmark}$ & $2$\\
 \hline
 \end{tabular}
-\caption{Measurement-induced-state-transition (MIST) observed in Fig.~\ref{fig:Floquet}. Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstate of $H_0$ (see Eq.~\ref{eq:bare_ham}) which has the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of qubit mode ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, we use $\bar n_r\sim 0$ to indicate that the drive frequency is exactly resonant with the transition frequency between the two levels. A `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d/2\pi=8.71 \ \mathrm{GHz}$ with $\Delta_{ac}=4.0 \ \mathrm{MHz}$ absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\sim 0, \omega_d/2\pi=9.25 \ \mathrm{GHz}$\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=14, \omega_d/2\pi=9.41 \ \mathrm{GHz}$ with $\Delta_{ac}=4.2 \ \mathrm{MHz}$ absorbs $1$ drive photon}. Column $4$ represents the drive frequency $\omega_d/2\pi$ at which these transitions occur. Column $5$ yields the quasienergy gap at the avoided crossing labeled as $\Delta_{ac}$. Column $6$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. The various colors for the checkmarks indicate that the p-MIST event involves the state $\ket{\tilde{0},\tilde{0}}$ (red), $\ket{\tilde{1},\tilde{0}}$ (green) or $\ket{\tilde{2},\tilde{0}}$ (blue). Column $7$ indicates the number of drive photons ($\#$) involved in the energy-conserving process, illustrated in Fig.~\ref{fig:trans_prof}, which is responsible for these transitions.
+\caption{{\bf Measurement-induced-state-transition (MIST) observed in Fig.~\ref{fig:Floquet}.} Column $1$ lists the numbering used to mark the transitions in Fig.~\ref{fig:Floquet}. Here $\ket{\tilde{i},\tilde{j}}$ indicates the hybridized eigenstate of $H_0$ (see Eq.~\ref{eq:bare_ham}) which has the maximum overlap with the state $\ket{i}_\phi\otimes \ket{j}_{\mu=2}$ in the disjoint Hilbert space of qubit mode ($\phi$) and parasitic mode ($\mu=2$). Column $2$ lists the MIST processes that start  at the lowest average readout photon number $\bar n_r$ given by column $3$. In some cases, we use $\bar n_r\sim 0$ to indicate that the drive frequency is exactly resonant with the transition frequency between the two levels. A `$^*$'-marked state indicates hybridization at lower $\bar n_r$ due to preceding transitions~\footnote{$\ket{\tilde{4},\tilde{2}}^*:\ket{\tilde{4},\tilde{2}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{14},\tilde{2}}$ at $\bar n_r=5, \omega_d/2\pi=8.71 \ \mathrm{GHz}$ with $\Delta_{ac}=4.0 \ \mathrm{MHz}$ absorbs $2$ drive photons\\$\ket{\tilde{6},\tilde{1}}^*:\ket{\tilde{6},\tilde{1}}\xleftrightarrow[]{\hspace{1em}}\ket{\tilde{3},\tilde{1}}$ at $\bar n_r\sim 0, \omega_d/2\pi=9.25 \ \mathrm{GHz}$\\$\ket{\tilde{5},\tilde{1}}^*:\ket{\tilde{5},\tilde{1}}\xleftrightarrow[]{\hspace{1em}} \ket{\tilde{17},\tilde{0}}$ at $\bar n_r=14, \omega_d/2\pi=9.41 \ \mathrm{GHz}$ with $\Delta_{ac}=4.2 \ \mathrm{MHz}$ absorbs $1$ drive photon}. Column $4$ represents the drive frequency $\omega_d/2\pi$ at which these transitions occur. Column $5$ yields the quasienergy gap at the avoided crossing labeled as $\Delta_{ac}$. Column $6$ indicates if the process cannot occur without the parasitic mode, denoted as p-MIST. The various colors for the checkmarks indicate that the p-MIST event involves the state $\ket{\tilde{0},\tilde{0}}$ (red), $\ket{\tilde{1},\tilde{0}}$ (green) or $\ket{\tilde{2},\tilde{0}}$ (blue). Column $7$ indicates the number of drive photons ($\#$) involved in the energy-conserving process, illustrated in Fig.~\ref{fig:trans_prof}, which is responsible for these transitions.
 }
     \label{tab:p-MIST}
 \end{table*}
@@ -351,7 +351,7 @@ Our findings reveal that for our specific circuit choice, JJA parasitic modes ca
  \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{Figures/Floquet_011.pdf}
-    \caption{Examples of p-MIST using transitions \textbf{(a)} $8$ and \textbf{(b)} $9$ from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state, with maximum overlap to the un-hybridized state $\ket{1}_\phi\otimes\ket{0}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Stark-shifted eigen-energies (dashed) from first-order perturbative calculations, and quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
+    \caption{{\bf p-MIST processes including state $\ket{\tilde{1},\tilde{0}}$.} Examples of p-MIST using transitions \textbf{(a)} $8$ and \textbf{(b)} $9$ from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state, with maximum overlap to the un-hybridized state $\ket{1}_\phi\otimes\ket{0}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} $\tilde{E}_i=E_i \ \textrm{mod} \ \omega_d$ where $E_i$ is the Stark-shifted eigen-energy (dashed) obtained from first-order perturbative calculations, or quasi-energy (solid) obtained from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
     \label{fig:011}
 \end{figure}
 
@@ -399,7 +399,7 @@ scale of phase errors that would result from such processes.
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Figures/dephasing.pdf}
-    \caption{Dephasing error probability due to random decay of an excited parasitic mode with occupation $\braket{n_\mu}$, after p-MIST, for various internal parasitic quality factor $Q_\mu$. The horizontal red line shows the quality factor quoted in~\cite{masluk_microwave_2012}. The green line shows the dephasing error probability for transition $9$ for various quality factors at $\kappa_r/2\pi=1 \ \mathrm{MHz}$ (see Figs.~\ref{fig:011}(b) and~\ref{fig:LZ}).}
+    \caption{{\bf Dephasing error probability due to random decay of an excited parasitic mode, after p-MIST, various internal parasitic quality factors.} The horizontal red line shows the quality factor quoted in~\cite{masluk_microwave_2012}. The green line shows the dephasing error probability for transition $9$ for various quality factors at $\kappa_r/2\pi=1 \ \mathrm{MHz}$ (see Figs.~\ref{fig:011}(b) and~\ref{fig:LZ}).}
     \label{fig:dephasing}
 \end{figure}
 
@@ -470,7 +470,7 @@ We take a fairly liberal value of $\epsilon / 25$ , to make sure we identify pro
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{Figures/Trans_.pdf}
-    \caption{Energy conserving processes $\ket{\tilde{i},\tilde{0}}\leftrightarrow\ket{\tilde{f},\tilde{y}}$ for Eq.~\ref{eq:En_cons} with $x\le 4, y\le 2, f\le 20$ and $i=0$ (red diamonds), $i=1$ (green squares), $i=2$ (blue circles). The horizontal lines indicate the initial state $i$ for visual aid. Labels in black correspond to transition $\#$ listed in Table~\ref{tab:p-MIST}. The colored labels correspond to the disjoint subspaces for simplified representation but the energy conservation uses the eigen-energies of the hybridized eigenstates of $H_{0}$ (see Eq.~\ref{eq:bare_ham}). For example, the green label ($4 \mathrm{r},-1 \mathrm{p}$), for transition $8$ of Table~\ref{tab:p-MIST}, shows the number of readout photons absorbed ($4$) and the number of parasitic mode ($\mu=2$) photons emitted ($1$) in the process. The faded points are weaker transitions not captured in the Floquet simulations. 
+    \caption{{\bf Energy conserving processes $\ket{\tilde{i},\tilde{0}}\leftrightarrow\ket{\tilde{f},\tilde{y}}$ for Eq.~\ref{eq:En_cons} with $x\le 4, y\le 2, f\le 20$ and $i=0$ (red diamonds), $i=1$ (green squares), $i=2$ (blue circles).} The horizontal lines indicate the initial state $i$ for visual aid. Labels in black correspond to transition $\#$ listed in Table~\ref{tab:p-MIST}. The colored labels correspond to the disjoint subspaces for simplified representation but the energy conservation uses the eigen-energies of the hybridized eigenstates of $H_{0}$ (see Eq.~\ref{eq:bare_ham}). For example, the green label ($4 \mathrm{r},-1 \mathrm{p}$), for transition $8$ of Table~\ref{tab:p-MIST}, shows the number of readout photons absorbed ($4$) and the number of parasitic mode ($\mu=2$) photons emitted ($1$) in the process. The faded points are weaker transitions not captured in the Floquet simulations. 
 }
     \label{fig:trans_prof}
 \end{figure}
@@ -496,7 +496,7 @@ An approach towards mitigating p-MIST processes is to adjust $\omega_\mu$ so tha
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{Figures/Floquet_low.pdf}
-    \caption{Floquet simulations at lower readout frequencies using circuit parameters quoted in Tables~\ref{tab:circuit_params} and~\ref{tab:readout_params} for branch analysis starting in the dressed hybridized eigenstate $i=\ket{\tilde{k},\tilde{0}}$, with maximum overlap to the un-hybridized states $\ket{k}_\phi\otimes\ket{0}_{\mu=2}$. The figures are plotted in linear scale, unlike Fig.~\ref{fig:Floquet}, making any streak due to significantly weaker transitions unnoticeable.}
+    \caption{{\bf Floquet simulations at lower readout frequencies.} Circuit parameters used are the same as quoted in Tables~\ref{tab:circuit_params} and~\ref{tab:readout_params} for branch analysis starting in the dressed hybridized eigenstate $i=\ket{\tilde{k},\tilde{0}}$, with maximum overlap to the un-hybridized states $\ket{k}_\phi\otimes\ket{0}_{\mu=2}$. The figures are plotted in linear scale, unlike Fig.~\ref{fig:Floquet}, making any streak due to significantly weaker transitions unnoticeable.}
     \label{fig:Flo_low}
 \end{figure}
 
@@ -517,7 +517,7 @@ The assumptions for numerical modeling are the same as previous Floquet simulati
 \begin{figure}[t]
     \centering
     \includegraphics[width=\linewidth]{Figures/Floquet_Will.pdf}
-    \caption{Floquet analysis with alternate JJA fluxonium parameters inspired by Ref.~\cite{ding_high-fidelity_2023}. \textbf{(a)} Fluxonium energy spectrum. \textbf{(b)} Parasitic mode frequencies. \textbf{(c)} Floquet simulations for the branch analysis of the computational states. Circuit parameters for this circuit are discussed in Sec.~\ref{Will_circuit} and App.~\ref{app:alt_circuit1}. The Floquet figures are plotted in linear scale unlike Fig.~\ref{fig:Floquet}, making any streak due to significantly weaker transitions unnoticeable.}
+    \caption{{\bf Floquet analysis with alternate JJA fluxonium parameters inspired by Ref.~\cite{ding_high-fidelity_2023}.} \textbf{(a)} Fluxonium energy spectrum. \textbf{(b)} Parasitic mode frequencies. \textbf{(c)} Floquet simulations for the branch analysis of the computational states. Circuit parameters for this circuit are discussed in Sec.~\ref{Will_circuit} and App.~\ref{app:alt_circuit1}. The Floquet figures are plotted in linear scale unlike Fig.~\ref{fig:Floquet}, making any streak due to significantly weaker transitions unnoticeable.}
     \label{fig:Floquet1}
 \end{figure}
 
@@ -1031,19 +1031,19 @@ Finally, we plot the p-MIST effect observed in the Floquet simulations for this 
 \begin{figure*}
     \centering
     \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans0.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{0},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}. Note that MIST in figure $(2)$ is split into two figures in order to capture the two consecutive transitions involved.}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{0},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}. Note that MIST in figure $(2)$ is split into two figures in order to capture the two consecutive transitions involved.}
     \label{fig:Trans0}
 \end{figure*}
 \begin{figure*}
     \centering
     \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans1.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{1},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
     \label{fig:Trans1}
 \end{figure*}
 \begin{figure*}
     \centering
     \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans2.pdf}
-    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{2},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. Inset shows avoided crossing of quasi-energies. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \caption{MIST processes from Table~\ref{tab:p-MIST} involving the $\ket{\tilde{2},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
     \label{fig:Trans2}
 \end{figure*}
 
