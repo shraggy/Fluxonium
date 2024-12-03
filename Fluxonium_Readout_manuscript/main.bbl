@@ -124,6 +124,9 @@
 \bibitem [{\citenamefont {Nesterov}\ and\ \citenamefont {Pechenezhskiy}(2024)}]{nesterov2024measurement}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.~N.}\ \bibnamefont {Nesterov}}\ and\ \bibinfo {author} {\bibfnamefont {I.~V.}\ \bibnamefont {Pechenezhskiy}},\ }\bibfield  {title} {\bibinfo {title} {Measurement-induced state transitions in dispersive qubit readout schemes},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {arXiv preprint arXiv:2402.07360}\ } (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Viola}\ and\ \citenamefont {Catelani}(2015)}]{viola2015collective}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Viola}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Catelani}},\ }\bibfield  {title} {\bibinfo {title} {Collective modes in the fluxonium qubit},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {92}},\ \bibinfo {pages} {224511} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Manucharyan}\ \emph {et~al.}(2009)\citenamefont {Manucharyan}, \citenamefont {Koch}, \citenamefont {Glazman},\ and\ \citenamefont {Devoret}}]{manucharyan2009fluxonium}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~E.}\ \bibnamefont {Manucharyan}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Koch}}, \bibinfo {author} {\bibfnamefont {L.~I.}\ \bibnamefont {Glazman}},\ and\ \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Devoret}},\ }\bibfield  {title} {\bibinfo {title} {Fluxonium: Single cooper-pair circuit free of charge offsets},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Science}\ }\textbf {\bibinfo {volume} {326}},\ \bibinfo {pages} {113} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
@@ -133,9 +136,6 @@
 \bibitem [{\citenamefont {Ferguson}\ \emph {et~al.}(2013)\citenamefont {Ferguson}, \citenamefont {Houck},\ and\ \citenamefont {Koch}}]{ferguson2013symmetries}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont {Ferguson}}, \bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont {Houck}},\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Koch}},\ }\bibfield  {title} {\bibinfo {title} {Symmetries and collective excitations in large superconducting circuits},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review X}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {011003} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Viola}\ and\ \citenamefont {Catelani}(2015)}]{viola2015collective}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Viola}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Catelani}},\ }\bibfield  {title} {\bibinfo {title} {Collective modes in the fluxonium qubit},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {92}},\ \bibinfo {pages} {224511} (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
 \bibitem [{Note2()}]{Note2}%
   \BibitemOpen
   \bibinfo {note} {In fact, the first four even parasitic modes with coupling strengths within a factor of $10$ of $g_{\phi r}$. See Fig.~\ref {fig:coupling-strength} in App.~\ref {app:coupling}}\BibitemShut {NoStop}%
