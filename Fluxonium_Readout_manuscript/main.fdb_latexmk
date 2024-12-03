@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 1731717350.72685 "main.aux" "main.bbl" "main" 1731717424.39922 0
-  "./mainNotes.bib" 1731717424.05973 1829 9ed0fa2809426d8dc8b9590f7b8d1727 ""
+["bibtex main"] 1731717350.72685 "main.aux" "main.bbl" "main" 1733202347.33293 0
+  "./mainNotes.bib" 1733202347.02506 1829 9ed0fa2809426d8dc8b9590f7b8d1727 ""
   "./refs.bib" 1731174716.1147 42942 ed44213324781617aa3b6ece87a01899 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1731717424.05745 56272 21ab7131546306d907464b6edafc36ec "pdflatex"
+  "main.aux" 1733202347.02276 56272 21ab7131546306d907464b6edafc36ec "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1731717422.72874 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1731717424.39945 0
+["pdflatex"] 1733202345.70212 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1733202347.33317 0
   "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1731717422.61439 132504 c06634d8af40cd788dbdc76abce07a04 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -217,7 +217,7 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1731617414 8221429 d309d3ef3a5ec9bb1228c5bc3ecbfce4 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "Figures/Demo.pdf" 1731715065.61314 65616 2788dccd677105a41d0e99f80a1550d9 ""
-  "Figures/Floquet_011.pdf" 1731189362.19928 145824 0b1408a809c994156be840273d563866 ""
+  "Figures/Floquet_011.pdf" 1733202345.09747 129457 3c5a5539f31649660f3276dfc6d87499 ""
   "Figures/Floquet_Will.pdf" 1731189362.20102 225307 64bb200ac731fdea6dff590531bf38b4 ""
   "Figures/Floquet_coupling.pdf" 1731189362.20316 350088 9b47458dbe272b4923692c753309c3d2 ""
   "Figures/Floquet_low.pdf" 1731189362.20461 226366 5ad27a26817219270b359d2c8675ef13 ""
@@ -228,7 +228,7 @@
   "Figures/dephasing.pdf" 1731600224.29404 81834 14caf0e5272c85e7294927b2cdcb951e ""
   "Supp_Fig/Charge-matrix-Will.pdf" 1731189362.21062 94447 295d5a74427a614dd3191aa674c45e9e ""
   "Supp_Fig/Charge_Matrix.pdf" 1731189362.21131 131005 22455cbbf15c6904117fcc0d261d518d ""
-  "Supp_Fig/Circuit_choice.pdf" 1731716314.42373 146353 ee6697de7f5283aca9e02da75293720a ""
+  "Supp_Fig/Circuit_choice.pdf" 1731717475.95299 146400 acca8982deae4a679c15015169f0ec31 ""
   "Supp_Fig/Circuit_comp.pdf" 1731189362.21279 129716 9c2065e4a40710a0387e1a45a4985dcc ""
   "Supp_Fig/Coupling-Will.pdf" 1731189362.21355 97250 9d1e117b5a40db125b7a376bf600c16b ""
   "Supp_Fig/Coupling-strength.pdf" 1731189362.21405 83167 07a4e8c2d29a2ecd534d2d39d2cb219e ""
@@ -238,9 +238,9 @@
   "Supp_Fig/Trans1.pdf" 1731235118.87205 268088 926f80516896e94d8771c88e7a609d03 ""
   "Supp_Fig/Trans2.pdf" 1731235119.01233 185501 14ce32a7791e9a6221a548b999e4fe66 ""
   "Supp_Fig/dispersive_shift.pdf" 1731189362.22025 90319 ca949f994939b8681eeaaf9bb7b457e0 ""
-  "main.aux" 1731717424.05745 56272 21ab7131546306d907464b6edafc36ec "pdflatex"
+  "main.aux" 1733202347.02276 56272 21ab7131546306d907464b6edafc36ec "pdflatex"
   "main.bbl" 1731717350.80917 39162 6a48d58d5ae5a0b3b60fba9ac2fd44b4 "bibtex main"
-  "main.out" 1731717424.0596 5543 5a399d2c8df1365130851f8ca9079735 "pdflatex"
+  "main.out" 1733202347.02494 5543 5a399d2c8df1365130851f8ca9079735 "pdflatex"
   "main.tex" 1731717422.61439 132504 c06634d8af40cd788dbdc76abce07a04 ""
   (generated)
   "main.aux"
