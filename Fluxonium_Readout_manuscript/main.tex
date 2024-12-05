@@ -594,18 +594,18 @@ We will now derive the Hamiltonians for the circuits in Figs.~\ref{fig:circuit_c
 
 
 \subsection{Floating Fluxonium Circuit}
-The Lagrangian corresponding to these circuits is a combination of the Lagrangians, $\mathcal{L}_\textrm{phase-slip}$ from the phase-slip junction shown in blue (comprising of the junction with $E_J/E_C\sim 5-8$ and the capacitor $C$), $\mathcal{L}_\textrm{JJA}$ from the (red) junctions in the array, $\mathcal{L}_{g}$ from the ground capacitances, $\mathcal{L}_{R}$ from the readout resonator and $\mathcal{L}_c$ due to the coupling capacitances $C_c$. The flux variables and voltage variables in the circuit are denoted by $\varphi_n=2\pi\Phi_n/\Phi_0$ and $\dot{\varphi}_n/2e$, respectively, where $\Phi_0=h/2e$ is the superconducting flux quantum. We mark the phase-difference across the junctions in the array as $\theta_{i}=\varphi_i-\varphi_{i-1}$ and across the phase-slip junction as $\theta_0=\varphi_N-\varphi_{0}$ as shown in Figs.~\ref{fig:circuit_choice}(b,c). We will use subscripts $j, p$ for JJA and the phase-slip junction coordinates, respectively. Transforming the Lagrangian in Ref.~\cite{viola2015collective}, 
+The Lagrangian corresponding to these circuits is a combination of the Lagrangians, $\mathcal{L}_\textrm{phase-slip}$ from the phase-slip junction shown in blue (comprising of the junction with $E_J/E_C\sim 5-8$ and the capacitor $C$), $\mathcal{L}_\textrm{JJA}$ from the (red) junctions in the array, $\mathcal{L}_{g}$ from the ground capacitances, $\mathcal{L}_{R}$ from the readout resonator and $\mathcal{L}_c$ due to the coupling capacitances $C_c$. The node flux variables at various points in the circuit are denoted by $\varphi_n=2\pi\Phi_n/\Phi_0$. We mark the phase-difference across the junctions in the array, $\theta_{i}=\varphi_i-\varphi_{i-1}$, and across the phase-slip junction, $\theta_0=\varphi_N-\varphi_{0}$, as shown in Figs.~\ref{fig:circuit_choice}(b,c). We will use subscripts $j, p$ for JJA and the phase-slip junction coordinates, respectively. Transforming the Lagrangian for the parallel circuit in Refs.~\cite{viola2015collective,ferguson2013symmetries}, 
 \begin{align}
     \mathcal{L}&=\mathcal{L}_{\textrm{phase-slip}}+\mathcal{L}_{\textrm{JJA}}+\mathcal{L}_{\textrm{g}}+\mathcal{L}_{\textrm{R}}+\mathcal{L}_{\textrm{C}},
 \end{align}
-the following terms will remain the same in the case of floating fluxonium circuit (setting $\hbar=1$):
+the following terms will remain the same in the case of a floating fluxonium circuit as shown in Figs.~\ref{fig:circuit_choice}(b)(setting $\hbar=1$):
 \begin{align}
-    \mathcal{L}_{\textrm{phase-slip}}&=\frac{(\dot{\varphi}_N-\dot{\varphi}_0)^2}{16E_{C'}}-E_{J_p}\cos(\varphi_0-\varphi_{N}+\varphi_\mathrm{ext})\\
-    \mathcal{L}_{\textrm{JJA}}&=\sum_{i=1}^N\frac{(\dot{\varphi}_i-\dot{\varphi}_{i-1})^2}{16E_{C_j}}-E_{J_j}\cos(\varphi_i-\varphi_{i-1})\\
-    \mathcal{L}_{\textrm{R}}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi}_{-2})^2}{16E_{C_R}}-\frac{(\varphi_{-1}-\varphi_{-2})^2}{16E_{R}}\\
+    \mathcal{L}_{\textrm{phase-slip}}&=\frac{(\dot{\varphi_N}-\dot{\varphi_0})^2}{16E_{C'}}-E_{J_p}\cos\big(\sum_{i=1}^N\theta_i+\varphi_\mathrm{ext}\big)\\
+    \mathcal{L}_{\textrm{JJA}}&=\sum_{i=1}^N\frac{(\dot{\varphi}_i-\dot{\varphi}_{i-1})^2}{16E_{C_j}}-E_{J_j}\cos(\theta_i)\\
+    \mathcal{L}_{\textrm{R}}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi}_{-2})^2}{16E_{C_\textrm{R}}}-\frac{(\varphi_{-1}-\varphi_{-2})^2}{16E_{R}}\\
     \mathcal{L}_{\textrm{g}}&=\sum_{i=0}^{N} \frac{\dot{\varphi_i}^2}{16E_{g_i}}\label{eq:float-float}
   \end{align}
-The definitions and values of capacitive energies used here are given in Table~\ref{tab:circuit_params} except for $E_{C'}=e^2/2C'$. Here the terms associated with $\dot{\varphi}_i (\varphi_i)$ are the kinetic (potential) energy terms. The change in this Lagrangian is primarily due to the fewer coupling capacitances such that $\dot{\varphi_{-2}}=0$,
+The definitions and values of capacitive energies used here are given in Table~\ref{tab:circuit_params} except for $E_{C'}=e^2/2C'$. Here the terms associated with $\dot{\varphi}_i (\theta_i)$ are the kinetic (potential) energy terms. The change in this Lagrangian from the parallel circuit is primarily due to the fewer coupling capacitances,
 \begin{align}
 \mathcal{L}_{\textrm{C}}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi_0})^2}{16E_{c'}}=\frac{\dot{\varphi}^2_0}{16E_{c'}}+\frac{\dot{\varphi}^2_{-1}}{16E_{c'}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{c'}}
 \end{align}
