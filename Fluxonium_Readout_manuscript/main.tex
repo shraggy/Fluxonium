@@ -586,34 +586,37 @@ We have presented a first analysis toward understanding the role of parasitic mo
     \caption{Capacitances and zero-point fluctuation (ZPF) values for the fluxonium readout circuit used in the main text in Figs.~\ref{fig:meas_circuit} and~\ref{fig:circuit_choice}(a).}
     \label{tab:params}
     \end{table}
-The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text can have several modifications, each of which may affect various performance metrics. Here, in Fig.~\ref{fig:circuit_choice}, we present two modifications to the parallel circuit, with different grounding options for the fluxonium while removing a coupling capacitance. We will refer to these circuit choices as: $H_1$, parallel circuit in Fig.~\ref{fig:circuit_choice}(a) (same as Fig.~\ref{fig:meas_circuit}), $H_2$, floating fluxonium circuit in Fig.~\ref{fig:circuit_choice}(b), and $H_3$, grounded fluxonium circuit in Fig.~\ref{fig:circuit_choice}(c). We adjust the coupling capacitances (using $C_{\textrm{c}'}=5.06 \ \mathrm{fF},C_{\textrm{c}'}'=4.12 \ \mathrm{fF}$ in Figs.~\ref{fig:circuit_choice}(b,c)) and the total capacitance of the phase slip junction (busing $C'=4.97 \ \mathrm{fF},C''=5.8 \ \mathrm{fF}$ in Fig.~\ref{fig:circuit_choice}(b,c)), as compared to the values for the parallel circuit given by Table~\ref{tab:params}. These modifications achieve the same qubit frequency $\omega_{01}/2\pi$, plasmon frequency $\omega_{12}/2\pi$, qubit-readout coupling constant $g_{\phi \mu}$ and qubit-readout dispersive shift $\chi_{\phi r}$ for the three circuits as given by Table~\ref{tab:readout_params}. Under these choices, we find that the readout parameters affected by parasitic modes are roughly the same across all three circuits, given our assumptions of ordered array and no self-nonlinearity in parasitic modes. See Table~\ref{tab:parasitic_params} in App.~\ref{app:Hamiltonian} for details. 
+The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text can have several modifications, each of which may affect various performance metrics. This circuit has a parallel configuration with a symmetry (identified in Ref.~\cite{ferguson2013symmetries}) which removes the coupling to the lowest frequency mode $\mu=1$~\cite{viola2015collective}. The elements crucial to this symmetry are the equal coupling capacitances on both ends of the parallel circuit. While preserving this symmetry, in Fig.~\ref{fig:circuit_choice}, we present two modifications to the parallel circuit, with different grounding options for the fluxonium and the resonator. We will refer to these circuit choices as: $H_1$, parallel circuit in Fig.~\ref{fig:circuit_choice}(a) (same as Fig.~\ref{fig:meas_circuit}), $H_2$, grounded resonator circuit in Fig.~\ref{fig:circuit_choice}(b), and $H_3$, grounded fluxonium circuit in Fig.~\ref{fig:circuit_choice}(c). The second modification is used to study the readout fidelity in case of a hangar geometry with a single voltage line. The third modification is used to study the differences between a floating fluxonium circuit and a grounded fluxonium circuit in terms of readout. We adjust the coupling capacitances (using $C_{\textrm{c}'}=5.06 \ \mathrm{fF},C_{\textrm{c}'}'=4.12 \ \mathrm{fF}$ in Figs.~\ref{fig:circuit_choice}(b,c)) and the total capacitance of the phase slip junction (busing $C'=4.97 \ \mathrm{fF},C''=5.8 \ \mathrm{fF}$ in Fig.~\ref{fig:circuit_choice}(b,c)), as compared to the values for the parallel circuit given by Table~\ref{tab:params}. These modifications achieve the same qubit frequency $\omega_{01}/2\pi$, plasmon frequency $\omega_{12}/2\pi$, qubit-readout coupling constant $g_{\phi \mu}$ and qubit-readout dispersive shift $\chi_{\phi r}$ for the three circuits as given by Table~\ref{tab:readout_params}. Under these choices, we find that the readout parameters affected by parasitic modes are roughly the same across all three circuits, given our assumptions of ordered array and no self-nonlinearity in parasitic modes. See Table~\ref{tab:parasitic_params} in App.~\ref{app:Hamiltonian} for details. 
+
+\subsection{Lagrangian}
+
+We will first derive the Lagrangians for the circuits in Figs.~\ref{fig:circuit_choice}(a-c) to be used in the next section for comparison. To do this, we follow the recipe given in Refs.~\cite{viola2015collective,ferguson2013symmetries} for the parallel circuit. To this, we shall impose the modifications and thence derive the Lagrangians for circuits~\ref{fig:circuit_choice}(b,c). Importantly, we will show that the symmetry in the parallel circuit which prevents any coupling with the lowest-frequency parasitic mode ($\mu=1$) is preserved in all three circuits, absence of which would have changed the Floquet landscape across the three circuits significantly. 
 
 
-We will now derive the Hamiltonians for the circuits in Figs.~\ref{fig:circuit_choice}(b,c) to be used in the next section for comparison. To do this, we follow the recipe given in Ref.~\cite{viola2015collective} for the parallel circuit shown in Fig.~\ref{fig:circuit_choice}(a) or Fig.~\ref{fig:meas_circuit}(a). Importantly, we will show that the symmetry in the parallel circuit which prevents any coupling with the lowest-frequency parasitic mode ($\mu=1$) is preserved in all three circuits, absence of which would have changed the Floquet landscape across the three circuits significantly. 
-
-
-\subsection{Floating Fluxonium Circuit}
-The Lagrangian corresponding to these circuits is a combination of the Lagrangians, $\mathcal{L}_\textrm{phase-slip}$ from the phase-slip junction shown in blue (comprising of the junction with $E_{\textrm{J}}/E_{\textrm{C}}\sim 5-8$ and the capacitor $C$), $\mathcal{L}_\textrm{JJA}$ from the (red) junctions in the array, $\mathcal{L}_\textrm{g}$ from the ground capacitances, $\mathcal{L}_\textrm{R}$ from the readout resonator and $\mathcal{L}_\textrm{c}$ due to the coupling capacitances $C_\textrm{c}$. The node flux variables at various points in the circuit are denoted by $\varphi_i=2\pi\Phi_i/\Phi_0$. We mark the phase-difference across the junctions in the array, $\theta_{i}=\varphi_i-\varphi_{i-1}$, and across the phase-slip junction, $\theta_0=\varphi_N-\varphi_{0}$, as shown in Figs.~\ref{fig:circuit_choice}(b,c). Similarly, the voltage drop across each junction is given by the phase evolution equation $\dot{\theta}_i=\dot{\varphi}_i-\dot{\varphi}_{i-1}=2\pi V_i/\Phi_0$ where $\Phi_0=h/2e$ the superconducting flux quantum. We will use subscripts $\textrm{j, p}$ for JJA and the phase-slip junction coordinates, respectively. Transforming the Lagrangian for the parallel circuit~\cite{viola2015collective,ferguson2013symmetries}, we have 
+The Lagrangian corresponding to these circuits is a combination of the Lagrangians, $\mathcal{L}_\textrm{phase-slip}$ from the phase-slip junction shown in blue (comprising of the junction with $E_{\textrm{J}}/E_{\textrm{C}}\sim 5-8$ and the capacitor $C$), $\mathcal{L}_\textrm{JJA}$ from the (red) junctions in the array, $\mathcal{L}_\textrm{g}$ from the ground capacitances, $\mathcal{L}_\textrm{R}$ from the readout resonator and $\mathcal{L}_\textrm{c}$ due to the coupling capacitances $C_\textrm{c}$. The node flux variables at various points in the circuit are denoted by $\varphi_i=2\pi\Phi_i/\Phi_0$. We mark the phase-difference across the junctions in the array, $\theta_{i}=\varphi_i-\varphi_{i-1}$, and across the phase-slip junction, $\theta_0=\varphi_N-\varphi_{0}$, as shown in Figs.~\ref{fig:circuit_choice}(b,c). Similarly, the voltage drop across each junction is given by the phase evolution equation $\dot{\theta}_i=\dot{\varphi}_i-\dot{\varphi}_{i-1}=2\pi V_i/\Phi_0$ where $\Phi_0=h/2e$ the superconducting flux quantum. We will use subscripts $\textrm{j, p}$ for JJA and the phase-slip junction coordinates, respectively. For the Lagrangian for the parallel circuit~\cite{viola2015collective,ferguson2013symmetries} (setting $\hbar=1$), we have, 
 \begin{align}
     \mathcal{L}&=\mathcal{L}_{\textrm{phase-slip}}+\mathcal{L}_{\textrm{JJA}}+\mathcal{L}_{\textrm{g}}+\mathcal{L}_{\textrm{R}}+\mathcal{L}_{\textrm{C}}.
 \end{align}
-Ignoring $\mathcal{L}_\textrm{R}$ and setting $\hbar=1$, the following terms will remain the same in the case of a floating fluxonium circuit (see Fig.~\ref{fig:circuit_choice}(b)),
+where
+\allowdisplaybreaks{
 \begin{align}
     \mathcal{L}_{\textrm{phase-slip}}&=\frac{1}{16E_{\textrm{C}'}}(\dot{\varphi_\textrm{N}}-\dot{\varphi_0})^2-E_{J_\textrm{p}}\cos\big(\sum_{i=1}^N\theta_i+\varphi_\mathrm{ext}\big)\\
     \mathcal{L}_{\textrm{JJA}}&=\sum_{i=1}^N\frac{1}{16E_{C_\textrm{j}}}(\dot{\varphi}_i-\dot{\varphi}_{i-1})^2-E_{J_\textrm{j}}\cos(\theta_i)\\
-    \mathcal{L}_{\textrm{g}}&=\sum_{i=1}^{N-1} \frac{\dot{\varphi_i}^2}{16E_{\textrm{g,j}}}+\sum_{i=0,N} \frac{\dot{\varphi_i}^2}{16E_{\textrm{g,p}}}\label{eq:float-float}
-  \end{align}
-The definitions and values of capacitive energies used here are given in Table~\ref{tab:circuit_params} except for $E_{\textrm{C}'}=e^2/2C'$. Here the terms associated with $\dot{\varphi}_i (\theta_i)$ are the kinetic (potential) energy terms. The change in this Lagrangian from the parallel circuit is primarily due to one less coupling capacitance,
-\begin{align}
-\mathcal{L}_{\textrm{c}}&=\frac{1}{16E_{\textrm{c}'}}(\dot{\varphi}_{-1}-\dot{\varphi_0})^2=\frac{\dot{\varphi}^2_0}{16E_{\textrm{c}'}}+\frac{\dot{\varphi}^2_{-1}}{16E_{\textrm{c}'}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{\textrm{c}'}}.
+    \mathcal{L}_\textrm{R}&=\frac{1}{16E_{C_\textrm{R}}}(\dot{\varphi}_{-1}-\dot{\varphi}_{-2})^2+\frac{1}{16E_{L_\textrm{R}}}(\varphi_{-1}-\varphi_{-2})^2\\
+    \mathcal{L}_{\textrm{g}}&=\sum_{i=1}^{N-1} \frac{\dot{\varphi_i}^2}{16E_{\textrm{g,j}}}+\sum_{i=0,N} \frac{\dot{\varphi_i}^2}{16E_{\textrm{g,p}}}\\
+    \mathcal{L}_{\textrm{c}}&=\frac{1}{16E_{\textrm{c}'}}(\dot{\varphi}_{-1}-\dot{\varphi_0})^2+\frac{1}{16E_{\textrm{c}'}}(\dot{\varphi}_{-2}-\dot{\varphi}_N)^2\nonumber\\
+    &=\frac{\dot{\varphi}^2_0}{16E_{\textrm{c}'}}+\frac{\dot{\varphi}^2_{-1}}{16E_{\textrm{c}'}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{\textrm{c}'}}.\label{eq:float-float}
 \end{align}
-Now, we can use the definition of phase difference quadratures
+}
+The definitions and values of capacitive energies used here are given in Table~\ref{tab:circuit_params} except for $E_{\textrm{C}'}=e^2/2C'$. Here the terms associated with $\dot{\varphi}_i (\theta_i)$ are the kinetic (potential) energy terms. We can ignore the harmonic oscillator Lagrangian $\mathcal{L}_\textrm{R}$ due to triviality. We will now expand on the derivation in Refs.~\cite{ferguson2013symmetries,viola2015collective} for completeness. 
+
+We can use the definition of phase difference quadratures
 \begin{align}
 \varphi_m-\varphi_0=\sum_{l=1}^m\theta_l
 \end{align}
-and use the fluxoid quantization with an external flux $\varphi_{\mathrm{ext}}=\pi$.
+and the fluxoid quantization with an external flux choice of $\varphi_{\mathrm{ext}}=\pi$ as per the main text.
 \begin{align}
-\\ \sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z,
+\sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z,
 \end{align}
 where $z\in\mathbb{Z}$ is an arbitrary integer. Writing the the Lagrangian in this new basis follows $\partial \mathcal{L}/\partial \dot{\varphi}_0=0$ yields the expression,
 \begin{align}
@@ -633,6 +636,8 @@ We simplify the Lagrangian $\mathcal{L}_\textrm{g}+\mathcal{L}_\textrm{c}$ as
     &=\sum_{m=1}^N\sum_{n=1}^N\dot{\theta}_m\dot{\theta}_{n} \frac{(N-\text{max}\{m,n\}+1)\text{min}\{m,n\}E_{\textrm{t}}}{16E_{\textrm{g}}^2}
 \end{align}
 The first line shows that the contribution from the coupling capacitance comes only via the readout resonator mode. The second and third lines, on the other hand, show the terms which contribute to parasitic couplings via the the ground capacitance due to terms proportional to $\dot{\theta}_m\dot{\theta}_n$. 
+
+Note that for the grounded resonator and grounded fluxonium circuits, see Figs.~\ref{fig:circuit_choice}(b,c), we can respectively impose $\dot{\varphi}_{-2}=0$ and $\dot{\varphi}_{N}=0$. 
 \paragraph{Collective Modes.} 
 Now, we will define the collective modes for the fluxonium circuit, $\{\phi,\xi_1,...,\xi_{N-1}\}$ such that 
 \begin{align}
