@@ -533,7 +533,7 @@ explicit transitions with quasienergies for the Floquet profile shown in Fig.~\r
 
 \section{Conclusion and Further Work}\label{sec:conclusion}
 %%%%Summary/inferences&&&&&&
-
+\sh{Aash, please go through this shorter conclusion for coherence. Once you do, please remove my comment.}
 In this work, we have analyzed the impact of parasitic modes on driven JJA fluxonium qubits, showing that measurement-induced state transitions of a fluxonium qubit can occur via excitations of a parasitic mode of the JJA. These processes, we have called PMIST, occur at particular resonance conditions when the energy of several readout photons is equal to a small number of parasitic mode excitations and a fluxonium mode excitation.  
 
 We find that PMIST transitions can occur at meaningfully-high rates (with avoided crossing quasienergy gap $\Delta_{\textrm{ac}}=0.66 \ \textrm{MHz}$) because of the strong coupling between  parasitic modes and the qubit. Consequently, it is possible to have qubit state transitions mediated via JJA internal mode during fluxonium readout, even at low average readout photon numbers and while using typical parameters that enable high fidelity, dispersive readout. For example, we have shown that PMIST does lower the onset of MIST processes to $\sim 10$ readout photons at certain drive frequencies. In addition, it has the potential to significantly dephase the qubit post-measurement, which could in turn limit the qubit gate fidelities required for quantum error correction, and ultimately the performance of a quantum processor. However, the coupling of the parasitic mode to the readout is still sufficiently weak such that, for the vast majority of readout frequencies, the JJA mode excitation population is negligible unless a PMIST occurs. Therefore, these processes can be avoided via judicious choice of readout, junction array, and fluxonium parameters.
@@ -545,14 +545,14 @@ We analyze the trend in PMIST for various drive frequencies, parasitic mode freq
 We have presented a first analysis toward understanding the role of parasitic modes in the dispersive readout dynamics of a fluxonium circuit. Mitigating the parasitic mode excitations could involve careful selection of the readout resonator frequency, and varying junction energies along the array to localize parasitic modes. Such modifications alter the parasitic mode spectrum towards reducing excitation probability. The circuit parameters used in this work correspond to a parasitic mode of the fluxonium's junction array. However, other modes with similar frequencies may also participate in the environment of the fluxonium. This may include, for example, confined package modes, slot line modes, and harmonics of coplanar waveguide resonators for readout. Our results show the significance of taking all such modes into consideration when driving many excitations into highly nonlinear circuits.  
 
 \section{Acknowledgments}
- We thank Akshay Koottandavida, Daniel K. Weiss, Sumeru Hazra, Connor Hann, Kyungjoo Noh, Simon Leiu and Vidul R. Joshi for fruitful discussions. We are grateful to Simone Severini, Bill Vass, Oskar Painter, Fernando Brand\~ao, Eric Chisholm, and AWS for supporting the quantum computing program. %SS acknowledges support from the Army Research Office (ARO) under Grant Number W911NF-23-1-0051 for the time she spent on this project at Yale. SS is grateful to Connor Hann for inviting her to pursue an internship program at AWS where this project started.
+ We thank Akshay Koottandavida, Daniel K. Weiss, Sumeru Hazra, Alessandro Miano, Connor Hann, Kyungjoo Noh, Simon Leiu and Vidul R. Joshi for fruitful discussions. We are grateful to Simone Severini, Bill Vass, Oskar Painter, Fernando Brand\~ao, Eric Chisholm, and AWS for supporting the quantum computing program. %SS acknowledges support from the Army Research Office (ARO) under Grant Number W911NF-23-1-0051 for the time she spent on this project at Yale University. SS is grateful to Connor Hann for inviting her to pursue an internship program at AWS where this project started.
 \appendix
 \section{Single-Point Connections}\label{app:alt_circuits}
 %Appendices for Sec 4
 \begin{figure*}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Circuit_choice.pdf}
-    \caption{(a-c) Alternative readout circuits. (a) Parallel circuit ($H_1$) same as Fig.~\ref{fig:meas_circuit}(a), (b) Grounded readout resonator ($H_2$), (c) Grounded fluxonium ($H_3$). Alternatives (b) and (c) require a single-point connection to the readout line $V$, unlike the parallel circuit in (a). The parallel circuit is used as a reference for denoting phase variables $\varphi_i$ at each node and phase difference variables $\theta_j$ across each junction used in the derivation of the Lagrangian for all three circuits. We maintain the values for all circuit variables the same except for the coupling capacitances $C,C',C''$ and differential capacitances $C_\textrm{c},C_\textrm{c}',C_\textrm{c}''$. (d) Absolute values of the coefficients of coupling terms in the Hamiltonian (in GHz). We can see that some parasitic modes couple to the qubit stronger than the qubit couples to the readout for all three circuits. The parasitic mode coupling to the readout is very slightly weaker in $H_3$ compared to $H_1$, $H_2$.}
+    \caption{(a-c) Alternative readout circuits. (a) Symmetric parallel circuit ($H_1$) same as Fig.~\ref{fig:meas_circuit}(a), (b) Asymmetric readout circuit with floating fluxonium ($H_2$), (c) Asymmetric readout circuit with grounded fluxonium ($H_3$). Alternatives (b) and (c) require a single-point connection to the readout line $V$, unlike the parallel circuit in (a). The parallel circuit is used as a reference for denoting phase variables $\varphi_i$ at each node and phase difference variables $\theta_j$ across each junction used in the derivation of the Lagrangian for all three circuits. We maintain the values for all circuit variables the same except for the coupling capacitances $C,C',C''$ and differential capacitances $C_\textrm{c},C_\textrm{c}',C_\textrm{c}''$. (d) Absolute values of the coefficients of coupling terms in the Hamiltonian (in GHz). We can see that some parasitic modes couple to the qubit stronger than the qubit couples to the readout for all three circuits. The parasitic mode coupling to the readout is very slightly weaker in $H_3$ compared to $H_1$, $H_2$.}
     \label{fig:circuit_choice}
 \end{figure*}
 
@@ -586,7 +586,7 @@ We have presented a first analysis toward understanding the role of parasitic mo
     \caption{Capacitances and zero-point fluctuation (ZPF) values for the fluxonium readout circuit used in the main text in Figs.~\ref{fig:meas_circuit} and~\ref{fig:circuit_choice}(a).}
     \label{tab:params}
     \end{table}
-The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text can have several modifications, each of which may affect various performance metrics. This circuit has a parallel configuration with a symmetry (identified in Ref.~\cite{ferguson2013symmetries}) which removes the coupling to the lowest frequency mode $\mu=1$~\cite{viola2015collective}. The elements crucial to this symmetry are the equal coupling capacitances on both ends of the parallel circuit. While preserving this symmetry, in Fig.~\ref{fig:circuit_choice}, we present two modifications to the parallel circuit, with different grounding options for the fluxonium and the resonator. We will refer to these circuit choices as: $H_1$, parallel circuit in Fig.~\ref{fig:circuit_choice}(a) (same as Fig.~\ref{fig:meas_circuit}), $H_2$, grounded readout resonator circuit in Fig.~\ref{fig:circuit_choice}(b), and $H_3$, grounded fluxonium circuit in Fig.~\ref{fig:circuit_choice}(c). The second modification is used to study the readout fidelity in case of a hangar geometry with a single voltage line. The third modification is used to study the differences between a floating fluxonium circuit and a grounded fluxonium circuit in terms of readout. We adjust the coupling capacitances (using $C_{\textrm{c}}=5.06 \ \mathrm{fF},C_{\textrm{c}}'=4.12 \ \mathrm{fF}$ in Figs.~\ref{fig:circuit_choice}(b,c)) and the total capacitance of the phase slip junction (busing $C'=4.97 \ \mathrm{fF},C''=5.8 \ \mathrm{fF}$ in Fig.~\ref{fig:circuit_choice}(b,c)), as compared to the values for the parallel circuit given by Table~\ref{tab:params}. These modifications achieve the same qubit frequency $\omega_{01}/2\pi$, plasmon frequency $\omega_{12}/2\pi$, qubit-readout coupling constant $g_{\phi \mu}$ and qubit-readout dispersive shift $\chi_{\phi r}$ for the three circuits as given by Table~\ref{tab:readout_params}. Under these choices, we find that the readout parameters affected by parasitic modes are roughly the same across all three circuits, given our assumptions of ordered array and no self-nonlinearity in parasitic modes. See Table~\ref{tab:parasitic_params} in App.~\ref{app:Hamiltonian} for details. 
+The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text can have several modifications, each of which may affect various performance metrics. This circuit has a parallel configuration with a symmetry (identified in Ref.~\cite{ferguson2013symmetries}) which removes the coupling to the lowest frequency mode $\mu=1$~\cite{viola2015collective}. The elements crucial to this symmetry are the equal coupling capacitances on both ends of the parallel circuit. While preserving this symmetry, in Fig.~\ref{fig:circuit_choice}, we present two modifications to the parallel circuit, with different grounding options for the fluxonium and the resonator. We will refer to these circuit choices as: $H_1$, a symmetric parallel circuit in Fig.~\ref{fig:circuit_choice}(a) (same as Fig.~\ref{fig:meas_circuit}), $H_2$, asymmetric readout circuit with floating fluxonium in Fig.~\ref{fig:circuit_choice}(b), and $H_3$, asymmetric readout circuit with grounded fluxonium in Fig.~\ref{fig:circuit_choice}(c). The second modification is an asymmetric circuit which is used to study the readout fidelity in case of a hangar geometry with a single voltage line~\cite{zhang_universal_2021}. We shall refer to these circuits as symmetric parallel circuit, asymmetric floating fluxonium circuit and asymmetric grounded fluxonium circuit, respectively. The third modification uses a grounded fluxonium in the asymmetric readout circuit~\cite{flux_stefanski_2024}. We adjust the coupling capacitances (using $C_{\textrm{c}}=5.06 \ \mathrm{fF},C_{\textrm{c}}'=4.12 \ \mathrm{fF}$ in Figs.~\ref{fig:circuit_choice}(b,c)) and the total capacitance of the phase slip junction (busing $C'=4.97 \ \mathrm{fF},C''=5.8 \ \mathrm{fF}$ in Fig.~\ref{fig:circuit_choice}(b,c)), as compared to the values for the parallel circuit given by Table~\ref{tab:params}. These modifications achieve the same qubit frequency $\omega_{01}/2\pi$, plasmon frequency $\omega_{12}/2\pi$, qubit-readout coupling constant $g_{\phi \mu}$ and qubit-readout dispersive shift $\chi_{\phi r}$ for the three circuits as given by Table~\ref{tab:readout_params}. Under these choices, we find that the readout parameters affected by parasitic modes are roughly the same across all three circuits, given our assumptions of ordered array and no self-nonlinearity in parasitic modes. See Table~\ref{tab:parasitic_params} in App.~\ref{app:Hamiltonian} for details. 
 
 \subsection{Lagrangian}
 
@@ -608,15 +608,12 @@ where
     &=\frac{\dot{\varphi}^2_0}{16E_{\textrm{c}}}+\frac{\dot{\varphi}^2_{-1}}{16E_{\textrm{c}}}-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E_{\textrm{c}}}\nonumber\\&\quad+\frac{\dot{\varphi}^2_\textrm{N}}{16E_{\textrm{c}}}+\frac{\dot{\varphi}^2_{-2}}{16E_{\textrm{c}}}-\frac{\dot{\varphi}_\textrm{N}\dot{\varphi}_{-2}}{8E_{\textrm{c}}}.\label{eq:float-float}
 \end{align}
 }
-The definitions and values of capacitive energies used here are given in Table~\ref{tab:circuit_params} for the parallel circuit. Here the terms associated with $\dot{\varphi}_i (\theta_i)$ are the kinetic (potential) energy terms. We can ignore the harmonic oscillator Lagrangian $\mathcal{L}_\textrm{R}$ due to triviality. Note that for the grounded readout resonator and grounded fluxonium circuits, see Figs.~\ref{fig:circuit_choice}(b,c), we can respectively impose $\dot{\varphi}_{-2}=0$ and $\dot{\varphi}_{N}=0$. 
+The definitions and values of capacitive energies used here are given in Table~\ref{tab:circuit_params} for the parallel circuit. Here the terms associated with $\dot{\varphi}_i (\theta_i)$ are the kinetic (potential) energy terms. We can ignore the harmonic oscillator Lagrangian $\mathcal{L}_\textrm{R}$ due to triviality. Note that for the asymmetric floating fluxonium and grounded fluxonium circuits, see Figs.~\ref{fig:circuit_choice}(b,c), we can respectively impose $\dot{\varphi}_{-2}=0$ and $\dot{\varphi}_{N}=0$. 
 First, we will expand on the derivation in Refs.~\cite{ferguson2013symmetries,viola2015collective} for completeness and then impose these conditions to derive the Lagrangians for all three cases. 
 
-We can use the definition of phase difference quadratures
+We can use the definition of phase difference quadratures and the fluxoid quantization with an external flux choice of $\varphi_{\mathrm{ext}}=\pi$ as per the main text.
 \begin{align}
-\varphi_m-\varphi_0=\sum_{l=1}^m\theta_l
-\end{align}
-and the fluxoid quantization with an external flux choice of $\varphi_{\mathrm{ext}}=\pi$ as per the main text.
-\begin{align}
+\sum_{l=1}^m\theta_l&=\varphi_m-\varphi_0\\
 \sum_{m=0}^N \theta_m+\varphi_\mathrm{ext}&=2\pi z,
 \end{align}
 where $z\in\mathbb{Z}$. Writing the the Lagrangian in this new basis follows $\partial \mathcal{L}/\partial \dot{\varphi}_0=0$ yields the expression,
@@ -629,18 +626,15 @@ E_\textrm{t}=\Big(\frac{2}{E_{\textrm{c}}}+\frac{N-1}{E_{\textrm{g,j}}}+\frac{2}
 \end{align}
 is the total capacitive energy of the circuit due to the parasitic ground capacitances and coupling capacitances. Using the expression for $\dot{\varphi}_0$ we get $\mathcal{L}_\textrm{c}+\mathcal{L}_\textrm{g}=$,
 \begin{align}
-%\mathcal{L}_\textrm{g}+\mathcal{L}_\textrm{c}&=-\frac{\dot{\varphi}_0^2}{16E_\textrm{t}}+\frac{\big(\dot{\varphi}_{-1}^2+\dot{\varphi}_{-2}^2\big)}{16E_\textrm{c}}-\frac{\dot{\varphi}_{-2}}{8E_\textrm{c}}\sum_{l=1}^N\dot{\theta}_l\nonumber\\
-%&+\Big(\sum_{l=1}^N\dot{\theta}_l\Big)^2\Big(\frac{1}{16E_\textrm{g,p}}+\frac{1}{16E_\textrm{c}}\Big)\nonumber\\
-%&+\frac{1}{16E_\textrm{g,j}}\sum_{i=1}^{N-1}\Big(\sum_{l=1}^i\dot{\theta}_l\Big)^2\\
 &\frac{\big(\dot{\varphi}^2_{-1}+\dot{\varphi}^2_{-2}\big)}{16E_\textrm{c}}\Big(1-\frac{E_\textrm{t}}{E_\textrm{c}}\Big)+\frac{\dot{\varphi}_{-1}\dot{\varphi}_{-2}}{8E_\textrm{c}}\Big(\frac{E_\textrm{t}}{E_\textrm{c}}\Big)\nonumber\\
-&+\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_\textrm{c}}+\frac{\dot{\varphi}_{-2}\dot{\theta}_n}{E_\textrm{c}}\Big)\Big(\frac{E_t}{8E_\textrm{c}}+\frac{E_t}{8E_\textrm{g,p}}\Big)\nonumber\\&+\sum_{n=1}^{N-1}\Big(\frac{\dot{\varphi}_{-1}\dot{\theta}_n}{E_\textrm{c}}+\frac{\dot{\varphi}_{-2}\dot{\theta}_n}{E_\textrm{c}}\Big)\frac{(N-n)E_t}{8E_\textrm{g,j}}\nonumber\\
-&-\sum_{n=1}^N\frac{\dot{\varphi}_{-2}\dot{\theta}_n}{8E_\textrm{c}}+\Big(\sum_{l=1}^N\dot{\theta}_l\Big)^2\Bigg(\frac{1}{16E_\textrm{c}}+\frac{1}{16E_\textrm{g,p}}\Bigg)\nonumber\\&\quad\times\Bigg(1-\frac{E_\textrm{t}}{E_\textrm{c}}-\frac{E_\textrm{t}}{E_\textrm{g,p}}\Bigg)+\frac{\sum_{i=1}^{N-1}\big(\sum_{l=1}^i\dot{\theta}_l\big)^2}{16E_\textrm{g,j}}\nonumber\\
-&-\sum_{l=1}^N \sum_{l'=1}^{N-1}\dot{\theta}_l\dot{\theta}_{l'}(N-l')\Bigg(\frac{E_\textrm{t}}{8E_\textrm{c}E_\textrm{g,j}}+\frac{E_\textrm{t}}{8E_\textrm{g,p}E_\textrm{g,j}}\Bigg)\nonumber\\
-&-\frac{E_\textrm{t}}{16}\Bigg[\frac{\sum_{l=1}^{N-1}(N-i)\theta_i}{E_\textrm{g,j}}\Bigg]^2.
+&+\sum_{i=1}^N\Big(\frac{\dot{\varphi}_{-1}\dot{\theta}_i}{E_\textrm{c}}+\frac{\dot{\varphi}_{-2}\dot{\theta}_i}{E_\textrm{c}}\Big)\Big(\frac{E_t}{8E_\textrm{c}}+\frac{E_t}{8E_\textrm{g,p}}\Big)\nonumber\\&+\sum_{i=1}^{N-1}\Big(\frac{\dot{\varphi}_{-1}\dot{\theta}_i}{E_\textrm{c}}+\frac{\dot{\varphi}_{-2}\dot{\theta}_i}{E_\textrm{c}}\Big)\frac{(N-i)E_t}{8E_\textrm{g,j}}\nonumber\\
+&-\sum_{i=1}^N\frac{\dot{\varphi}_{-2}\dot{\theta}_i}{8E_\textrm{c}}+\Big(\sum_{i=1}^N\dot{\theta}_i\Big)^2\Bigg(\frac{1}{16E_\textrm{c}}+\frac{1}{16E_\textrm{g,p}}\Bigg)\nonumber\\&\quad\times\Bigg(1-\frac{E_\textrm{t}}{E_\textrm{c}}-\frac{E_\textrm{t}}{E_\textrm{g,p}}\Bigg)+\frac{\sum_{i=1}^{N-1}\big(\sum_{l=1}^i\dot{\theta}_l\big)^2}{16E_\textrm{g,j}}\nonumber\\
+&-2\sum_{l=1}^N \sum_{l'=1}^{N-1}\dot{\theta}_l\dot{\theta}_{l'}(N-l')\Bigg(\frac{E_\textrm{t}}{8E_\textrm{c}E_\textrm{g,j}}+\frac{E_\textrm{t}}{8E_\textrm{g,p}E_\textrm{g,j}}\Bigg)\nonumber\\
+&-\frac{E_\textrm{t}}{16}\Bigg[\frac{\sum_{i=1}^{N-1}(N-i)\theta_i}{E_\textrm{g,j}}\Bigg]^2.
 \end{align}
-We will eventually use the scalar voltage values for $\dot{\varphi}_{-1},\dot{\varphi}_{-2}$ and hence we can ignore any term solely dependent on these variables. The terms independent of $\dot{\varphi}_{-1},\dot{\varphi}_{-2}$ are combined as $\sum_{m=1}^{N}\sum_{n=1}^{N}\mathcal{G}_{mn}\dot{\theta}_m\dot{\theta}_n$ where,
+We will eventually use the scalar voltage values for $\dot{\varphi}_{-1},\dot{\varphi}_{-2}$ and hence we can ignore any term solely dependent on these variables. The terms independent of $\dot{\varphi}_{-1},\dot{\varphi}_{-2}$ are combined as $\sum_{l=1}^{N}\sum_{l=1}^{N}\mathcal{G}_{ll'}\dot{\theta}_l\dot{\theta}_{l'}$ where,
 \begin{align}
-\mathcal{G}_{mn}&=\Big[\frac{\textrm{N}-\text{max}\{m,n\}}{16E_\textrm{g,j}}+\frac{1}{16E_\textrm{c}}+\frac{1}{16E_\textrm{g,p}}\Big]\nonumber\\&\quad\times\Big[1-\frac{E_\textrm{t}}{E_\textrm{c}}-\frac{E_\textrm{t}}{E_\textrm{g,p}}-(\textrm{N}-\text{min}\{m,n\})\frac{E_\textrm{t}}{E_\textrm{g,j}}\Big]
+\mathcal{G}_{ll'}&=\Big[\frac{\textrm{N}-\text{max}\{l,l'\}}{16E_\textrm{g,j}}+\frac{1}{16E_\textrm{c}}+\frac{1}{16E_\textrm{g,p}}\Big]\nonumber\\&\quad\times\Big[1-\frac{E_\textrm{t}}{E_\textrm{c}}-\frac{E_\textrm{t}}{E_\textrm{g,p}}-(\textrm{N}-\text{min}\{l,l'\})\frac{E_\textrm{t}}{E_\textrm{g,j}}\Big]
 \end{align}
 This final expression matches with Refs.~\cite{ferguson2013symmetries,viola2015collective}, for an ordered array.
 \paragraph{Collective Modes.} 
@@ -650,7 +644,7 @@ Now, we will define the collective modes for the fluxonium circuit, $\{\phi,\xi_
 \end{align}
 and inversely,
 \begin{align}
-    \phi&=\sum_{m}\theta_m,\quad \xi_\mu=\sum_m W_{\mu m}\theta_m.
+    \phi&=\sum_{m=1}^N\theta_m,\quad \xi_\mu=\sum_{m=1}^N W_{\mu m}\theta_m.
 \end{align}
 Here, $\phi$ is called the superinductance mode or the \emph{qubit} mode while $\xi_\mu$ denote the parasitic modes indexed by $\mu\in\{1,..,N-1\}$~\cite{ferguson2013symmetries}. The matrix $W$ is semi-orthogonal, with dimensions $(N-1)\times N$, and is given by $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$. Its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice
 \begin{align}
@@ -658,137 +652,80 @@ Here, $\phi$ is called the superinductance mode or the \emph{qubit} mode while $
 \end{align}
 is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective} to derive the Hamiltonian for the parallel circuit.
 The choice of these new variables highlights the collective modes describing the low-energy physics as illustrated in~\cite{catelani2011relaxation,koch2009charging,manucharyan2009fluxonium}. We can now split the combined Lagrangian $\mathcal{L}=\mathcal{T}-\mathcal{U}$ into kinteic energy $\mathcal{T}$ and potential energy $
-\mathcal{U}$ terms in the basis of collective modes as, \sh{Here on, we need to remove terms due to Ec3 and Ec4, and also point out where the symmetry from the odd modes is coming from. We also need to separate Egj and Egp}
+\mathcal{U}$ terms in the basis of collective modes as,
 \begin{align}
-\mathcal{T}=&\frac{\dot{\varphi}^2_{-1}}{16E_{\textrm{c}}}\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)+\frac{1}{E_{\textrm{c}}}\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)\nonumber\\
-      &+\Big[\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}\Big)\Big(\frac{E_{\textrm{t}}}{8E_{\textrm{c}}}+(N-n+1)\frac{E_{\textrm{t}}}{8E_{\textrm{g}}}\Big)\nonumber\\&\quad-\sum_{n=1}^N\frac{\dot{\varphi}_{-2}}{8E_{\textrm{c}}}\Big](\dot{\phi}/N+\sum_\mu W_{\mu n}\dot{\xi}_\mu)+\sum_{m=1}^N\sum_{n=1}^N(\dot{\phi}/N\nonumber\\
-  &+\sum_\mu W_{\mu n}\dot{\xi}_\mu)(\dot{\phi}/N+\sum_\mu W_{\mu m}\dot{\xi}_\mu)\Big( (N-\text{max}\{m,n\}\nonumber\\&+1)\frac{1}{16E_{\textrm{g}}}+\frac{1}{16E_{\textrm{c}}}\Big)\Big(\text{min}\{m,n\}\frac{E_{\textrm{t}}}{E_{\textrm{g}}}+\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)\label{eq:kin-energy}\\
-    \mathcal{U}&=-E_{J_\textrm{p}}\cos(\phi)-\frac{(\varphi_{-1}-\varphi_{-2})^2}{16E_{R}}\nonumber\\&\quad-\sum_{n=1}^NE_{J_\textrm{j}}\cos\Big(\phi/N+\sum_\mu W_{\mu n}\xi_\mu\Big)\label{eq:pot-energy}
+\mathcal{T}=&\Big[\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}\Big)\Big(\frac{E_{\textrm{t}}}{8E_{\textrm{c}}}+\frac{E_{\textrm{t}}}{8E_{\textrm{g,p}}}\Big)-\frac{\dot{\varphi}_{-2}}{8E_{\textrm{c}}}\Big]\dot{\phi}\nonumber\\&+\sum_{l=1}^{N-1}(N-l)\frac{E_{\textrm{t}}}{8E_{\textrm{g,j}}}\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}\Big)\Big](\dot{\phi}/N+\sum_\mu W_{\mu l}\dot{\xi}_\mu)\nonumber\\
+  &+\sum_{l=1}^N\sum_{l'=1}^N(\dot{\phi}/N+\sum_\mu W_{\mu l}\dot{\xi}_\mu)(\dot{\phi}/N+\sum_\mu W_{\mu l'}\dot{\xi}_\mu)\nonumber\\
+  &\times\Big[\frac{\textrm{N}-\text{max}\{l,l'\}}{16E_\textrm{g,j}}+\frac{1}{16E_\textrm{c}}+\frac{1}{16E_\textrm{g,p}}\Big]\nonumber\\&\times\Big[1-\frac{E_\textrm{t}}{E_\textrm{c}}-\frac{E_\textrm{t}}{E_\textrm{g,p}}-(\textrm{N}-\text{min}\{l,l'\})\frac{E_\textrm{t}}{E_\textrm{g,j}}\Big]\label{eq:kin-energy}\\
+    \mathcal{U}&=-E_{J_\textrm{p}}\cos(\phi)-\sum_{l=1}^NE_{J_\textrm{j}}\cos\Big(\phi/N+\sum_\mu W_{\mu l}\xi_\mu\Big)\label{eq:pot-energy}
 \end{align}
-
-\paragraph{Symmetries in the Lagrangian}
-Simplifying the kinetic energy term from Eq.~\ref{eq:kin-energy}, recalling that $\sum_m W_{\mu m}=0$, and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$ yields
-\begin{align}
-\mathcal{T}&=-\frac{\dot{\varphi}_{-2}eV}{16E_{\textrm{c}}}+\frac{\dot{\varphi}_{-1}eV}{16E_{\textrm{c}}}-E_{\textrm{t}}\frac{\dot{\varphi}_{-1}\dot{\varphi}_{-2}}{16E_{\textrm{c}}^2}\nonumber\\
-    &+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E_{\textrm{c}}}\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)+\frac{1}{E_{\textrm{c}}}\Big)\\&+\frac{\dot{\varphi}^2_{-2}}{16}\Big(\frac{1}{E_{\textrm{c}}}+\frac{1}{E_{\textrm{c}}}\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)\Big)\nonumber\\&\quad+\frac{E_{\textrm{t}}}{8E_{\textrm{c}}^2}\dot{\varphi}_{-1}\dot{\phi}+\frac{E_{\textrm{t}}}{8E_{\textrm{c}}^2}\dot{\varphi}_{-2}\dot{\phi}\nonumber\\
-      &+\Big[\sum_{n=1}^N\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}\Big)\Big(\frac{E_{\textrm{t}}}{8E_{\textrm{c}}}+(N-n+1)\frac{E_{\textrm{t}}}{8E_{\textrm{g}}}\Big)\nonumber\\&\quad-\sum_{n=1}^N\frac{\dot{\varphi}_{-2}}{8E_{\textrm{c}}}\Big](\dot{\phi}/N+\sum_\mu W_{\mu n}\dot{\xi}_\mu)\nonumber\\
-    &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big],    
-    \end{align}
-where the coefficients are given by
-\begin{align}
-    M_{00}&=\frac{1}{16E_{\textrm{C}}}+\frac{1}{16NE_{C_\textrm{j}}},\quad M_{0\mu}=0,\quad    M_{\mu\nu}=\frac{\delta_{\mu\nu}}{16E_{C_\textrm{j}}}\\
-    G_{00}&=\frac{1}{64E_{\textrm{t}}}\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)^2\Big[1-\frac{2}{3}\frac{N-1}{N}\Big]\\
-    G_{0\mu}&=-\frac{c_\mu o_{\mu+1}}{16E_{\textrm{g}}\sqrt{2N}s_\mu^2}\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)\\
-    G_{\mu\nu}&=\frac{1}{64E_{\textrm{g}}s_\mu^2}\Big[\delta_{\mu\nu}-\frac{E_{\textrm{t}}}{E_{\textrm{g}}}\frac{2c_\mu c_\nu o_\mu o_\nu}{N s_\nu^2}\Big].
-\end{align}
-\sh{Define c,o.}
-The quantities $G_{00},G_{0\mu},G_{\mu\nu}$ contribute to the equations for coupling strengths while $M_{00},M_{\nu\nu}$ contribute to the charging energies of the qubit and parasitic modes, discussed in Sec.~\ref{sec:expressions}. Note that $G_{00}$ increases quadratically with a factor of $\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)$. Thus, $G_{0\mu}$ is different from the parallel circuit by a factor $\Big(1-\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)$. The last term, $G_{\mu\nu}$ same as the case of parallel circuit quoted in Ref.~\cite{viola2015collective} because it has no dependence on coupling capacitances.
 \paragraph{Linear Approximation}
 From here on, we define a sum over $m,n$ as running from $1$ to $N$, while the sum over $\mu,\nu$ runs from $1$ to $N-1$. Simplification to including only linear terms from Taylor expansion of the cosine ($\cos{x}\sim 1-\frac{x^2}{2}$) Eq.~\ref{eq:pot-energy} and using $\sum_{n}W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$, yields (up to a constant term)
 \allowdisplaybreaks{
 \begin{align}
-    \mathcal{U}&=E_{J_\textrm{p}}\cos(\phi)-\frac{(\varphi_{-1}-\varphi_{-2})^2}{16E_{R}}\nonumber\\&\quad+\frac{E_{J_\textrm{j}}}{2N}\phi^2+\frac{E_{J_\textrm{j}}}{2}\sum_{\mu}\xi_\mu^2\\
-    &=E_{J_\textrm{p}}\cos(\phi)+\frac{E_{J_\textrm{j}}}{2N}\phi^2+\frac{E_{J_\textrm{j}}}{2}\sum_{\mu}\xi_\mu^2-\frac{\varphi_{-}^2}{16E_{R}},
+    \mathcal{U}&=E_{J_\textrm{p}}\cos(\phi)+\frac{E_{J_\textrm{j}}}{2N}\phi^2+\frac{E_{J_\textrm{j}}}{2}\sum_{\mu}\xi_\mu^2\\
+    &=E_{J_\textrm{p}}\cos(\phi)+\frac{E_{J_\textrm{j}}}{2N}\phi^2+\frac{E_{J_\textrm{j}}}{2}\sum_{\mu}\xi_\mu^2,
     \end{align}
-    }
-where $\dot{\phi}_{-1}=-\dot{\phi}_{-2}=eV$
-\sh{Need to remove eV in this derivation}
+}
 
-We can see that there is no choice of $\dot{\varphi}_{\pm}$ such that the parasitic coupling between the readout resonator and fluxonium can be canceled without eliminating the coupling between the qubit and readout resonator. Note that, $\frac{N+1}{E_{\textrm{g}}}=\frac{1}{E_{\textrm{g}}}-\frac{1}{E_{\textrm{c}}}$ \sh{weird!}, and thus, the coupling between the qubit and the readout is same as the parallel circuit if $E_{\textrm{g}} \ll E_{\textrm{c}}$ with a lower $N$. We drive the readout resonator, such that, $\dot{\varphi}_{-}\equiv 2eV$ (the sign of the voltage value has been changed because in this circuit $\varphi_{-1}$ will be connected to $V$ and not $-V$, just for simplicity).
+\paragraph{Circuit modifications}
+We will simplify the kinetic energy term from Eq.~\ref{eq:kin-energy}, recalling that $\sum_m W_{\mu m}=0$, and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$. In addition, we will now impose conditions 
+\begin{itemize}
+    \item $\dot{\varphi}_{-1}=\textrm{eV},\dot{\varphi}_{-2}=-\textrm{eV}$ for the parallel circuit, see Fig.~\ref{fig:circuit_choice}(a), Lagrangian $\mathcal{L}_1=\mathcal{T}_1-\mathcal{U}_1$.
+    \item $\dot{\varphi}_{-1}=2\textrm{eV},\dot{\varphi}_{-2}=0$ for the asymmetric floating fluxonium circuit, see Fig.~\ref{fig:circuit_choice}(b), Lagrangian $\mathcal{L}_2=\mathcal{T}_2-\mathcal{U}_2$.
+    \item $\dot{\varphi}_{-1}=2\textrm{eV},\dot{\varphi}_{-2}=0,\dot{\varphi}_N=0$ for the asymmetric grounded fluxonium circuit, see Fig.~\ref{fig:circuit_choice}(c), Lagrangian $\mathcal{L}_3=\mathcal{T}_3-\mathcal{U}_3$. 
+    \item  In addition $C_\textrm{c}=0$ on one end in Figs.~\ref{fig:circuit_choice}(b,c).
+\end{itemize}
+ The potential of all three circuit remains the same ($\mathcal{U}=\mathcal{U}_1=\mathcal{U}_2=\mathcal{U}_3$) but the kinetic energies change as follows,\sh{check these equations and define all M's and G's}
 \begin{align}
-    \mathcal{L}&=\frac{\dot{\varphi}_{+}^2}{64E_{\textrm{c}}}\Big(2+\frac{(N+1)E_{\textrm{t}}}{E_{\textrm{g}}}\Big)+\frac{\dot{\varphi}_{+}eV}{16E_{\textrm{c}}}\Big(\frac{3}{2}+\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)\nonumber\\
-    &\quad-\frac{(N+1)E_{\textrm{t}}}{32E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}eV+\frac{(N+1)E_{\textrm{t}}}{64E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\dot{\varphi}_{+}\nonumber\\
-    &\quad -\frac{E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu eV\nonumber\\
-    &\quad+\frac{E_{\textrm{t}}}{32E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu\dot{\varphi}_{+}\mathcal{O}(e^2V^2)\nonumber\\
-    &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\
-    &\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
-\end{align}
-\sh{Correct the derivation in numerics and text to only use grounded readout resonator and then extend briefly to the floating case. We are ding so by eliminating all terms with $E_{\textrm{c}}^3, E_{\textrm{c}}^4$ and using $\dot \varphi_{-2}=0, \dot\varphi_{-1}=-2eV$. Thus, $\varphi_{+}=\varphi_{-}=-2eV$. So this point everything will be correct and we do not need to change the equations for Ec but only for Eg
-} 
+\mathcal{T}_1&=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\textrm{eV}-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu \textrm{eV}\nonumber\\
+    &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big],\\ 
+\mathcal{T}_2&=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\textrm{eV}-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu \textrm{eV}\nonumber\\
+    &\quad+\Big[(M_{00}'+G_{00}')\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}'+G_{0\mu}')\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}'+G_{\mu\nu}')\dot{\xi_\mu}\dot{\xi_\nu}\Big],\\
+\mathcal{T}_3&=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\textrm{eV}-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu \textrm{eV}\nonumber\\
+    &\quad+\Big[(M_{00}''+G_{00}'')\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}''+G_{0\mu}'')\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}''+G_{\mu\nu}'')\dot{\xi_\mu}\dot{\xi_\nu}\Big], 
+    \end{align}
+where, defining $c_\mu=\cos{\frac{\pi\mu}{2N}}, s_\mu=\sin{\frac{\pi\mu}{2N}}, o_\mu=\frac{1-(-1)^\mu}{2}$, we have used,
 \begin{align}
-    &=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}eV-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu eV\nonumber\\
-    &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
+    M_{00}&=\frac{1}{E_{C_\textrm{tot}}}+\frac{1}{NE_{C_\textrm{j}}}, M_{0\mu}=0,    M_{\mu\nu}=\frac{\delta_{\mu\nu}}{E_{C_\textrm{j}}}\\
+    G_{00}&=\frac{1}{4E_{\textrm{t}}}\Big[1-\frac{2}{3}\frac{(N^2-1)E_t}{NE_{g,j}}\Big]\\
+    G_{0\mu}&=-\frac{c_\mu o_{\mu+1}}{2E_{\textrm{g,j}}\sqrt{2N}s_\mu^2}\\
+    G_{\mu\nu}&=\frac{1}{4E_{\textrm{g,j}}s_\mu^2}\Big[\delta_{\mu\nu}-\frac{E_{\textrm{t}}}{E_{\textrm{g,j}}}\frac{2c_\mu c_\nu o_\mu o_\nu}{N s_\nu^2}\Big].
 \end{align}
-\paragraph{Hamiltonian:} 
+Note that $C_\textrm{tot}=C_\textrm{p}+C$ is the total capacitance used for the qubit mode. The quantities $G_{00},G_{0\mu},G_{\mu\nu}$ contribute to the equations for the coupling strengths in the final Hamiltonian while $M_{00},M_{\nu\nu}$ contribute to the charging energies of the qubit and parasitic modes, discussed in Sec.~\ref{sec:expressions}.
+\subsection{Hamiltonian} 
 We will now use Legendre transformation to obtain Hamiltonian variables,
 \begin{align}
      p_{\phi}&=\frac{\partial \mathcal{L_K}_o}{\partial \dot{\phi}}=2(M_{00}+G_{00}) \dot{\phi}+\sum_{\mu}(M_{\mu 0}+G_{\mu 0})\dot{\xi}_{\mu}\nonumber\\
-    &\quad-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}eV\\
+    &\quad-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\textrm{eV}\\
     p_{\xi_\mu}&=\frac{\partial \mathcal{L_K}_o}{\partial \dot{\xi}_\mu}=(M_{0\mu}+G_{0\mu}) \dot{\phi}+2\sum_{\nu} (M_{\mu\nu}+G_{\mu\nu}) \dot{\xi}_\nu\nonumber\\
-    &\quad-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}eV
+    &\quad-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}\textrm{eV}
     \end{align}
-\sh{define odd and even sectors and then check what is different here.}
-    Here, the even and odd sectors are not decoupled due to the $eV$ term. The even and odd sectors can be diagonalized independently, such that a rotation on the odd sectors does not affect the even sectors. This is contrary to the case of Eq. 77 in~\cite{viola2015collective} where the rotation of odd sectors affects the even sectors. This is because in that case $G_{0\mu}$ was changed to being dependent on odd as well as even sectors. However, here, only the $\mathcal{L}_V$ term has changed. Thus, if the following condition is satisfied, 
+Here, the even ($\mu\in 2\mathbb{Z}$) and odd ($\mu\in 2\mathbb{Z}+1$) sectors are not decoupled due to the $\textrm{eV}$ term. Thus, both sectors can be diagonalized independently, such that a rotation on the odd sectors does not affect the even sectors. This is contrary to the case of Eq. 77 in~\cite{viola2015collective} where the rotation of odd sectors affects the even sectors. This is because in that case $G_{0\mu}$ was changed to being dependent on odd as well as even sectors. However, here, only the $\mathcal{L}_c$ term has changed. Now, if the following condition is satisfied, 
 \begin{align}
      \frac{\tilde{E}_{c}^{\phi}\tilde{E}_{c,j}^{e}c_i c_j}{32NE_{\textrm{g}}^2s_i^2 s_j^2}&<<1\implies \frac{4E_{\textrm{g}}\tilde{E}_{c}^{\phi}c_i c_j}{32NE_{\textrm{g}}^2s_i^2 }<<1\\
      \implies \frac{4\tilde{E}_{c}^{\phi}N}{8E_{\textrm{g}} \pi^2\mu\nu }&<<1\implies N<<8\pi^2\frac{E_{\textrm{g}}}{\tilde{E}_{c}^{\phi}},
  \end{align}
-\sh{quote the N} we can carry out the exact same procedure as Ref.~\cite{viola2015collective} to simplify the inversion of matrix for the Legendre transformation and obtain the Hamiltonian as follows. Thus, we arrive at the following Hamiltonian
+we arrive at the following Hamiltonians using Legendre transformation,\sh{quote the H1, H2 and H3}
  \begin{align}
 \quad H_2&= 4\bar{E}^\phi_\textrm{c}p_\phi^2+\sum_{\mu=1}^{N-1} 4\tilde{E}^{e/o}_{c,\mu}p_\mu^2\nonumber\\
     &\quad+2\sum_{\mu=1}^{N-1} \frac{\bar{E}^\phi_\textrm{c}\tilde{E}^{e/o}_{c,\mu}c_\mu o_{\mu+1}}{\sqrt{2N}E_{\textrm{g}}s_\mu^2} p_\phi p_\mu \nonumber\\
-&\quad -\bar{E}_\textrm{c}^\phi p_\phi eV\Big[\frac{(N+1)E_{\textrm{t}}}{2E_{\textrm{g}}E_{\textrm{c}}}+\frac{E_{\textrm{t}}^2\tilde{E}_{c,\mu}^{e/o}}{8E_{\textrm{g}}^2E_{\textrm{c}}^2} \Big(\frac{c_\mu^2 o_\mu}{2Ns_\mu^4}\Big)\Big]\nonumber\\
-    &\quad- \sum_{\mu=1}^{N-1} \frac{\bar{E}^\phi_\textrm{c}\tilde{E}^{e/o}_{c,\mu}c_\mu o_{\mu+1}}{\sqrt{2N}E_{\textrm{g}}s_\mu^2}\Big[\frac{(N+1)E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \Big]p_\mu eV\nonumber\\
+&\quad -\bar{E}_\textrm{c}^\phi p_\phi \textrm{eV}\Big[\frac{(N+1)E_{\textrm{t}}}{2E_{\textrm{g}}E_{\textrm{c}}}+\frac{E_{\textrm{t}}^2\tilde{E}_{c,\mu}^{e/o}}{8E_{\textrm{g}}^2E_{\textrm{c}}^2} \Big(\frac{c_\mu^2 o_\mu}{2Ns_\mu^4}\Big)\Big]\nonumber\\
+    &\quad- \sum_{\mu=1}^{N-1} \frac{\bar{E}^\phi_\textrm{c}\tilde{E}^{e/o}_{c,\mu}c_\mu o_{\mu+1}}{\sqrt{2N}E_{\textrm{g}}s_\mu^2}\Big[\frac{(N+1)E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \Big]p_\mu \textrm{eV}\nonumber\\
 &\quad +E_{J_\textrm{p}}\cos{\phi}+\frac{E_L}{2}\phi^2+\frac{E_{J_\textrm{j}}}{2}\sum_{\mu=1}^{N-1} \xi_\mu^2 -\frac{\varphi_{-}^2}{16E_{R}}
  \end{align}
  \sh{Connect this Hamiltonian to the original Hamiltonian and give the expression for each term.}
  where the variables $\tilde{E}^e_{c,\mu}$ are the same as before and $\tilde{E}^o_{c,\mu}$ is the diagonalized charging energy of odd sectors. Here, $\tilde{E}^{e/o}_{c,\mu}$ denotes that the term will be $\tilde{E}^{o}_{c,\mu}$ for odd $\mu$ and $\tilde{E}^{e}_{c,\mu}$ for even $\mu$. Thus, we can see that by not preserving the symmetry we only have the extra odd sector term interacting with the readout resonator. However, this term is extremely small \ER{proportional to / why small}. Additionally, $\mathcal{U}$ remains the same as the parallel case. Thus, in terms of types of couplings there might not be major differences, however, the value of $\bar{E}_\textrm{c}^\phi=(G_{00}+M_{00})^{-1}$ changes since $G_{00}$ has changed. This change can also be diminished with increasing N. Thus, for large enough N, this circuit is the same as the parallel circuit. 
-\subsection{Grounded Fluxonium Circuit}
-\sh{only express initial Lagrangian upto showing the symmetry is preserved and then show the Hamiltonian}
-For $H_3$, the constraint $\dot{\varphi_{N}}=0$ yields
-\begin{align}
-    \mathcal{L}&=\mathcal{L}_{phase-slip}+\mathcal{L}_{JJA}+\mathcal{L}_{g}+\mathcal{L}_{R}+\mathcal{L}_{C}\\
-    \mathcal{L}_{phase-slip}&=\frac{\dot{\varphi}_0^2}{16E_{\textrm{C}}}-E_{J_\textrm{p}}\cos(\varphi_0+\varphi_\mathrm{ext})\\
-    \mathcal{L}_{JJA}&=\sum_{n=1}^N\frac{(\dot{\varphi}_n-\dot{\varphi}_{n-1})^2}{16E^{n}_{C_j}}-E^{n}_{J_j}\cos(\varphi_n-\varphi_{n-1})\\
-    \mathcal{L}_{R}&=\frac{\dot{\varphi}_{-}^2}{16E_{{R}}}-\frac{\varphi_{-}^2}{16E_{R}}\\
-    \mathcal{L}_{g}&=\sum_{n=0}^{N-1} \frac{\dot{\varphi_n}^2}{16E^n_{g}}
-  \end{align}
-  Here, we will not assume that the capacitances to transmission line are infinite or that ground capacitance for the phase-slip junction and JJA. We will leave the value of $\varphi_{\pm}$ a variable in this case unlike the parallel circuit study we performed above. 
-The grounding of fluxonium yields an additional condition to the fluxoid condition $\varphi_\textrm{N}=c, \text{a constant}$ which implies that
-\begin{align}
-     \varphi_0=c-\sum_{l=1}^N \theta_l\implies \dot\varphi_0=-\sum_{l=1}^N \dot\theta_l
-\end{align}
-This used to be our qubit in the definition of collective modes in this article. However, in this case there are only $N-1$ modes, such that the collective modes are defined as,
-\begin{align}
-    \phi=c+\sum_{l=1}^{N-1} \theta_l\implies \dot\phi=-\dot\varphi_{0}
-\end{align}
-Since one of the dynamic variables are fixed we only have $N-1$ modes, thus,
-  \begin{align}
-    \mathcal{L}_{phase-slip}&=\frac{(\sum_{m=1}^{N-1}\dot\theta_m)^2}{16E_{\textrm{C}}}+E_{J_\textrm{p}}\cos\big(\sum_{m=1}^N\theta_m+\varphi_\mathrm{ext}\big)\\
-    \mathcal{L}_{JJA}&=\sum_{n=1}^{N-1}\frac{\dot{\theta}_n^2}{16E^{n}_{C_j}}-E^{n}_{J_j}\cos{\theta_n}\\
-    \mathcal{L}_{R}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi}_{-2})^2}{16E_{{R}}}-\frac{(\varphi_{-1}-\varphi_{-2})^2}{2L_{R}}\\
-    \mathcal{L}_{g}&=\frac{\dot{\varphi}_0^2}{16E^0_{g}}+\sum_{n=1}^N \frac{(\dot{\varphi_0}+\sum_{m=1}^n\dot{\theta}_m)^2}{16E^m_{g}}\\
-    &=\frac{\dot{\varphi}_0^2}{16E^0_{g}}+\sum_{n=1}^N \frac{1}{16E^n_{g}}(\dot{\varphi}_0^2+2\dot{\varphi}_0\sum_{m=1}^n\dot{\theta}_m\nonumber\\&\quad+\sum_{i=1}^n\sum_{j=1}^{n}\dot{\theta}_i\dot{\theta}_j)\\
-    &=\dot{\varphi}_0^2\sum_{n=0}^N\frac{1}{16E^n_\textrm{g}}+2\sum_{n=1}^N\sum_{m=1}^n\frac{\dot{\varphi}_0\dot{\theta}_m}{16E^n_{g}}\nonumber\\&\quad+\sum_{n=1}^N\sum_{j=1}^n\sum_{i=1}^{n}\frac{\dot{\theta}_i\dot{\theta}_j}{16E^n_{g}}\\
-    \mathcal{L}_{c}&=\frac{\dot{\varphi}^2_0}{16E^1_\textrm{c}}+\frac{\dot{\varphi}^2_{-1}}{16}\Big(\frac{1}{E^1_\textrm{c}}+\frac{1}{E^3_\textrm{c}}\Big)\nonumber\\
-    &\quad+\frac{\dot{\varphi}^2_{-2}}{16}\Big(\frac{1}{E^4_\textrm{c}}+\frac{1}{E^2_\textrm{c}}\Big)+\frac{(\dot{\varphi}_0+\sum_{m=1}^N\dot{\theta}_m)^2}{16E^2_\textrm{c}}\nonumber\\
-  &-\frac{\dot{\varphi}_0\dot{\varphi}_{-1}}{8E^1_\textrm{c}}-\frac{\dot{\varphi}_{-2}(\dot{\varphi}_{0}+\sum_{m=1}^N\dot{\theta}_m)}{8E^2_\textrm{c}}\nonumber\\
-    &\quad-\frac{\dot{\varphi}_{-2}eV}{8E^4_\textrm{c}}+\frac{\dot{\varphi}_{-1}eV}{8E^3_\textrm{c}}
-\end{align}
-The term $\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}}$ will be added to the Lagrangian. The coupling constant for this case is,
-\begin{align}
-    \mathcal{L}_{c}&=\frac{(\dot{\varphi}_{-1}-\dot{\varphi}_{0})^2}{16E^1_{c}}+\frac{(\dot{\varphi}_{-1}-eV)^2}{16E^3_{c}}+\frac{(\dot{\varphi}_{-2})^2}{16E^4_{c}},\\
- \mathcal{L}&=\frac{\dot{\varphi}_{+}^2}{16E_{\textrm{c}}}\Big(2+\frac{NE_{\textrm{t}}}{E_{\textrm{g}}}\Big)-\frac{\dot{\varphi}_{+}eV}{4E_{\textrm{c}}}\Big(\frac{3}{8}+\frac{E_{\textrm{t}}}{E_{\textrm{c}}}\Big)\nonumber\\
-    &\quad-\frac{NE_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}eV-\frac{NE_{\textrm{t}}}{32E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\dot{\varphi}_{+}\\
-    &\quad -\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2(N-1)}s_\mu^2}  \dot{\xi}_\mu eV\nonumber\\
-    &\quad-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2(N-1)}s_\mu^2}  \dot{\xi}_\mu\dot{\varphi}_{+}+\mathcal{O}(e^2V^2)\\
-    &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\
-    &\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big]-\mathcal{U}
-\end{align}
-
-\paragraph{Hamiltonian:} All terms in the Hamiltonian ($H_2$) can be adopted \ER{what do you mean by adopted?} via $N\rightarrow N-1$. If $C_\textrm{g}^N\neq C_\textrm{g}^1$ then this ground fluxonium and floating fluxonium have a larger difference in terms of frequencies of modes. However, we see that by adjusting the values of the differential capacitance $C$ and coupling capacitances $C_\textrm{c}$, we can optimize the three circuits to have the same qubit and parasitic mode frequencies. See Fig.~\ref{fig:circuit_choice} and Table~\ref{tab:parasitic_params} for further details.
-
-
 \section{Undriven Fluxonium Circuit}\label{app:Hamiltonian}
 In this appendix, we summarize the expressions for coupling strengths and charging energies derived above and compare them for all three circuits. We will also analyze effect of variations in circuit parameters on these quantities. This analysis is used in Sec~\ref{sec:expressions} to comment on mitigation strategies for the parasitic effects captured in this work. We also discuss the quantities related to the corresponding dispersive qubit Hamiltonians and give expressions for the dispersive coupling $\chi_{\phi\mu}$ used in Sec.~\ref{sec:dephasing}. Following the main text, we set $\hbar=1$. 
 
 
-In Table~\ref{tab:parasitic_params} we note that in addition to the preserved symmetries which restrict qubit couplings to only even parasitic modes, in all three circuits, the values of parasitic quantities $g_{\phi\mu},g_{\phi r},\chi_{\phi\mu}$ for $\mu=2$ are also very similar. Since the parasitic state transitions (PMIST) and the post readout parasitic-dephasing are determined predominantly by these quantities only, this observation leads to our conclusion that the various grounding configurations covered in App.~\ref{app:alt_circuits} will have the same Floquet landscape. These arguments hold for all parasitic modes $\mu$ as shown by Figs.~\ref{fig:circuit_choice}(d) and~\ref{fig:dispersive-shift}. 
+In Table~\ref{tab:parasitic_params} we note that in addition to the preserved symmetries which restrict qubit couplings to only even parasitic modes, in all three circuits, the values of parasitic quantities $g_{\phi\mu},g_{\phi r},\chi_{\phi\mu}$ for $\mu=2$ are also very similar. Since the parasitic state transitions (PMIST) and the post readout parasitic-dephasing are determined predominantly by these quantities only, this observation leads to our conclusion that the various grounding configurations~\cite{zhang_universal_2021,flux_stefanski_2024} covered in App.~\ref{app:alt_circuits} will have the same Floquet landscape. These arguments hold for all parasitic modes $\mu$ as shown by Figs.~\ref{fig:circuit_choice}(d) and~\ref{fig:dispersive-shift}. 
 \begin{table}[t]
     \centering
     \begin{tabular}{|c|c|c|c|}
     \hline
-     \shortstack{\\\textbf{Fluxonium}\\ \textbf{Parameters}\\$(\mu=2)$} & \shortstack{\\\textbf{Parallel}\\\textbf{Circuit}\\$H_1$} & \shortstack{\\\textbf{Floating}\\\textbf{Fluxonium}\\$H_2$}& \shortstack{\\\textbf{Grounded}\\\textbf{Fluxonium}\\$H_3$}\\
+     \shortstack{\\\textbf{Fluxonium}\\ \textbf{Parameters}\\$(\mu=2)$} & \shortstack{\\\textbf{Parallel}\\\textbf{Circuit}\\$H_1$} & \shortstack{\\\textbf{Grounded}\\\textbf{Readout}\\$H_2$}& \shortstack{\\\textbf{Grounded}\\\textbf{Fluxonium}\\$H_3$}\\
 \hline
          $g_{\phi \mu}$&$157 \ \mathrm{GHz}$&$161 \ \mathrm{GHz}$& $158 \ \mathrm{GHz}$\\
 \hline
@@ -929,7 +866,7 @@ For the parameters in Table~\ref{tab:circuit_params},  we plot $\chi_{\phi\mu},\
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.45\textwidth]{Supp_Fig/dispersive_shift.pdf}
-    \caption{ {\bf The dispersive shift induced on the qubit due to the parasitic mode $\mu$.} The three grounding configurations, parallel circuit ($H_1$), floating fluxonium ($H_2$), and grounded fluxonium ($H_3$) shown in Figs.~\ref{fig:circuit_comp}(a-c) yield the same values. Dashed lines in the same color code represent the dispersive shift ($\sim $) induced by the readout resonator on the qubit.}
+    \caption{ {\bf The dispersive shift induced on the qubit due to the parasitic mode $\mu$.} The three grounding configurations, symmetric parallel circuit ($H_1$), asymmetric floating fluxonium circuit ($H_2$), and asymmetric grounded fluxonium circuit ($H_3$) shown in Figs.~\ref{fig:circuit_comp}(a-c) yield the same values. Dashed lines in the same color code represent the dispersive shift ($\sim $) induced by the readout resonator on the qubit.}
     \label{fig:dispersive-shift}
 \end{figure}
 
