@@ -293,10 +293,10 @@ $14.$&$\color{RoyalBlue}{\ket{\tilde{2},\tilde{0}}}$$\xleftrightarrow[]{\hspace{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Our first numerical analysis involves calculating the Floquet eigenstates of $H_\textrm{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) for various fixed values of the drive powers, as controlled by the average photon number $\bar n_\textrm{r}$.  We do this by retaining the lowest $20$ levels in the qubit subspace $\phi$ and $2$ levels in the parasitic mode $\mu=2$\footnote{We show that our results hold when simulated with $30$ levels in the qubit mode and $10$ levels in the parasitic mode}; the truncation for this analysis are discussed further in App.~\ref{app:numerics}.
+Our first numerical analysis involves calculating the Floquet eigenstates of $H_\textrm{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) for various fixed values of the drive powers, as controlled by the average photon number $\bar n_\textrm{r}$.  We do this by retaining the lowest $20$ levels in the qubit subspace $\phi$ and $5$ levels in the parasitic mode $\mu=2$\footnote{We show that our results hold when simulated with $30$ levels in the qubit mode and $10$ levels in the parasitic mode}; the truncation for this analysis are discussed further in App.~\ref{app:numerics}.
 Our goal is to use these results to make predictions for a readout pulse involving a time-dependent drive power, identifying possible transitions starting from a dressed state $\ket{i} =\ket{\tilde{\phi}, \tilde{\mu}}$ where $\phi\in\{0,1,2\}$ and $\mu=0$ (i.e. parasitic mode is initially empty). With $\omega_\mu/2\pi=12.06 \ \mathrm{GHz}$, the analysis in this section will consider the regime of negative detuning where, $\omega_{\mu=2}>\omega_\textrm{d}=\omega_\textrm{r} \gg \omega_\textrm{q}$, and can be replicated for any other parasitic mode $\mu \neq 2$. Note that we also analyze the effects of an alternative circuit with $\omega_{\mu=2}/2\pi\sim 16 \ \mathrm{GHz}$ and $\omega_{01}/2\pi\sim 300 \ \mathrm{MHz}$ in Sec.~\ref{sec:expressions}.
 
-Inspired by~\cite{dumas2024unified,cohen2023reminiscence}, we extract PMIST processes by tracking the evolution of  the Floquet eigenstates as we increase the parameter $\bar{n}_\textrm{r}$, a method known as \emph{branch analysis}. 
+Inspired by~\cite{dumas2024unified,cohen2023reminiscence}, we extract PMIST processes by tracking the evolution of the Floquet eigenstates as we increase the parameter $\bar{n}_\textrm{r}$, a method known as \emph{branch analysis}. 
 We do this for a series of discrete values of $\bar{n}_\textrm{r}$, that we chose to be integers.  The simulation begins in a chosen eigenstate $\ket{i}_0$ of the bare Hamiltonian $\hat{H}_0 \equiv \hat{H}_\textrm{s.c.}[\bar{n}=0]$ (see Eq.~\ref{eq:bare_ham}). 
 Next, we compute the Floquet eigenstates $\ket{m_1}$ of the Hamiltonian $\hat{H}_\textrm{s.c.}[\bar{n}_\textrm{r}=1]$,
 %$\{\ket{m}_{\bar n_\textrm{r}=1}\}$, 
@@ -526,7 +526,8 @@ Fig.~\ref{fig:Floquet1} shows that indeed, PMIST effects are comparatively less 
 explicit transitions with quasienergies for the Floquet profile shown in Fig.~\ref{fig:Floquet1}(c) can be found in App.~\ref{app:alt_circuit1}. The overall reduced number of MIST effects in Fig.~\ref{fig:Floquet1} compared to Fig.~\ref{fig:Floquet} is \singh{due to the fact that the charge matrix $|\ket{i|\hat H|f}|^2$ elements between levels $i=0$(and $i=1$) and higher fluxonium states ($f$) decreases faster with increasing $f$ for this circuit (compare Fig.~\ref{fig:charge-matrix-Will} with Fig.~\ref{charge-matrix}).} 
 
 
-While the above results are promising, we stress that our analysis here considers a single specific PMIST process (i.e.~ involving the lowest-frequency array mode with the strongest qubit-parasitic coupling).  Other less obvious processes may also play a role.  In general, understanding MIST processes for a given set of circuit parameters requires a detailed analysis of the corresponding Floquet profile, along with complementary rate calculations.
+While the above results are promising, we stress that our analysis here considers a single specific PMIST process (i.e.~ involving the lowest-frequency array mode with the strongest qubit-parasitic coupling).  Other less obvious processes may also play a role, for example PMIST due to parasitic modes $\mu=4,6,..$. The Floquet simulation including all relevant parasitic modes will be numerically intractable and hence warrants easier alternatives. % In general, understanding MIST processes for a given set of circuit parameters requires a detailed analysis of the corresponding Floquet profile, along with complementary rate calculations.
+
 
 
 \section{Conclusion and Further Work}\label{sec:conclusion}
@@ -724,7 +725,7 @@ The derived Lagrangians provide the Hamiltonians for each circuit. Ref.~\cite{vi
 \section{Undriven fluxonium circuit}\label{app:Hamiltonian}
 In this appendix, we summarize the expressions for coupling strengths and charging energies used in Eqs.~\ref{Hamiltonian_total}-\ref{eq:int_hamiltonian}. We will analyze the effect of variations in circuit parameters on these quantities. This analysis is used in Sec~\ref{sec:expressions} to comment on the dependence of the parasitic effects captured in this work on circuit parameters. We also discuss the quantities related to the corresponding dispersive qubit Hamiltonians and give expressions for the dispersive coupling $\chi_{\phi\mu}$ used in Sec.~\ref{sec:dephasing}. Following the main text, we set $\hbar=1$. 
 
-\subsection{Variation in charging energies and coupling Strengths with circuit parameters}\label{app:coupling}
+\subsection{Variation in charging energies and coupling strengths with circuit parameters}\label{app:coupling}
 Here, we show the variations of the couplings and charging energies referenced in the main text, using the expressions derived in Ref.~\cite{viola2015collective}, with number of junctions $N$ and parasitic ground capacitance $C_\textrm{g,j}$, used in Sec.~\ref{sec:expressions}. \begin{figure}[tbh]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Coupling-strength.pdf}
@@ -804,23 +805,23 @@ where, $\omega_\textrm{q}=\omega_{01}$ is the qubit frequency, $\kappa_\mu$ is t
 \end{figure}
 
 \section{Driven fluxonium circuit}\label{app:MIST}
-Here, we discuss the several analysis techniques to study MIST effects used in this work. We begin with the derivation of $H_\textrm{s.c.}$ in Eq.~\ref{eq:drive}. Then we discuss and justify the Hilbert space truncation, as well as approximations used for Floquet simulations in Sec.~\ref{sec:MIST}.
+Here, we discuss the several analysis techniques to study MIST effects used in this work. First, we discuss and justify the Hilbert space truncation, as well as approximations used for Floquet simulations in Sec.~\ref{sec:MIST}. Next, we derive the semi-classical Hamiltonian $H_\textrm{s.c.}$ in Eq.~\ref{eq:drive} and discuss other details related to the Floquet simulations
 \subsection{Approximations for numerical modeling}\label{app:numerics}
 We use the following three approximations in our work.
 \begin{itemize}
-    \item \textbf{Restriction to $\mu=2$}. We restrict our analyses to only include the lowest-frequency, even parasitic mode. This mode couples most strongly to the qubit and the readout as evident from Fig.~\ref{fig:coupling-strength}(d). This assumption reduces the Hilbert space size for feasible study. 
+    \item \textbf{Restriction to $\mu=2$}. We restrict our analyses to only include the lowest-frequency, even parasitic mode. This mode couples most strongly to the qubit and the readout as evident from Fig.~\ref{fig:coupling-strength}(d). This assumption reduces the Hilbert space size for a feasible study. 
 
     \item \textbf{Semi-classical drive approximation.}  We treat the readout resonator classically as described in Refs.~\cite{xiao2023diagrammatic,dumas2024unified,cohen2023reminiscence,khezri2023measurement}, eliminating the readout mode states from our numerical simulation. This approximation is again necessary to restrict the Hilbert space size to values feasible for numeric study.
     
-    \item \textbf{Linear JJA approximation.} We assume that the parasitic modes are linear, due to the large $E_{\textrm{J}_\textrm{j}}/E_{\textrm{C}_\textrm{j}} \sim 200$ ratio. Nonlinear corrections to our results is beyond the scope of this work. For details on how nonlinear corrections affect different circuit energies, we direct the readers to Ref.~\cite{viola2015collective}. 
-    \item \textbf{Truncation.} We note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decreases roughly exponentially with increasing excited state number. With this observation, shown in Fig.~\ref{charge-matrix}, as well as our assumptions above, we truncate the Hilbert space dimensions to $30\times 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. 
+    \item \textbf{Linear JJA approximation.} We assume that the parasitic modes are linear, due to the large $E_{\textrm{J}_\textrm{j}}/E_{\textrm{C}_\textrm{j}} \sim 200$ ratio. Nonlinear corrections to our results are beyond the scope of this work. For details on how non-linear corrections affect different circuit energies, we direct the readers to~\cite{viola2015collective}. 
+    \item \textbf{Truncation.} We note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decrease roughly exponentially with increasing excited state number. With this observation, shown in Fig.~\ref{charge-matrix}, as well as our assumptions above, we truncate the Hilbert space dimensions to $30\times 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. 
     \end{itemize}
-    Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of PMIST processes, and do not claim to quantify how many such transitions can be present. Hence, with this truncation we only examine the excitations to $0-2$ levels in the parasitic mode and $0-20$ in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. In this appendix we will show the results for truncating the Hilbert space to $20
+    Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of PMIST processes, and we do not claim to quantify how many such transitions can be present. Hence, with this truncation we only examine the excitations in $0-20$ levels in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. In this appendix, we show the results for truncating the Hilbert space to $20
     \times 5$ levels in the two modes and $30
-    \times 10$, showing the convergence of the MIST results.
+    \times 10$, showing the convergence of the MIST results. Importantly, both simulations show no higher than excitation of $\bar n_\mu=2$ in parasitic mode.
 
 \subsection{Semi-classical approximation}\label{app:semi-classical}
-In this appendix we derive the semi-classical Hamiltonian $H_\textrm{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) used for the Floquet simulations. The fully quantum Hamiltonian is given by 
+In this Appendix, we derive the semiclassical Hamiltonian $H_\textrm{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) used for the Floquet simulations. The fully quantum Hamiltonian is given by 
 \begin{align}
     H_\textrm{drive}=\hat H \textrm{ (see Eq.~\ref{Hamiltonian_total}) }-i\epsilon_\textrm{d}(\hat a_\textrm{r}-\hat a_\textrm{r}^\dagger)\sin{\omega_\textrm{d} t}
 \end{align}
@@ -829,7 +830,7 @@ where $\omega_\textrm{d}$ is the drive frequency and $\epsilon_\textrm{d}\in \ma
    =&\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}+\frac{\epsilon_\textrm{d}}{2}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)\nonumber\\ 
    &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)
 \end{align}
-Let us call the Hamiltonian at this stage, $H_\textrm{U}$. Now we go to the displaced frame $a_\textrm{r}\rightarrow a_\textrm{r}+\alpha$ via transformation under the unitary $U_\alpha=e^{-i\alpha(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)}$ such that in the interaction picture we have, $U_\alpha\hat H_\textrm{U}U_\alpha^\dagger+i\dot{U}_\alpha U_\alpha^\dagger$ 
+Let us call the Hamiltonian at this stage, $H_\textrm{U}$. Now we go to the displaced frame $a_\textrm{r}\rightarrow a_\textrm{r}+\alpha$ via transformation under the unitary $U_\alpha=e^{-i\alpha(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)}$ such that in the interaction picture we have $ U_\alpha\hat H_\textrm{U}U_\alpha^\dagger+i\dot{U}_\alpha U_\alpha^\dagger$ 
 \begin{align}
    =&\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}\label{bare}\\ 
    &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)\label{quantum}\\
@@ -844,7 +845,7 @@ Now, we go back to the lab frame and ignore the terms associated with the quantu
 
 \subsection{Floquet simulations}
 \paragraph{Stark shift:}\label{app:stark-shift}
-To observe a state transition the primary requirements are high charge matrix elements and low energy difference. The eigen-energies of the states in question are changed with an increase in the number of readout photons or, in this case, the drive strength. In this section, we compute the Stark shifted eigen-energies which facilitates the prediction of an avoided crossing using a first-order perturbative approach, given $\bar n_\textrm{r}, \omega_\textrm{r}$ and the charge matrix elements.  Let $\ket{i}$ be a state in the eigenspace of $H_{\textrm{int}}=H_\phi+H_{\mu=2}+g_{\phi\mu}\hat N_\phi\hat N_\mu$. Following derivations in App.~\ref{app:Hamiltonian}, the Stark-shift in the energy of state $\ket{i}$ at an average number of readout photons $\bar n_\textrm{r}$ is given by
+To observe a state transition, the primary requirements are high charge matrix elements and low energy difference. The eigenenergies of the states in question are changed with an increase in the number of readout photons or, in this case, the drive strength. In this section, we compute the Stark-shifted eigenenergies which facilitate the prediction of an avoided crossing using a first-order perturbative approach, given $\bar n_\textrm{r}, \omega_\textrm{r}$ and the charge matrix elements.  Let $\ket{i}$ be a state in the eigenspace of $H_{\textrm{int}}=H_\phi+H_{\mu=2}+g_{\phi\mu}\hat N_\phi\hat N_\mu$. Following derivations in App.~\ref{app:Hamiltonian}, the Stark-shift in the energy of state $\ket{i}$ at an average number of readout photons $\bar n_\textrm{r}$ is given by
 \begin{align}
     \chi_i(\bar n_\textrm{r})=2\bar n_\textrm{r}\sum_{f}\omega_{if}\Big[\frac{g_{\phi \textrm{r}}|\braket{i|\hat N_\phi|f}|^2}{\omega_\textrm{d}^2-\omega_{if}^2}+\frac{g_{\mu \textrm{r}}|\braket{i|\hat N_\mu|f}|^2}{\omega_\textrm{d}^2-\omega_{if}^2}\Big]\label{eq:stark}
 \end{align}
@@ -857,7 +858,7 @@ To observe a state transition the primary requirements are high charge matrix el
  \end{figure}
 
 \paragraph{Population exchange and quasienergies:}\label{app:Floquet-trans}
-Below we plot the population exchange and quasienergy probabilities for all transitions captured in Fig.~\ref{fig:Floquet} and Table~\ref{tab:PMIST} for states $\ket{\tilde{0},\tilde{0}}$ (see Fig.~\ref{fig:Trans0}), $\ket{\tilde{1},\tilde{0}}$ (see Fig.~\ref{fig:Trans1}) and $\ket{\tilde{2},\tilde{0}}$ (see Fig.~\ref{fig:Trans2}). We will comment on some special types of transitions explicitly here.
+Below we plot the population exchange and quasi-energy probabilities for all transitions captured in Fig.~\ref{fig:Floquet} and Table~\ref{tab:PMIST} for states $\ket{\tilde{0},\tilde{0}}$ (see Fig.~\ref{fig:Trans0}), $\ket{\tilde{1},\tilde{0}}$ (see Fig.~\ref{fig:Trans1}) and $\ket{\tilde{2},\tilde{0}}$ (see Fig.~\ref{fig:Trans2}). We will comment on some special types of transitions explicitly here.
 
 \begin{itemize}
     \item Transition $(2)$ has two crossings, one that takes place at $\bar n_\textrm{r}=14$ and another at $\bar n_\textrm{r}=48$. The states $\ket{\tilde{4},\tilde{2}}$ and $\ket{\tilde{14},\tilde{2}}$ hybridize first and then the resulting state hybridizes with the computational state $\ket{\tilde{0},\tilde{0}}$.
