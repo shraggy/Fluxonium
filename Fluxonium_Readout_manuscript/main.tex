@@ -736,8 +736,14 @@ We use the following three approximations in our work.
     \item \textbf{Semi-classical drive approximation.}  We treat the readout resonator classically as described in Refs.~\cite{xiao2023diagrammatic,dumas2024unified,cohen2023reminiscence,khezri2023measurement}, eliminating the readout mode states from our numerical simulation. This approximation is again necessary to restrict the Hilbert space size to values feasible for numeric study.
     
     \item \textbf{Linear JJA approximation.} We assume that the parasitic modes are linear, due to the large $E_{\textrm{J}_\textrm{j}}/E_{\textrm{C}_\textrm{j}} \sim 200$ ratio. Nonlinear corrections to our results are beyond the scope of this work. For details on how non-linear corrections affect different circuit energies, we direct the readers to~\cite{viola2015collective}. 
-    \item \textbf{Truncation.} We note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decrease roughly exponentially with increasing excited state number. With this observation, shown in Fig.~\ref{charge-matrix}, as well as our assumptions above, we truncate the Hilbert space dimensions to $30\times 10$. That is, we assume $30$ levels in the fluxonium qubit mode and $10$ levels in the parasitic mode. 
+    \item \textbf{Truncation.} We note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decrease roughly exponentially with increasing excited state number (see shown in Fig.~\ref{charge-matrix}). With this observation and our assumptions above, we truncate the Hilbert space dimensions to $20\times 5$. That is, we assume $20$ levels in the fluxonium qubit mode and $5$ levels in the parasitic mode. We justify this truncation in Fig.~\ref{fig:truncation} for all Floquet simulations by giving an analogous plot for Fig.~\ref{fig:Floquet} using a numerical simulation in Hilbert space of $30\times 10$.
     \end{itemize}
+    \begin{figure}[t]
+        \centering
+        \includegraphics[width=0.5\linewidth]{}
+        \caption{{\bf Truncation.} Floquet landscape of Fig.~\ref{fig:Floquet} computed using a Hilbert space of $30\times 10$ is shown here. The two plots match in the fluxonium and parasitic levels which get excited at the expected frequencies, as quoted in Table.~\ref{tab:PMIST}.}
+        \label{fig:truncation}
+    \end{figure}
     Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of PMIST processes, and we do not claim to quantify how many such transitions can be present. Hence, with this truncation we only examine the excitations in $0-20$ levels in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. In this appendix, we show the results for truncating the Hilbert space to $20
     \times 5$ levels in the two modes and $30
     \times 10$, showing the convergence of the MIST results. Importantly, both simulations show no higher than excitation of $\bar n_\mu=2$ in parasitic mode.
