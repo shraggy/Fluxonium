@@ -718,7 +718,7 @@ Thus, we have seen that the symmetric case removes coupling between the qubit an
 %\end{align}
 
 \section{Undriven Fluxonium Circuit}\label{app:Hamiltonian}
-The Lagrangian for the symmetric circuit in Fig.~\ref{fig:meas_circuit}, under some assumptions on $N$ gives the Hamiltonian quoted in Eq.~\ref{eq:bare_ham}. In this appendix, we summarize the expressions for coupling strengths and charging energies used in this equation. We will analyze the effect of variations in circuit parameters on these quantities. This analysis is used in Sec~\ref{sec:expressions} to comment on the dependence of the parasitic effects captured in this work on circuit parameters. We also discuss the quantities related to the corresponding dispersive qubit Hamiltonians and give expressions for the dispersive coupling $\chi_{\phi\mu}$ used in Sec.~\ref{sec:dephasing}. Following the main text, we set $\hbar=1$. 
+The Lagrangian for the symmetric circuit in Fig.~\ref{fig:meas_circuit}, under some assumptions on $N$ gives the Hamiltonian quoted in Eq.~\ref{Hamiltonian_total}. In this appendix, we summarize the expressions for coupling strengths and charging energies used in this equation. We will analyze the effect of variations in circuit parameters on these quantities. This analysis is used in Sec~\ref{sec:expressions} to comment on the dependence of the parasitic effects captured in this work on circuit parameters. We also discuss the quantities related to the corresponding dispersive qubit Hamiltonians and give expressions for the dispersive coupling $\chi_{\phi\mu}$ used in Sec.~\ref{sec:dephasing}. Following the main text, we set $\hbar=1$. 
 
 \subsection{Variation in Charging energies and Coupling Strengths with Circuit Parameters}\label{app:coupling}
 Here, we show the variations of the couplings and charging energies referenced in the main text, using the expressions derived in Ref.~\cite{viola2015collective}, with number of junctions $N$ and parasitic ground capacitance $C_\textrm{g,j}$, used in Sec.~\ref{sec:expressions}. \begin{figure}[tbh]
@@ -763,7 +763,7 @@ which corresponds to lowering the parasitic mode frequency $\omega_\mu$ with inc
 The above comparisons suggest that, under the assumption such that $N$ obeys the limits for Hamiltonian derivation~\cite{viola2015collective} and the linear assumption on parasitic modes, the best strategy to reduce PMIST effects is to target for low parasitic ground capacitance in the JJA while the junction count needs to be optimized while taking care of both parasitic frequency and qubit-parasitic couplings.
 
 \subsection{Fluxonium Qubit Hamiltonian}
-We now discuss the Fluxonium qubit Hamiltonian, through a detailed consideration of its charge matrix elements and the dispersive shifts on the qubit induced by the parasitic modes and readout. This dispersive Hamiltonian is derived using the Schrieffer-Wolff approximation~\cite{viola2015collective}. The qubit Hamiltonian $H_{\phi}$ (see Eq.~\ref{eq:Hphi}) is diagonalized in the Fock state basis, where we have used the standard bosonic operators
+We now discuss the Fluxonium qubit Hamiltonian, through a detailed consideration of its charge matrix elements and the dispersive shifts on the qubit induced by the parasitic modes and readout. This dispersive Hamiltonian is derived using the Schrieffer-Wolff approximation~\cite{viola2015collective} on Eq.~\ref{Hamiltonian_total}. The qubit Hamiltonian $H_{\phi}$ (see Eq.~\ref{eq:Hphi}) is diagonalized in the Fock state basis, where we have used the standard bosonic operators
  \begin{equation} \hat x=x_{\mathrm{ZPF}}(a+a^\dagger)=\hat N_{\phi}/ N_{\phi,\mathrm{ZPF}}
  \end{equation}
  and 
@@ -794,12 +794,12 @@ Next, we extract the qubit parameters quoted in Table~\ref{tab:readout_params}, 
 where, $\omega_q=\omega_{01}$ is the qubit frequency, $\kappa_\mu$ is the lamb shift on the parasitic mode while all other variables follow the definitions used in Table~\ref{tab:readout_params}. In the main text, we have used the value of the dispersive shift ($\chi_{\phi\mu}$) due to the parasitic mode in Sec.~\ref{sec:dephasing}, computed using the expression from Ref.~\cite{viola2015collective}. For the parameters in Table~\ref{tab:circuit_params}, we plot $\chi_{\phi\mu}$ for all parasitic modes of the symmetric circuit, in Fig.~\ref{fig:dispersive-shift}. We also plot the dispersive shift due to readout $\chi_{\phi \textrm{r}}$ computed using the following expression (derivation not shown here),
 \begin{align}  
 \chi_{\phi \textrm{r}}&=16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\textrm{r}^2}|\langle 0|p_\phi|1 \rangle|^2\nonumber\\
-   &+16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_\textrm{r}^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_\textrm{r}^2}\Bigg]
+   &+16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_\textrm{r}^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_\textrm{r}^2}\Bigg]\label{eq:qubit-readout-shift}
 \end{align}
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.45\textwidth]{Supp_Fig/dispersive_shift.pdf}
-    \caption{ {\bf The dispersive shift induced on the qubit due to the parasitic mode $\mu$.} The three grounding configurations, symmetric circuit ($H_1$), asymmetric floating fluxonium circuit ($H_2$), and asymmetric grounded fluxonium circuit ($H_3$) shown in Figs.~\ref{fig:circuit_comp}(a-c) yield the same values. Dashed lines in the same color code represent the dispersive shift ($\sim $) induced by the readout resonator on the qubit.}
+    \caption{ {\bf The dispersive shift ($\chi_{\phi\mu}$) induced on the qubit due to the parasitic mode $\mu$.} The orange reference line represent the dispersive shift ($\sim $) induced by the readout resonator on the qubit ($\chi_{\mu\textrm{r}}$, see Eq.~\ref{eq:qubit-readout-shift}).}
     \label{fig:dispersive-shift}
 \end{figure}
 
