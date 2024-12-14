@@ -827,12 +827,27 @@ We use the following three approximations in our work.
 
 \sh{Include the 30 X 10 as well as 20 X 3}
 \subsection{Semi-classical Approximation}\label{app:semi-classical}
-The fully quantum Hamiltonian is given by Eq.~\ref{eq:drive_Ham} where we assume $\omega_\textrm{r}=\omega_\textrm{d}$. For the semi-classical approximation, we first use the interaction picture via the transformation $U\hat H_\textrm{s.c.}U^\dagger-i\dot{U}U^\dagger$ under the unitary $U=e^{-i\hat H_\textrm{r}t}=e^{-i\omega_\textrm{r} \hat a_\textrm{r}^\dagger \hat a_\textrm{r}t}$. This transformation imposes $a_\textrm{r}\rightarrow a_\textrm{r}e^{-i\omega_\textrm{r}t}$.
+In this appendix we derive the semi-classical Hamiltonian $H_\textrm{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) used for the Floquet simulations. The fully quantum Hamiltonian is given by 
 \begin{align}
-  U\hat H_\textrm{s.c.}U^\dagger=\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}\\
-  +\frac{g_{\phi\textrm{r}}\hat N_\phi\hat N_\textrm{r}}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}
+    H_\textrm{drive}=\hat H \textrm{ (see Eq.~\ref{Hamiltonian_total}) }-i\epsilon_d(\hat a_\textrm{r}-\hat a_\textrm{r}^\dagger)\sin{\omega_d t}
 \end{align}
-
+where $\omega_\textrm{d}$ is the drive frequency and $\epsilon_d\in \mathbb{R}$ is the drive strength. For the semi-classical approximation, we first use the rotating frame transformation $UH_\textrm{drive}U^\dagger-i\dot{U}U^\dagger$ under the unitary $U=e^{-i\hat H_\textrm{r}t}=e^{-i\omega_\textrm{r} \hat a_\textrm{r}^\dagger \hat a_\textrm{r}t}$. This transformation imposes $a_\textrm{r}\rightarrow a_\textrm{r}e^{-i\omega_\textrm{r}t}=\hat{\tilde{a}}$. Now, in the interaction picture we have $U\hat H_\textrm{drive}U^\dagger+i\dot{U}U^\dagger$ (ignoring terms which oscillate at a rate faster than $\omega_d=\omega_r$),
+\begin{align}
+   =&\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}+\frac{\epsilon_d}{2}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)\nonumber\\ 
+   &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)
+\end{align}
+Let us call the Hamiltonian at this stage, $H_\textrm{U}$. Now we go to the displaced frame $a_\textrm{r}\rightarrow \alpha$ via transformation under the unitary $U_\alpha=e^{-i\alpha(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)}$ such that in the interaction picture we have, $U_\alpha\hat H_\textrm{U}U_\alpha^\dagger+i\dot{U}_\alpha U_\alpha^\dagger$ 
+\begin{align}
+   =&\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}\label{bare}\\ 
+   &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)\label{quantum}\\
+   &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\alpha e^{-i\omega_r t}-\alpha^* e^{i\omega_r t})\\&-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\alpha e^{-i\omega_r t}-\alpha^* e^{i\omega_r t})\label{classical}\\
+   &-\frac{\epsilon_d}{2}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)+\dot{\alpha}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)\label{drive}
+\end{align}
+We choose $\dot{\alpha}=\frac{\epsilon_d}{2}\implies\alpha(t)\in\mathbb{R}$ to remove the terms in Eq.~\ref{drive}, such that the Eqs.~\ref{classical} take the form,
+\begin{align}
+    -\Big[\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}+\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}\Big](2\alpha\cos{\omega_d t})\label{semi-classical}
+\end{align}
+Now, we go back to the lab frame and ignore the terms associated with the quantum operators $\hat{\tilde{a}}_r$ in Eqs.~\ref{quantum} while we replace $\alpha$ with the mean value $\sqrt{\bar n_\textrm{r}}$ in Eq.~\ref{semi-classical} to get the final semi-classical form $H_\textrm{s.c.}$~\cite{cohen2023reminiscence}.
 
 \subsection{Floquet Simulations}
 \paragraph{Stark shift:}\label{app:stark-shift}
@@ -929,14 +944,6 @@ Finally, we plot the PMIST effect observed in the Floquet simulations for this a
     \caption{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{2},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
     \label{fig:Trans2}
 \end{figure*}
-
-\clearpage
-\begin{itemize}
-    \item Units of g is an outstanding issue: momentum or charge coefficient?
-    \item PMIST or PIST
-    \item some sub-figures have subheadings some do not
-    \item shorter conclusion
-\end{itemize}
 \clearpage
 \bibliography{refs.bib} 
 \end{document}
