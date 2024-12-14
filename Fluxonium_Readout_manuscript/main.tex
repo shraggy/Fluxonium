@@ -590,7 +590,7 @@ We have presented a first analysis toward understanding the role of parasitic mo
     \end{tabular}
     \end{center}
     
-    \caption{Capacitances and zero-point fluctuation (ZPF) values for the fluxonium readout circuit used in the main text in Figs.~\ref{fig:meas_circuit} and~\ref{fig:circuit_choice}(a).}
+    \caption{{\bf Capacitances and zero-point fluctuation (ZPF) values.} These circuit parameters are used throughout this article.}
     \label{tab:params}
     \end{table}
 The fluxonium readout circuit shown in Fig.~\ref{fig:meas_circuit} of main text can have several modifications, each of which may affect various performance metrics. This circuit has a symmetric configuration with a symmetry (identified in Ref.~\cite{ferguson2013symmetries}) which removes the coupling to the lowest frequency mode $\mu=1$~\cite{viola2015collective}. The elements crucial to this symmetry are the equal coupling capacitances on both ends of the symmetric circuit (see Fig.~\ref{fig:circuit_choice}(a)). We present a modification to the symmetric circuit with different grounding option which does not respect this symmetry (see Fig.~\ref{fig:circuit_choice}(b)). This asymmetric circuit, inspired by~\cite{zhang_universal_2021}, can prove useful in a hangar geometry with a single voltage line. In this appendix, we derive the Lagrangian for both circuits and show that the effects of not preserving this symmetry can be detrimental for readout. For the rest of appendix and in the main text, we thus use the symmetric circuit for readout.
@@ -825,7 +825,6 @@ We use the following three approximations in our work.
     \times 5$ levels in the two modes and $30
     \times 10$, showing the convergence of the MIST results.
 
-\sh{Include the 30 X 10 as well as 20 X 3}
 \subsection{Semi-classical Approximation}\label{app:semi-classical}
 In this appendix we derive the semi-classical Hamiltonian $H_\textrm{s.c.}$ (see Eq.~\ref{eq:drive_Ham}) used for the Floquet simulations. The fully quantum Hamiltonian is given by 
 \begin{align}
@@ -859,7 +858,7 @@ To observe a state transition the primary requirements are high charge matrix el
  \begin{figure}
      \centering
      \includegraphics[width=\linewidth]{Supp_Fig/Stark-shift.pdf}
-     \caption{Stark shift in different energy levels for readout computed using Eq.~\ref{eq:stark} for energy level $\ket{\tilde{0},\tilde{0}}$. We have verified that Stark shift on the excited energy levels $\ket{\tilde{1},\tilde{0}}$ and $\ket{\tilde{2},\tilde{0}}$ are also upper bounded by $50$ MHz for the ranges considered in x- and y-axes in this plot.}
+     \caption{\textbf{Stark shift in the ground state of fluxonium due to readout.} Values are computed using Eq.~\ref{eq:stark} for energy level $i=\ket{\tilde{0},\tilde{0}}$. We have verified that Stark shift on the excited energy levels $\ket{\tilde{1},\tilde{0}}$ and $\ket{\tilde{2},\tilde{0}}$ are also upper bounded by $50$ MHz for the ranges of $\omega_d$ and $ \bar n_r$ considered in this plot.}
      \label{fig:stark-shift}
  \end{figure}
 
@@ -898,15 +897,31 @@ Here, we give the circuit parameters (Table~\ref{tab:circuit_params_Will}), coup
 \label{tab:circuit_params_Will}
 \end{table}
 
-The coupling strengths in this circuit are similar to those evaluated for our original circuit parameters, in Fig.~\ref{fig:coupling-strength}.
+The coupling strengths in this circuit are similar to those evaluated for our original circuit parameters, in Fig.~\ref{fig:coupling-strength}. We find in Fig.~\ref{fig:charge-matrix-Will} that the charge matrix elements of the second circuit analyzed in Sec.~\ref{Will_circuit} has a faster decrease with increasing excited state levels. This could be indicative of the fact that such a circuit will see lower MIST effects as observed in Fig.~\ref{fig:Floquet1}(c). Finally, we plot the PMIST effect observed in the Floquet simulations for this alternative circuit in Fig.~\ref{fig:011_Will}. We perform a branch analysis of the initial state $\ket{\tilde{0}, \tilde{0}}$ and observe a transition to $\ket{\tilde{4},\tilde{1}}$, as described in the main text. 
+\begin{figure*}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans0.pdf}
+    \caption{\textbf{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{0},\tilde{0}}$ state.} The figure numbering indicates the row index in Table~\ref{tab:PMIST}. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}. Note that MIST in figure $(2)$ is split into two figures in order to capture the two consecutive transitions involved.}
+    \label{fig:Trans0}
+\end{figure*}
+\begin{figure*}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans1.pdf}
+    \caption{\textbf{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{1},\tilde{0}}$ state.} The figure numbering indicates the row index in Table~\ref{tab:PMIST}. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \label{fig:Trans1}
+\end{figure*}
+\begin{figure*}
+    \centering
+    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans2.pdf}
+    \caption{\textbf{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{2},\tilde{0}}$ state.} The figure numbering indicates the row index in Table~\ref{tab:PMIST}. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
+    \label{fig:Trans2}
+\end{figure*}
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Coupling-Will.pdf}
     \caption{{\bf Absolute values of the coupling strengths.} $g_{\phi \textrm{r}}/2\pi$ (qubit-readout), $g_{\phi\mu}/2\pi$ (qubit-parasitic), $g_{\mu \textrm{r}}/2\pi$ (parasitic-readout), for various circuits. Coupling to odd parasitic modes is zero due to the symmetries of the circuit~\cite{viola2015collective}. The parasitic modes $\mu\in\{2,4,6\}$ couple to the qubit more or as strongly as the readout.}
     \label{fig:coupling-strength-Will}
 \end{figure}
-
-We find in Fig.~\ref{fig:charge-matrix-Will} that the charge matrix elements of the second circuit analyzed in Sec.~\ref{Will_circuit} has a faster decrease with increasing excited state levels. This could be indicative of the fact that such a circuit will see lower MIST effects as observed in Fig.~\ref{fig:Floquet1}(c). 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Charge-matrix-Will.pdf}
@@ -915,35 +930,13 @@ We find in Fig.~\ref{fig:charge-matrix-Will} that the charge matrix elements of 
     \label{fig:charge-matrix-Will}
 \end{figure}
 
-Finally, we plot the PMIST effect observed in the Floquet simulations for this alternative circuit in Fig.~\ref{fig:011_Will}. We perform a branch analysis of the initial state $\ket{\tilde{0}, \tilde{0}}$ and observe a transition to $\ket{\tilde{4},\tilde{1}}$, as described in the main text. 
-
- \begin{figure}[htb]
+\begin{figure}[htb]
     \centering
     \includegraphics[width=\linewidth]{Supp_Fig/Floquet_Will_landscape.pdf}
     \caption{{\bf Examples of PMIST using transitions for the alternative circuit in Fig.~\ref{fig:Floquet1}(c) of Sec.~\ref{Will_circuit}.} involving the states $\ket{\tilde{0},\tilde{0}}\leftrightarrow\ket{\tilde{4},\tilde{1}}$, with maximum overlap to the un-hybridized state $\ket{k}_\phi\otimes\ket{n}_{\mu=2}$. \textbf{Top row:} Qubit mode average occupation $\braket{n_\phi}$. \textbf{Middle row:} Parasitic mode average occupation $\braket{n_\mu}$. \textbf{Bottom row:} Quasi-energies (solid) from Floquet simulations showing avoided crossings. Plots are extracted from numerical data used in Fig.~\ref{fig:Floquet}. The data points are connected by lines for visual aid.}
     \label{fig:011_Will}
 \end{figure}
 
-%Finally, we focus on the rate of this PMIST process using Landau Zener calculations as follows in Fig.??.
-%\sh{Add Landau Zener plot}
-\begin{figure*}
-    \centering
-    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans0.pdf}
-    \caption{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{0},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}. Note that MIST in figure $(2)$ is split into two figures in order to capture the two consecutive transitions involved.}
-    \label{fig:Trans0}
-\end{figure*}
-\begin{figure*}
-    \centering
-    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans1.pdf}
-    \caption{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{1},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
-    \label{fig:Trans1}
-\end{figure*}
-\begin{figure*}
-    \centering
-    \includegraphics[width=1.0\textwidth]{Supp_Fig/Trans2.pdf}
-    \caption{MIST processes from Table~\ref{tab:PMIST} involving the $\ket{\tilde{2},\tilde{0}}$ state in rows indexed by figure numbering. (Top row) Fluxonium subspace $\braket{n_\phi}$. (Middle) Parasitic mode subspace $\braket{n_\mu}$ (Bottom) Stark-shifted eigen-energies (dashed) and quasi-energies (solid) from Floquet simulations, corresponding to the initial state $i$ as per the legend. The y-axis for this plot is in MHz. Floquet results are extracted from numerical data used for Fig.~\ref{fig:Floquet}.}
-    \label{fig:Trans2}
-\end{figure*}
 \clearpage
 \bibliography{refs.bib} 
 \end{document}
