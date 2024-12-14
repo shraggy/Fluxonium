@@ -776,7 +776,7 @@ Here, using the approximations described in App.~\ref{app:alt_circuits}, we calc
     \centering
 \includegraphics[width=0.45\textwidth]{Supp_Fig/Charge_Matrix.pdf}
     \caption{{\bf Charge matrix 
- elements (squared) for all three circuits.} Note that we use $\langle f|N_\phi|f'\rangle=iN_{\phi,\mathrm{ZPF}}\langle f|(a-a^\dagger)|f'\rangle$ where $N_{\phi,\mathrm{ZPF}}=\frac{1}{\sqrt{2}}\Big(E_{J,j}/8NE_{\textrm{c}}\Big)^{1/4}$. The charge matrix elements between parity conserving states is zero (points not seen in log plot) due to the symmetry of cosine potential at $\varphi_\mathrm{ext}=0.5\Phi_0$, where $\Phi_0$ is the flux quantum.}
+ elements (squared) for the symmetric circuit.} Note that we use $\langle f|N_\phi|f'\rangle=iN_{\phi,\mathrm{ZPF}}\langle f|(a-a^\dagger)|f'\rangle$ where $N_{\phi,\mathrm{ZPF}}=\frac{1}{\sqrt{2}}\Big(E_{J,j}/8NE_{\textrm{c}}\Big)^{1/4}$. The charge matrix elements between parity conserving states is zero (points not seen in log plot) due to the symmetry of cosine potential at $\varphi_\mathrm{ext}=0.5\Phi_0$, where $\Phi_0$ is the flux quantum.}
     \label{charge-matrix}
 \end{figure}
 
@@ -788,33 +788,14 @@ Next, we extract the qubit parameters quoted in Table~\ref{tab:readout_params}, 
 \begin{align}
     H/\hbar&=\frac{\omega_q}{2}\sigma_z+\sum_{\mu}(\omega_\mu+k_\mu) a_\mu^\dagger a_\mu
     +\omega_\textrm{r} a_\textrm{r}^\dagger a_\textrm{r}\nonumber\\ &\quad +\chi_{r,\phi}\sigma_z a_\textrm{r}^\dagger a_\textrm{r}
-    +\sum_{\mu}\chi_{\mu,\phi}\sigma_z a_\mu^\dagger a_\mu
-   \nonumber\\&\quad +\sum_{\mu}\chi_{r\mu} a_\mu^\dagger a_\mu a_\textrm{r}^\dagger a_\textrm{r}\\
+    +\sum_{\mu}\chi_{\mu,\phi}\sigma_z a_\mu^\dagger a_\mu\\
    &=\frac{\omega_q}{2}\sigma_z+\Big(\omega_\textrm{r} +\chi_{r\phi}\sigma_z\Big)a_\textrm{r}^\dagger a_\textrm{r}\nonumber\\&+\sum_{\mu}\Big(\omega_\mu+k_\mu+\chi_{r\mu}a_\textrm{r}^\dagger a_\textrm{r}+\chi_{\mu\phi}\sigma_z\Big) a_\mu^\dagger a_\mu\label{eq:dispersive}
 \end{align}
-where the lamb shift is given by,
-\begin{align}
-   k_{\mu\in 2\mathbb{Z}}&=16E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\sqrt{\frac{E_{J_\textrm{j}}}{32E_{\textrm{c}}^e}}\Bigg[\frac{g_{r\mu}^2}{\omega_\mu-\omega_\textrm{r}}\Bigg]
-\end{align}
-$\le\mathcal{O}(10^{-8})$. 
-In Eq.~\ref{eq:dispersive} the qubit frequency is given by $\omega_{01}=\epsilon_1-\epsilon_0$
-\begin{align}
-    &=-|\langle 0|p_\phi|1\rangle|^2\Bigg[16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\textrm{r}^2}\nonumber\\ &\quad+\sum_\mu\Bigg\{g_{\mu\phi}^2\sqrt{\frac{E_{J_\textrm{j}}}{32\tilde{E}_{C,\mu}^e}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\mu^2}\Bigg\}\Bigg]\nonumber\\&-\sum_{l>1}16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\Bigg[\frac{|\langle 0|p_\phi|l\rangle|^2}{\epsilon_{0l}-\omega_\textrm{r}}\nonumber\\&-\frac{|\langle 1|p_\phi|l\rangle|^2}{\epsilon_{1l}-\omega_\textrm{r}}\Bigg]+\sum_{l>1,\mu}\Bigg\{g_{\mu\phi}^2\sqrt{\frac{E_{J_\textrm{j}}}{32\tilde{E}_{C,\mu}^e}}\times\nonumber \\&\quad\Bigg[\frac{|\langle 0|p_\phi|l\rangle|^2}{\epsilon_{0l}-\omega_\mu}-\frac{|\langle 1|p_\phi|l\rangle|^2}{\epsilon_{1l}-\omega_\mu}\Bigg]\Bigg\}
-\end{align}
-Here the second summand over $\mu$ is the correction $\delta_{\omega_{01}}$ to the qubit frequency due to parasitic modes. For the parameters used in Table~\ref{tab:circuit_params}, which yields $\omega_{01}/2\pi=30 \ \mathrm{MHz}$ the frequency corrections for circuits $H_1,H_2,H_3$ are $\delta\omega_{01}/2\pi=0.4 \ \mathrm{MHz},0.45 \ \mathrm{MHz},0.41 \ \mathrm{MHz}$, respectively. 
-
-The dispersive shift due to the readout mode is given by,
-\begin{align}
+where, $\omega_q=\omega_{01}$ is the qubit frequency, $\kappa_\mu$ is the lamb shift on the parasitic mode while all other variables follow the definitions used in Table~\ref{tab:readout_params}. In the main text, we have used the value of the dispersive shift ($\chi_{\phi\mu}$) due to the parasitic mode in Sec.~\ref{sec:dephasing}, computed using the expression from Ref.~\cite{viola2015collective}. For the parameters in Table~\ref{tab:circuit_params}, we plot $\chi_{\phi\mu}$ for all parasitic modes of the symmetric circuit, in Fig.~\ref{fig:dispersive-shift}. We also plot the dispersive shift due to readout $\chi_{\phi \textrm{r}}$ computed using the following expression (derivation not shown here),
+\begin{align}  
 \chi_{\phi \textrm{r}}&=16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\textrm{r}^2}|\langle 0|p_\phi|1 \rangle|^2\nonumber\\
    &+16g_{r\phi}^2E_{C_\textrm{r}}^2\sqrt{\frac{E_{L_\textrm{r}}}{32E_{C_\textrm{r}}}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_\textrm{r}^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_\textrm{r}^2}\Bigg]
 \end{align}
-and the dispersive shift due to the parasitic mode is given by,
-\begin{align}  
-   \chi_{\phi\mu}&=g_{\mu\phi}^2\sqrt{\frac{E_{J_\textrm{j}}}{32\tilde{E}_{C,\mu}^e}}\frac{2\epsilon_{01}}{\epsilon_{01}^2-\omega_\mu^2}|\langle 0|p_\phi|1 \rangle|^2\nonumber\\
-   &+g_{\mu\phi}^2\sqrt{\frac{E_{J_\textrm{j}}}{32\tilde{E}_{C,\mu}^e}}\Bigg[\sum_l|\langle 0|p_\phi|l \rangle|^2\frac{\epsilon_{0l}}{\epsilon_{0l}^2-\omega_\mu^2}\nonumber\\&\quad-\sum_l|\langle 1|p_\phi|l \rangle|^2\frac{\epsilon_{1l}}{\epsilon_{1l}^2-\omega_\mu^2}\Bigg]
-\end{align}
-}
-For the parameters in Table~\ref{tab:circuit_params},  we plot $\chi_{\phi\mu},\chi_{\phi \textrm{r}}$ for all three circuits in Fig.~\ref{fig:dispersive-shift}. 
 \begin{figure}[htb]
     \centering
     \includegraphics[width=0.45\textwidth]{Supp_Fig/dispersive_shift.pdf}
