@@ -671,15 +671,14 @@ From here on, we define a sum over $m,n$ as running from $1$ to $N$, while the s
 \paragraph{Circuit modifications}
 We will simplify the kinetic energy term from Eq.~\ref{eq:kin-energy}, recalling that $\sum_m W_{\mu m}=0$, and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$. In addition, we will now impose conditions 
 \begin{itemize}
-    \item $\dot{\varphi}_{-1}=\textrm{eV},\dot{\varphi}_{-2}=-\textrm{eV}$ for the parallel circuit, see Fig.~\ref{fig:circuit_choice}(a), Lagrangian $\mathcal{L}_1=\mathcal{T}_1-\mathcal{U}_1$.
-    \item $\dot{\varphi}_{-1}=2\textrm{eV},\dot{\varphi}_{-2}=0$ for the asymmetric floating fluxonium circuit, see Fig.~\ref{fig:circuit_choice}(b), Lagrangian $\mathcal{L}_2=\mathcal{T}_2-\mathcal{U}_2$.
-    \item $\dot{\varphi}_{-1}=2\textrm{eV},\dot{\varphi}_{-2}=0,\dot{\varphi}_N=0$ for the asymmetric grounded fluxonium circuit, see Fig.~\ref{fig:circuit_choice}(c), Lagrangian $\mathcal{L}_3=\mathcal{T}_3-\mathcal{U}_3$. 
+    \item $\dot{\varphi}_{-1}=2\textrm{eV},\dot{\varphi}_{-2}=-2\textrm{eV}$ for the parallel circuit, see Fig.~\ref{fig:circuit_choice}(a), Lagrangian $\mathcal{L}_1=\mathcal{T}_1-\mathcal{U}_1$.
+    \item $\dot{\varphi}_{-1}=4\textrm{eV},\dot{\varphi}_{-2}=0$ for the asymmetric floating fluxonium circuit, see Fig.~\ref{fig:circuit_choice}(b), Lagrangian $\mathcal{L}_2=\mathcal{T}_2-\mathcal{U}_2$.
+    \item $\dot{\varphi}_{-1}=4\textrm{eV},\dot{\varphi}_{-2}=0,\dot{\varphi}_N=0$ for the asymmetric grounded fluxonium circuit, see Fig.~\ref{fig:circuit_choice}(c), Lagrangian $\mathcal{L}_3=\mathcal{T}_3-\mathcal{U}_3$. 
     \item  In addition $C_\textrm{c}=0$ on one end in Figs.~\ref{fig:circuit_choice}(b,c).
 \end{itemize}
  The potential of all three circuit remains the same ($\mathcal{U}=\mathcal{U}_1=\mathcal{U}_2=\mathcal{U}_3$) but the kinetic energies change as follows,\sh{check these equations and define all M's and G's}
 \begin{align}
-\mathcal{T}_1&=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\textrm{eV}-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu \textrm{eV}\nonumber\\
-    &\quad+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big],\\ 
+\mathcal{T}_1&=-\frac{\dot{\phi}\textrm{eV}}{4E_{\textrm{c}}}+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}+G_{0\mu})\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big],\\ 
 \mathcal{T}_2&=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\textrm{eV}-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu \textrm{eV}\nonumber\\
     &\quad+\Big[(M_{00}'+G_{00}')\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}'+G_{0\mu}')\dot{\phi}\dot{\xi_\mu}\nonumber\\&\quad+\sum_{\mu,\nu}(M_{\mu\nu}'+G_{\mu\nu}')\dot{\xi_\mu}\dot{\xi_\nu}\Big],\\
 \mathcal{T}_3&=-\frac{(N+1)E_{\textrm{t}}}{16E_{\textrm{g}}E_{\textrm{c}}}\dot{\phi}\textrm{eV}-\frac{E_{\textrm{t}}}{8E_{\textrm{g}}E_{\textrm{c}}} \sum_\mu\frac{c_\mu o_\mu}{\sqrt{2N}s_\mu^2}  \dot{\xi}_\mu \textrm{eV}\nonumber\\
