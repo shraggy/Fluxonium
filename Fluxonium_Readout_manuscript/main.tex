@@ -829,18 +829,18 @@ where $\omega_\textrm{d}$ is the drive frequency and $\epsilon_\textrm{d}\in \ma
    =&\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}+\frac{\epsilon_\textrm{d}}{2}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)\nonumber\\ 
    &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)
 \end{align}
-Let us call the Hamiltonian at this stage, $H_\textrm{U}$. Now we go to the displaced frame $a_\textrm{r}\rightarrow \alpha$ via transformation under the unitary $U_\alpha=e^{-i\alpha(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)}$ such that in the interaction picture we have, $U_\alpha\hat H_\textrm{U}U_\alpha^\dagger+i\dot{U}_\alpha U_\alpha^\dagger$ 
+Let us call the Hamiltonian at this stage, $H_\textrm{U}$. Now we go to the displaced frame $a_\textrm{r}\rightarrow a_\textrm{r}+\alpha$ via transformation under the unitary $U_\alpha=e^{-i\alpha(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)}$ such that in the interaction picture we have, $U_\alpha\hat H_\textrm{U}U_\alpha^\dagger+i\dot{U}_\alpha U_\alpha^\dagger$ 
 \begin{align}
    =&\hat H_\phi+\sum_{\mu\in 2\mathbb{Z}}\hat H_\mu+\frac{g_{\phi\mu}\hat N_\phi\hat N_\mu}{N_{\phi,\textrm{ZPF}}N_{\mu,\textrm{ZPF}}}\label{bare}\\ 
    &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\hat {\tilde{a}}_\textrm{r}-\hat {\tilde{a}}_\textrm{r}^\dagger)\label{quantum}\\
    &-i\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}(\alpha e^{-i\omega_\textrm{r} t}-\alpha^* e^{i\omega_\textrm{r} t})\\&-i\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}(\alpha e^{-i\omega_\textrm{r} t}-\alpha^* e^{i\omega_\textrm{r} t})\label{classical}\\
    &-\frac{\epsilon_\textrm{d}}{2}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)+\dot{\alpha}(\hat a_\textrm{r}+\hat a_\textrm{r}^\dagger)\label{drive}
 \end{align}
-We choose $\dot{\alpha}=\frac{\epsilon_\textrm{d}}{2}\implies\alpha(t)\in\mathbb{R}$ to remove the terms in Eq.~\ref{drive}, such that the Eqs.~\ref{classical} take the form,
+We choose $\dot{\alpha}=\frac{\epsilon_\textrm{d}}{2}\implies\alpha(t)\in\mathbb{R}$ to remove the terms in Eq.~\ref{drive}, such that the Eq.~\ref{classical} take the form,
 \begin{align}
     -\Big[\frac{g_{\phi\textrm{r}}\hat N_\phi}{N_{\phi,\textrm{ZPF}}}+\frac{g_{\mu\textrm{r}}\hat N_\mu}{N_{\mu,\textrm{ZPF}}}\Big](2\alpha\cos{\omega_\textrm{d} t})\label{semi-classical}
 \end{align}
-Now, we go back to the lab frame and ignore the terms associated with the quantum operators $\hat{\tilde{a}}_\textrm{r}$ in Eqs.~\ref{quantum} while we replace $\alpha$ with the mean value $\sqrt{\bar n_\textrm{r}}$ in Eq.~\ref{semi-classical} to get the final semi-classical form $H_\textrm{s.c.}$~\cite{cohen2023reminiscence}.
+Now, we go back to the lab frame and ignore the terms associated with the quantum operators $\hat{\tilde{a}}_\textrm{r}$ in Eqs.~\ref{quantum} while we replace $\alpha$ with the mean value $\sqrt{\bar n_\textrm{r}}$ in the term~\ref{semi-classical} to get the final semi-classical form $H_\textrm{s.c.}$~\cite{cohen2023reminiscence}.
 
 \subsection{Floquet simulations}
 \paragraph{Stark shift:}\label{app:stark-shift}
