@@ -547,11 +547,7 @@ We use the definition of phase difference quadratures and the fluxoid quantizati
 \end{align}
 where $z\in\mathbb{Z}$. Writing the the Lagrangian in this new basis follows $\partial \mathcal{L}/\partial \dot{\varphi}_0=0$ yields the expression,
 \begin{align}
-<<<<<<< Updated upstream
 \dot{\varphi}_0&=E_{\textrm{t}}\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}-\sum_{l=1}^{N}\frac{\dot{\theta}_l}{E_{\textrm{c}}}-\sum_{l=1}^{N}\frac{\dot{\theta}_l}{E_{\textrm{g,p}}}\nonumber\\&\quad-\sum_{i=1}^{N-1}(N-i)\frac{\dot{\theta}_i}{E_{\textrm{g,j}}}\Big)
-=======
-    \dot{\varphi}_0&=E_{\textrm{t}}\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}'}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}'}}-\sum_{l=1}^{N}\frac{\dot{\theta}_l}{E_{\textrm{g,p}}}\nonumber\\&\quad-\sum_{i=1}^{N-1}(N-i+1)\frac{\dot{\theta}_i}{E_{\textrm{g,j}}}\Big)
->>>>>>> Stashed changes
 \end{align}
 where
 \begin{align}
@@ -617,9 +613,9 @@ G_{00}&=\frac{1}{64E_{\textrm{t}}}\Big[1-\frac{2}{3}\frac{(N^2-1)E_\textrm{t}}{N
 G_{0\mu}&=-\frac{c_\mu o_{\mu+1}}{32E_{\textrm{g,j}}\sqrt{2N}s_\mu^2}\\
 G_{\mu\nu}&=\frac{1}{64E_{\textrm{g,j}}s_\mu^2}\Big[\delta_{\mu\nu}-\frac{E_{\textrm{t}}}{E_{\textrm{g,j}}}\frac{2c_\mu c_\nu o_\mu o_\nu}{N s_\nu^2}\Big].
 \end{align}
-Note that $C_\textrm{tot}=\textrm{C}_\textrm{p}+C$ is the total capacitance used for the qubit mode. The quantities $G_{00}, G_{0\mu}, G_{\mu\nu}$ contribute to the equations for the coupling strengths in the final Hamiltonian, while $M_{00}, M_{\nu\nu}$ contribute to the charging energies of the qubit and parasitic modes, discussed in Sec.~\ref{sec:expressions}. We can see that only the parasitic modes with even index $\mu$ interact with the qubit since $G_{0\mu}=0$ for $\mu\in 2\mathbb{Z}+1$. The Hamiltonian for the symmetric case, thus, will also not couple the odd modes (especially parasitic mode $\mu=1$) with the qubit.
+Note that $C_\textrm{tot}=\textrm{C}_\textrm{p}+C$ is the total capacitance used for the qubit mode. The quantities $G_{00}, G_{0\mu}, G_{\mu\nu}$ contribute to the equations for the coupling strengths in the final Hamiltonian, while $M_{00}, M_{\nu\nu}$ contribute to the charging energies of the qubit and parasitic modes, discussed in Sec.~\ref{sec:expressions}. We can see that only the parasitic modes with even index $\mu$ interact with the qubit since $G_{0\mu}=0$ for $\mu\in 2\mathbb{Z}+1$. The Hamiltonian for the symmetric case, thus, will also not couple the odd modes (especially, parasitic mode $\mu=1$) with the qubit.
 
-\paragraph{Asymmetric circuit.} \sh{Start spell check here} For the circuit in Fig.~\ref{fig:circuit_choice}(b), let the Lagrangian be denoted by $\mathcal{L}_2=\mathcal{T}_2-\mathcal{U}_2$ and impose the conditions $\dot{\varphi}_{-1}=4\textrm{eV}, \dot{\varphi}_{-2}=0$. In addition, $C_\textrm{c}=0$ on one end. The changes in the derivation include:
+\paragraph{Asymmetric circuit.} For the circuit in Fig.~\ref{fig:circuit_choice}(b), let the Lagrangian be denoted by $\mathcal{L}_2=\mathcal{T}_2-\mathcal{U}_2$ and impose the conditions $\dot{\varphi}_{-1}=4\textrm{eV}, \dot{\varphi}_{-2}=0$. In addition, $C_\textrm{c}=0$ on one end. The changes in the derivation include:
 \begin{align}
 \dot{\varphi}_0&=E_{\textrm{t}}\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}-\sum_{l=1}^{N}\frac{\dot{\theta}_l}{E_{\textrm{g,p}}}-\sum_{i=1}^{N-1}(N-i)\frac{\dot{\theta}_i}{E_{\textrm{g,j}}}\Big)\\
 E_\textrm{t}&=\Big(\frac{1}{E_{\textrm{c}}}+\frac{N-1}{E_{\textrm{g,j}}}+\frac{2}{E_{\textrm{g,p}}}\Big)^{-1}\\
@@ -647,8 +643,8 @@ Here, we show the variations of the couplings and charging energies referenced i
 \end{figure}
 \begin{enumerate}
     \item Qubit charging energy ($E_{\textrm{c}}^\phi \hat N_{\phi}^2$): The target qubit charging energy is affected by parasitic effects since $\frac{1}{E_\textrm{t}}\neq 0$.\\ $\frac{1}{\bar{E}_\textrm{c}^\phi}=\frac{1}{4E_{\textrm{t}}}\Big(1-\frac{2}{3}\frac{N^2-1}{N}\frac{E_{\textrm{t}}}{E_{\textrm{g,j}}}\Big)+\frac{1}{E_{\textrm{C}}}+\frac{1}{NE_{\textrm{C}_\textrm{j}}}$.
-    \item Even Parasitic-mode charging energy ($E_{\textrm{c},\mu}^\textrm{e}$): The parasitic charging energy is crucial in deciding the parasitic mode frequency $\omega_{\mu}$. And since only even parasitic modes (with index $\mu\in 2\mathbb{Z}$) couple to the qubit we will only give expressions for the even modes here.\\ $\frac{1}{\tilde{E}_{\textrm{c},\mu}^{e}}=\frac{1}{E_{\textrm{C}_\textrm{j}}}+\frac{1}{4E_{\textrm{g,j}}s_\mu^2}.$ 
-    \item Qubit-Readout Coupling ($g_{\phi \textrm{r}}$):\\ $g_{\phi \textrm{r}}=\frac{\tilde{E}_\textrm{c}^\phi}{E_{\textrm{c}}} N_{\phi,\mathrm{ZPF}}N_{\mu,\mathrm{ZPF}}.$
+    \item Even parasitic-mode charging energy ($E_{\textrm{c},\mu}^\textrm{e}$): The parasitic charging energy is crucial in deciding the parasitic-mode frequency $\omega_{\mu}$. And since only even parasitic modes (with index $\mu\in 2\mathbb{Z}$) couple to the qubit we will only give expressions for the even modes here.\\ $\frac{1}{\tilde{E}_{\textrm{c},\mu}^{e}}=\frac{1}{E_{\textrm{C}_\textrm{j}}}+\frac{1}{4E_{\textrm{g,j}}s_\mu^2}.$ 
+    \item Qubit-readout Coupling ($g_{\phi \textrm{r}}$):\\ $g_{\phi \textrm{r}}=\frac{\tilde{E}_\textrm{c}^\phi}{E_{\textrm{c}}} N_{\phi,\mathrm{ZPF}}N_{\mu,\mathrm{ZPF}}.$
     \item Qubit-parasitic coupling ($g_{\phi\mu}$): The coupling strengths as shown in Fig.~\ref{fig:coupling-Floquet} induce all MIST effects. In particular, the parasitic-qubit coupling $g_{\phi\mu}$ is responsible for PMIST effects.\\ $g_{\phi\mu}=\sqrt{\frac{2}{N}} \frac{\tilde{E}^\phi_\textrm{c}\tilde{E}^\textrm{e}_{\textrm{c},\mu}c_\mu}{E_{\textrm{g,j}}s_\mu^2} N_{\phi,\mathrm{ZPF}} N_{\mu,\mathrm{ZPF}}.$
     \item Readout-parasitic coupling ($g_{\mu r}$): The parasitic-readout coupling $g_{\mu r}$ only increases the population of the parasitic modes and is directly proportional to $g_{\phi\mu}$. We do not see any significant effects due to the $g_{\mu \textrm{r}}$ quantity in this work.\\ $g_{\mu r}=\frac{\tilde{E}^\phi_\textrm{c}\tilde{E}^\textrm{e}_{\textrm{c},\mu}c_\mu}{4\sqrt{2N}E_{\textrm{g,j}}E_{\textrm{c}}s_\mu^2} N_{\mu,\mathrm{ZPF}}N_{\textrm{r},\mathrm{ZPF}}.$   
     \end{enumerate}
