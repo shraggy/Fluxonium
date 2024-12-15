@@ -390,7 +390,7 @@ INPUT ./Supp_Fig/dispersive_shift.pdf
 INPUT ./Supp_Fig/dispersive_shift.pdf
 INPUT ./Supp_Fig/dispersive_shift.pdf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/tools/.tex
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Supp_Fig/Stark-shift.pdf
@@ -431,9 +431,6 @@ INPUT ./Supp_Fig/Floquet_Will_landscape.pdf
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 OUTPUT main.soc
 OUTPUT main.loc
 INPUT main.aux
@@ -466,6 +463,7 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb

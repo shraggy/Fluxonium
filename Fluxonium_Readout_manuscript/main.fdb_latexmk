@@ -1,15 +1,15 @@
 # Fdb version 4
-["bibtex main"] 1734217619.48199 "main.aux" "main.bbl" "main" 1734219929.42235 0
-  "./mainNotes.bib" 1734219929.04466 2063 6d71020d455584b591bf04ae8d0e1c74 ""
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1734221275.01529 -1
+  "./mainNotes.bib" 1734221274.56243 2063 6d71020d455584b591bf04ae8d0e1c74 ""
   "./refs.bib" 1733996600.0957 43397 c273432a7d5005bb96d31273de4afc65 ""
   "/usr/local/texlive/2024/texmf-dist/bibtex/bst/revtex/apsrev4-2.bst" 1601932770 69609 e9dea59f0e753ccda3ddc8f5806d846d ""
-  "main.aux" 1734219929.04204 57008 900e76229897f6962bc5eb3bd455ba74 "pdflatex"
+  "main.aux" 1734221274.56019 52553 4e89ddea258d56bc967ee678c8ac943a "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1734219927.57522 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1734219929.42258 2
-  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1734219925.25645 127792 98c55fe04fcde0499abbf1c5623fcdc1 ""
+["pdflatex"] 1734221273.20036 "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" "main.pdf" "main" 1734221275.01556 2
+  "/Users/shraddhasingh/Documents/GitHub/Fluxonium/Fluxonium_Readout_manuscript/main.tex" 1734221271.00345 128005 294ac68551fb14ca08fbe269e9ce1fd6 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -41,6 +41,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti7.tfm" 1136768653 1492 86331993fe614793f5e7e755835c31c5 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti9.tfm" 1136768653 1476 cccc6cc4935c18ec3d5623b77ecb8b74 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm" 1136768653 764 c98a2af25c99b73a368cf7336e255190 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
@@ -68,6 +69,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb" 1248133631 36607 d654cb3f2bc54f57509240071db3bffa ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1248133631 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb" 1248133631 29078 718ea4567ceff944262b0f5b0800e1d9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb" 1248133631 30212 b6aafa449db0097a6b9b890f66741063 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1248133631 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
@@ -164,7 +166,6 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty" 1705352648 2462 6bc53756156dbd71c1ad550d30a3b93f ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty" 1705352648 5319 2b738d02ce36ada6dcdd9534940db0ee ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty" 1705352648 5048 425739d70251273bf93e3d51f3c40048 ""
-  "/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd" 1705352648 2469 74341109f164f230581718c66211c718 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/braket/braket.sty" 1266794558 3601 193635d942bc4777a5acaaeeffdce692 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/changes/changes.sty" 1626465424 29978 a9cfa26176db050060b35afe018a6d31 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -212,7 +213,6 @@
   "/usr/local/texlive/2024/texmf-dist/tex/latex/revtex/revtex4-2.cls" 1685563380 202907 3900a45169782ac9ef2ca218441e0d14 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/textcase/textcase.sty" 1690576885 3050 42e1650bbafdaeb05aa69e5d5263388a ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/todonotes/todonotes.sty" 1704576842 21404 916e19cbd009b6d289c8194b313d3895 ""
-  "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/.tex" 1686341992 1386 e12910b1679ec687be15153859582c13 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/array.sty" 1698869629 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/tools/calc.sty" 1698869629 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "/usr/local/texlive/2024/texmf-dist/tex/latex/truncate/truncate.sty" 1276385404 6657 bba86b8809c129cc7edd6da64c0c1e43 ""
@@ -233,6 +233,7 @@
   "Figures/Meas_Circuit.pdf" 1731189362.2074 135427 3c8c646bbd324923bddc811098fe4fad ""
   "Figures/Trans_.pdf" 1731189362.20788 101024 da7b58555346a47cea870f908b6a75a8 ""
   "Figures/dephasing.pdf" 1733213952.26 81375 f7a78f2766f4ecca081cda1cbd727909 ""
+  "Fluxonium_Readout_manuscript/Supp_Fig/Tuncation.pdf" 0 -1 0 ""
   "Supp_Fig/Charge-matrix-Will.pdf" 1734194132.07594 95525 1cd2b89dc91b805726ce0c72c4d56848 ""
   "Supp_Fig/Charge_Matrix.pdf" 1734192523.16425 84966 2cc788a853f7523b6f5561253a1cdefc ""
   "Supp_Fig/Circuit_choice.pdf" 1734174365.19026 103164 2c6e08726e8b74993c23555775f07773 ""
@@ -245,10 +246,10 @@
   "Supp_Fig/Trans1.pdf" 1731235118.87205 268088 926f80516896e94d8771c88e7a609d03 ""
   "Supp_Fig/Trans2.pdf" 1731235119.01233 185501 14ce32a7791e9a6221a548b999e4fe66 ""
   "Supp_Fig/dispersive_shift.pdf" 1734201179.83506 94795 97a8e438551524c336f4cd311dc6aa53 ""
-  "main.aux" 1734219929.04204 57008 900e76229897f6962bc5eb3bd455ba74 "pdflatex"
-  "main.bbl" 1734217619.56524 38080 37acc216166998fc24a17ed2bbfc402c "bibtex main"
-  "main.out" 1734219929.04437 5701 cd401ca75216e2e0b13a71f61b449638 "pdflatex"
-  "main.tex" 1734219925.25645 127792 98c55fe04fcde0499abbf1c5623fcdc1 ""
+  "main.aux" 1734221274.56019 52553 4e89ddea258d56bc967ee678c8ac943a "pdflatex"
+  "main.bbl" 1734220606.81239 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.out" 1734221274.56227 5595 75a7e15c8553a703ae31cd919870a33f "pdflatex"
+  "main.tex" 1734221271.00345 128005 294ac68551fb14ca08fbe269e9ce1fd6 ""
   (generated)
   "main.aux"
   "main.loc"
