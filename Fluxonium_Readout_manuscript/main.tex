@@ -648,7 +648,7 @@ Here, we show the variations of the couplings and charging energies referenced i
     \item Qubit-Parasitic Coupling ($g_{\phi\mu}$): The coupling strengths as shown in Fig.~\ref{fig:coupling-Floquet} induce all MIST effects. In particular, the parasitic-qubit coupling $g_{\phi\mu}$ is responsible for PMIST effects.\\ $g_{\phi\mu}=\sqrt{\frac{2}{N}} \frac{\tilde{E}^\phi_\textrm{c}\tilde{E}^\textrm{e}_{\textrm{c},\mu}c_\mu}{E_{\textrm{g,j}}s_\mu^2} N_{\phi,\mathrm{ZPF}} N_{\mu,\mathrm{ZPF}}.$
     \item Readout-Parasitic Coupling ($g_{\mu r}$): The parasitic-readout coupling $g_{\mu r}$ only increases the population of the parasitic modes and is directly proportional to $g_{\phi\mu}$. We do not see any significant effects due to the $g_{\mu \textrm{r}}$ quantity in this work.\\ $g_{\mu r}=\frac{\tilde{E}^\phi_\textrm{c}\tilde{E}^\textrm{e}_{\textrm{c},\mu}c_\mu}{4\sqrt{2N}E_{\textrm{g,j}}E_{\textrm{c}}s_\mu^2} N_{\mu,\mathrm{ZPF}}N_{\textrm{r},\mathrm{ZPF}}.$   
     \end{enumerate}
-    Fig.~\ref{fig:coupling-strength} shows that the lowest three even modes $\mu=2,4,6$ couple to the qubit more strongly than the readout. This observation is a backbone of our work; we find that because of this relatively large coupling strength, PMIST rates may be significant in fluxonium-based quantum computers. In Fig.~\ref{fig:circuit_comp}, we show the dependence of charging energies and coupling constants on the number of junctions $N$ as well as the ground capacitance $C_\textrm{g,j}$. \footnote{Note that the assumptions used in Ref.~\cite{viola2015collective} to derive the Hamiltonian were respected when analyzing the variation with $N$.} We focus specifically on $g_{\phi\mu}$ and $E_{\textrm{c},\mu}^\textrm{e}$ because parasitic charging energy decides the parasitic frequency while the presence of qubit-parasitic coupling is the main culprit behind PMIST.
+    Fig.~\ref{fig:coupling-strength} shows that the lowest three even modes $\mu=2,4,6$ couple to the qubit more strongly than the readout. This observation is the backbone of our work; we find that because of this relatively large coupling strength, PMIST rates may be significant in fluxonium-based quantum computers. In Fig.~\ref{fig:circuit_comp}, we show the dependence of charging energies and coupling constants on the number of junctions $N$ as well as the ground capacitance $C_\textrm{g,j}$. \footnote{Note that the assumptions used in Ref.~\cite{viola2015collective} to derive the Hamiltonian were respected when analyzing the variation with $N$.} We focus specifically on $g_{\phi\mu}$ and $E_{\textrm{c},\mu}^\textrm{e}$ because parasitic charging energy decides the parasitic frequency while the presence of qubit-parasitic coupling is the main culprit behind PMIST.
 
 \begin{figure}[t]
     \centering
@@ -672,7 +672,7 @@ A smaller \( N \) increases \( g_{\phi\mu} \) but also raises the parasitic mode
 
 These considerations suggest that to minimize PMIST effects, it is crucial to reduce the parasitic ground capacitance in the JJA. Simultaneously, the junction count \( N \) must be carefully optimized to balance parasitic frequencies and qubit-parasitic couplings, while respecting the assumptions of linearity of parasitic modes.
 \subsection{Fluxonium qubit Hamiltonian}\sh{Start spell check here}
-We now discuss the parameters related to fluxonium qubit Hamiltonian, through a detailed consideration of its charge matrix elements and the dispersive shifts on the qubit induced by the parasitic modes and readout. The qubit Hamiltonian $H_{\phi}$ (see Eq.~\ref{eq:Hphi}) is diagonalized in the Fock state basis, where we have used the standard bosonic operators
+We now discuss the parameters related to the fluxonium qubit Hamiltonian, through a detailed consideration of its charge matrix elements and the dispersive shifts on the qubit induced by the parasitic modes and readout. The qubit Hamiltonian $H_{\phi}$ (see Eq.~\ref{eq:Hphi}) is diagonalized in the Fock state basis, where we have used the standard bosonic operators
  \begin{equation} \hat x_\phi=x_{\mathrm{ZPF}}(a+a^\dagger)=\hat N_{\phi}/ N_{\phi,\mathrm{ZPF}}
  \end{equation}
  and 
@@ -680,7 +680,7 @@ We now discuss the parameters related to fluxonium qubit Hamiltonian, through a 
  \end{equation}
 such that $[\hat x,\hat p]=i$.
 \paragraph{Charge matrix elements:}
-Here, using the approximations described in App.~\ref{app:alt_circuits}, we calculate the charge matrix elements for the qubit mode. We observe that with increasing final state ($f$), the charge matrix elements with respect to the ground and first two excited states follow a decreasing trend, approximately exponential. This exponential decrease to $10^{-10}$ motivates our truncation of the fluxonium potential up to $30$ levels for the Floquet simulations of Sec.~\ref{sec:MIST}.
+Here, we calculate the charge matrix elements for the qubit mode using the approximations described in App.~\ref{app:alt_circuits}. We observe that with increasing final state ($f$), the charge matrix elements with respect to the ground and first two excited states follow a decreasing trend, approximately exponential. This exponential decrease to $10^{-10}$ motivates our truncation of the fluxonium potential up to $30$ levels for the Floquet simulations of Sec.~\ref{sec:MIST}.
 \begin{figure}[t]
     \centering
 \includegraphics[width=0.45\textwidth]{Supp_Fig/Charge_Matrix.pdf}
@@ -711,7 +711,7 @@ where, $\omega_\textrm{q}=\omega_{01}$ is the qubit frequency, $\kappa_\mu$ is t
 \end{figure}
 
 \section{Driven fluxonium circuit}\label{app:MIST}
-Here, we discuss the several analysis techniques to study MIST effects used in this work. First, we discuss and justify the Hilbert space truncation, as well as approximations used for Floquet simulations in Sec.~\ref{sec:MIST}. Next, we derive the semi-classical Hamiltonian $H_\textrm{s.c.}$ in Eq.~\ref{eq:drive} and discuss other details related to the Floquet simulations
+Here, we discuss several analysis techniques to study the effects of MIST used in this work. First, we discuss and justify the Hilbert space truncation, as well as approximations used for Floquet simulations in Sec.~\ref{sec:MIST}. Next, we derive the semi-classical Hamiltonian $H_\textrm{s.c.}$ in Eq.~\ref{eq:drive} and discuss other details related to the Floquet simulations
 \subsection{Approximations for numerical modeling}\label{app:numerics}
 We use the following three approximations in our work.
 \begin{itemize}
@@ -720,7 +720,7 @@ We use the following three approximations in our work.
     \item \textbf{Semi-classical drive approximation.}  We treat the readout resonator classically as described in Refs.~\cite{xiao2023diagrammatic,dumas2024unified,cohen2023reminiscence,khezri2023measurement}, eliminating the readout mode states from our numerical simulation. This approximation is again necessary to restrict the Hilbert space size to values feasible for numeric study.
     
     \item \textbf{Linear JJA approximation.} We assume that the parasitic modes are linear, due to the large $E_{\textrm{J}_\textrm{j}}/E_{\textrm{C}_\textrm{j}} \sim 200$ ratio. Nonlinear corrections to our results are beyond the scope of this work. For details on how non-linear corrections affect different circuit energies, we direct the readers to~\cite{viola2015collective}. 
-    \item \textbf{Truncation.} We note that the charge matrix elements connecting the fluxonium qubit ground states to excited states decrease roughly exponentially with increasing excited state number (see shown in Fig.~\ref{charge-matrix}). With this observation and our assumptions above, we truncate the Hilbert space dimensions to $20\times 5$. That is, we assume $20$ levels in the fluxonium qubit mode and $5$ levels in the parasitic mode. We justify this truncation in Fig.~\ref{fig:truncation} for all Floquet simulations by giving an analogous plot for Fig.~\ref{fig:Floquet} using a numerical simulation in Hilbert space of $30\times 10$.
+    \item \textbf{Truncation.} We note that the charge matrix elements connecting the fluxonium qubit ground state to excited states decrease roughly exponentially with increasing excited state number (see shown in Fig.~\ref{charge-matrix}). With this observation and our assumptions above, we truncate the Hilbert space dimensions to $20\times 5$. That is, we assume $20$ levels in the fluxonium qubit mode and $5$ levels in the parasitic mode. We justify this truncation in Fig.~\ref{fig:truncation} for all Floquet simulations by giving an analogous plot for Fig.~\ref{fig:Floquet} using a numerical simulation in Hilbert space of $30\times 10$.
     \end{itemize}
 \begin{figure}[t]
         \centering
@@ -729,7 +729,7 @@ We use the following three approximations in our work.
         }
         \label{fig:truncation}
     \end{figure}
-    Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of PMIST processes, and we do not claim to quantify how many such transitions can be present. Hence, with this truncation we only examine the excitations in $0-20$ levels in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. In this appendix, we show the results for truncating the Hilbert space to $20
+    Note that for the conclusions drawn in this paper, we are only interested in identifying the existence of PMIST processes, and we do not claim to quantify how many such transitions can be present. Hence, with this truncation, we only examine the excitations in $0-20$ levels in the fluxonium subspace in Figs.~\ref{fig:Floquet},~\ref{fig:Flo_low},~\ref{fig:coupling-Floquet}. In this appendix, we show the results for truncating the Hilbert space to $20
     \times 5$ levels in the two modes and $30
     \times 10$, showing the convergence of the MIST results. Importantly, both simulations show no higher than excitation of $\bar n_\mu=2$ in parasitic mode.
 
