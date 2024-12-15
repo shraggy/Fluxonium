@@ -567,8 +567,7 @@ We will eventually use the scalar voltage values for $\dot{\varphi}_{-1},\dot{\v
 \end{align}
 This final expression matches Refs.~\cite{ferguson2013symmetries,viola2015collective} for an ordered array.
 \subsection{Collective modes.} 
-\sh{Start spell check here}
-Now, we will define the collective modes for the fluxonium circuit, $\{\phi,\xi_1,...,\xi_{\textrm{N}-1}\}$ such that 
+Now, we define the collective modes for the fluxonium circuit, $\{\phi,\xi_1,...,\xi_{\textrm{N}-1}\}$ such that 
 \begin{align}
     \theta_m=\phi/N+\sum_\mu W_{\mu m}\xi_\mu,
 \end{align}
@@ -576,13 +575,11 @@ and inversely,
 \begin{align}
     \phi&=\sum_{m=1}^N\theta_m,\quad \xi_\mu=\sum_{m=1}^N W_{\mu m}\theta_m.
 \end{align}
-Here, $\phi$ is called the superinductance mode or the \emph{qubit} mode while $\xi_\mu$ denote the parasitic modes indexed by $\mu\in\{1,..,N-1\}$~\cite{ferguson2013symmetries}. The matrix $W$ is semi-orthogonal, with dimensions $(N-1)\times N$, and is given by $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$. Its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice
+Here, $\phi$ is called the superinductance mode or the \emph{qubit} mode, while $\xi_\mu$ denote the parasitic modes indexed by $\mu\in\{1,..,N-1\}$~\cite{ferguson2013symmetries}. The matrix $W$ is semi-orthogonal, with dimensions $(N-1)\times N$, and is given by $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu \nu}$. Its row sum is zero, $\sum_mW_{\mu m}=0$. Thus, the following choice
 \begin{align}
     W_{\mu m}=\sqrt{\frac{2}{N}}\cos{\frac{\pi\mu(m-1/2)}{N}},
 \end{align}
-is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective} to derive the Hamiltonian for the symmetric circuit.
-The choice of these new variables highlights the collective modes describing the low-energy physics as illustrated in~\cite{catelani2011relaxation,koch2009charging,manucharyan2009fluxonium}. We can now split the combined Lagrangian $\mathcal{L}=\mathcal{T}-\mathcal{U}$ into kinteic energy $\mathcal{T}$ and potential energy $
-\mathcal{U}$ terms in the basis of collective modes as,
+is observed in~\cite{ferguson2013symmetries} and later used in~\cite{viola2015collective} to derive the Hamiltonian for the symmetric circuit. The choice of these new variables highlights the collective modes describing the low-energy physics as illustrated in~\cite{catelani2011relaxation,koch2009charging,manucharyan2009fluxonium}. We now split the combined Lagrangian $\mathcal{L}=\mathcal{T}-\mathcal{U}$ into kinetic energy $\mathcal{T}$ and potential energy $\mathcal{U}$ terms in the basis of collective modes as,
 \begin{align}
 \mathcal{T}=&\Big[\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}\Big)\Big(\frac{E_{\textrm{t}}}{8E_{\textrm{c}}}+\frac{E_{\textrm{t}}}{8E_{\textrm{g,p}}}\Big)-\frac{\dot{\varphi}_{-2}}{8E_{\textrm{c}}}\Big]\dot{\phi}\nonumber\\&+\sum_{l=1}^{N-1}(N-l)\frac{E_{\textrm{t}}}{8E_{\textrm{g,j}}}\Big(\frac{\dot{\varphi}_{-1}}{E_{\textrm{c}}}+\frac{\dot{\varphi}_{-2}}{E_{\textrm{c}}}\Big)\Big](\dot{\phi}/N+\sum_\mu W_{\mu l}\dot{\xi}_\mu)\nonumber\\
   &+\sum_{l=1}^N\sum_{l'=1}^N(\dot{\phi}/N+\sum_\mu W_{\mu l}\dot{\xi}_\mu)(\dot{\phi}/N+\sum_\mu W_{\mu l'}\dot{\xi}_\mu)\nonumber\\
@@ -590,15 +587,14 @@ The choice of these new variables highlights the collective modes describing the
     \mathcal{U}&=-E_{\textrm{J}_\textrm{p}}\cos(\phi)-\sum_{l=1}^NE_{\textrm{J}_\textrm{j}}\cos\Big(\phi/N+\sum_\mu W_{\mu l}\xi_\mu\Big)\label{eq:pot-energy}
 \end{align}
 \subsection{Circuit modifications and assumptions}
-From here on, we define a sum over $m,n$ as running from $1$ to $N$, while the sum over $\mu,\nu$ runs from $1$ to $N-1$. In order to simplify the Lagrangian for the different circuits, we will recall that $\sum_m W_{\mu m}=0$, and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$, yielding the identities,
+From here on, we define a sum over $m,n$ as running from $1$ to $N$, while the sum over $\mu,\nu$ runs from $1$ to $N-1$. To simplify the Lagrangian for the different circuits, we recall that $\sum_m W_{\mu m}=0$ and the semi-orthogonal matrix condition $\sum_m W_{\mu m}W_{\nu m}=\delta_{\mu\nu}$, yielding the identities,
 \begin{align}
  \sum_{n=1}^m W_{\mu n}&=-\sum_{n=m+1}^N W_{\mu n}\\
  \sum_{m=1}^N mW_{\mu m}&=-\frac{c_\mu o_{\mu}}{\sqrt{2N}s_\mu^2}\\
  \sum_{m=1}^N m^2W_{\mu m}&=\frac{c_\mu}{\sqrt{2N}s_\mu^2}[N(-1)^\mu-o_\mu]
 \end{align}
-where $o_\mu=\frac{[1-(-1)^\mu]}{2},c_\mu=\cos{\frac{\pi\mu}{2N}}, s_\mu=\sin{\frac{\pi\mu}{2N}}$. We will now simplify the kinetic energy and potential energy terms from Eqs.~\ref{eq:pot-energy} and~\ref{eq:kin-energy}, for the different circuits, using these identities.
-\paragraph{Linear Approximation}
-We discuss the simplification under linear assumption on the parasitic modes $\mu$. This includes only linear terms from Taylor expansion of the cosine ($\cos{x}\sim 1-\frac{x^2}{2}$) Eq.~\ref{eq:pot-energy}, yielding (up to a constant term)
+where $o_\mu=\frac{[1-(-1)^\mu]}{2}, c_\mu=\cos{\frac{\pi\mu}{2N}}, s_\mu=\sin{\frac{\pi\mu}{2N}}$. We now simplify the kinetic energy and potential energy terms from Eqs.~\ref{eq:pot-energy} and~\ref{eq:kin-energy} for the different circuits using these identities.\paragraph{Linear Approximation}
+We discuss the simplification under the linear assumption on the parasitic modes $\mu$. This includes only linear terms from the Taylor expansion of the cosine ($\cos{x}\sim 1-\frac{x^2}{2}$) in Eq.~\ref{eq:pot-energy}, yielding (up to a constant term)
 \allowdisplaybreaks{
 \begin{align}
     \mathcal{U}&=E_{\textrm{J}_\textrm{p}}\cos(\phi)+\frac{E_{\textrm{J}_\textrm{j}}}{2N}\phi^2+\frac{E_{\textrm{J}_\textrm{j}}}{2}\sum_{\mu}\xi_\mu^2\\
@@ -606,10 +602,11 @@ We discuss the simplification under linear assumption on the parasitic modes $\m
     \end{align}
 }
 
- The potential energy of both circuits remains the same ($\mathcal{U}=\mathcal{U}_1=\mathcal{U}_2$). 
-\paragraph{Symmetric circuit.} For the circuit in Fig.~\ref{fig:circuit_choice}(a), let the Lagrangian be denoted by $\mathcal{L}_1=\mathcal{T}_1-\mathcal{U}_1$ and impose the conditions $\dot{\varphi}_{-1}=2\textrm{eV},\dot{\varphi}_{-2}=-2\textrm{eV}$.
-    \begin{align}
+The potential energy of both circuits remains the same ($\mathcal{U}=\mathcal{U}_1=\mathcal{U}_2$).
+\paragraph{Symmetric circuit.} For the circuit in Fig.~\ref{fig:circuit_choice}(a), let the Lagrangian be denoted by $\mathcal{L}_1=\mathcal{T}_1-\mathcal{U}_1$ and impose the conditions $\dot{\varphi}_{-1}=2\textrm{eV}, \dot{\varphi}_{-2}=-2\textrm{eV}$.
+\begin{align}
 \mathcal{T}_1&=-\frac{\dot{\phi}\textrm{eV}}{4E_{\textrm{c}}}+\Big[(M_{00}+G_{00})\dot{\phi}^2+2\sum_{\mu}(M_{0\mu}\nonumber\\&\quad+G_{0\mu})\dot{\phi}\dot{\xi_\mu}+\sum_{\mu,\nu}(M_{\mu\nu}+G_{\mu\nu})\dot{\xi_\mu}\dot{\xi_\nu}\Big].\end{align}
+\sh{Spell check starts here}
 Here $M$ comes from the phase-slip junction and JJA while $G$ comes from the coupling and ground capacitances, and these coefficients are given by,
 \begin{align}
 M_{00}&=\frac{1}{E_{C_\textrm{tot}}}+\frac{1}{NE_{\textrm{C}_\textrm{j}}}, M_{0\mu}=0,    M_{\mu\nu}=\frac{\delta_{\mu\nu}}{E_{\textrm{C}_\textrm{j}}}\\
