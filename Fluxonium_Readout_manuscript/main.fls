@@ -431,6 +431,9 @@ INPUT ./Supp_Fig/Floquet_Will_landscape.pdf
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 OUTPUT main.soc
 OUTPUT main.loc
 INPUT main.aux
