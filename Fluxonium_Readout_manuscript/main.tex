@@ -801,7 +801,7 @@ Below we plot the population exchange and quasi-energy probabilities for all tra
 We compute the Landau-Zener probabilities in Sec.~\ref{sec:LZ} numerically using the quasienergies from the Floquet simulations, and analytically, using the Stark-shifted eigen-energies. In this case, we use a time-dependent readout photon number, where $\bar n_\textrm{r}$ varies as $\bar n_\textrm{r}=50(1-e^{-\kappa t/2})^2$, to emulate change in readout photons from dissipation~\cite{dumas2024unifie,khezri2023measurement}. The numerical calculations use the probability for Landau-Zener transitions given in~\cite{ikeda2022floquet}, for an avoided crossing observed between states $\ket{i},\ket{f}$ of
 \begin{align}
     P_\textrm{LZ}&=\exp{\Big[-\frac{\pi \Delta_\textrm{ac}^2}{2v}\Big]},\\
-    \text{where } v&=\sqrt{2\Delta_\textrm{ac}\Big|\frac{d^2\epsilon_f}{d\sqrt{\bar{n}_\textrm{r}(t)}^2}\Big|_{t_\textrm{ac}}}\frac{d\sqrt{\bar{n}_\textrm{r}(t)}}{dt}|_{t_\textrm{ac}}\Big .
+    \text{where } v&=\sqrt{2\Delta_\textrm{ac}\Bigg|\frac{d^2\epsilon_f}{d\sqrt{\bar{n}_\textrm{r}(t)}^2}\Bigg|_{t_\textrm{ac}}}\frac{d\sqrt{\bar{n}_\textrm{r}(t)}}{dt}\Bigg|_{t_\textrm{ac}} .
 \end{align}
 Here, the variable $\epsilon_f$ is the numerically-computed quasi-energy obtained from Floquet simulations, while $\Delta_\textrm{ac}$ refers to their quasi-energy difference at avoided crossing. 
 
