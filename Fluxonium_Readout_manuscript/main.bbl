@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{41}%
+\begin{thebibliography}{42}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -154,22 +154,25 @@
 \bibitem [{\citenamefont {Masluk}(2013)}]{masluk2013reducing}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~A.}\ \bibnamefont {Masluk}},\ }\href@noop {} {\emph {\bibinfo {title} {Reducing the losses of the fluxonium artificial atom}}}\ (\bibinfo  {publisher} {Yale University},\ \bibinfo {year} {2013})\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Fowler}\ \emph {et~al.}(2012)\citenamefont {Fowler}, \citenamefont {Mariantoni}, \citenamefont {Martinis},\ and\ \citenamefont {Cleland}}]{fowler2012surface}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~G.}\ \bibnamefont {Fowler}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Mariantoni}}, \bibinfo {author} {\bibfnamefont {J.~M.}\ \bibnamefont {Martinis}},\ and\ \bibinfo {author} {\bibfnamefont {A.~N.}\ \bibnamefont {Cleland}},\ }\bibfield  {title} {\bibinfo {title} {Surface codes: Towards practical large-scale quantum computation},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review A—Atomic, Molecular, and Optical Physics}\ }\textbf {\bibinfo {volume} {86}},\ \bibinfo {pages} {032324} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
 \bibitem [{Note5()}]{Note5}%
   \BibitemOpen
-  \bibinfo {note} {Further lower $\omega _\protect \textrm {d}$ for readout is not favorable due to thermal heating of the readout resonator leading to photon-shot-noise induced dephasing of the qubit, and hence not analyzed in this work.}\BibitemShut {Stop}%
+  \bibinfo {note} {{\protect \color {red}Note that results quoted for dephasing in the text below do not change significantly if the parasitic mode was instead initialized a coherent state $\mathinner {|{\alpha }\rangle }$ such that $|\alpha |^2=\mathinner {\langle {n_\mu }\rangle }.$}}\BibitemShut {NoStop}%
 \bibitem [{Note6()}]{Note6}%
   \BibitemOpen
-  \bibinfo {note} {If $\omega _\protect \textrm {d}\gg \omega _{\mu =N-1}$, a dominating transition mechanism for PMIST would correspond to an excitation of a strongly coupled, low-frequency parasitic mode (i.e., $\mu =\{2,4,6\}$) to a large photon number $y$, leaving just enough energy to produce excitation to some state $f$ in the fluxonium subspace of significant charge matrix elements (see Fig.~\ref {charge-matrix}). However, such large excitations in the parasitic modes would occur with lower probability because of the high photon number $y$ involved in the transition.}\BibitemShut {Stop}%
+  \bibinfo {note} {We can estimate resonance conditions by identifying energy-conserving processes, where $x$ drive photons are converted into a transition with an energy difference $\protect \tilde {\Delta }_{if,y}$ in the hybridized eigenspace of the fluxonium and parasitic mode $\mu =2$. Here, $\protect \tilde {\Delta }_{if,y}$ is the transition energy between levels $\mathinner {|{\protect \tilde {i},\protect \tilde {m}}\rangle }$ and $\mathinner {|{\protect \tilde {f},\protect \tilde {n}}\rangle }$ such that $|m-n|=y$. This equation can also be interpreted as a process where $x$ readout photons convert into $y$ parasitic mode photons and a fluxonium excitation $\mathinner {|{i}\rangle }_\phi \leftrightarrow \mathinner {|{f}\rangle }_\phi $ such that $\Delta _{if}=\hbar |\omega _f-\omega _i|$.}\BibitemShut {Stop}%
+\bibitem [{Note7()}]{Note7}%
+  \BibitemOpen
+  \bibinfo {note} {Note that there are downward transitions from $\mathinner {|{2}\rangle }_\phi $ (blue dots) to the states $\mathinner {|{1}\rangle }_\phi $ (green line) and $\mathinner {|{0}\rangle }_\phi $ (red line) in the fluxonium subspace in the presence of parasitic modes. An example is captured by transition $13$ of Table~\ref {tab:PMIST}.}\BibitemShut {Stop}%
+\bibitem [{Note8()}]{Note8}%
+  \BibitemOpen
+  \bibinfo {note} {For example, transition $2$ corresponds to the emission of four readout photons, which are converted into two parasitic mode photons, absorbed by the mode $\mu =2$, as well as an excitation from $\mathinner {|{0}\rangle }_\phi $ to $\mathinner {|{4}\rangle }_\phi $ in the fluxonium subspace.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Catelani}\ \emph {et~al.}(2011)\citenamefont {Catelani}, \citenamefont {Schoelkopf}, \citenamefont {Devoret},\ and\ \citenamefont {Glazman}}]{catelani2011relaxation}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Catelani}}, \bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont {Schoelkopf}}, \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont {Devoret}},\ and\ \bibinfo {author} {\bibfnamefont {L.~I.}\ \bibnamefont {Glazman}},\ }\bibfield  {title} {\bibinfo {title} {Relaxation and frequency shifts induced by quasiparticles in superconducting qubits},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {84}},\ \bibinfo {pages} {064517} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Koch}\ \emph {et~al.}(2009)\citenamefont {Koch}, \citenamefont {Manucharyan}, \citenamefont {Devoret},\ and\ \citenamefont {Glazman}}]{koch2009charging}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Koch}}, \bibinfo {author} {\bibfnamefont {V.}~\bibnamefont {Manucharyan}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Devoret}},\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Glazman}},\ }\bibfield  {title} {\bibinfo {title} {Charging effects in the inductively shunted josephson junction},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical review letters}\ }\textbf {\bibinfo {volume} {103}},\ \bibinfo {pages} {217004} (\bibinfo {year} {2009})}\BibitemShut {NoStop}%
-\bibitem [{Note7()}]{Note7}%
+\bibitem [{Note9()}]{Note9}%
   \BibitemOpen
   \bibinfo {note} {Note that the assumptions used in Ref.~\cite {viola2015collective} to derive the Hamiltonian were respected when analyzing the variation with $N$.}\BibitemShut {Stop}%
 \end{thebibliography}%
